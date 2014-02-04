@@ -1,0 +1,310 @@
+sw_volume: 100
+audio_device_state:1:default detected output
+state: stop
+current: 10
+random: 1
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Mozart/7th Symphony.mp3
+1:Mozart/Fur Elise.mp3
+2:Mozart/Greensleeves.mp3
+3:Mozart/Mozart - Carmina Burana - O Fortuna.mp3
+4:Mozart/Mozart - Pachabel Cannon In D Minor.mp3
+5:Mozart/Mozart - Serenade.mp3
+6:Mozart/Pachabel Cannon in D - Acoustic Guit.mp3
+7:Mozart/Mozart_ Piano Concerto #23 In A.m4a
+8:Mozart/Mozart_ Piano Concerto #21 In C.m4a
+9:Mozart/Mozart_ Piano Concerto #24 In C.m4a
+10:Mozart/Mozart_ Piano Concerto #9 In E.m4a
+11:Mozart/Mozart_ Piano Concerto #22 In E.m4a
+12:Mozart/Mozart_ Piano Concerto #20 In D.m4a
+13:Mozart/Mozart_ Piano Concerto #14 In E.m4a
+14:Mozart/Mozart_ Piano Concerto #15 In B.m4a
+15:Danny Wright/Danny Wright - Pachelbel's Cannon in D.mp3
+16:Bob Marley/bob marley/Africa Unite.mp3
+17:Bob Marley/bob marley/Africa Unite.mp3
+18:Bob Marley/bob marley/Buffalo Soldier.mp3
+19:Bob Marley/bob marley/Burnin' and Lootin'.mp3
+20:Bob Marley/bob marley/Coming in From the Cold.mp3
+21:Bob Marley/bob marley/Concrete Jungle.mp3
+22:Bob Marley/bob marley/Could You Be Loved 2.mp3
+23:Bob Marley/bob marley/Could You Be Loved.mp3
+24:Bob Marley/bob marley/Crazy Baldhead.mp3
+25:Bob Marley/bob marley/Everything's Gonna Be Alright.mp3
+26:Bob Marley/bob marley/Exodus.mp3
+27:Bob Marley/bob marley/Get Up, Stand Up.mp3
+28:Bob Marley/bob marley/Girl I Want To Make You Sweat.mp3
+29:Bob Marley/bob marley/I Can See Clearly Now.mp3
+30:Bob Marley/bob marley/I Shot the Sheriff.mp3
+31:Bob Marley/bob marley/Iron Lion Zion.mp3
+32:Bob Marley/bob marley/Is This Love.mp3
+33:Bob Marley/bob marley/Jah Live.mp3
+34:Bob Marley/bob marley/Jamaica Rum.mp3
+35:Bob Marley/bob marley/Jamming.mp3
+36:Bob Marley/bob marley/Kinky Reggae.mp3
+37:Bob Marley/bob marley/Lively Up Yourself.mp3
+38:Bob Marley/bob marley/Misty morning.mp3
+39:Bob Marley/bob marley/Mr. Brown.mp3
+40:Bob Marley/bob marley/Natural Mystic.mp3
+41:Bob Marley/bob marley/No Woman No Cry [Live].mp3
+42:Bob Marley/bob marley/No Woman No Cry.mp3
+43:Bob Marley/bob marley/One Drop.mp3
+44:Bob Marley/bob marley/One Love.mp3
+45:Bob Marley/bob marley/One Love_People Get Ready.mp3
+46:Bob Marley/bob marley/Positive Vibration.mp3
+47:Bob Marley/bob marley/Punky Reggae Party.mp3
+48:Bob Marley/bob marley/Rastaman Live Up!.mp3
+49:Bob Marley/bob marley/Rebel Music (3 O'Clock Roadblock).mp3
+50:Bob Marley/bob marley/Redemption Song.mp3
+51:Bob Marley/bob marley/Satisfy My Soul.mp3
+52:Bob Marley/bob marley/Slave Driver.mp3
+53:Bob Marley/bob marley/Smoke Two Joints.mp3
+54:Bob Marley/bob marley/So Much Trouble in the World.mp3
+55:Bob Marley/bob marley/Stir It Up.mp3
+56:Bob Marley/bob marley/Trenchtown Rock [Live].mp3
+57:Bob Marley/bob marley/Turn Your Lights Down Low.mp3
+58:Bob Marley/bob marley/01 Sun Is Shining (Techno Remix).mp3
+59:Bob Marley/bob marley/Unknown Album/Waiting in Vain.mp3
+60:Bob Marley/bob marley/Unknown Album/War_No More Trouble.mp3
+61:Bob Dylan/Bob Dylan - Ballad of a Thin Man.mp3
+62:Bob Dylan/Bob Dylan - Like A Rolling Stone.mp3
+63:Bob Dylan/Bob Dylan - Knockin' On Heaven's Door.mp3
+64:Bob Dylan/Bob Dylan - Blowin' In The Wind.mp3
+65:Bob Dylan/Bob Dylan - The Time They Are A-Changin'.mp3
+66:Bob Dylan/Best Of/12 Forever Young.mp3
+67:Bobby McFerrin/Bobby McFerrin - Dont worry Be happy.mp3
+68:Cat Stevens/Cat Stevens- Peace Train.mp3
+69:Dispatch/The General- Dispatch wlyrics.mp3
+70:Dropkick Murphys/Dropkick Murphys - I'm Shipping Up To Boston.mp3
+71:Dropkick Murphys/Dropkick Murphys - Johnny, I Hardly Knew Ya.mp3
+72:Dropkick Murphys/Dropkick Murphys - Kiss Me, I'm Shitfaced (Lyrics On Screen).mp3
+73:Dropkick Murphys/Dropkick Murphys - Rose Tattoo.mp3
+74:Dropkick Murphys/Dropkick Murphys - The Rocky Road To Dublin.mp3
+75:Dropkick Murphys/Dropkick Murphys - The State Of Massachusetts.mp3
+76:Dropkick Murphys/Dropkick Murphys - The Boys Are Back.mp3
+77:Eddie Vedder/Eddie Vedder - Guaranteed.mp3
+78:Eddie Vedder/Eddie Vedder - Long Nights.mp3
+79:Eddie Vedder/Eddie Vedder - Society.mp3
+80:Eddie Vedder Corin Tucker(OST /Eddie Vedder Corin Tucker(OST  - Hard Sun.mp3
+81:Enya/Enya - Only Time.mp3
+82:Enya/Unknown Album/32 Gaelic Silent Night.mp3
+83:The Avett Brothers/All My Mistakes - The Avett Brothers.mp3
+84:The Avett Brothers/Find My Love - The Avett Brothers.mp3
+85:The Avett Brothers/Head Full of Doubt - The Avett Brothers.mp3
+86:The Avett Brothers/I Would Be Sad - The Avett Brothers.mp3
+87:The Avett Brothers/I and Love and You - The Avett Brothers.mp3
+88:The Avett Brothers/Live and Die - The Avett Brothers.mp3
+89:The Avett Brothers/Living of Love - The Avett Brothers.mp3
+90:The Avett Brothers/Tear Down The House - The Avett Brothers.mp3
+91:The Avett Brothers/The Avett Brothers - Murder InThe City.mp3
+92:Jack Johnson/01 Hope.mp3
+93:Jack Johnson/Curious George Soundtrack/I Can Tell That We Are Gonna Be Frie.mp3
+94:Jack Johnson/Curious George Soundtrack/12 Questions.mp3
+95:Jack Johnson/In Between Dreams/01 Better Together.mp3
+96:Jack Johnson/In Between Dreams/01 Sitting, Waiting, Wishing.mp3
+97:Jack Johnson/In Between Dreams/02 Never Know.mp3
+98:Jack Johnson/In Between Dreams/03 Banana Pancakes.mp3
+99:Jack Johnson/In Between Dreams/04 Good people.mp3
+100:Jack Johnson/On and On/09 Dreams Be Dreams.mp3
+101:Jack Johnson/On and On/04 Taylor.mp3
+102:Jack Johnson/Sleep Through the Static/08 If I Had Eyes.mp3
+103:Jack Johnson/Sleep Through the Static/06 If I Had Eyes.mp3
+104:Jack Johnson/Unknown Album/jack johnson - times like these.mp3
+105:Jack Johnson/no title/01 Inaudible Melodies.mp3
+106:Jack Johnson/no title/05 Flake.mp3
+107:The Lumineers/Big Parade (Live Bus) - The Lumineers.mp3
+108:The Lumineers/Big Parade - The Lumineers.mp3
+109:The Lumineers/Charlie Boy - The Lumineers.mp3
+110:The Lumineers/Don't Wanna Go - The Lumineers.mp3
+111:The Lumineers/Flapper Girl - The Lumineers.mp3
+112:The Lumineers/Morning Song - The Lumineers.mp3
+113:The Lumineers/Slow It Down - The Lumineers.mp3
+114:The Lumineers/Submarines - The Lumineers.mp3
+115:The Lumineers/The Lumineers - -Flowers In Your Hair- Tour Video.mp3
+116:The Lumineers/The Lumineers - Classy Girls.mp3
+117:The Lumineers/The Lumineers - Ho Hey (Official Video).mp3
+118:The Lumineers/The Lumineers - Stubborn Love.mp3
+119:The Lumineers/The Lumineers - Ho Hey.mp3
+120:Mozart/7th Symphony.mp3
+121:Mozart/Fur Elise.mp3
+122:Mozart/Greensleeves.mp3
+123:Mozart/Mozart - Carmina Burana - O Fortuna.mp3
+124:Mozart/Mozart - Pachabel Cannon In D Minor.mp3
+125:Mozart/Mozart - Serenade.mp3
+126:Mozart/Pachabel Cannon in D - Acoustic Guit.mp3
+127:Mozart/Mozart_ Piano Concerto #23 In A.m4a
+128:Mozart/Mozart_ Piano Concerto #21 In C.m4a
+129:Mozart/Mozart_ Piano Concerto #24 In C.m4a
+130:Mozart/Mozart_ Piano Concerto #9 In E.m4a
+131:Mozart/Mozart_ Piano Concerto #22 In E.m4a
+132:Mozart/Mozart_ Piano Concerto #20 In D.m4a
+133:Mozart/Mozart_ Piano Concerto #14 In E.m4a
+134:Mozart/Mozart_ Piano Concerto #15 In B.m4a
+135:Mumford & Sons/Mumford & Sons - Feel The Tide.mp3
+136:Mumford & Sons/Mumford & Sons - Ghosts That We Knew.mp3
+137:Mumford and Sons/After the Storm - Mumford and Sons.mp3
+138:Mumford and Sons/Hold On To What You Believe - Mumford and Sons.mp3
+139:Mumford and Sons/Home - Mumford and Sons.mp3
+140:Mumford and Sons/I Will Wait (Live) - Mumford and Sons.mp3
+141:Mumford and Sons/Little Lion Man.mp3
+142:Mumford and Sons/Lover of The Light (different) - Mumford and Sons.mp3
+143:Mumford and Sons/Roll Away Your Stone - Mumford and Sons.mp3
+144:Mumford and Sons/The Banjolin Song - Mumford and Sons.mp3
+145:Mumford and Sons/The Cave - Mumford and Sons.mp3
+146:Mumford and Sons/Winter Winds - Mumford and Sons.mp3
+147:HIM/HIM - In Joy And Sorrow.mp3
+148:HIM/HIM - Killing Loneliness.mp3
+149:HIM/HIM - Vampire Heart.mp3
+150:HIM/HIM - Wicked Game.mp3
+151:HIM/Unknown Album/Wings of a Butterfly.mp3
+152:Danny Wright/Danny Wright - Pachelbel's Cannon in D.mp3
+153:Rod Stewart/Rod Stewart - I'll Stand By You.mp3
+154:Five for Fighting/100 Years.m4a
+155:Eddie Vedder/Eddie Vedder - Long Nights.mp3
+156:Eddie Vedder/Eddie Vedder - Society.mp3
+157:Bob Marley/bob marley/Africa Unite.mp3
+158:Bob Marley/bob marley/Buffalo Soldier.mp3
+159:Bob Marley/bob marley/Burnin' and Lootin'.mp3
+160:Bob Marley/bob marley/Coming in From the Cold.mp3
+161:Bob Marley/bob marley/Concrete Jungle.mp3
+162:Bob Marley/bob marley/Could You Be Loved 2.mp3
+163:Bob Marley/bob marley/Could You Be Loved.mp3
+164:Bob Marley/bob marley/Crazy Baldhead.mp3
+165:Bob Marley/bob marley/Everything's Gonna Be Alright.mp3
+166:Bob Marley/bob marley/Exodus.mp3
+167:Bob Marley/bob marley/Get Up, Stand Up.mp3
+168:Bob Marley/bob marley/Girl I Want To Make You Sweat.mp3
+169:Bob Marley/bob marley/I Can See Clearly Now.mp3
+170:Bob Marley/bob marley/I Shot the Sheriff.mp3
+171:Bob Marley/bob marley/Iron Lion Zion.mp3
+172:Bob Marley/bob marley/Is This Love.mp3
+173:Bob Marley/bob marley/Jah Live.mp3
+174:Bob Marley/bob marley/Jamaica Rum.mp3
+175:Bob Marley/bob marley/Jamming.mp3
+176:Bob Marley/bob marley/Kinky Reggae.mp3
+177:Bob Marley/bob marley/Lively Up Yourself.mp3
+178:Bob Marley/bob marley/Misty morning.mp3
+179:Bob Marley/bob marley/Mr. Brown.mp3
+180:Bob Marley/bob marley/Natural Mystic.mp3
+181:Bob Marley/bob marley/No Woman No Cry [Live].mp3
+182:Bob Marley/bob marley/No Woman No Cry.mp3
+183:Bob Marley/bob marley/One Drop.mp3
+184:Bob Marley/bob marley/One Love.mp3
+185:Bob Marley/bob marley/One Love_People Get Ready.mp3
+186:Bob Marley/bob marley/Positive Vibration.mp3
+187:Bob Marley/bob marley/Punky Reggae Party.mp3
+188:Bob Marley/bob marley/Rastaman Live Up!.mp3
+189:Bob Marley/bob marley/Rebel Music (3 O'Clock Roadblock).mp3
+190:Bob Marley/bob marley/Redemption Song.mp3
+191:Bob Marley/bob marley/Satisfy My Soul.mp3
+192:Bob Marley/bob marley/Slave Driver.mp3
+193:Bob Marley/bob marley/Smoke Two Joints.mp3
+194:Bob Marley/bob marley/So Much Trouble in the World.mp3
+195:Bob Marley/bob marley/Stir It Up.mp3
+196:Bob Marley/bob marley/Trenchtown Rock [Live].mp3
+197:Bob Marley/bob marley/Turn Your Lights Down Low.mp3
+198:Bob Marley/bob marley/01 Sun Is Shining (Techno Remix).mp3
+199:Bob Marley/bob marley/Unknown Album/Waiting in Vain.mp3
+200:Bob Marley/bob marley/Unknown Album/War_No More Trouble.mp3
+201:Bob Dylan/Bob Dylan - Ballad of a Thin Man.mp3
+202:Bob Dylan/Bob Dylan - Like A Rolling Stone.mp3
+203:Bob Dylan/Bob Dylan - Knockin' On Heaven's Door.mp3
+204:Bob Dylan/Bob Dylan - Blowin' In The Wind.mp3
+205:Bob Dylan/Bob Dylan - The Time They Are A-Changin'.mp3
+206:Bob Dylan/Best Of/12 Forever Young.mp3
+207:Bobby McFerrin/Bobby McFerrin - Dont worry Be happy.mp3
+208:Cat Stevens/Cat Stevens- Peace Train.mp3
+209:Dispatch/The General- Dispatch wlyrics.mp3
+210:Dropkick Murphys/Dropkick Murphys - I'm Shipping Up To Boston.mp3
+211:Dropkick Murphys/Dropkick Murphys - Johnny, I Hardly Knew Ya.mp3
+212:Dropkick Murphys/Dropkick Murphys - Kiss Me, I'm Shitfaced (Lyrics On Screen).mp3
+213:Dropkick Murphys/Dropkick Murphys - Rose Tattoo.mp3
+214:Dropkick Murphys/Dropkick Murphys - The Rocky Road To Dublin.mp3
+215:Dropkick Murphys/Dropkick Murphys - The State Of Massachusetts.mp3
+216:Dropkick Murphys/Dropkick Murphys - The Boys Are Back.mp3
+217:Eddie Vedder/Eddie Vedder - Guaranteed.mp3
+218:Eddie Vedder/Eddie Vedder - Long Nights.mp3
+219:Eddie Vedder/Eddie Vedder - Society.mp3
+220:Eddie Vedder Corin Tucker(OST /Eddie Vedder Corin Tucker(OST  - Hard Sun.mp3
+221:Enya/Enya - Only Time.mp3
+222:Enya/Unknown Album/32 Gaelic Silent Night.mp3
+223:The Avett Brothers/All My Mistakes - The Avett Brothers.mp3
+224:The Avett Brothers/Find My Love - The Avett Brothers.mp3
+225:The Avett Brothers/Head Full of Doubt - The Avett Brothers.mp3
+226:The Avett Brothers/I Would Be Sad - The Avett Brothers.mp3
+227:The Avett Brothers/I and Love and You - The Avett Brothers.mp3
+228:The Avett Brothers/Live and Die - The Avett Brothers.mp3
+229:The Avett Brothers/Living of Love - The Avett Brothers.mp3
+230:The Avett Brothers/Tear Down The House - The Avett Brothers.mp3
+231:The Avett Brothers/The Avett Brothers - Murder InThe City.mp3
+232:Jack Johnson/01 Hope.mp3
+233:Jack Johnson/Curious George Soundtrack/I Can Tell That We Are Gonna Be Frie.mp3
+234:Jack Johnson/Curious George Soundtrack/12 Questions.mp3
+235:Jack Johnson/In Between Dreams/01 Better Together.mp3
+236:Jack Johnson/In Between Dreams/01 Sitting, Waiting, Wishing.mp3
+237:Jack Johnson/In Between Dreams/02 Never Know.mp3
+238:Jack Johnson/In Between Dreams/03 Banana Pancakes.mp3
+239:Jack Johnson/In Between Dreams/04 Good people.mp3
+240:Jack Johnson/On and On/09 Dreams Be Dreams.mp3
+241:Jack Johnson/On and On/04 Taylor.mp3
+242:Jack Johnson/Sleep Through the Static/08 If I Had Eyes.mp3
+243:Jack Johnson/Sleep Through the Static/06 If I Had Eyes.mp3
+244:Jack Johnson/Unknown Album/jack johnson - times like these.mp3
+245:Jack Johnson/no title/01 Inaudible Melodies.mp3
+246:Jack Johnson/no title/05 Flake.mp3
+247:The Lumineers/Big Parade (Live Bus) - The Lumineers.mp3
+248:The Lumineers/Big Parade - The Lumineers.mp3
+249:The Lumineers/Charlie Boy - The Lumineers.mp3
+250:The Lumineers/Don't Wanna Go - The Lumineers.mp3
+251:The Lumineers/Flapper Girl - The Lumineers.mp3
+252:The Lumineers/Morning Song - The Lumineers.mp3
+253:The Lumineers/Slow It Down - The Lumineers.mp3
+254:The Lumineers/Submarines - The Lumineers.mp3
+255:The Lumineers/The Lumineers - -Flowers In Your Hair- Tour Video.mp3
+256:The Lumineers/The Lumineers - Classy Girls.mp3
+257:The Lumineers/The Lumineers - Ho Hey (Official Video).mp3
+258:The Lumineers/The Lumineers - Stubborn Love.mp3
+259:The Lumineers/The Lumineers - Ho Hey.mp3
+260:Mozart/7th Symphony.mp3
+261:Mozart/Fur Elise.mp3
+262:Mozart/Greensleeves.mp3
+263:Mozart/Mozart - Carmina Burana - O Fortuna.mp3
+264:Mozart/Mozart - Pachabel Cannon In D Minor.mp3
+265:Mozart/Mozart - Serenade.mp3
+266:Mozart/Pachabel Cannon in D - Acoustic Guit.mp3
+267:Mozart/Mozart_ Piano Concerto #23 In A.m4a
+268:Mozart/Mozart_ Piano Concerto #21 In C.m4a
+269:Mozart/Mozart_ Piano Concerto #24 In C.m4a
+270:Mozart/Mozart_ Piano Concerto #9 In E.m4a
+271:Mozart/Mozart_ Piano Concerto #22 In E.m4a
+272:Mozart/Mozart_ Piano Concerto #20 In D.m4a
+273:Mozart/Mozart_ Piano Concerto #14 In E.m4a
+274:Mozart/Mozart_ Piano Concerto #15 In B.m4a
+275:Mumford & Sons/Mumford & Sons - Feel The Tide.mp3
+276:Mumford & Sons/Mumford & Sons - Ghosts That We Knew.mp3
+277:Mumford and Sons/After the Storm - Mumford and Sons.mp3
+278:Mumford and Sons/Hold On To What You Believe - Mumford and Sons.mp3
+279:Mumford and Sons/Home - Mumford and Sons.mp3
+280:Mumford and Sons/I Will Wait (Live) - Mumford and Sons.mp3
+281:Mumford and Sons/Little Lion Man.mp3
+282:Mumford and Sons/Lover of The Light (different) - Mumford and Sons.mp3
+283:Mumford and Sons/Roll Away Your Stone - Mumford and Sons.mp3
+284:Mumford and Sons/The Banjolin Song - Mumford and Sons.mp3
+285:Mumford and Sons/The Cave - Mumford and Sons.mp3
+286:Mumford and Sons/Winter Winds - Mumford and Sons.mp3
+287:HIM/HIM - In Joy And Sorrow.mp3
+288:HIM/HIM - Killing Loneliness.mp3
+289:HIM/HIM - Vampire Heart.mp3
+290:HIM/HIM - Wicked Game.mp3
+291:HIM/Unknown Album/Wings of a Butterfly.mp3
+292:Danny Wright/Danny Wright - Pachelbel's Cannon in D.mp3
+293:Rod Stewart/Rod Stewart - I'll Stand By You.mp3
+294:Five for Fighting/100 Years.m4a
+295:Rusted Root/Rusted Root - Send Me On My Way.mp3
+296:Hayley Westenra/Hayley Westenra - May it be.mp3
+playlist_end

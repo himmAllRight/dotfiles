@@ -1,0 +1,51 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_transmit_fg_color = "#91ba0d"
+  title_receive_bg_color = "#222222"
+  title_transmit_bg_color = "#000000"
+  title_receive_fg_color = "#91ba0d"
+  title_inactive_bg_color = "#000000"
+[keybindings]
+  hide_window = <Shift><Control>a
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#505050:#55c86a:#525252:#ccff95:#cb610c:#db9e3c:#75d65d:#6b9663:#4cc3b8:#ed993f:#2cc1a0:#d2d252:#63d351:#d78223:#ff7100:#b5e8a0"
+    font = Monospace 9
+    background_image = None
+    background_darkness = 0.92
+    scrollback_lines = 5000
+    background_type = transparent
+    use_system_font = False
+    cursor_color = "#d8d8d8"
+    foreground_color = "#a9e098"
+    scroll_on_output = False
+    show_titlebar = False
+    color_scheme = custom
+    copy_on_selection = True
+    scrollback_infinite = True
+  [[Ryan]]
+    background_darkness = 0.67
+    background_image = None
+    background_type = transparent
+    show_titlebar = False
+    foreground_color = "#ffffff"
+  [[New Profile]]
+    palette = "#000000:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    background_image = None
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[Default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

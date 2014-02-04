@@ -1,0 +1,887 @@
+2013-12-31 15:14:09	⇄	irc: connecting to server irc.geekshed.net/6667...
+2013-12-31 15:14:09	⇄	irc: connected to irc.geekshed.net/6667 (69.197.32.94)
+2013-12-31 15:14:09	⇄	*** Please wait while we scan your connection for open proxies...
+2013-12-31 15:14:09	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** Looking up your hostname...
+2013-12-31 15:14:09	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** Checking ident...
+2013-12-31 15:14:09	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** Found your hostname
+2013-12-31 15:14:12	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** No ident response; username prefixed with ~
+2013-12-31 15:14:12	⇄	CTCP requested by IRC: VERSION
+2013-12-31 15:14:12	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2013-12-31 15:14:12	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2013-12-31 15:14:12	⇄	Your host is Tyrol.GeekShed.net, running version Unreal3.2.8-gs.9
+2013-12-31 15:14:12	⇄	This server was created Wed Oct 3 2012 at 18:56:52 UTC
+2013-12-31 15:14:12	⇄	Tyrol.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2013-12-31 15:14:12	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2013-12-31 15:14:12	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2013-12-31 15:14:12	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2013-12-31 15:14:12	⇄	There are 109 users and 1950 invisible on 13 servers
+2013-12-31 15:14:12	⇄	30 :operator(s) online
+2013-12-31 15:14:12	⇄	1477 :channels formed
+2013-12-31 15:14:12	⇄	I have 161 clients and 0 servers
+2013-12-31 15:14:12	⇄	Current Local Users: 161  Max: 856
+2013-12-31 15:14:12	⇄	Current Global Users: 2059  Max: 5334
+2013-12-31 15:14:12	⇄	- Tyrol.GeekShed.net Message of the Day -
+2013-12-31 15:14:12	⇄	- 28/11/2013 2:05
+2013-12-31 15:14:12	⇄	-   _____           _     _____ _              _
+2013-12-31 15:14:12	⇄	-  / ____|         | |   / ____| |            | |
+2013-12-31 15:14:12	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2013-12-31 15:14:12	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2013-12-31 15:14:12	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2013-12-31 15:14:12	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	- Before continuing please read the Geek Shed
+2013-12-31 15:14:12	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	- By connecting and retaining a connection to any
+2013-12-31 15:14:12	⇄	- part of Geek Shed you state that you have read,
+2013-12-31 15:14:12	⇄	- understand, and hereby agree to comply with and accept
+2013-12-31 15:14:12	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2013-12-31 15:14:12	⇄	- and rules stated in the document.
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2013-12-31 15:14:12	⇄	- DO NOT RECONNECT!
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	- -------------------------------------------------------
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	- :: Our Site  http://www.geekshed.net/
+2013-12-31 15:14:12	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2013-12-31 15:14:12	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2013-12-31 15:14:12	⇄	- :: Commands  http://www.geekshed.net/commands/
+2013-12-31 15:14:12	⇄	- :: Forums    http://www.geekshed.net/forum/
+2013-12-31 15:14:12	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2013-12-31 15:14:12	⇄	- :: Staff     http://www.geekshed.net/staff/
+2013-12-31 15:14:12	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2013-12-31 15:14:12	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2013-12-31 15:14:12	⇄	-
+2013-12-31 15:14:12	⇄	- -------------------------------------------------------
+2013-12-31 15:14:12	⇄	End of /MOTD command.
+2013-12-31 15:14:12	⇄	User mode [+iRx] by ryan
+2013-12-31 15:14:12	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 15:14:12	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 15:14:12	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 15:14:12	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2013-12-31 15:14:35	⇄	NickServ (services@geekshed.net): Your nickname is now being changed to Unidentified23683
+2013-12-31 15:14:36	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 15:14:36	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 15:14:36	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 15:14:36	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2013-12-31 15:14:44	⇄	MSG(NickServe): IDENTIFY ry17re34
+2013-12-31 15:14:44	⇄	NickServe: No such nick/channel
+2013-12-31 15:14:57	⇄	MSG(NickServ): IDENTIFY ********
+2013-12-31 15:14:58	⇄	User mode [+r] by Services.GeekShed.net
+2013-12-31 15:14:58	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2013-12-31 15:33:12	⇄	irc: connecting to server irc.geekshed.net/6667...
+2013-12-31 15:33:12	⇄	irc: connected to irc.geekshed.net/6667 (46.137.61.145)
+2013-12-31 15:33:12	⇄	*** Please wait while we scan your connection for open proxies...
+2013-12-31 15:33:12	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Looking up your hostname...
+2013-12-31 15:33:12	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Checking ident...
+2013-12-31 15:33:12	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Found your hostname
+2013-12-31 15:33:16	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** No ident response; username prefixed with ~
+2013-12-31 15:33:16	⇄	CTCP requested by IRC: VERSION
+2013-12-31 15:33:16	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2013-12-31 15:33:16	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2013-12-31 15:33:16	⇄	Your host is Tigh.GeekShed.net, running version Unreal3.2.8-gs.9
+2013-12-31 15:33:16	⇄	This server was created Sun Oct 9 2011 at 11:22:39 UTC
+2013-12-31 15:33:16	⇄	Tigh.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2013-12-31 15:33:16	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2013-12-31 15:33:16	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2013-12-31 15:33:16	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2013-12-31 15:33:16	⇄	There are 108 users and 1914 invisible on 13 servers
+2013-12-31 15:33:16	⇄	29 :operator(s) online
+2013-12-31 15:33:16	⇄	1471 :channels formed
+2013-12-31 15:33:16	⇄	I have 303 clients and 0 servers
+2013-12-31 15:33:16	⇄	Current Local Users: 303  Max: 797
+2013-12-31 15:33:16	⇄	Current Global Users: 2022  Max: 5334
+2013-12-31 15:33:16	⇄	- Tigh.GeekShed.net Message of the Day -
+2013-12-31 15:33:16	⇄	- 28/11/2013 2:05
+2013-12-31 15:33:16	⇄	-   _____           _     _____ _              _
+2013-12-31 15:33:16	⇄	-  / ____|         | |   / ____| |            | |
+2013-12-31 15:33:16	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2013-12-31 15:33:16	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2013-12-31 15:33:16	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2013-12-31 15:33:16	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	- Before continuing please read the Geek Shed
+2013-12-31 15:33:16	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	- By connecting and retaining a connection to any
+2013-12-31 15:33:16	⇄	- part of Geek Shed you state that you have read,
+2013-12-31 15:33:16	⇄	- understand, and hereby agree to comply with and accept
+2013-12-31 15:33:16	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2013-12-31 15:33:16	⇄	- and rules stated in the document.
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2013-12-31 15:33:16	⇄	- DO NOT RECONNECT!
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	- -------------------------------------------------------
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	- :: Our Site  http://www.geekshed.net/
+2013-12-31 15:33:16	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2013-12-31 15:33:16	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2013-12-31 15:33:16	⇄	- :: Commands  http://www.geekshed.net/commands/
+2013-12-31 15:33:16	⇄	- :: Forums    http://www.geekshed.net/forum/
+2013-12-31 15:33:16	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2013-12-31 15:33:16	⇄	- :: Staff     http://www.geekshed.net/staff/
+2013-12-31 15:33:16	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2013-12-31 15:33:16	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2013-12-31 15:33:16	⇄	-
+2013-12-31 15:33:16	⇄	- -------------------------------------------------------
+2013-12-31 15:33:16	⇄	End of /MOTD command.
+2013-12-31 15:33:16	⇄	User mode [+iRx] by ryan
+2013-12-31 15:33:16	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 15:33:16	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 15:33:16	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 15:33:16	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2013-12-31 15:33:20	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 15:33:20	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 15:33:20	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 15:33:20	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2013-12-31 15:33:39	⇄	MSG(NickServ): IDENTIFY ********
+2013-12-31 15:33:39	⇄	User mode [+r] by Services.GeekShed.net
+2013-12-31 15:33:39	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2013-12-31 16:17:12	⇄	irc: connecting to server irc.geekshed.net/6667...
+2013-12-31 16:17:12	⇄	irc: connected to irc.geekshed.net/6667 (107.20.73.183)
+2013-12-31 16:17:12	⇄	*** Please wait while we scan your connection for open proxies...
+2013-12-31 16:17:12	⇄	Baltar.GeekShed.net (Baltar.GeekShed.net): *** Looking up your hostname...
+2013-12-31 16:17:12	⇄	Baltar.GeekShed.net (Baltar.GeekShed.net): *** Checking ident...
+2013-12-31 16:17:12	⇄	Baltar.GeekShed.net (Baltar.GeekShed.net): *** Found your hostname
+2013-12-31 16:17:15	⇄	Baltar.GeekShed.net (Baltar.GeekShed.net): *** No ident response; username prefixed with ~
+2013-12-31 16:17:15	⇄	CTCP requested by IRC: VERSION
+2013-12-31 16:17:15	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2013-12-31 16:17:15	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2013-12-31 16:17:15	⇄	Your host is Baltar.GeekShed.net, running version Unreal3.2.8-gs.9
+2013-12-31 16:17:15	⇄	This server was created Wed Oct 5 2011 at 21:38:19 UTC
+2013-12-31 16:17:15	⇄	Baltar.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2013-12-31 16:17:15	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2013-12-31 16:17:15	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2013-12-31 16:17:15	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2013-12-31 16:17:15	⇄	There are 108 users and 1900 invisible on 13 servers
+2013-12-31 16:17:15	⇄	29 :operator(s) online
+2013-12-31 16:17:15	⇄	8 :unknown connection(s)
+2013-12-31 16:17:15	⇄	1478 :channels formed
+2013-12-31 16:17:15	⇄	I have 369 clients and 0 servers
+2013-12-31 16:17:15	⇄	Current Local Users: 369  Max: 1234
+2013-12-31 16:17:15	⇄	Current Global Users: 2008  Max: 5334
+2013-12-31 16:17:15	⇄	- Baltar.GeekShed.net Message of the Day -
+2013-12-31 16:17:15	⇄	- 28/11/2013 2:05
+2013-12-31 16:17:15	⇄	-   _____           _     _____ _              _
+2013-12-31 16:17:15	⇄	-  / ____|         | |   / ____| |            | |
+2013-12-31 16:17:15	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2013-12-31 16:17:15	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2013-12-31 16:17:15	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2013-12-31 16:17:15	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	- Before continuing please read the Geek Shed
+2013-12-31 16:17:15	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	- By connecting and retaining a connection to any
+2013-12-31 16:17:15	⇄	- part of Geek Shed you state that you have read,
+2013-12-31 16:17:15	⇄	- understand, and hereby agree to comply with and accept
+2013-12-31 16:17:15	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2013-12-31 16:17:15	⇄	- and rules stated in the document.
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2013-12-31 16:17:15	⇄	- DO NOT RECONNECT!
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	- -------------------------------------------------------
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	- :: Our Site  http://www.geekshed.net/
+2013-12-31 16:17:15	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2013-12-31 16:17:15	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2013-12-31 16:17:15	⇄	- :: Commands  http://www.geekshed.net/commands/
+2013-12-31 16:17:15	⇄	- :: Forums    http://www.geekshed.net/forum/
+2013-12-31 16:17:15	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2013-12-31 16:17:15	⇄	- :: Staff     http://www.geekshed.net/staff/
+2013-12-31 16:17:15	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2013-12-31 16:17:15	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2013-12-31 16:17:15	⇄	-
+2013-12-31 16:17:15	⇄	- -------------------------------------------------------
+2013-12-31 16:17:15	⇄	End of /MOTD command.
+2013-12-31 16:17:15	⇄	User mode [+iRx] by ryan
+2013-12-31 16:17:15	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 16:17:15	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 16:17:15	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 16:17:15	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2013-12-31 16:17:18	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 16:17:18	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 16:17:18	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 16:17:18	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2013-12-31 16:17:25	⇄	MSG(NickServ): IDENTIFY ********
+2013-12-31 16:17:25	⇄	User mode [+r] by Services.GeekShed.net
+2013-12-31 16:17:25	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2013-12-31 16:54:07	⇄	irc: connecting to server irc.geekshed.net/6667...
+2013-12-31 16:54:07	⇄	irc: connected to irc.geekshed.net/6667 (176.32.75.164)
+2013-12-31 16:54:07	⇄	*** Please wait while we scan your connection for open proxies...
+2013-12-31 16:54:07	⇄	Neptune.GeekShed.net (Neptune.GeekShed.net): *** Looking up your hostname...
+2013-12-31 16:54:07	⇄	Neptune.GeekShed.net (Neptune.GeekShed.net): *** Checking ident...
+2013-12-31 16:54:07	⇄	Neptune.GeekShed.net (Neptune.GeekShed.net): *** Found your hostname
+2013-12-31 16:54:10	⇄	Neptune.GeekShed.net (Neptune.GeekShed.net): *** No ident response; username prefixed with ~
+2013-12-31 16:54:10	⇄	CTCP requested by IRC: VERSION
+2013-12-31 16:54:10	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2013-12-31 16:54:10	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2013-12-31 16:54:10	⇄	Your host is Neptune.GeekShed.net, running version Unreal3.2.8-gs.9
+2013-12-31 16:54:10	⇄	This server was created Wed Oct 12 2011 at 02:00:12 UTC
+2013-12-31 16:54:10	⇄	Neptune.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2013-12-31 16:54:10	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2013-12-31 16:54:10	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2013-12-31 16:54:10	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2013-12-31 16:54:10	⇄	There are 107 users and 1919 invisible on 13 servers
+2013-12-31 16:54:10	⇄	30 :operator(s) online
+2013-12-31 16:54:10	⇄	1 :unknown connection(s)
+2013-12-31 16:54:10	⇄	1471 :channels formed
+2013-12-31 16:54:10	⇄	I have 263 clients and 0 servers
+2013-12-31 16:54:10	⇄	Current Local Users: 263  Max: 853
+2013-12-31 16:54:10	⇄	Current Global Users: 2026  Max: 5334
+2013-12-31 16:54:10	⇄	- Neptune.GeekShed.net Message of the Day -
+2013-12-31 16:54:10	⇄	- 28/11/2013 2:05
+2013-12-31 16:54:10	⇄	-   _____           _     _____ _              _
+2013-12-31 16:54:10	⇄	-  / ____|         | |   / ____| |            | |
+2013-12-31 16:54:10	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2013-12-31 16:54:10	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2013-12-31 16:54:10	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2013-12-31 16:54:10	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	- Before continuing please read the Geek Shed
+2013-12-31 16:54:10	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	- By connecting and retaining a connection to any
+2013-12-31 16:54:10	⇄	- part of Geek Shed you state that you have read,
+2013-12-31 16:54:10	⇄	- understand, and hereby agree to comply with and accept
+2013-12-31 16:54:10	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2013-12-31 16:54:10	⇄	- and rules stated in the document.
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2013-12-31 16:54:10	⇄	- DO NOT RECONNECT!
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	- -------------------------------------------------------
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	- :: Our Site  http://www.geekshed.net/
+2013-12-31 16:54:10	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2013-12-31 16:54:10	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2013-12-31 16:54:10	⇄	- :: Commands  http://www.geekshed.net/commands/
+2013-12-31 16:54:10	⇄	- :: Forums    http://www.geekshed.net/forum/
+2013-12-31 16:54:10	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2013-12-31 16:54:10	⇄	- :: Staff     http://www.geekshed.net/staff/
+2013-12-31 16:54:10	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2013-12-31 16:54:10	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2013-12-31 16:54:10	⇄	-
+2013-12-31 16:54:10	⇄	- -------------------------------------------------------
+2013-12-31 16:54:10	⇄	End of /MOTD command.
+2013-12-31 16:54:10	⇄	User mode [+iRx] by ryan
+2013-12-31 16:54:10	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 16:54:10	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 16:54:10	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 16:54:10	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2013-12-31 16:54:13	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2013-12-31 16:54:13	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2013-12-31 16:54:13	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2013-12-31 16:54:13	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2013-12-31 16:54:22	⇄	MSG(NickServ): IDENTIFY ********
+2013-12-31 16:54:22	⇄	User mode [+r] by Services.GeekShed.net
+2013-12-31 16:54:22	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2014-01-01 02:27:37	+	Closing Link: himmelwr[c-68-80-234-127.hsd1.pa.comcast.net] (Ping timeout)
+2014-01-01 02:27:37	⇄	irc: disconnected from server
+2014-01-01 02:27:37	⇄	irc: reconnecting to server in 10 seconds
+2014-01-01 02:27:47	⇄	irc: reconnecting to server...
+2014-01-01 02:27:47	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:28:47	+	irc: timeout
+2014-01-01 02:28:47	⇄	irc: reconnecting to server in 20 seconds
+2014-01-01 02:29:07	⇄	irc: reconnecting to server...
+2014-01-01 02:29:07	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:29:27	+	irc: address "irc.geekshed.net" not found
+2014-01-01 02:29:27	+	irc: error: Name or service not known
+2014-01-01 02:29:27	⇄	irc: reconnecting to server in 40 seconds
+2014-01-01 02:30:07	⇄	irc: reconnecting to server...
+2014-01-01 02:30:07	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:30:27	+	irc: address "irc.geekshed.net" not found
+2014-01-01 02:30:27	+	irc: error: Name or service not known
+2014-01-01 02:30:27	⇄	irc: reconnecting to server in 1 minute, 20 seconds
+2014-01-01 02:31:47	⇄	irc: reconnecting to server...
+2014-01-01 02:31:47	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:32:47	+	irc: timeout
+2014-01-01 02:32:47	⇄	irc: reconnecting to server in 2 minutes, 40 seconds
+2014-01-01 02:35:27	⇄	irc: reconnecting to server...
+2014-01-01 02:35:27	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:35:47	+	irc: address "irc.geekshed.net" not found
+2014-01-01 02:35:47	+	irc: error: Name or service not known
+2014-01-01 02:35:47	⇄	irc: reconnecting to server in 5 minutes, 20 seconds
+2014-01-01 02:41:07	⇄	irc: reconnecting to server...
+2014-01-01 02:41:07	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:41:27	+	irc: address "irc.geekshed.net" not found
+2014-01-01 02:41:27	+	irc: error: Name or service not known
+2014-01-01 02:41:27	⇄	irc: reconnecting to server in 10 minutes, 40 seconds
+2014-01-01 02:52:07	⇄	irc: reconnecting to server...
+2014-01-01 02:52:07	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 02:52:27	+	irc: address "irc.geekshed.net" not found
+2014-01-01 02:52:27	+	irc: error: Name or service not known
+2014-01-01 02:52:27	⇄	irc: reconnecting to server in 21 minutes, 20 seconds
+2014-01-01 03:13:47	⇄	irc: reconnecting to server...
+2014-01-01 03:13:47	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 03:14:07	+	irc: address "irc.geekshed.net" not found
+2014-01-01 03:14:07	+	irc: error: Name or service not known
+2014-01-01 03:14:07	⇄	irc: reconnecting to server in 30 minutes
+2014-01-01 03:44:07	⇄	irc: reconnecting to server...
+2014-01-01 03:44:07	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 03:44:07	⇄	irc: connected to irc.geekshed.net/6667 (46.137.61.145)
+2014-01-01 03:44:07	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-01 03:44:07	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Looking up your hostname...
+2014-01-01 03:44:07	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Checking ident...
+2014-01-01 03:44:07	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Found your hostname
+2014-01-01 03:44:10	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-01 03:44:10	⇄	CTCP requested by IRC: VERSION
+2014-01-01 03:44:10	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-01 03:44:10	⇄	Welcome to the GeekShed IRC Network himmelwr!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2014-01-01 03:44:10	⇄	Your host is Tigh.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-01 03:44:10	⇄	This server was created Sun Oct 9 2011 at 11:22:39 UTC
+2014-01-01 03:44:10	⇄	Tigh.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-01 03:44:10	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-01 03:44:10	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-01 03:44:10	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-01 03:44:10	⇄	There are 107 users and 1602 invisible on 13 servers
+2014-01-01 03:44:10	⇄	30 :operator(s) online
+2014-01-01 03:44:10	⇄	1346 :channels formed
+2014-01-01 03:44:10	⇄	I have 254 clients and 0 servers
+2014-01-01 03:44:10	⇄	Current Local Users: 254  Max: 797
+2014-01-01 03:44:10	⇄	Current Global Users: 1709  Max: 5334
+2014-01-01 03:44:10	⇄	- Tigh.GeekShed.net Message of the Day -
+2014-01-01 03:44:10	⇄	- 28/11/2013 2:05
+2014-01-01 03:44:10	⇄	-   _____           _     _____ _              _
+2014-01-01 03:44:10	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-01 03:44:10	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-01 03:44:10	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-01 03:44:10	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-01 03:44:10	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	- Before continuing please read the Geek Shed
+2014-01-01 03:44:10	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	- By connecting and retaining a connection to any
+2014-01-01 03:44:10	⇄	- part of Geek Shed you state that you have read,
+2014-01-01 03:44:10	⇄	- understand, and hereby agree to comply with and accept
+2014-01-01 03:44:10	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-01 03:44:10	⇄	- and rules stated in the document.
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-01 03:44:10	⇄	- DO NOT RECONNECT!
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	- -------------------------------------------------------
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-01 03:44:10	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-01 03:44:10	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-01 03:44:10	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-01 03:44:10	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-01 03:44:10	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-01 03:44:10	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-01 03:44:10	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-01 03:44:10	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-01 03:44:10	⇄	-
+2014-01-01 03:44:10	⇄	- -------------------------------------------------------
+2014-01-01 03:44:10	⇄	End of /MOTD command.
+2014-01-01 03:44:10	⇄	User mode [+iRx] by himmelwr
+2014-01-01 03:44:10	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-01 03:44:10	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-01 03:44:10	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-01 03:44:10	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2014-01-01 03:45:12	⇄	NickServ (services@geekshed.net): Your nickname is now being changed to Unidentified37626
+2014-01-01 05:12:59	+	Closing Link: Unidentified37626[c-68-80-234-127.hsd1.pa.comcast.net] (Ping timeout)
+2014-01-01 05:12:59	⇄	irc: disconnected from server
+2014-01-01 05:12:59	⇄	irc: reconnecting to server in 10 seconds
+2014-01-01 05:13:09	⇄	irc: reconnecting to server...
+2014-01-01 05:13:09	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 05:13:29	+	irc: address "irc.geekshed.net" not found
+2014-01-01 05:13:29	+	irc: error: Name or service not known
+2014-01-01 05:13:29	⇄	irc: reconnecting to server in 20 seconds
+2014-01-01 05:13:49	⇄	irc: reconnecting to server...
+2014-01-01 05:13:49	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 05:14:09	+	irc: address "irc.geekshed.net" not found
+2014-01-01 05:14:09	+	irc: error: Name or service not known
+2014-01-01 05:14:09	⇄	irc: reconnecting to server in 40 seconds
+2014-01-01 05:14:49	⇄	irc: reconnecting to server...
+2014-01-01 05:14:49	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 05:15:09	+	irc: address "irc.geekshed.net" not found
+2014-01-01 05:15:09	+	irc: error: Name or service not known
+2014-01-01 05:15:09	⇄	irc: reconnecting to server in 1 minute, 20 seconds
+2014-01-01 05:16:29	⇄	irc: reconnecting to server...
+2014-01-01 05:16:29	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 05:16:49	+	irc: address "irc.geekshed.net" not found
+2014-01-01 05:16:49	+	irc: error: Name or service not known
+2014-01-01 05:16:49	⇄	irc: reconnecting to server in 2 minutes, 40 seconds
+2014-01-01 05:19:29	⇄	irc: reconnecting to server...
+2014-01-01 05:19:29	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 05:19:29	⇄	irc: connected to irc.geekshed.net/6667 (46.137.61.145)
+2014-01-01 05:19:29	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-01 05:19:29	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Looking up your hostname...
+2014-01-01 05:19:29	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Checking ident...
+2014-01-01 05:19:29	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Found your hostname
+2014-01-01 05:19:33	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-01 05:19:33	⇄	CTCP requested by IRC: VERSION
+2014-01-01 05:19:33	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-01 05:19:33	⇄	Welcome to the GeekShed IRC Network Unidentified37626!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2014-01-01 05:19:33	⇄	Your host is Tigh.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-01 05:19:33	⇄	This server was created Sun Oct 9 2011 at 11:22:39 UTC
+2014-01-01 05:19:33	⇄	Tigh.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-01 05:19:33	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-01 05:19:33	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-01 05:19:33	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-01 05:19:33	⇄	There are 107 users and 1609 invisible on 13 servers
+2014-01-01 05:19:33	⇄	29 :operator(s) online
+2014-01-01 05:19:33	⇄	1 :unknown connection(s)
+2014-01-01 05:19:33	⇄	1368 :channels formed
+2014-01-01 05:19:33	⇄	I have 248 clients and 0 servers
+2014-01-01 05:19:33	⇄	Current Local Users: 248  Max: 797
+2014-01-01 05:19:33	⇄	Current Global Users: 1716  Max: 5334
+2014-01-01 05:19:33	⇄	- Tigh.GeekShed.net Message of the Day -
+2014-01-01 05:19:33	⇄	- 28/11/2013 2:05
+2014-01-01 05:19:33	⇄	-   _____           _     _____ _              _
+2014-01-01 05:19:33	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-01 05:19:33	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-01 05:19:33	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-01 05:19:33	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-01 05:19:33	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	- Before continuing please read the Geek Shed
+2014-01-01 05:19:33	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	- By connecting and retaining a connection to any
+2014-01-01 05:19:33	⇄	- part of Geek Shed you state that you have read,
+2014-01-01 05:19:33	⇄	- understand, and hereby agree to comply with and accept
+2014-01-01 05:19:33	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-01 05:19:33	⇄	- and rules stated in the document.
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-01 05:19:33	⇄	- DO NOT RECONNECT!
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	- -------------------------------------------------------
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-01 05:19:33	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-01 05:19:33	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-01 05:19:33	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-01 05:19:33	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-01 05:19:33	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-01 05:19:33	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-01 05:19:33	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-01 05:19:33	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-01 05:19:33	⇄	-
+2014-01-01 05:19:33	⇄	- -------------------------------------------------------
+2014-01-01 05:19:33	⇄	End of /MOTD command.
+2014-01-01 05:19:33	⇄	User mode [+iRx] by Unidentified37626
+2014-01-01 07:58:30	+	Closing Link: Unidentified37626[c-68-80-234-127.hsd1.pa.comcast.net] (Ping timeout)
+2014-01-01 07:58:30	⇄	irc: disconnected from server
+2014-01-01 07:58:30	⇄	irc: reconnecting to server in 10 seconds
+2014-01-01 07:58:40	⇄	irc: reconnecting to server...
+2014-01-01 07:58:40	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-01 07:58:41	⇄	irc: connected to irc.geekshed.net/6667 (69.197.32.94)
+2014-01-01 07:58:42	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-01 07:58:42	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** Looking up your hostname...
+2014-01-01 07:58:42	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** Checking ident...
+2014-01-01 07:58:42	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** Found your hostname
+2014-01-01 07:58:45	⇄	Tyrol.GeekShed.net (Tyrol.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-01 07:58:45	⇄	CTCP requested by IRC: VERSION
+2014-01-01 07:58:45	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-01 07:58:45	⇄	Welcome to the GeekShed IRC Network Unidentified37626!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2014-01-01 07:58:45	⇄	Your host is Tyrol.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-01 07:58:45	⇄	This server was created Wed Oct 3 2012 at 18:56:52 UTC
+2014-01-01 07:58:45	⇄	Tyrol.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-01 07:58:45	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-01 07:58:45	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-01 07:58:45	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-01 07:58:45	⇄	There are 108 users and 1692 invisible on 13 servers
+2014-01-01 07:58:45	⇄	30 :operator(s) online
+2014-01-01 07:58:45	⇄	1 :unknown connection(s)
+2014-01-01 07:58:45	⇄	1434 :channels formed
+2014-01-01 07:58:45	⇄	I have 164 clients and 0 servers
+2014-01-01 07:58:45	⇄	Current Local Users: 164  Max: 856
+2014-01-01 07:58:45	⇄	Current Global Users: 1800  Max: 5334
+2014-01-01 07:58:45	⇄	- Tyrol.GeekShed.net Message of the Day -
+2014-01-01 07:58:45	⇄	- 28/11/2013 2:05
+2014-01-01 07:58:45	⇄	-   _____           _     _____ _              _
+2014-01-01 07:58:45	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-01 07:58:45	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-01 07:58:45	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-01 07:58:45	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-01 07:58:45	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-01 07:58:45	⇄	-
+2014-01-01 07:58:45	⇄	-
+2014-01-01 07:58:45	⇄	- Before continuing please read the Geek Shed
+2014-01-01 07:58:45	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-01 07:58:45	⇄	-
+2014-01-01 07:58:45	⇄	- By connecting and retaining a connection to any
+2014-01-01 07:58:45	⇄	- part of Geek Shed you state that you have read,
+2014-01-01 07:58:45	⇄	- understand, and hereby agree to comply with and accept
+2014-01-01 07:58:45	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-01 07:58:45	⇄	- and rules stated in the document.
+2014-01-01 07:58:45	⇄	-
+2014-01-01 07:58:45	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-01 07:58:45	⇄	- DO NOT RECONNECT!
+2014-01-01 07:58:45	⇄	-
+2014-01-01 07:58:45	⇄	- -------------------------------------------------------
+2014-01-01 07:58:45	⇄	-
+2014-01-01 07:58:45	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-01 07:58:45	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-01 07:58:45	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-01 07:58:45	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-01 07:58:45	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-01 07:58:45	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-01 07:58:46	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-01 07:58:47	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-01 07:58:47	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-01 07:58:47	⇄	-
+2014-01-01 07:58:47	⇄	- -------------------------------------------------------
+2014-01-01 07:58:47	⇄	End of /MOTD command.
+2014-01-01 07:58:47	⇄	User mode [+iRx] by Unidentified37626
+2014-01-02 11:07:10	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-02 11:07:16	⇄	irc: connected to irc.geekshed.net/6667 (198.251.81.220)
+2014-01-02 11:07:16	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-02 11:07:16	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Looking up your hostname...
+2014-01-02 11:07:16	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Checking ident...
+2014-01-02 11:07:16	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Found your hostname
+2014-01-02 11:07:20	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-02 11:07:20	⇄	CTCP requested by IRC: VERSION
+2014-01-02 11:07:20	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-02 11:07:20	⇄	Welcome to the GeekShed IRC Network himmelwr!~ryan@c-68-80-234-127.hsd1.pa.comcast.net
+2014-01-02 11:07:20	⇄	Your host is Sheba.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-02 11:07:20	⇄	This server was created Thu Dec 13 2012 at 20:01:09 MSK
+2014-01-02 11:07:20	⇄	Sheba.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-02 11:07:20	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-02 11:07:20	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-02 11:07:20	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-02 11:07:20	⇄	There are 110 users and 1866 invisible on 13 servers
+2014-01-02 11:07:20	⇄	30 :operator(s) online
+2014-01-02 11:07:20	⇄	3 :unknown connection(s)
+2014-01-02 11:07:20	⇄	1470 :channels formed
+2014-01-02 11:07:20	⇄	I have 98 clients and 0 servers
+2014-01-02 11:07:20	⇄	Current Local Users: 98  Max: 563
+2014-01-02 11:07:20	⇄	Current Global Users: 1976  Max: 5334
+2014-01-02 11:07:20	⇄	- Sheba.GeekShed.net Message of the Day -
+2014-01-02 11:07:20	⇄	- 28/11/2013 6:05
+2014-01-02 11:07:20	⇄	-   _____           _     _____ _              _
+2014-01-02 11:07:20	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-02 11:07:20	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-02 11:07:20	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-02 11:07:20	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-02 11:07:20	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	- Before continuing please read the Geek Shed
+2014-01-02 11:07:20	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	- By connecting and retaining a connection to any
+2014-01-02 11:07:20	⇄	- part of Geek Shed you state that you have read,
+2014-01-02 11:07:20	⇄	- understand, and hereby agree to comply with and accept
+2014-01-02 11:07:20	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-02 11:07:20	⇄	- and rules stated in the document.
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-02 11:07:20	⇄	- DO NOT RECONNECT!
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	- -------------------------------------------------------
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-02 11:07:20	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-02 11:07:20	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-02 11:07:20	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-02 11:07:20	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-02 11:07:20	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-02 11:07:20	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-02 11:07:20	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-02 11:07:20	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-02 11:07:20	⇄	-
+2014-01-02 11:07:20	⇄	- -------------------------------------------------------
+2014-01-02 11:07:20	⇄	End of /MOTD command.
+2014-01-02 11:07:20	⇄	User mode [+iRx] by himmelwr
+2014-01-02 11:07:21	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-02 11:07:21	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-02 11:07:21	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-02 11:07:21	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2014-01-02 11:07:24	⇄	MSG(NickServ): IDENTIFY ********
+2014-01-02 11:07:24	⇄	User mode [+r] by Services.GeekShed.net
+2014-01-02 11:07:24	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2014-01-04 20:17:04	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-04 20:17:04	⇄	irc: connected to irc.geekshed.net/6667 (209.141.39.158)
+2014-01-04 20:17:04	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-04 20:17:04	⇄	Komma.GeekShed.net (Komma.GeekShed.net): *** Looking up your hostname...
+2014-01-04 20:17:04	⇄	Komma.GeekShed.net (Komma.GeekShed.net): *** Checking ident...
+2014-01-04 20:17:04	⇄	Komma.GeekShed.net (Komma.GeekShed.net): *** Found your hostname
+2014-01-04 20:17:08	⇄	Komma.GeekShed.net (Komma.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-04 20:17:08	⇄	CTCP requested by IRC: VERSION
+2014-01-04 20:17:08	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-04 20:17:08	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@64-121-204-206.c3-0.eas-ubr2.atw-eas.pa.cable.rcn.com
+2014-01-04 20:17:08	⇄	Your host is Komma.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-04 20:17:08	⇄	This server was created Thu Dec 13 2012 at 19:48:52 MSK
+2014-01-04 20:17:08	⇄	Komma.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-04 20:17:08	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-04 20:17:08	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-04 20:17:08	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-04 20:17:08	⇄	There are 108 users and 1852 invisible on 13 servers
+2014-01-04 20:17:08	⇄	31 :operator(s) online
+2014-01-04 20:17:08	⇄	1372 :channels formed
+2014-01-04 20:17:08	⇄	I have 93 clients and 0 servers
+2014-01-04 20:17:08	⇄	Current Local Users: 93  Max: 366
+2014-01-04 20:17:08	⇄	Current Global Users: 1960  Max: 5334
+2014-01-04 20:17:08	⇄	- Komma.GeekShed.net Message of the Day -
+2014-01-04 20:17:08	⇄	- 28/11/2013 6:05
+2014-01-04 20:17:08	⇄	-   _____           _     _____ _              _
+2014-01-04 20:17:08	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-04 20:17:08	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-04 20:17:08	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-04 20:17:08	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-04 20:17:08	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	- Before continuing please read the Geek Shed
+2014-01-04 20:17:08	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	- By connecting and retaining a connection to any
+2014-01-04 20:17:08	⇄	- part of Geek Shed you state that you have read,
+2014-01-04 20:17:08	⇄	- understand, and hereby agree to comply with and accept
+2014-01-04 20:17:08	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-04 20:17:08	⇄	- and rules stated in the document.
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-04 20:17:08	⇄	- DO NOT RECONNECT!
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	- -------------------------------------------------------
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-04 20:17:08	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-04 20:17:08	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-04 20:17:08	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-04 20:17:08	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-04 20:17:08	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-04 20:17:08	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-04 20:17:08	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-04 20:17:08	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-04 20:17:08	⇄	-
+2014-01-04 20:17:08	⇄	- -------------------------------------------------------
+2014-01-04 20:17:08	⇄	End of /MOTD command.
+2014-01-04 20:17:08	⇄	User mode [+iRx] by ryan
+2014-01-04 20:17:08	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-04 20:17:08	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-04 20:17:08	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-04 20:17:08	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2014-01-04 20:17:10	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-04 20:17:10	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-04 20:17:10	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-04 20:17:10	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2014-01-04 20:17:17	⇄	MSG(NickServ): IDENTIFY ********
+2014-01-04 20:17:17	⇄	User mode [+r] by Services.GeekShed.net
+2014-01-04 20:17:17	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2014-01-04 22:12:04	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-04 22:12:05	⇄	irc: connected to irc.geekshed.net/6667 (198.251.81.220)
+2014-01-04 22:12:05	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-04 22:12:05	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Looking up your hostname...
+2014-01-04 22:12:05	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Checking ident...
+2014-01-04 22:12:06	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Found your hostname
+2014-01-04 22:12:09	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-04 22:12:09	⇄	CTCP requested by IRC: VERSION
+2014-01-04 22:12:09	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-04 22:12:09	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@64-121-204-206.c3-0.eas-ubr2.atw-eas.pa.cable.rcn.com
+2014-01-04 22:12:09	⇄	Your host is Sheba.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-04 22:12:09	⇄	This server was created Thu Dec 13 2012 at 20:01:09 MSK
+2014-01-04 22:12:09	⇄	Sheba.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-04 22:12:09	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-04 22:12:09	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-04 22:12:09	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-04 22:12:09	⇄	There are 107 users and 1837 invisible on 13 servers
+2014-01-04 22:12:09	⇄	31 :operator(s) online
+2014-01-04 22:12:09	⇄	1 :unknown connection(s)
+2014-01-04 22:12:09	⇄	1330 :channels formed
+2014-01-04 22:12:09	⇄	I have 100 clients and 0 servers
+2014-01-04 22:12:09	⇄	Current Local Users: 100  Max: 563
+2014-01-04 22:12:09	⇄	Current Global Users: 1944  Max: 5334
+2014-01-04 22:12:09	⇄	- Sheba.GeekShed.net Message of the Day -
+2014-01-04 22:12:09	⇄	- 28/11/2013 6:05
+2014-01-04 22:12:09	⇄	-   _____           _     _____ _              _
+2014-01-04 22:12:09	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-04 22:12:09	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-04 22:12:09	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-04 22:12:09	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-04 22:12:09	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	- Before continuing please read the Geek Shed
+2014-01-04 22:12:09	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	- By connecting and retaining a connection to any
+2014-01-04 22:12:09	⇄	- part of Geek Shed you state that you have read,
+2014-01-04 22:12:09	⇄	- understand, and hereby agree to comply with and accept
+2014-01-04 22:12:09	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-04 22:12:09	⇄	- and rules stated in the document.
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-04 22:12:09	⇄	- DO NOT RECONNECT!
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	- -------------------------------------------------------
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-04 22:12:09	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-04 22:12:09	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-04 22:12:09	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-04 22:12:09	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-04 22:12:09	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-04 22:12:09	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-04 22:12:09	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-04 22:12:09	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-04 22:12:09	⇄	-
+2014-01-04 22:12:09	⇄	- -------------------------------------------------------
+2014-01-04 22:12:09	⇄	End of /MOTD command.
+2014-01-04 22:12:09	⇄	User mode [+iRx] by ryan
+2014-01-04 22:12:09	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-04 22:12:09	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-04 22:12:09	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-04 22:12:09	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2014-01-04 22:12:12	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-04 22:12:12	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-04 22:12:12	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-04 22:12:12	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2014-01-04 22:12:19	⇄	MSG(NickServ): IDENTIFY ********
+2014-01-04 22:12:19	⇄	User mode [+r] by Services.GeekShed.net
+2014-01-04 22:12:19	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2014-01-04 22:27:24	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-04 22:27:24	⇄	irc: connected to irc.geekshed.net/6667 (198.251.81.220)
+2014-01-04 22:27:24	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-04 22:27:24	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Looking up your hostname...
+2014-01-04 22:27:24	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Checking ident...
+2014-01-04 22:27:24	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** Found your hostname
+2014-01-04 22:27:27	⇄	Sheba.GeekShed.net (Sheba.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-04 22:27:27	⇄	CTCP requested by IRC: VERSION
+2014-01-04 22:27:27	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-04 22:27:27	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@64-121-204-206.c3-0.eas-ubr2.atw-eas.pa.cable.rcn.com
+2014-01-04 22:27:27	⇄	Your host is Sheba.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-04 22:27:27	⇄	This server was created Thu Dec 13 2012 at 20:01:09 MSK
+2014-01-04 22:27:27	⇄	Sheba.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-04 22:27:27	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-04 22:27:27	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-04 22:27:27	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-04 22:27:27	⇄	There are 107 users and 1840 invisible on 13 servers
+2014-01-04 22:27:27	⇄	31 :operator(s) online
+2014-01-04 22:27:27	⇄	1343 :channels formed
+2014-01-04 22:27:27	⇄	I have 102 clients and 0 servers
+2014-01-04 22:27:27	⇄	Current Local Users: 102  Max: 563
+2014-01-04 22:27:27	⇄	Current Global Users: 1947  Max: 5334
+2014-01-04 22:27:27	⇄	- Sheba.GeekShed.net Message of the Day -
+2014-01-04 22:27:27	⇄	- 28/11/2013 6:05
+2014-01-04 22:27:27	⇄	-   _____           _     _____ _              _
+2014-01-04 22:27:27	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-04 22:27:27	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-04 22:27:27	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-04 22:27:27	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-04 22:27:27	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	- Before continuing please read the Geek Shed
+2014-01-04 22:27:27	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	- By connecting and retaining a connection to any
+2014-01-04 22:27:27	⇄	- part of Geek Shed you state that you have read,
+2014-01-04 22:27:27	⇄	- understand, and hereby agree to comply with and accept
+2014-01-04 22:27:27	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-04 22:27:27	⇄	- and rules stated in the document.
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-04 22:27:27	⇄	- DO NOT RECONNECT!
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	- -------------------------------------------------------
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-04 22:27:27	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-04 22:27:27	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-04 22:27:27	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-04 22:27:27	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-04 22:27:27	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-04 22:27:27	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-04 22:27:27	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-04 22:27:27	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-04 22:27:27	⇄	-
+2014-01-04 22:27:27	⇄	- -------------------------------------------------------
+2014-01-04 22:27:27	⇄	End of /MOTD command.
+2014-01-04 22:27:27	⇄	User mode [+iRx] by ryan
+2014-01-04 22:27:27	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-04 22:27:27	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-04 22:27:27	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-04 22:27:27	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2014-01-04 22:27:29	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-04 22:27:29	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-04 22:27:29	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-04 22:27:29	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2014-01-04 22:27:34	⇄	MSG(NickServ): IDENTIFY ********
+2014-01-04 22:27:35	⇄	User mode [+r] by Services.GeekShed.net
+2014-01-04 22:27:35	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.
+2014-01-05 20:43:58	⇄	irc: connecting to server irc.geekshed.net/6667...
+2014-01-05 20:43:58	⇄	irc: connected to irc.geekshed.net/6667 (46.137.61.145)
+2014-01-05 20:43:58	⇄	*** Please wait while we scan your connection for open proxies...
+2014-01-05 20:43:58	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Looking up your hostname...
+2014-01-05 20:43:58	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Checking ident...
+2014-01-05 20:43:58	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** Found your hostname
+2014-01-05 20:44:01	⇄	Tigh.GeekShed.net (Tigh.GeekShed.net): *** No ident response; username prefixed with ~
+2014-01-05 20:44:01	⇄	CTCP requested by IRC: VERSION
+2014-01-05 20:44:01	⇄	CTCP reply to IRC: VERSION WeeChat 0.4.2 (Nov 23 2013)
+2014-01-05 20:44:01	⇄	Welcome to the GeekShed IRC Network ryan!~ryan@64-121-204-206.c3-0.eas-ubr2.atw-eas.pa.cable.rcn.com
+2014-01-05 20:44:01	⇄	Your host is Tigh.GeekShed.net, running version Unreal3.2.8-gs.9
+2014-01-05 20:44:01	⇄	This server was created Sun Oct 9 2011 at 11:22:39 UTC
+2014-01-05 20:44:01	⇄	Tigh.GeekShed.net Unreal3.2.8-gs.9 iowghraAsORTVSxNCWqBzvdHtGpDc lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGjU
+2014-01-05 20:44:01	⇄	CMDS=KNOCK,MAP,DCCALLOW,USERIP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=100 CHANLIMIT=#:100 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+2014-01-05 20:44:01	⇄	MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVCuzNSMTGU NETWORK=GeekShed CASEMAPPING=ascii EXTBAN=~,cqnrT ELIST=MNUCT :are supported by this server
+2014-01-05 20:44:01	⇄	STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+2014-01-05 20:44:01	⇄	There are 108 users and 1879 invisible on 13 servers
+2014-01-05 20:44:01	⇄	31 :operator(s) online
+2014-01-05 20:44:01	⇄	1351 :channels formed
+2014-01-05 20:44:01	⇄	I have 293 clients and 0 servers
+2014-01-05 20:44:01	⇄	Current Local Users: 293  Max: 797
+2014-01-05 20:44:01	⇄	Current Global Users: 1987  Max: 5334
+2014-01-05 20:44:01	⇄	- Tigh.GeekShed.net Message of the Day -
+2014-01-05 20:44:01	⇄	- 28/11/2013 2:05
+2014-01-05 20:44:01	⇄	-   _____           _     _____ _              _
+2014-01-05 20:44:01	⇄	-  / ____|         | |   / ____| |            | |
+2014-01-05 20:44:01	⇄	- | |  __  ___  ___| | _| (___ | |__   ___  __| |
+2014-01-05 20:44:01	⇄	- | | |_ |/ _ \/ _ \ |/ /\___ \| '_ \ / _ \/ _` |
+2014-01-05 20:44:01	⇄	- | |__| |  __/  __/   < ____) | | | |  __/ (_| |
+2014-01-05 20:44:01	⇄	-  \_____|\___|\___|_|\_\_____/|_| |_|\___|\__,_|
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	- Before continuing please read the Geek Shed
+2014-01-05 20:44:01	⇄	- Terms Of Service: http://www.geekshed.net/tos/
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	- By connecting and retaining a connection to any
+2014-01-05 20:44:01	⇄	- part of Geek Shed you state that you have read,
+2014-01-05 20:44:01	⇄	- understand, and hereby agree to comply with and accept
+2014-01-05 20:44:01	⇄	- the Geek Shed Terms Of Service, disclaimers,
+2014-01-05 20:44:01	⇄	- and rules stated in the document.
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	- IF YOU DO NOT AGREE, DISCONNECT NOW AND
+2014-01-05 20:44:01	⇄	- DO NOT RECONNECT!
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	- -------------------------------------------------------
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	- :: Our Site  http://www.geekshed.net/
+2014-01-05 20:44:01	⇄	- :: Free BNC  http://www.geekshed.net/bnc/
+2014-01-05 20:44:01	⇄	- :: Web Chat  http://www.geekshed.net/chat/
+2014-01-05 20:44:01	⇄	- :: Commands  http://www.geekshed.net/commands/
+2014-01-05 20:44:01	⇄	- :: Forums    http://www.geekshed.net/forum/
+2014-01-05 20:44:01	⇄	- :: Quotes    http://www.geekshed.net/qdb/
+2014-01-05 20:44:01	⇄	- :: Staff     http://www.geekshed.net/staff/
+2014-01-05 20:44:01	⇄	- :: Twitter   http://www.twitter.com/geekshed
+2014-01-05 20:44:01	⇄	- :: YouTube   http://www.youtube.com/geekshedirc
+2014-01-05 20:44:01	⇄	-
+2014-01-05 20:44:01	⇄	- -------------------------------------------------------
+2014-01-05 20:44:01	⇄	End of /MOTD command.
+2014-01-05 20:44:01	⇄	User mode [+iRx] by ryan
+2014-01-05 20:44:01	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-05 20:44:01	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-05 20:44:01	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-05 20:44:01	⇄	NickServ (services@geekshed.net): If you do not change within 20 seconds, I will change your nick.
+2014-01-05 20:44:04	⇄	NickServ (services@geekshed.net): This nickname is registered and protected.  If it is your
+2014-01-05 20:44:04	⇄	NickServ (services@geekshed.net): nick, type /msg NickServ IDENTIFY password.  Otherwise,
+2014-01-05 20:44:04	⇄	NickServ (services@geekshed.net): please choose a different nick.
+2014-01-05 20:44:04	⇄	NickServ (services@geekshed.net): If you do not change within one minute, I will change your nick.
+2014-01-05 20:44:08	⇄	MSG(NickServ): IDENTIFY ********
+2014-01-05 20:44:09	⇄	User mode [+r] by Services.GeekShed.net
+2014-01-05 20:44:09	⇄	NickServ (services@geekshed.net): Password accepted - you are now recognized.

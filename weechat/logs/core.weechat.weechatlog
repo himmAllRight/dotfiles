@@ -1,0 +1,155 @@
+2013-12-30 12:46:12	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-30 12:46:12	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-30 12:46:12		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-30 12:46:37		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2013-12-30 13:40:34		fifo: pipe closed
+2013-12-30 13:42:31	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-30 13:42:31	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-30 13:42:31		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-30 13:42:38		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2013-12-30 14:01:36		fifo: pipe closed
+2013-12-31 15:09:32	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 15:09:32	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 15:09:32		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-31 15:09:39		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2013-12-31 15:10:24	+	Error: unknown command "jopin" (type /help for help)
+2013-12-31 15:11:51		fifo: pipe closed
+2013-12-31 15:12:23	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 15:12:23	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 15:12:24		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-31 15:13:29	+	irc: too few arguments for "query" command
+2013-12-31 15:13:32		fifo: pipe closed
+2013-12-31 15:13:33	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 15:13:33	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 15:13:33		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-31 15:14:02		irc: server geekshed created
+2013-12-31 15:32:03		fifo: pipe closed
+2013-12-31 15:33:04	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 15:33:04	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 15:33:04		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-31 15:44:18		fifo: pipe closed
+2013-12-31 16:17:05	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 16:17:05	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 16:17:05		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-31 16:39:16		fifo: pipe closed
+2013-12-31 16:44:26	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 16:44:26	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 16:44:26		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2013-12-31 16:46:21		fifo: pipe closed
+2013-12-31 16:54:03	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2013-12-31 16:54:03	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2013-12-31 16:54:03		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-01 19:49:03		fifo: pipe closed
+2014-01-02 11:07:03	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-02 11:07:03	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-02 11:07:03		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-03 11:23:35		fifo: pipe closed
+2014-01-04 20:16:58	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-04 20:16:58	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-04 20:16:58		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-04 22:09:57		fifo: pipe closed
+2014-01-04 22:11:57	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-04 22:11:57	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-04 22:11:57		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-04 22:15:59		fifo: pipe closed
+2014-01-04 22:27:18	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-04 22:27:18	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-04 22:27:18		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-05 19:26:32		fifo: pipe closed
+2014-01-05 20:43:53	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-05 20:43:53	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-05 20:43:53		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-06 13:04:17		fifo: pipe closed
+2014-01-06 13:14:13	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-06 13:14:13	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-06 13:14:13		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-06 13:15:20		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-06 13:24:31		fifo: pipe closed
+2014-01-06 13:29:51	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-06 13:29:51	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-06 13:29:51		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-06 14:48:51		Options reloaded from sec.conf
+2014-01-06 14:48:51		Options reloaded from weechat.conf
+2014-01-06 14:48:51		Options reloaded from plugins.conf
+2014-01-06 14:48:51		Options reloaded from irc.conf
+2014-01-06 14:48:51		Options reloaded from logger.conf
+2014-01-06 14:48:51		Options reloaded from relay.conf
+2014-01-06 14:48:51		Options reloaded from aspell.conf
+2014-01-06 14:48:51		Options reloaded from script.conf
+2014-01-06 14:48:51		Options reloaded from xfer.conf
+2014-01-06 14:48:51		Options reloaded from charset.conf
+2014-01-06 14:48:51		Options reloaded from alias.conf
+2014-01-06 14:48:51		Options reloaded from rmodifier.conf
+2014-01-06 14:48:51		fifo: pipe closed
+2014-01-06 15:11:23	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-06 15:11:23	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-06 15:11:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-06 15:11:34		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-07 04:27:40		fifo: pipe closed
+2014-01-14 09:14:27	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-14 09:14:27	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-14 09:14:27		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-14 09:14:41		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-15 12:31:28		fifo: pipe closed
+2014-01-15 12:32:55	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-15 12:32:55	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-15 12:32:55		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-15 12:33:02		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-16 21:20:48		fifo: pipe closed
+2014-01-16 21:51:39	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-16 21:51:39	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-16 21:51:39		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-16 21:51:49		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-17 13:26:38		fifo: pipe closed
+2014-01-17 19:13:02	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-17 19:13:02	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-17 19:13:02		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-17 19:13:10		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-17 19:29:25		Options reloaded from sec.conf
+2014-01-17 19:29:25		Options reloaded from weechat.conf
+2014-01-17 19:29:25		Options reloaded from plugins.conf
+2014-01-17 19:29:25	+	irc: warning: server "irc.geekshed.net" not found in configuration file, not deleted in memory because it's currently used
+2014-01-17 19:29:25		Options reloaded from irc.conf
+2014-01-17 19:29:25		Options reloaded from logger.conf
+2014-01-17 19:29:25		Options reloaded from relay.conf
+2014-01-17 19:29:25		Options reloaded from aspell.conf
+2014-01-17 19:29:25		Options reloaded from script.conf
+2014-01-17 19:29:25		Options reloaded from xfer.conf
+2014-01-17 19:29:25		Options reloaded from charset.conf
+2014-01-17 19:29:25		Options reloaded from alias.conf
+2014-01-17 19:29:25		Options reloaded from rmodifier.conf
+2014-01-17 19:29:25		fifo: pipe closed
+2014-01-17 21:12:23	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-17 21:12:23	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-17 21:12:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-17 21:12:45	+	irc: command "nick" must be executed on irc buffer (server or channel)
+2014-01-17 21:13:01		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-22 17:31:27		fifo: pipe closed
+2014-01-23 13:51:54	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-23 13:51:54	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-23 13:51:54		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-23 13:52:00		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-25 13:34:58		Options reloaded from sec.conf
+2014-01-25 13:34:58		Options reloaded from weechat.conf
+2014-01-25 13:34:58		Options reloaded from plugins.conf
+2014-01-25 13:34:58	+	irc: warning: server "irc.geekshed.net" not found in configuration file, not deleted in memory because it's currently used
+2014-01-25 13:34:58		Options reloaded from irc.conf
+2014-01-25 13:34:58		Options reloaded from logger.conf
+2014-01-25 13:34:58		Options reloaded from relay.conf
+2014-01-25 13:34:58		Options reloaded from aspell.conf
+2014-01-25 13:34:58		Options reloaded from script.conf
+2014-01-25 13:34:58		Options reloaded from xfer.conf
+2014-01-25 13:34:58		Options reloaded from charset.conf
+2014-01-25 13:34:58		Options reloaded from alias.conf
+2014-01-25 13:34:58		Options reloaded from rmodifier.conf
+2014-01-25 13:34:58		fifo: pipe closed
+2014-01-25 13:35:00	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-25 13:35:00	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-25 13:35:00		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-25 13:35:37		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-25 13:37:27		fifo: pipe closed
+2014-01-25 13:37:48	+	Error: unable to load plugin "/usr/lib/weechat/plugins/ruby.so": libruby.so.2.0: cannot open shared object file: No such file or directory
+2014-01-25 13:37:48	+	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-01-25 13:37:48		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, script, tcl, xfer
+2014-01-25 13:37:56		irc: server irc.geekshed.net created (temporary server, NOT SAVED!)
+2014-01-28 14:50:20		fifo: pipe closed
