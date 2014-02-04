@@ -1,0 +1,92 @@
+!=================!
+! Xresources file !
+!=================!
+
+!=========!
+! URxvt !
+!=========!
+
+! = Functionality = !
+
+!--------------!
+! Key Bindings !
+!--------------!
+
+URxvt*keysym.Home: \033[1~
+URxvt*keysym.End: \033[4~
+
+
+!------------!
+! Appearance !
+!------------!
+
+
+URxvt*transparent: false
+URxvt*pointerColor: black
+URxvt*pointerColor2: white
+URxvt*borderless: true
+URxvt*colorMode: on
+URxvt*cursorBlink: true
+URxvt*internalBorder: 10
+URxvt*cursorColor: #2E3340
+URxvt*scrollBar: false
+
+
+!------!
+! Font !
+!------!
+
+!URxvt*font: -beastie-terminus14-medium-r-normal--14-140-72-72-c-80-iso8859-1
+!URxvt*font: -beastie-gohufontmod11-medium-r-normal--11-80-100-100-c-60-iso8859-1
+URxvt*font: xft:Inconsolata:pixelsize=11
+URxvt*boldFont:
+
+
+!--------------!
+! Xft Settings !
+!--------------!
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+!----------------!
+! dzen2 Settings !
+!----------------!
+dzen2.font: xft:Inconsolata:pixelsize=12
+
+!!===========!!
+!! Colours !!
+!!===========!!
+
+
+urxvt.foreground: #E8DFD6
+urxvt.background: #021B21
+! Black/Dark Grey
+urxvt.color0: #032C36
+urxvt.color8: #065F73
+! Red/Light Red
+urxvt.color1: #C2454E
+urxvt.color9: #EF5847
+! Green/Light Green
+urxvt.color2: #7CBF9E
+urxvt.color10: #A2D9B1
+! Yellow/Light Yellow
+urxvt.color3: #8A7A63
+urxvt.color11: #BEB090
+! Blue/Light Blue
+urxvt.color4: #2E3340
+urxvt.color12: #61778D
+! Magenta/Light Magenta
+urxvt.color5: #FF5879
+urxvt.color13: #FF99A1
+! Cyna/Light Cyan
+urxvt.color6: #44B5B1
+urxvt.color14: #9ED9D8
+! White/Grey
+urxvt.color7: #F2F1B9
+urxvt.color15: #F6F6C9
