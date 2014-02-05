@@ -173,8 +173,8 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 ####
 
 #Volume Key Binds
-bindsym $mod+shift+equal exec amixer set Master 2dB+
-bindsym $mod+shift+minus exec amixer set Master 2dB-
+bindsym $mod+shift+equal exec amixer -c 0 -q set Master 2dB+
+bindsym $mod+shift+minus exec amixer -c 0 -q set Master 2dB-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
