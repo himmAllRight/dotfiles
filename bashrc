@@ -78,6 +78,7 @@ alias serverUnmount="sudo umount /Data1/ryan/Server"
 
 # Other shortcuts
 alias getIP="curl -s icanhazip.com"
+alias ta="tmux attach-session -t $1"
 
 # prompt
 
