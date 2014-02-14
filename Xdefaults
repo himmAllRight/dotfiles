@@ -63,30 +63,36 @@ dzen2.font: xft:Inconsolata:pixelsize=12
 !! Colours !!
 !!===========!!
 
+*foreground: #DDCCBB
 
-urxvt.foreground: #E8DFD6
-urxvt.background: #021B21
-! Black/Dark Grey
-urxvt.color0: #032C36
-urxvt.color8: #065F73
-! Red/Light Red
-urxvt.color1: #C2454E
-urxvt.color9: #EF5847
-! Green/Light Green
-urxvt.color2: #7CBF9E
-urxvt.color10: #A2D9B1
-! Yellow/Light Yellow
-urxvt.color3: #8A7A63
-urxvt.color11: #BEB090
-! Blue/Light Blue
-urxvt.color4: #2E3340
-urxvt.color12: #61778D
-! Magenta/Light Magenta
-urxvt.color5: #FF5879
-urxvt.color13: #FF99A1
-! Cyna/Light Cyan
-urxvt.color6: #44B5B1
-urxvt.color14: #9ED9D8
-! White/Grey
-urxvt.color7: #F2F1B9
-urxvt.color15: #F6F6C9
+! Brown BG
+!*background: #30251D
+
+! Grey BG
+*background: #151515
+
+
+!black
+*color0:     #393939
+*color8:     #AF875F
+!red
+*color1:     #BF1E2D
+*color9:     #E7212A
+!green
+*color2:     #9DBA3A
+*color10:    #A9C938
+!yellow
+*color3:     #F5B915
+*color11:    #F7D325
+!blue
+*color4:     #1CA1DB
+*color12:    #00AFDA
+!magenta
+*color5:     #652F90
+*color13:    #894E9F
+!cyan
+*color6:     #EA7D24
+*color14:    #F79321
+!white
+*color7:     #E7E8E9
+*color15:    #F3F3F4
