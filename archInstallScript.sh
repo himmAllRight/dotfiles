@@ -22,6 +22,10 @@ rm -r yaourt*
 echo 'pacaur installs'
 echo pacaur -S i3 dmenu
 pacaur -S i3 dmenu
+echo pacaur -S firefox
+pacaur -S firefox
+echo pacaur -S thunderbird 
+pacaur -S thunderbird
 echo pacaur -S weechat
 pacaur -S weechat
 echo pacaur -S vim
