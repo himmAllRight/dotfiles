@@ -56,3 +56,5 @@ echo pacaur -S rxvt-unicode
 pacaur -S rxvt-unicode
 echo pacaur -S tmux
 pacaur -S tmux
+echo pacaur -S mplayer
+pacaur -S mplayer
