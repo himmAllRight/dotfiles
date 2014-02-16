@@ -48,4 +48,5 @@ echo pacaur -S ncmpcpp
 pacaur -S ncmpcpp
 echo pacaur -S rsync
 pacaur -S rsync
-
+echo pacaur -S rxvt-unicode
+pacaur -S rxvt-unicode
