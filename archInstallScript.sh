@@ -6,7 +6,6 @@
 # Dependencies to install yaourt and pacaur
 echo 'Install a few things for yaourt and pacar...'
 sudo pacman -S make gcc
-sudo pacman -S git
 
 #Download and install yaourt & pacaur
 echo 'Download and install yaourt then pacaur'
@@ -49,3 +48,4 @@ echo pacaur -S ncmpcpp
 pacaur -S ncmpcpp
 echo pacaur -S rsync
 pacaur -S rsync
+
