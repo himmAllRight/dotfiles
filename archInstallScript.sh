@@ -58,3 +58,5 @@ echo pacaur -S tmux
 pacaur -S tmux
 echo pacaur -S mplayer
 pacaur -S mplayer
+echo pacaur -S htop
+pacaur -S htop
