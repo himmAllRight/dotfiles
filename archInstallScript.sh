@@ -13,7 +13,7 @@ wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
 tar -zxf yaourt.tar.gz
 cd yaourt
 makepkg -s
-sudo pacman -S yaourt*.pkg.tar.xz
+sudo pacman -U yaourt*.pkg.tar.xz
 sudo yaourt -S pacaur
 cd ..
 rm -r yaourt*
@@ -54,3 +54,5 @@ echo pacaur -S rsync
 pacaur -S rsync
 echo pacaur -S rxvt-unicode
 pacaur -S rxvt-unicode
+echo pacaur -S tmux
+pacaur -S tmux
