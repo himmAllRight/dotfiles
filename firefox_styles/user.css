@@ -105,7 +105,7 @@ max-height: 15px;
 background: none!important;
 -moz-appearance: none!important;
 }
-#urlbar-container { background-color: #111111;!important; color: #ffffff;!important; max-height: 15px!important; }
+#urlbar-container { background-color: #666666;!important; color: #ffffff;!important; max-height: 15px!important; }
 #main-window { height: 15px;}
 #back-button .toolbarbutton-icon,
 #forward-button .toolbarbutton-icon,
