@@ -75,11 +75,13 @@ alias serverMount="sshfs ryan@162.243.19.18:/home/ryan/ /Data1/ryan/Server"
 alias mountWebsite="sshfs ryanhimm@ryanhimmelwright.com:/home4/ryanhimm/public_html/ ~/Website/"
 alias mountAEC="sshfs himmelwr@compute217.cs.lafayette.edu:/usr22/himmelwr ~/AEC/"
 alias serverUnmount="sudo umount /Data1/ryan/Server"
+alias server="ssh -Y ryan@192.168.1.123"
 
 # Other shortcuts
 alias getIP="curl -s icanhazip.com"
 alias ta="tmux attach-session -t $1"
 alias tn="tmux new-session -s $1"
+alias redteam="cd ~/Network/Subversion/working_Redteam"
 
 # prompt
 
