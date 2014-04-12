@@ -63,36 +63,32 @@ dzen2.font: xft:Inconsolata:pixelsize=12
 !! Colours !!
 !!===========!!
 
-*foreground: #DDCCBB
-
-! Brown BG
-!*background: #30251D
-
-! Grey BG
-*background: #151515
-
+URxvt*background:        #282828
+!URxvt.background: rgba:0000/0000/0000/9999
+URxvt.foreground:        #F2F1F0
+URxvt.cursorColor:       #F07746
 
 !black
-*color0:     #393939
-*color8:     #AF875F
+*color0: #222222
+*color8: #666666
 !red
-*color1:     #BF1E2D
-*color9:     #E7212A
+*color1: #E84F4F
+*color9: #D23D3D
 !green
-*color2:     #9DBA3A
-*color10:    #A9C938
+*color2: #B7CE42
+*color10: #BDE077
 !yellow
-*color3:     #F5B915
-*color11:    #F7D325
+*color3: #F07746
+*color11: #F07746
 !blue
-*color4:     #1CA1DB
-*color12:    #00AFDA
+*color4: #66AABB
+*color12: #AACCBB
 !magenta
-*color5:     #652F90
-*color13:    #894E9F
+*color5: #B7416E
+*color13: #E16A98
 !cyan
-*color6:     #EA7D24
-*color14:    #F79321
+*color6: #6D878D
+*color14: #42717B
 !white
-*color7:     #E7E8E9
-*color15:    #F3F3F4
+*color7: #F2F1F0
+*color15: #F2F1F0
