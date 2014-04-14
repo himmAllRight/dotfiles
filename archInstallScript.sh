@@ -60,3 +60,15 @@ echo pacaur -S mplayer
 pacaur -S mplayer
 echo pacaur -S htop
 pacaur -S htop
+echo pacaur -S lib32-libpulse
+pacaur -S lib32-libpulse
+echo pacaur -S lib32-alsa-plugins
+pacaur -S lib32-alsa-plugins
+echo pacaur -S skype
+pacaur -S skype
+echo pacaur -S volumeicon
+pacaur -S volumeicon
+echo pacaur -S nm-applet
+pacaur -S nm-applet
+echo pacaur -S pavucontrol
+pacaur -S pavucontrol
