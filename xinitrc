@@ -1,13 +1,28 @@
-# BSPWM
-#sxhkd &
-#exec bspwm
+#!/bin/sh
+#
 
-#exec gnome-session
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+    for f in /etc/X11/xinit/xinitrc.d/*; do
+        [ -x "$f" ] && . "$f"
+    done
+    unset f
+fi
 
-#exec ck-launch-session dbus-launch --exit-wth-session i3
-exec i3
-/Data1/ryan/.monitors &
-#nitrogen --restore &
-/usr/bin/urxvtd -q -f -o &
-/bin/backgroun &
-#feh --bg-scale --no-xinerama /Data1/ryan/Dropbox/Photos/Wallpapers/33881.jpg
+#exec dbus-launch --exit-with-session openbox-session &
+#exec dbus-launch --exit-with-session i3 &
+#exec startxfce4
+
+exec awesome &
+#exec icewm &
+
+#xbindkeys &
+#tinywm &
+
+#exec dwm &
+
+nitrogen --restore &
+
+volumeicon &
+nm-applet &
+
+dropboxd
