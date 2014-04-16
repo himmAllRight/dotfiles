@@ -8,15 +8,15 @@ echo 'Install a few things for yaourt and pacar...'
 sudo pacman -S make gcc
 
 #Download and install yaourt & pacaur
-echo 'Download and install yaourt then pacaur'
-wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
-tar -zxf yaourt.tar.gz
-cd yaourt
-makepkg -s
-sudo pacman -U yaourt*.pkg.tar.xz
-sudo yaourt -S pacaur
-cd ..
-rm -r yaourt*
+#echo 'Download and install yaourt then pacaur'
+#wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
+#tar -zxf yaourt.tar.gz
+#cd yaourt
+#makepkg -s
+#sudo pacman -U yaourt*.pkg.tar.xz
+#sudo yaourt -S pacaur
+#cd ..
+#rm -r yaourt*
 
 #pacaur installs
 echo 'pacaur installs'
@@ -56,8 +56,18 @@ echo pacaur -S rxvt-unicode
 pacaur -S rxvt-unicode
 echo pacaur -S tmux
 pacaur -S tmux
+echo pacaur -S r
+pacaur -S r
+echo pacaur -S make
+pacaur -S make
+echo pacaur -S gcc-fortran
+pacaur -S gcc-fortran
+echo pacaur -S gnuplot
+pacaur -S gnuplot
 echo pacaur -S mplayer
 pacaur -S mplayer
+echo pacaur -S gifsicle
+pacaur -S gifsicle
 echo pacaur -S htop
 pacaur -S htop
 echo pacaur -S lib32-libpulse
