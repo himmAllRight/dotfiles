@@ -188,6 +188,6 @@ exec --no-startup-id nitrogen --restore &
 exec dropboxd &
 exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
-exec ~/.monitors.sh
-
+exec volumeicon &
+exec nm-applet
 
