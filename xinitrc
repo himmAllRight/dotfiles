@@ -12,17 +12,12 @@ fi
 #exec dbus-launch --exit-with-session i3 &
 #exec startxfce4
 
-exec awesome &
+#exec awesome &
 #exec icewm &
 
 #xbindkeys &
 #tinywm &
 
 #exec dwm &
+exec i3 
 
-nitrogen --restore &
-
-volumeicon &
-nm-applet &
-
-dropboxd
