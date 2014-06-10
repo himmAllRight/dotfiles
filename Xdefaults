@@ -22,6 +22,7 @@ URxvt*keysym.End: \033[4~
 
 
 URxvt*transparent: false
+URxvt*shacing: 90
 URxvt*pointerColor: black
 URxvt*pointerColor2: white
 URxvt*borderless: true
