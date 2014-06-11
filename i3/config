@@ -189,5 +189,5 @@ exec dropboxd &
 exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
 exec volumeicon &
-exec nm-applet
-
+exec nm-applet &
+exec urxvt

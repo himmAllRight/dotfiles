@@ -8,15 +8,15 @@ echo 'Install a few things for yaourt and pacar...'
 sudo pacman -S make gcc
 
 #Download and install yaourt & pacaur
-#echo 'Download and install yaourt then pacaur'
-#wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
-#tar -zxf yaourt.tar.gz
-#cd yaourt
-#makepkg -s
-#sudo pacman -U yaourt*.pkg.tar.xz
-#sudo yaourt -S pacaur
-#cd ..
-#rm -r yaourt*
+echo 'Download and install yaourt then pacaur'
+wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
+tar -zxf yaourt.tar.gz
+cd yaourt
+makepkg -s
+sudo pacman -U yaourt*.pkg.tar.xz
+sudo yaourt -S pacaur
+cd ..
+rm -r yaourt*
 
 #pacaur installs
 echo 'pacaur installs'

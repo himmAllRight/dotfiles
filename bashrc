@@ -78,6 +78,7 @@ alias serverUnmount="sudo umount /Data1/ryan/Server"
 alias server="ssh -Y ryan@192.168.1.123"
 
 # Other shortcuts
+alias trans="transset-df"
 alias getIP="curl -s icanhazip.com"
 alias ta="tmux attach-session -t $1"
 alias tn="tmux new-session -s $1"
