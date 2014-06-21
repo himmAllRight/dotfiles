@@ -96,7 +96,7 @@ bindsym $mod+4 workspace ✉ Mail
 bindsym $mod+5 workspace ☘ Etc
 bindsym $mod+6 workspace ✆ Chat
 bindsym $mod+7 workspace ☠ Games
-bindsym $mod+8 workspace ➑ Server
+bindsym $mod+8 workspace ➑ VirtualBox
 bindsym $mod+9 workspace ➒
 bindsym $mod+0 workspace ➓ 
 
@@ -108,7 +108,7 @@ bindsym $mod+Shift+4 move container to workspace ✉ Mail
 bindsym $mod+Shift+5 move container to workspace ☘ Etc
 bindsym $mod+Shift+6 move container to workspace ✆ Chat
 bindsym $mod+Shift+7 move container to workspace ☠ Games
-bindsym $mod+Shift+8 move container to workspace ➑ Server
+bindsym $mod+Shift+8 move container to workspace ➑ VirtualBox
 bindsym $mod+Shift+9 move container to workspace ➒
 bindsym $mod+Shift+0 move container to workspace ➓ 
 
@@ -171,6 +171,8 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 ##### 
 #Ryan Add Ons
 ####
+
+bindsym $mod+u border toggle
 
 #Volume Key Binds
 bindsym $mod+shift+equal exec amixer -c 0 -q set Master 2dB+
