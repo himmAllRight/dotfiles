@@ -1,93 +1,67 @@
-!=================!
-! Xresources file !
-!=================!
+! urxvt ---------------------------------------------------------------------
 
-!=========!
-! URxvt !
-!=========!
+URxvt.buffered:         true
+URxvt.background:      black
+URxvt.foreground:       #00cc00
+URxvt.cursorColor:      #00ff00
+URxvt.underlineColor:   green
+#URxvt.font:             xft:profont:pixelsize=11:antialias=false
+URxvt.font:             xft:Terminus:pixelsize=12:antialias=false
+URxvt.saveLines:          1024
+URxvt.scrollTtyKeypress:  true
+URxvt.scrollWithBuffer:   false
+URxvt.scrollBar:          false
+URxvt.perl-ext:        default,matcher
+URxvt.urlLauncher:     /usr/bin/firefox
+URxvt.matcher.button:  1 
+#URxvt.perl-ext-common:  default,tabbed
 
-! = Functionality = !
+! transparency ---------------------------------------------------------------
 
-!--------------!
-! Key Bindings !
-!--------------!
+!URxvt*inheritPixmap: true
+!URxvt*tintColor: black
+!URxvt*shading: 40
 
-URxvt*keysym.Home: \033[1~
-URxvt*keysym.End: \033[4~
+! terminal colors ------------------------------------------------------------
+! matrix colorscheme by zowki
 
+*foreground: #000000
+*background: #00cc00
 
-!------------!
-! Appearance !
-!------------!
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
 
+*color0:    #000000
+*color1:    #55ff55
+*color2:    #00cc00
+*color3:    #00cc00
+*color4:    #005500
+*color5:    #55ff55
+*color6:    #00cc00
+*color7:    #00cc00
 
-URxvt*transparent: false
-URxvt*shacing: 90
-URxvt*pointerColor: black
-URxvt*pointerColor2: white
-URxvt*borderless: true
-URxvt*colorMode: on
-URxvt*cursorBlink: true
-URxvt*internalBorder: 10
-URxvt*cursorColor: #2E3340
-URxvt*scrollBar: false
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
 
-
-!------!
-! Font !
-!------!
-
-!URxvt*font: -beastie-terminus14-medium-r-normal--14-140-72-72-c-80-iso8859-1
-!URxvt*font: -beastie-gohufontmod11-medium-r-normal--11-80-100-100-c-60-iso8859-1
-URxvt*font: xft:Inconsolata:pixelsize=11
-URxvt*boldFont:
-
-
-!--------------!
-! Xft Settings !
-!--------------!
-
-Xft.dpi: 96
-Xft.antialias: true
-Xft.rgba: rgb
-Xft.autohint: true
-Xft.hinting: true
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
-
-!----------------!
-! dzen2 Settings !
-!----------------!
-dzen2.font: xft:Inconsolata:pixelsize=12
-
-!!===========!!
-!! Colours !!
-!!===========!!
-
-
-URxvt.foreground: #D7D0C7
-URxvt.background: #151515
-! Black
-URxvt.color0: #444444
-URxvt.color8: #404040
-! Red
-URxvt.color1: #E84F4F
-URxvt.color9: #D23D3D
-! Green
-URxvt.color2: #B8D68C
-URxvt.color10: #A0CF5D
-! Yellow
-URxvt.color3: #E1AA5D
-URxvt.color11: #F39D21
-! Blue
-URxvt.color4: #7DC1CF
-URxvt.color12: #4E9FB1
-! Magenta
-URxvt.color5: #9B64FB
-URxvt.color13: #8542FF
-! Cyan
-URxvt.color6: #6D878D
-URxvt.color14: #42717B
-! White
-URxvt.color7: #dddddd
-URxvt.color15: #dddddd
+*color8:    #000000
+*color9:    #55ff55
+*color10:    #55ff55
+*color11:    #55ff55
+*color12:    #005500
+*color13:    #55ff55
+*color14:    #55ff55
+*color15:    #00cc00
