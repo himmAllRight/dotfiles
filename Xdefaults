@@ -1,67 +1,57 @@
-! urxvt ---------------------------------------------------------------------
+!Xdefaults
 
-URxvt.buffered:         true
-URxvt.background:      black
-URxvt.foreground:       #00cc00
-URxvt.cursorColor:      #00ff00
-URxvt.underlineColor:   green
-#URxvt.font:             xft:profont:pixelsize=11:antialias=false
-URxvt.font:             xft:Terminus:pixelsize=12:antialias=false
-URxvt.saveLines:          1024
-URxvt.scrollTtyKeypress:  true
-URxvt.scrollWithBuffer:   false
-URxvt.scrollBar:          false
-URxvt.perl-ext:        default,matcher
-URxvt.urlLauncher:     /usr/bin/firefox
-URxvt.matcher.button:  1 
-#URxvt.perl-ext-common:  default,tabbed
+*dpi: 96
+*rgba: rgb
+*hinting: true
+*antialias: true
+*theme: aero-drop
+*hintstyle: hintslight
+Xcursor.theme: Human
 
-! transparency ---------------------------------------------------------------
+*background: #262729
+*foreground: #FAFAFA
 
-!URxvt*inheritPixmap: true
-!URxvt*tintColor: black
-!URxvt*shading: 40
+!URxvt
+*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+*boldFont: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+URxvt.scrollBar: false
+URxvt.saveLines: 5000
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
+URxvt.urgentOnBell: true
+URxvt.title: terminal
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: /usr/bin/chromium
+URxvt.matcher.button: 1
+URxvt.cursorColor: #D8D8D8
+URxvt.cursorBlink: true
 
-! terminal colors ------------------------------------------------------------
-! matrix colorscheme by zowki
-
-*foreground: #000000
-*background: #00cc00
-
-! Normal
-! color0    black
-! color1    red
-! color2    green
-! color3    yellow
-! color4    blue
-! color5    purple
-! color6    cyan
-! color7    white
-
-*color0:    #000000
-*color1:    #55ff55
-*color2:    #00cc00
-*color3:    #00cc00
-*color4:    #005500
-*color5:    #55ff55
-*color6:    #00cc00
-*color7:    #00cc00
-
-! Light
-! color8    black
-! color9    red
-! color10    green
-! color11    yellow
-! color12    blue
-! color13    purple
-! color14    cyan
-! color15    white
-
-*color8:    #000000
-*color9:    #55ff55
-*color10:    #55ff55
-*color11:    #55ff55
-*color12:    #005500
-*color13:    #55ff55
-*color14:    #55ff55
-*color15:    #00cc00
+/* Terminal colors
+ * 0-7 low intensity
+ * 8-15 high intensity
+ */
+! Black ------------------------------------------- !
+    *color0: #1D1D1D
+    *color8: #505050
+! Red --------------------------------------------- !
+    *color1: #f03669
+    *color9: #c75b79
+! Green ------------------------------------------- !
+    *color2: #b8e346
+    *color10: #c8e37e
+! Yellow ------------------------------------------ !
+    *color3: #ffa402
+    *color11: #ffbe4a
+! Blue -------------------------------------------- !
+    *color4: #02a2ff
+    *color12: #71cbff
+! Magenta ----------------------------------------- !
+    *color5: #875c8d
+    *color13: #e41f66
+! Cyan -------------------------------------------- !
+    *color6: #6fa9d3
+    *color14: #0078CE
+! White ------------------------------------------- !
+    *color7: #d2d2d2
+    *color15: #fafafa
