@@ -13,16 +13,15 @@ fi
 #exec startxfce4
 
 #exec awesome 
-exec i3 
-#exec openbox
-#exec awesome &
-#exec icewm &
+#exec openbox 
 
 #xbindkeys 
-#tinywm 
+~/Builds/tinywm-1.3/tinywm & urxvt & urxvt
+#exec twm
 
 #exec dwm 
+#exec i3 
 
-#nitrogen --restore &
-xcompmgr &
+#exec metacity & 
+#exec gnome-terminal
 
