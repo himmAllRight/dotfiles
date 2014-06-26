@@ -1,0 +1,13 @@
+## Autostart File ##
+
+## Compositor
+comption &
+
+## Panel Bar
+tint2 &
+
+## Sound Icon
+volumeicon &
+
+## Load Background
+nitrogen --restore &
