@@ -249,7 +249,17 @@
         <command>dmenu_run</command>
       </action>
     </keybind>
-    <!-- Keybindings for windows -->
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>urxvt</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-r">
+      <action name="Execute">
+        <command>openbox --restart</command>
+      </action>
+    </keybind>
+  <!-- Keybindings for windows -->
     <keybind key="S-W-q">
       <action name="Close"/>
     </keybind>
