@@ -12,16 +12,24 @@ fi
 #exec dbus-launch --exit-with-session i3 &
 #exec startxfce4
 
-#exec awesome 
-#exec openbox 
-
-#xbindkeys 
-~/Builds/tinywm-1.3/tinywm & urxvt & urxvt
+# Minimal
+exec openbox & nitrogen --restore & tint2 & docky & dmenu & compton & urxvt
+#exec pekwm & urxvt & compton & synapse
 #exec twm
 
-#exec dwm 
-#exec i3 
+# Tiny and small wm
+#~/Builds/tinywm-1.3/tinywm & urxvt & urxvt
+#~/Builds/SmallWm/bin/smallwm & urxvt & urxvt
 
-#exec metacity & 
-#exec gnome-terminal
+
+#Tiling
+#exec dwm 
+#exec i3 & compton
+#exec awesome 
+
+# Stand Alone display
+#exec metacity & urxvt & nitrogen --restore & synapse
+#exec compiz cc & urxvt
+#exec gala & plank & wingpanel & slingshot-launcher & urxvt
+
 
