@@ -31,8 +31,8 @@ URxvt*color7: #D3D3D3
 URxvt*color15: #D3D3D3
 
 ! FONTS
-urxvt*font: xft:lime:size=6:antialias=true
-urxvt*boldFont: xft:lime:size=6:antialias=true
+*font: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
+*boldFont: -*-terminus-*-*-*-*-*-*-*-*-*-*-*-*
 
 ! SETTINGS
 URxvt*scrollBar: False
