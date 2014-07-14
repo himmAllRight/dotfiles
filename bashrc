@@ -77,6 +77,11 @@ alias mountAEC="sshfs himmelwr@compute217.cs.lafayette.edu:/usr22/himmelwr ~/AEC
 alias serverUnmount="sudo umount /Data1/ryan/Server"
 alias server="ssh -Y ryan@192.168.1.123"
 
+# Radio
+alias jblive="mpv http://jblive.fm"
+alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.pls"
+
+
 # Other shortcuts
 alias trans="transset-df"
 alias getIP="curl -s icanhazip.com"
