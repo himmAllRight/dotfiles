@@ -1,0 +1,14 @@
+[2014-07-15 08:15:03] WeeChat 0.4.3 (compiled on May 31 2014 03:48:43)
+[2014-07-15 08:15:03] Reading configuration file sec.conf
+[2014-07-15 08:15:03] Reading configuration file weechat.conf
+[2014-07-15 08:15:03] Reading configuration file plugins.conf
+[2014-07-15 08:15:03] Reading configuration file charset.conf
+[2014-07-15 08:15:03] Reading configuration file aspell.conf
+[2014-07-15 08:15:03] Reading configuration file xfer.conf
+[2014-07-15 08:15:03] Reading configuration file relay.conf
+[2014-07-15 08:15:03] Reading configuration file alias.conf
+[2014-07-15 08:15:03] Reading configuration file logger.conf
+[2014-07-15 08:15:03] Reading configuration file irc.conf
+[2014-07-15 08:15:03] irc: connecting to server irc.geekshed.net/6667...
+[2014-07-15 08:15:03] Reading configuration file rmodifier.conf
+[2014-07-15 08:15:03] Reading configuration file script.conf

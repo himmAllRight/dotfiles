@@ -1,39 +1,14 @@
-[2014-01-25 13:37:48] WeeChat 0.4.2 (compiled on Dec 21 2013 20:26:31)
-[2014-01-25 13:37:48] Reading configuration file sec.conf
-[2014-01-25 13:37:48] Reading configuration file weechat.conf
-[2014-01-25 13:37:48] Reading configuration file plugins.conf
-[2014-01-25 13:37:48] Reading configuration file irc.conf
-[2014-01-25 13:37:48] Reading configuration file logger.conf
-[2014-01-25 13:37:48] Reading configuration file relay.conf
-[2014-01-25 13:37:48] Reading configuration file aspell.conf
-[2014-01-25 13:37:48] Reading configuration file script.conf
-[2014-01-25 13:37:48] Reading configuration file xfer.conf
-[2014-01-25 13:37:48] Reading configuration file charset.conf
-[2014-01-25 13:37:48] Reading configuration file alias.conf
-[2014-01-25 13:37:48] Reading configuration file rmodifier.conf
-[2014-01-25 13:37:56] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-27 15:18:25] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:20:00] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:21:16] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:22:52] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:25:08] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:28:44] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:35:00] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 02:46:36] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 03:08:52] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 03:39:48] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 04:10:44] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 04:41:44] irc: connecting to server irc.geekshed.net/6667...
-[2014-01-28 14:50:20] Terminal lost, exiting WeeChat...
-[2014-01-28 14:50:20] Writing configuration file plugins.conf 
-[2014-01-28 14:50:20] Writing configuration file rmodifier.conf 
-[2014-01-28 14:50:20] Writing configuration file alias.conf 
-[2014-01-28 14:50:20] Writing configuration file charset.conf 
-[2014-01-28 14:50:20] Writing configuration file xfer.conf 
-[2014-01-28 14:50:20] Writing configuration file script.conf 
-[2014-01-28 14:50:20] Writing configuration file aspell.conf 
-[2014-01-28 14:50:20] Writing configuration file relay.conf 
-[2014-01-28 14:50:20] Writing configuration file logger.conf 
-[2014-01-28 14:50:20] Writing configuration file irc.conf 
-[2014-01-28 14:50:20] Writing configuration file weechat.conf 
-[2014-01-28 14:50:20] Writing configuration file sec.conf 
+[2014-07-15 08:23:10] WeeChat 0.4.3 (compiled on May 31 2014 03:48:43)
+[2014-07-15 08:23:10] Reading configuration file sec.conf
+[2014-07-15 08:23:10] Reading configuration file weechat.conf
+[2014-07-15 08:23:10] Reading configuration file plugins.conf
+[2014-07-15 08:23:10] Reading configuration file charset.conf
+[2014-07-15 08:23:10] Reading configuration file aspell.conf
+[2014-07-15 08:23:10] Reading configuration file xfer.conf
+[2014-07-15 08:23:10] Reading configuration file relay.conf
+[2014-07-15 08:23:10] Reading configuration file alias.conf
+[2014-07-15 08:23:10] Reading configuration file logger.conf
+[2014-07-15 08:23:10] Reading configuration file irc.conf
+[2014-07-15 08:23:10] irc: connecting to server irc.geekshed.net/6667...
+[2014-07-15 08:23:10] Reading configuration file rmodifier.conf
+[2014-07-15 08:23:10] Reading configuration file script.conf

@@ -1,0 +1,16 @@
+2014-07-15 08:11:14	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-07-15 08:11:14	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-07-15 08:11:14		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, xfer
+2014-07-15 08:11:29	=!=	Error: option "add" not found
+2014-07-15 08:11:36		irc: server geekshed created
+2014-07-15 08:11:58		Option changed: irc.server.geekshed.nicks = "himmelwr,himmelwr17"  (default: (undefined))
+2014-07-15 08:12:23		Option changed: irc.server.geekshed.username = "himmelwr"  (default: (undefined))
+2014-07-15 08:12:36		Option changed: irc.server.geekshed.autoconnect = on  (default: (undefined))
+2014-07-15 08:13:46		Option changed: irc.server.geekshed.command = "/nick himmelwr;/msg NickServ IDENTIFY ry17re34"  (default: (undefined))
+2014-07-15 08:13:55	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-07-15 08:13:55	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-07-15 08:13:55		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, xfer
+2014-07-15 08:14:17	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2014-07-15 08:14:17	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2014-07-15 08:14:17		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, xfer
+2014-07-15 08:14:53		Option changed: irc.server.geekshed.autojoin = "#jupiterbroadcasting"  (default: (undefined))
