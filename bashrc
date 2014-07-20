@@ -79,6 +79,7 @@ alias server="ssh -Y ryan@192.168.1.123"
 
 # Radio
 alias jblive="mpv http://jblive.fm"
+alias jbliveV="mpv rtsp://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream"
 alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.pls"
 
 
