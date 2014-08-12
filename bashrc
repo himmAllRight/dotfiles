@@ -71,7 +71,11 @@ alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.p
 
 
 # Other shortcuts
+<<<<<<< HEAD
 alias ryMoney='python ~/scripts/ryMoney/ryMoney.py'
+=======
+alias ryMoney='python /home/ryan/scripts/ryMoney/ryMoney.py'
+>>>>>>> 7afc713ddca78f70b28cf6ff6cf9b2b1640627c4
 alias trans="transset-df"
 alias getIP="curl -s icanhazip.com"
 alias ta="tmux attach-session -t $1"
