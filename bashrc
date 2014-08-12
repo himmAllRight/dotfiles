@@ -60,22 +60,9 @@ alias thesis="cd ~/Documents/Thesis/"
 alias school="cd ~/Dropbox/School/2013-2014"
 alias config="cd ~/Dropbox/scripts/config/"
 
-# ssh to aec compute nodes
-alias aec210="ssh -Y himmelwr@compute210.cs.lafayette.edu"
-alias aec211="ssh -Y himmelwr@compute211.cs.lafayette.edu"
-alias aec212="ssh -Y himmelwr@compute212.cs.lafayette.edu"
-alias aec213="ssh -Y himmelwr@compute213.cs.lafayette.edu"
-alias aec214="ssh -Y himmelwr@compute214.cs.lafayette.edu"
-alias aec215="ssh -Y himmelwr@compute215.cs.lafayette.edu"
-alias aec216="ssh -Y himmelwr@compute216.cs.lafayette.edu"
-alias aec217="ssh -Y himmelwr@compute217.cs.lafayette.edu"
-alias aec218="ssh -Y himmelwr@compute218.cs.lafayette.edu"
-alias himmelwr="ssh -Y ryan@162.243.19.18"
-alias serverMount="sshfs ryan@162.243.19.18:/home/ryan/ /Data1/ryan/Server"
+# ssh to online accounts
 alias mountWebsite="sshfs ryanhimm@ryanhimmelwright.com:/home4/ryanhimm/public_html/ ~/Website/"
 alias mountAEC="sshfs himmelwr@compute217.cs.lafayette.edu:/usr22/himmelwr ~/AEC/"
-alias serverUnmount="sudo umount /Data1/ryan/Server"
-alias server="ssh -Y ryan@192.168.1.123"
 
 # Radio
 alias jblive="mpv http://jblive.fm"
