@@ -82,3 +82,5 @@ echo pacaur -S nm-applet
 pacaur -S nm-applet
 echo pacaur -S pavucontrol
 pacaur -S pavucontrol
+echo pacaur -S ncdu
+pacaur -S ncdu
