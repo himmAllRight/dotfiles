@@ -73,8 +73,10 @@ alias trans="transset-df"
 alias getIP="curl -s icanhazip.com"
 alias ta="tmux attach-session -t $1"
 alias tn="tmux new-session -s $1"
+alias searchFiles="/home/rhimmelwright/scripts/shell/searchFiles"
 
-
+# Work shortcuts
+alias cruncherCode='cd /cygdrive/s/_Vault_Working/1-saas/AutoPrice-CLIX/models/development/cruncher-dev/model-cruncher/'
 # prompt
 
 PS1='[\u@\h \w]\$ '
