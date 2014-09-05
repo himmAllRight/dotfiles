@@ -61,8 +61,6 @@ alias mountWebsite="sshfs ryanhimm@ryanhimmelwright.com:/home4/ryanhimm/public_h
 alias sshDesktop="ssh ryan@'cat ~/desktopIP.txt'"
 
 # Radio
-#alias jblive="mpv http://jblive.fm"
-#alias jbliveV="mpv rtsp://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream"
 #alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.pls"
 
 
