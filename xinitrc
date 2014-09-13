@@ -10,7 +10,7 @@ fi
 
 # Main
 #exec dbus-launch --exit-with-session openbox-session 
-exec dbus-launch --exit-with-session i3 & compton
+exec dbus-launch --exit-with-session i3 & owncloud & compton
 #exec awesome 
 
 #xbindkeys 
