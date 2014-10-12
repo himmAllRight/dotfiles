@@ -92,10 +92,10 @@ bindsym $mod+a focus parent
 bindsym $mod+1 workspace ♋ Main
 bindsym $mod+2 workspace ツStatus
 bindsym $mod+3 workspace ☢ Work
-bindsym $mod+4 workspace ✉ Mail
+bindsym $mod+4 workspace ✉ Music
 bindsym $mod+5 workspace ☘ Etc
 bindsym $mod+6 workspace ✆ Chat
-bindsym $mod+7 workspace ☠ Music
+bindsym $mod+7 workspace ☠ Network
 bindsym $mod+8 workspace ➑ Games
 bindsym $mod+9 workspace ➒
 bindsym $mod+0 workspace ➓ 
@@ -104,10 +104,10 @@ bindsym $mod+0 workspace ➓
 bindsym $mod+Shift+1 move container to workspace ♋ Main
 bindsym $mod+Shift+2 move container to workspace ツStatus
 bindsym $mod+Shift+3 move container to workspace ☢ Work
-bindsym $mod+Shift+4 move container to workspace ✉ Mail
+bindsym $mod+Shift+4 move container to workspace ✉ Music
 bindsym $mod+Shift+5 move container to workspace ☘ Etc
 bindsym $mod+Shift+6 move container to workspace ✆ Chat
-bindsym $mod+Shift+7 move container to workspace ☠ Music
+bindsym $mod+Shift+7 move container to workspace ☠ Network
 bindsym $mod+Shift+8 move container to workspace ➑ Games
 bindsym $mod+Shift+9 move container to workspace ➒
 bindsym $mod+Shift+0 move container to workspace ➓ 
