@@ -63,7 +63,8 @@ alias config="cd ~/Dropbox/scripts/config/"
 # ssh to online accounts
 alias mountWebsite="sshfs ryanhimm@ryanhimmelwright.com:/home4/ryanhimm/public_html/ ~/Website/"
 alias mountAEC="sshfs himmelwr@compute217.cs.lafayette.edu:/usr22/himmelwr ~/AEC/"
-alias desktop="ssh ryan@`echo ~/Dropbox/current_ip.txt`"
+alias desktop="ssh ryan@`echo ~/owncloud/current_ip.txt`"
+alias himmelwr="ssh -p 1729 ryan@`cat ~/owncloud/himmelwr.txt`"
 
 # Radio
 alias jblive="mpv http://jblive.fm"
