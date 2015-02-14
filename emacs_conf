@@ -1,0 +1,82 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(custom-enabled-themes (quote (wombat)))
+ '(display-battery-mode t)
+ '(display-time-mode t)
+ '(font-use-system-font t)
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(size-indication-mode t)
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+
+
+;; Allegro
+(push "~/Builds/acl90express/eli" load-path)
+(load "fi-site-init.el")
+(setq fi:common-lisp-image-name "~/Builds/acl90express/alisp")
+(setq fi:common-lisp-image-file "~/Builds/acl90express/alisp.dxl")
+(setq fi:common-lisp-directory "~/")
+
+ ;; Ryan Added
+;; lines
+(global-linum-mode 1)
+;; ido mode
+(ido-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+ 
+ ;; remove splash screen and use *scratch*
+(setq inhibit-startup-message t
+inhibit-startup-echo-area-message t)  
+
+;; Auto indent
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
+;; Add a load path
+(add-to-list 'load-path "~/.emacs.d/")
+
+;; New line for C-n
+(setq net-line-add-newlines t)
+
+;; ido version of imenu bind
+(global-set-key (kbd "M-i") 'ido-goto-symbol)
+
+
+;; Tool Tips in echo area
+(tooltip-mode -1)
+(setq tooltip-use-echo-area t)
+
+;; Redisplay pause
+(setq redisplay-dont-pause t)
+
+
+;; Supercharge recentf
+(require 'recentf)
+
+;; get rid of `find-file-read-only' and replace it with something
+;; more useful.
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+
+;; enable recent files mode.
+(recentf-mode t)
+
+; 50 files ought to be enough.
+(setq recentf-max-saved-items 50)
+
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
+
