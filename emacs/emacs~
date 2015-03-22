@@ -1,9 +1,3 @@
-(add-hook 'emacs-startup-hook
-  (lambda ()
-    (load-theme 'atom-dark)
-    (load-theme 'smart-mode-line-powerline)
-        (load-theme 'smart-mode-line-dark)
-    ))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -12,76 +6,17 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote))
+ '(custom-enabled-themes (quote (smart-mode-line-light)))
  '(custom-safe-themes
    (quote
-    ("61b188036ad811b11387fc1ef944441826c19ab6dcee5c67c7664a0bbd67a5b5" "573e46dadf8c2623256a164831cfe9e42d5c700baed1f8ecd1de0675072e23c2" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "d143750cb9fadb9ea9a3a27e0632418d2ad09788e115a61a64dd5404fedfe178" "e24180589c0267df991cf54bf1a795c07d00b24169206106624bb844292807b9" "f0a99f53cbf7b004ba0c1760aa14fd70f2eabafe4e62a2b3cf5cabae8203113b" "ef08e77c67344f23154fd8cb9f3b8b1b4bb1799c0bf9d05dfd4b792557e0e401" "7dd515d883520286fc8936ce32381fb01b978d0d7cfb6fe56f7f55d8accbf63a" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" default)))
+    ("6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" default)))
  '(display-battery-mode t)
  '(display-time-mode t)
  '(fci-rule-color "#c7c7c7")
  '(font-use-system-font t)
  '(load-theme atom-dark)
- '(menu-bar-mode nil)
  '(scroll-bar-mode nil)
  '(size-indication-mode t)
- '(sml/mode-width)
- '(sml/pos-id-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active1)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s" powerline-default-separator
-			    (car powerline-default-separator-dir)))
-		   (quote powerline-active1)
-		   (quote powerline-active2))))
-     (:propertize " " face powerline-active2))))
- '(sml/pos-minor-modes-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active1)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s" powerline-default-separator
-			    (cdr powerline-default-separator-dir)))
-		   (quote powerline-active1)
-		   nil)))
-     (:propertize " " face sml/global))))
- '(sml/pre-id-separator
-   (quote
-    (""
-     (:propertize " " face sml/global)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s" powerline-default-separator
-			    (car powerline-default-separator-dir)))
-		   nil
-		   (quote powerline-active1))))
-     (:propertize " " face powerline-active1))))
- '(sml/pre-minor-modes-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active2)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s" powerline-default-separator
-			    (cdr powerline-default-separator-dir)))
-		   (quote powerline-active2)
-		   (quote powerline-active1))))
-     (:propertize " " face powerline-active1))))
- '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
  '(tool-bar-mode nil)
  '(vc-annotate-background "#d4d4d4")
  '(vc-annotate-color-map

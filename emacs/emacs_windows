@@ -1,0 +1,33 @@
+;; The configuration of my emacs files that is used on my  windows computers at work,
+;; but my linux computers at home.
+
+;; Allegro Common LISP Stuff
+; This is sample code for starting and specifying defaults to the
+; Emacs-Lisp interface.
+ (push "C:/acl90-smp.64/eli" load-path)
+ (load "fi-site-init.el")
+;
+ (setq fi:common-lisp-image-name "C:/acl90-smp.64/allegro.exe")
+ (setq fi:common-lisp-image-file "C:/acl90-smp.64/allegro.dxl")
+ (setq fi:common-lisp-directory "S:/_Vault_Working/Libraries/ggplot/src/development/trunk/")
+
+
+;; Launch Emacs in maximized mode in Windows
+(defun maximize-frame ()
+  "Maximizes the active frame in Windows"
+  (interactive)
+  ;; Send a `WM_SYSCOMMAND' message to the active frame with the
+  ;; `SC_MAXIMIZE' parameter.
+  (when (eq system-type 'windows-nt)
+    (w32-send-sys-command 61488)))
+(add-hook 'window-setup-hook 'maximize-frame t)
+
+;; Move deleted files to trash can
+(setq delete-by-moving-to-trash t)
+
+
+;; Making it more Linux-y
+
+;; Add Cygwin /bin to exec-path
+(if (file-directory-p "c:/cygwin/bin")
+    (add-to-list 'exec-path "c:/cygwin/bin"))

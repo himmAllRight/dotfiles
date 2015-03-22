@@ -1,0 +1,10 @@
+;; The configuration of my emacs files that is used on my home linux computers, but not on my
+;; windows computers at work.
+
+
+;; Allegro
+(push "~/Builds/acl90express/eli" load-path)
+(load "fi-site-init.el")
+(setq fi:common-lisp-image-name "~/Builds/acl90express/alisp")
+(setq fi:common-lisp-image-file "~/Builds/acl90express/alisp.dxl")
+(setq fi:common-lisp-directory "~/")
