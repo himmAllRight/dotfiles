@@ -272,6 +272,10 @@
 (add-to-list 'auto-mode-alist '("\\.md$" . jekyll-markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.html" . jekyll-html-mode))
 
+;; Magit status
+(global-set-key (kbd "C-c g") 'magit-status)
+
+
 ;; Jekyll, have org mode export only <body> to jekyll path
 (setq org-publish-project-alist
       '(
