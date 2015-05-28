@@ -182,6 +182,22 @@ static char *gnus-pointer[] = {
 
 
 (load "c:/acl90.64/eli/fi-site-init.el")
+
+;; Set current project location for when launching allegro
+(setq acl-project-dir "s:/_Vault_Working/2-applications/ProsEDICreator/src/development/trunk/")
+
+;; A function that will launch acl-smp, but with the
+;; acl-project-dir location
+(defun acl-project ()
+  (interactive)
+  (fi:common-lisp
+   "*common-lisp*"
+   acl-project-dir
+   "c:/acl90-smp.64/allegro"
+   (quote ("+B" "+cn"))
+   "localhost"
+   nil))
+
 (defun acl ()
   (interactive)
   (fi:common-lisp
@@ -245,6 +261,7 @@ static char *gnus-pointer[] = {
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Allegro Keybindings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Uncomment Region  Note: "C-c ;" is already set to comment region in allegro
 (global-set-key (kbd "C-c :") 'uncomment-region)
+(global-set-key (kbd "C-c p") 'acl-project)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -389,10 +406,6 @@ inhibit-startup-echo-area-message t)
 
 ;; run allegro-common lisp
 (global-set-key (kbd "C-c l") 'fi:common-lisp)
-
-;; run elfeed keybind
-(global-set-key (kbd "C-c p") 'elfeed)
-
 
 ;; Multiple Cursors
 (require 'multiple-cursors)
