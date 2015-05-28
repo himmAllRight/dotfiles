@@ -3,39 +3,22 @@
 # Antegros on one of my compters.
 
 
-# Dependencies to install yaourt and pacaur
-echo 'Install a few things for yaourt and pacar...'
-sudo pacman -S make gcc
-
-#Download and install yaourt & pacaur
-echo 'Download and install yaourt then pacaur'
-wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
-tar -zxf yaourt.tar.gz
-cd yaourt
-makepkg -s
-sudo pacman -U yaourt*.pkg.tar.xz
-sudo yaourt -S pacaur
-cd ..
-rm -r yaourt*
-
 #pacaur installs
 echo 'pacaur installs'
 echo pacaur -S i3 dmenu
 pacaur -S i3 dmenu
-echo pacaur -S firefox
-pacaur -S firefox
+#echo pacaur -S firefox
+#pacaur -S firefox
 echo pacaur -S thunderbird 
 pacaur -S thunderbird
 echo pacaur -S weechat
 pacaur -S weechat
-echo pacaur -S vim
-pacaur -S vim
-echo pacaur -S mplayer
-pacaur -S mplayer
+#echo pacaur -S emacs
+#pacaur -S emacs
+echo pacaur -S vlc
+pacaur -S vlc
 echo pacaur -S tty-clock
 pacaur -S tty-clock
-echo pacaur -S dropbox
-pacaur -S dropbox
 echo pacaur -S nitrogen
 pacaur -S nitrogen
 echo pacaur -S libreoffice
@@ -62,12 +45,8 @@ echo pacaur -S make
 pacaur -S make
 echo pacaur -S gcc-fortran
 pacaur -S gcc-fortran
-echo pacaur -S gnuplot
-pacaur -S gnuplot
 echo pacaur -S mplayer
 pacaur -S mplayer
-echo pacaur -S gifsicle
-pacaur -S gifsicle
 echo pacaur -S htop
 pacaur -S htop
 echo pacaur -S lib32-libpulse
