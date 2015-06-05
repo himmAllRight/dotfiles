@@ -248,6 +248,8 @@
 (global-set-key (kbd "C-c o")
 		(lambda () (interactive) (find-file "~/owncloud/emacs/org/me.org")))
 
+(global-set-key (kbd "C-c c") 'irc)
+
 ;; w3m
 (eval-after-load 'w3m
   '(progn
@@ -262,8 +264,8 @@
 ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
 
-;; Eshell launch keybind
-(global-set-key (kbd "C-c t") 'eshell)
+;; Change Theme keybind
+(global-set-key (kbd "C-c t") 'customize-themes)
 
 ;; run allegro-common lisp
 (global-set-key (kbd "C-c l") 'fi:common-lisp)
