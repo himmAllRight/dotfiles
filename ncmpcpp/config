@@ -24,18 +24,18 @@ browser_display_mode = "columns" (classic/columns)
 
 # Colors
 discard_colors_if_item_is_selected = "yes"
-header_window_color = "black"
-volume_color = "cyan"
-state_line_color = "black"
+header_window_color = "white"
+volume_color = "green"
+state_line_color = "green"
 state_flags_color = "yellow"
 main_window_color = "white"
-color1 = "default"
+color1 = "white"
 color2 = "green"
 main_window_highlight_color = "red"
 progressbar_color = "yellow"
-statusbar_color = "black"
+statusbar_color = "green"
 active_column_color = "red"
-visualizer_color = "yellow"
+visualizer_color = "green"
 
 # Others
 mpd_music_dir = "~/Music/"
@@ -43,4 +43,4 @@ mpd_crossfade_time = "5"
 #song_window_title_format = "MPD: {%a > }{%t}{ [%b{ Disc %d}]}|{%f}"
 search_engine_display_mode = "columns" (classic/columns)
 follow_now_playing_lyrics = "yes"
-display_screens_numbers_on_start = "no"
+#display_screens_numbers_on_start = "no"
