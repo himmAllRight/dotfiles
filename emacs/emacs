@@ -145,8 +145,8 @@
 (sml/setup)
 
 ;; Monitor thing
-(require 'symon)
-(symon-mode)
+;;(require 'symon)
+;;(symon-mode)
 
 ;; Lines  on
 (global-linum-mode 1)
@@ -219,9 +219,9 @@
 (setq twittering-use-master-password t)
 
 ;; EMMS Multimendia player
-(require 'emms-setup)
-(emms-standard)
-(emms-default-players)
+;;(require 'emms-setup)
+;;(emms-standard)
+;;(emms-default-players)
 
 '(elfeed-feeds
   (quote
@@ -305,3 +305,19 @@
     ("ryan" :components ("org-ianbarton" "org-static-ian"))
 
 ))
+
+
+;; Python setup
+(require 'python-mode)
+; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+
+; switch to the interpreter after executing code
+(setq py-shell-switch-buffers-on-execute-p t)
+(setq py-switch-buffers-on-execute-p t)
+; don't split windows
+(setq py-split-windows-on-execute-p nil)
+; try to automagically figure out indentation
+(setq py-smart-indentation t)
+
