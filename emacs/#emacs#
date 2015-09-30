@@ -1,0 +1,354 @@
+'(lambda ()
+    (load-theme 'atom-dark)
+    (load-theme 'smart-mode-line-powerline)
+    (load-theme 'smart-mode-line-dark)
+    )
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(column-number-mode t)
+ '(custom-enabled-themes (quote (smart-mode-line-powerline)))
+ '(custom-safe-themes
+   (quote
+    ("08851585c86abcf44bb1232bced2ae13bc9f6323aeda71adfa3791d6e7fea2b6" "33bb2c9b6e965f9c3366c57f8d08a94152954d4e2124dc621953f5a8d7e9ca41" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "0251780e8e79d2a5e75eec7ee3b6c646b882495cb884d9dd32f30c60f9d65db6" "f0b0710b7e1260ead8f7808b3ee13c3bb38d45564e369cbe15fc6d312f0cd7a0" "a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "61b188036ad811b11387fc1ef944441826c19ab6dcee5c67c7664a0bbd67a5b5" "573e46dadf8c2623256a164831cfe9e42d5c700baed1f8ecd1de0675072e23c2" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "d143750cb9fadb9ea9a3a27e0632418d2ad09788e115a61a64dd5404fedfe178" "e24180589c0267df991cf54bf1a795c07d00b24169206106624bb844292807b9" "f0a99f53cbf7b004ba0c1760aa14fd70f2eabafe4e62a2b3cf5cabae8203113b" "ef08e77c67344f23154fd8cb9f3b8b1b4bb1799c0bf9d05dfd4b792557e0e401" "7dd515d883520286fc8936ce32381fb01b978d0d7cfb6fe56f7f55d8accbf63a" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" default)))
+ '(display-battery-mode t)
+ '(display-time-mode t)
+ '(elfeed-feeds
+   (quote
+    ("http://www.theminimalists.com/feed/" "http://feeds.feedburner.com/StudyHacks" "http://www.rowdykittens.com/feed/" "http://zenhabits.net/feed" "http://sachachua.com/blog/feed/" "http://cmacr.ae/rss.xml" "http://ryanhimmelwright.com/feed.xml")))
+ '(fci-rule-color "#c7c7c7")
+ '(font-use-system-font t)
+ '(load-theme atom-dark)
+ '(menu-bar-mode nil)
+ '(scroll-bar-mode nil)
+ '(send-mail-function (quote smtpmail-send-it))
+ '(size-indication-mode t)
+ '(sml/pos-id-separator
+   (quote
+    (""
+     (:propertize " " face powerline-active1)
+     (:eval
+      (propertize " "
+		  (quote display)
+		  (funcall
+		   (intern
+		    (format "powerline-%s-%s" powerline-default-separator
+			    (car powerline-default-separator-dir)))
+		   (quote powerline-active1)
+		   (quote powerline-active2))))
+     (:propertize " " face powerline-active2))))
+ '(sml/pos-minor-modes-separator
+   (quote
+    (""
+     (:propertize " " face powerline-active1)
+     (:eval
+      (propertize " "
+		  (quote display)
+		  (funcall
+		   (intern
+		    (format "powerline-%s-%s" powerline-default-separator
+			    (cdr powerline-default-separator-dir)))
+		   (quote powerline-active1)
+		   nil)))
+     (:propertize " " face sml/global))))
+ '(sml/pre-id-separator
+   (quote
+    (""
+     (:propertize " " face sml/global)
+     (:eval
+      (propertize " "
+		  (quote display)
+		  (funcall
+		   (intern
+		    (format "powerline-%s-%s" powerline-default-separator
+			    (car powerline-default-separator-dir)))
+		   nil
+		   (quote powerline-active1))))
+     (:propertize " " face powerline-active1))))
+ '(sml/pre-minor-modes-separator
+   (quote
+    (""
+     (:propertize " " face powerline-active2)
+     (:eval
+      (propertize " "
+		  (quote display)
+		  (funcall
+		   (intern
+		    (format "powerline-%s-%s" powerline-default-separator
+			    (cdr powerline-default-separator-dir)))
+		   (quote powerline-active2)
+		   (quote powerline-active1))))
+     (:propertize " " face powerline-active1))))
+ '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
+ '(smtpmail-smtp-server "localhost")
+ '(smtpmail-smtp-service 1025)
+ '(tool-bar-mode nil)
+ '(vc-annotate-background "#d4d4d4")
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#437c7c")
+     (40 . "#336c6c")
+     (60 . "#205070")
+     (80 . "#2f4070")
+     (100 . "#1f3060")
+     (120 . "#0f2050")
+     (140 . "#a080a0")
+     (160 . "#806080")
+     (180 . "#704d70")
+     (200 . "#603a60")
+     (220 . "#502750")
+     (240 . "#401440")
+     (260 . "#6c1f1c")
+     (280 . "#935f5c")
+     (300 . "#834744")
+     (320 . "#732f2c")
+     (340 . "#6b400c")
+     (360 . "#23733c"))))
+ '(vc-annotate-very-old-color "#23733c"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;; Package Management ;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Add Melpa Repos
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
+
+
+
+;; Ryan Added
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Load specific config files
+(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
+(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
+;;(load "~/dotfiles/emacs/emacs_windows")    ; Windows Specifics (Boo)
+
+;; Backup all files in 1 place.
+(setq backup-directory-alist '(("." . "~/owncloud/emacs/backups")))
+
+;; Remove splash screen and use *scratch* as home
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)  
+
+;; Load Smart-mode-lines
+					;(require 'smart-mode-line)
+(sml/setup)
+
+;; Monitor thing
+(require 'symon)
+;;(symon-mode)
+
+;; Lines  on
+(global-linum-mode 1)
+
+;; Menubar off by default
+(menu-bar-mode -1)
+
+;; Auto indent
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
+;; New line for C-n
+(setq net-line-add-newlines t)
+
+;; Tool Tips in echo area
+(tooltip-mode -1)
+(setq tooltip-use-echo-area t)
+
+;; Redisplay pause
+(setq redisplay-dont-pause t)
+
+
+;; Stuff to auto find files better
+;; ido path completemode
+(ido-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+
+;; ido version of imenu bind
+(global-set-key (kbd "M-i") 'ido-goto-symbol)
+
+;; Supercharge recentf
+(require 'recentf)
+
+;; get rid of `find-file-read-only' and replace it with something
+;; more useful.
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+
+;; enable recent files mode.
+(recentf-mode t)
+
+					; 50 files ought to be enough.
+(setq recentf-max-saved-items 50)
+
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Org Mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Org-Mode Global list of my TODOs
+(setq org-agenda-files (list "~/owncloud/emacs/org/work.org"
+                             "~/owncloud/emacs/org/homeorg" 
+                             "~/owncloud/emacs/org/me.org"))
+
+;; Persistent Clocking
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;; Applications ;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Twittering
+(require 'twittering-mode)
+(setq twittering-use-master-password t)
+
+;; EMMS Multimendia player
+(require 'emms-setup)
+(emms-standard)
+(emms-default-players)
+
+'(elfeed-feeds
+  (quote
+   ("http://www.theminimalists.com/feed/" "http://feeds.feedburner.com/StudyHacks" "http://www.rowdykittens.com/feed/" "http://zenhabits.net/feed" "zenhabits.net/feed" "http://sachachua.com/blog/feed/")))
+
+
+;; erc auto login
+(setq erc-autojoin-channels-alist
+      '(("geekshed.net" "#jupiterbroadcasting")
+	("freenode.net" "#emacs" "reddit-homelab")))
+
+(defun irc ()
+  (erc :server "irc.geekshed.net" :port 6667 :nick "himmAllRight")
+  (erc :server "irc.freenode.net" :port 6667 :nick "himmAllRight"))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;; Key Bindings ;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; org-mode open me.org
+(global-set-key (kbd "C-c o")
+		(lambda () (interactive) (find-file "~/owncloud/emacs/org/me.org")))
+
+(global-set-key (kbd "C-c c") 'irc)
+
+;; w3m
+(eval-after-load 'w3m
+  '(progn
+     (define-key w3m-mode-map "q" 'w3m-previous-buffer)
+     (define-key w3m-mode-map "w" 'w3m-next-buffer)
+     (define-key w3m-mode-map "x" 'w3m-close-window)))
+
+;; Spell Check Word key-binds
+(global-set-key (kbd "C-c w") 'ispell-word)
+(global-set-key (kbd "C-c r") 'ispell-region)
+
+;; Multiple Cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
+;; Toggle menubar keybind
+(global-set-key (kbd "C-c m") 'menu-bar-mode)
+
+;; Copy Function
+(defun copy (start end)
+  (interactive "r")
+  (let ((selected-text (buffer-substring (mark) (point))))
+    (kill-new selected-text nil)
+    (minibuffer-message selected-text)))
+
+(global-set-key (kbd "C-c l") 'copy)
+
+;; Change Theme keybind
+(global-set-key (kbd "C-c t") 'customize-themes)
+
+;; run allegro-common lisp
+(global-set-key (kbd "C-c l") 'fi:common-lisp)
+
+;; run elfeed keybind
+(global-set-key (kbd "C-c p") 'elfeed)
+
+;; Join irc
+(global-set-key (kbd "C-c i") 'irc)
+
+;; Jekyll stuff
+(add-to-list 'auto-mode-alist '("\\.md$" . jekyll-markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.html" . jekyll-html-mode))
+
+;; Magit status
+(global-set-key (kbd "C-c g") 'magit-status)
+
+
+;; Jekyll, have org mode export only <body> to jekyll path
+(setq org-publish-project-alist
+      '(
+
+  ("org-ryanhimmelwright"
+          ;; Path to your org files.
+          :base-directory "~/owncloud/emacs/org/ryanhimmelwright/"
+          :base-extension "org"
+
+          ;; Path to your Jekyll project.
+          :publishing-directory "~/Network/ryanhimmelwright/"
+          :recursive t
+          :publishing-function org-publish-org-to-html
+          :headline-levels 4 
+          :html-extension "html"
+          :body-only t ;; Only export section between <body> </body>
+    )
+
+
+    ("org-static-ryan"
+          :base-directory "~/devel/ianbarton/org/"
+          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
+          :publishing-directory "~/Network/publishDir/"
+          :recursive t
+          :publishing-function org-publish-attachment)
+
+    ("ryan" :components ("org-ianbarton" "org-static-ian"))
+
+))
+
+
+
+;; Trying to set up mail.
+
+(setq tramp-default-method "ssh")
+
+
+;; Pianobar setup
+(add-to-list 'load-path "~/.emacs.d/elpa/pianobar-20120128.1301/pianobar.el")
+(autoload 'pianobar "pianobar" nil t)
+
+;;; the following is only needed if you install org-page manually
+(require 'org-page)
+(setq op/repository-directory "/Data/ryan/Network/ry-org-page/")
+(setq op/site-domain "himmelwright.net/ryan/")
+;;; for commenting, you can choose either disqus or duoshuo
+(setq op/personal-disqus-shortname "himmAllRight")
+(setq op/personal-duoshuo-shortname "himmAllRight")
+
+(setq op/repository-org-branch "~/Networking/ry-org-page/blog")
+(setq op/repository-html-branch "~/Networking/ry-org-page/site")
+
