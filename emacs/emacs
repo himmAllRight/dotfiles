@@ -151,7 +151,11 @@
 (sml/setup)
 
 ;; Monitor thing
+<<<<<<< HEAD
 (require 'symon)
+=======
+;;(require 'symon)
+>>>>>>> 0629284eab2eb85f256944089fe2a3265b9b8703
 ;;(symon-mode)
 
 ;; Lines  on
@@ -225,9 +229,9 @@
 (setq twittering-use-master-password t)
 
 ;; EMMS Multimendia player
-(require 'emms-setup)
-(emms-standard)
-(emms-default-players)
+;;(require 'emms-setup)
+;;(emms-standard)
+;;(emms-default-players)
 
 '(elfeed-feeds
   (quote
@@ -331,6 +335,7 @@
 ))
 
 
+<<<<<<< HEAD
 
 ;; Trying to set up mail.
 
@@ -350,4 +355,19 @@
 (setq op/personal-duoshuo-shortname "himmAllRight")
 
 (setq op/repository-org-branch "~/Networking/ry-org-page/blog")
+=======
+;; Python setup
+(require 'python-mode)
+; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+
+; switch to the interpreter after executing code
+(setq py-shell-switch-buffers-on-execute-p t)
+(setq py-switch-buffers-on-execute-p t)
+; don't split windows
+(setq py-split-windows-on-execute-p nil)
+; try to automagically figure out indentation
+(setq py-smart-indentation t)
+>>>>>>> 0629284eab2eb85f256944089fe2a3265b9b8703
 
