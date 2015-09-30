@@ -27,6 +27,7 @@
  '(load-theme atom-dark)
  '(menu-bar-mode nil)
  '(scroll-bar-mode nil)
+ '(send-mail-function (quote smtpmail-send-it))
  '(size-indication-mode t)
  '(sml/pos-id-separator
    (quote
@@ -85,6 +86,8 @@
 		   (quote powerline-active1))))
      (:propertize " " face powerline-active1))))
  '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
+ '(smtpmail-smtp-server "localhost")
+ '(smtpmail-smtp-service 1025)
  '(tool-bar-mode nil)
  '(vc-annotate-background "#d4d4d4")
  '(vc-annotate-color-map
@@ -132,8 +135,8 @@
 ;; Ryan Added
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load specific config files
-;;(load "~/.emacs_secret")		                     ; Personal stuff
-;;(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
+(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
+(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
 ;;(load "~/dotfiles/emacs/emacs_windows")    ; Windows Specifics (Boo)
 
 ;; Backup all files in 1 place.
@@ -149,7 +152,7 @@
 
 ;; Monitor thing
 (require 'symon)
-(symon-mode)
+;;(symon-mode)
 
 ;; Lines  on
 (global-linum-mode 1)
@@ -233,12 +236,12 @@
 
 ;; erc auto login
 (setq erc-autojoin-channels-alist
-      '(("geekshed.net" "#jupiterbroadcasting" "#jupiterdev")
-	("freenode.net" "#emacs" "#archlinux")))
+      '(("geekshed.net" "#jupiterbroadcasting")
+	("freenode.net" "#emacs" "reddit-homelab")))
 
 (defun irc ()
-  (erc :server "irc.geekshed.net" :port 6667 :nick "himmAllRight17")
-  (erc :server "irc.freenode.net" :port 6667 :nick "himmAllRight17"))
+  (erc :server "irc.geekshed.net" :port 6667 :nick "himmAllRight")
+  (erc :server "irc.freenode.net" :port 6667 :nick "himmAllRight"))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -261,8 +264,21 @@
 (global-set-key (kbd "C-c w") 'ispell-word)
 (global-set-key (kbd "C-c r") 'ispell-region)
 
+;; Multiple Cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
 ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
+
+;; Copy Function
+(defun copy (start end)
+  (interactive "r")
+  (let ((selected-text (buffer-substring (mark) (point))))
+    (kill-new selected-text nil)
+    (minibuffer-message selected-text)))
+
+(global-set-key (kbd "C-c l") 'copy)
 
 ;; Change Theme keybind
 (global-set-key (kbd "C-c t") 'customize-themes)
@@ -313,3 +329,25 @@
     ("ryan" :components ("org-ianbarton" "org-static-ian"))
 
 ))
+
+
+
+;; Trying to set up mail.
+
+(setq tramp-default-method "ssh")
+
+
+;; Pianobar setup
+(add-to-list 'load-path "~/.emacs.d/elpa/pianobar-20120128.1301/pianobar.el")
+(autoload 'pianobar "pianobar" nil t)
+
+;;; the following is only needed if you install org-page manually
+(require 'org-page)
+(setq op/repository-directory "/Data/ryan/Network/ry-org-page/")
+(setq op/site-domain "himmelwright.net/ryan/")
+;;; for commenting, you can choose either disqus or duoshuo
+(setq op/personal-disqus-shortname "himmAllRight")
+(setq op/personal-duoshuo-shortname "himmAllRight")
+
+(setq op/repository-org-branch "~/Networking/ry-org-page/blog")
+
