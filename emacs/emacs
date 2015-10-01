@@ -151,11 +151,7 @@
 (sml/setup)
 
 ;; Monitor thing
-<<<<<<< HEAD
-(require 'symon)
-=======
 ;;(require 'symon)
->>>>>>> 0629284eab2eb85f256944089fe2a3265b9b8703
 ;;(symon-mode)
 
 ;; Lines  on
@@ -335,8 +331,6 @@
 ))
 
 
-<<<<<<< HEAD
-
 ;; Trying to set up mail.
 
 (setq tramp-default-method "ssh")
@@ -353,9 +347,8 @@
 ;;; for commenting, you can choose either disqus or duoshuo
 (setq op/personal-disqus-shortname "himmAllRight")
 (setq op/personal-duoshuo-shortname "himmAllRight")
-
 (setq op/repository-org-branch "~/Networking/ry-org-page/blog")
-=======
+
 ;; Python setup
 (require 'python-mode)
 ; use IPython
@@ -369,5 +362,4 @@
 (setq py-split-windows-on-execute-p nil)
 ; try to automagically figure out indentation
 (setq py-smart-indentation t)
->>>>>>> 0629284eab2eb85f256944089fe2a3265b9b8703
 
