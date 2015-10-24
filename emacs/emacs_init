@@ -1,0 +1,10 @@
+;; Add Melpa Repos
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
+
+
+(mapcar #'package-install 
+	'(smart-mode-line symon recentf elfeed w3m multiple-cursors magit pianobar org-page auto-complete pretty-lambda indent-guide smartparens persistent-scratch hide-comnt aggresive-indent molokai-theme badger-theme))
