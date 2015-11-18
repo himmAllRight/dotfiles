@@ -363,14 +363,30 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/pianobar-20120128.1301/pianobar.el")
 (autoload 'pianobar "pianobar" nil t)
 
+
+
+
+
+;;; ORG PAGE ;;;
+
 ;;; the following is only needed if you install org-page manually
 (require 'org-page)
 (setq op/repository-directory "/Data/ryan/Network/ry-org-page/")
-(setq op/site-domain "home.himmelwright.net/ryan/")
+(setq op/site-domain "ryan.himmelwright.net")
 ;;; for commenting, you can choose either disqus or duoshuo
 (setq op/personal-disqus-shortname "himmAllRight")
 (setq op/personal-duoshuo-shortname "himmAllRight")
 (setq op/repository-org-branch "~/Networking/ry-org-page/blog")
+
+(setq op/site-main-title "ryan.himmelwright.net")
+(setq op/site-sub-title "/home/ryan")
+(setq op/personal-github-link "https://github.com/himmelwr")
+(setq op/personal-avatar "https://avatars1.githubusercontent.com/u/4473817?v=3&s=460")
+(setq op/category-ignore-lsit '("draft"))
+(setq op/theme 'phaer)
+
+
+::::::::::::::::::::
 
 ;; Python setup
 ;;(require 'python-mode)
@@ -450,4 +466,13 @@
 (indent-guide-global-mode t)
 ;; smartparens
 (smartparens-global-mode t)
+(sp-pair "'" nil :actions :rem) ;; removes single quote from auto pairing
+(sp-pair "`" nil :actions :rem) ;; removes ` from auto pairing
 
+;; Add Wrap org-mode code with appropriate code section
+(defun org-code (start end)
+  (interactive "r")
+  (let ((selected-text (buffer-substring (mark) (point)))
+	(db-name (read-from-minibuffer "Language: ")))
+    (kill-region start end)
+    (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
