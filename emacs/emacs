@@ -1,8 +1,3 @@
-'(lambda ()
-    (load-theme 'atom-dark)
-    (load-theme 'smart-mode-line-powerline)
-    (load-theme 'smart-mode-line-dark)
-    )
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -17,7 +12,7 @@
  '(custom-enabled-themes nil)
  '(custom-safe-themes
    (quote
-    ("cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "0a1a7f64f8785ffbf5b5fbe8bca1ee1d9e1fb5e505ad9a0f184499fe6747c1af" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "3ed645b3c08080a43a2a15e5768b893c27f6a02ca3282576e3bc09f3d9fa3aaa" "9b402e9e8f62024b2e7f516465b63a4927028a7055392290600b776e4a5b9905" "08851585c86abcf44bb1232bced2ae13bc9f6323aeda71adfa3791d6e7fea2b6" "33bb2c9b6e965f9c3366c57f8d08a94152954d4e2124dc621953f5a8d7e9ca41" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "0251780e8e79d2a5e75eec7ee3b6c646b882495cb884d9dd32f30c60f9d65db6" "f0b0710b7e1260ead8f7808b3ee13c3bb38d45564e369cbe15fc6d312f0cd7a0" "a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "61b188036ad811b11387fc1ef944441826c19ab6dcee5c67c7664a0bbd67a5b5" "573e46dadf8c2623256a164831cfe9e42d5c700baed1f8ecd1de0675072e23c2" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "d143750cb9fadb9ea9a3a27e0632418d2ad09788e115a61a64dd5404fedfe178" "e24180589c0267df991cf54bf1a795c07d00b24169206106624bb844292807b9" "f0a99f53cbf7b004ba0c1760aa14fd70f2eabafe4e62a2b3cf5cabae8203113b" "ef08e77c67344f23154fd8cb9f3b8b1b4bb1799c0bf9d05dfd4b792557e0e401" "7dd515d883520286fc8936ce32381fb01b978d0d7cfb6fe56f7f55d8accbf63a" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" default)))
+    ("94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "d3df47c843c22d8f0177fe3385ae95583dc8811bd6968240f7da42fd9aa51b0b" "54159ea82516378faa7c4d25fb549b843effb1eb932f0925dce1348de7a659ba" "f8f68f14dc4bd60afc74ad0e24149d2ffcb126781beb6d753759b92fd5ff4c26" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "e9776d12e4ccb722a2a732c6e80423331bcb93f02e089ba2a4b02e85de1cf00e" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "0a1a7f64f8785ffbf5b5fbe8bca1ee1d9e1fb5e505ad9a0f184499fe6747c1af" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "3ed645b3c08080a43a2a15e5768b893c27f6a02ca3282576e3bc09f3d9fa3aaa" "9b402e9e8f62024b2e7f516465b63a4927028a7055392290600b776e4a5b9905" "08851585c86abcf44bb1232bced2ae13bc9f6323aeda71adfa3791d6e7fea2b6" "33bb2c9b6e965f9c3366c57f8d08a94152954d4e2124dc621953f5a8d7e9ca41" "9122dfb203945f6e84b0de66d11a97de6c9edf28b3b5db772472e4beccc6b3c5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "0251780e8e79d2a5e75eec7ee3b6c646b882495cb884d9dd32f30c60f9d65db6" "f0b0710b7e1260ead8f7808b3ee13c3bb38d45564e369cbe15fc6d312f0cd7a0" "a041a61c0387c57bb65150f002862ebcfe41135a3e3425268de24200b82d6ec9" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "61b188036ad811b11387fc1ef944441826c19ab6dcee5c67c7664a0bbd67a5b5" "573e46dadf8c2623256a164831cfe9e42d5c700baed1f8ecd1de0675072e23c2" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "d143750cb9fadb9ea9a3a27e0632418d2ad09788e115a61a64dd5404fedfe178" "e24180589c0267df991cf54bf1a795c07d00b24169206106624bb844292807b9" "f0a99f53cbf7b004ba0c1760aa14fd70f2eabafe4e62a2b3cf5cabae8203113b" "ef08e77c67344f23154fd8cb9f3b8b1b4bb1799c0bf9d05dfd4b792557e0e401" "7dd515d883520286fc8936ce32381fb01b978d0d7cfb6fe56f7f55d8accbf63a" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" default)))
  '(display-battery-mode t)
  '(display-time-mode t)
  '(elfeed-feeds
@@ -36,7 +31,7 @@
      ("#A45E0A" . 70)
      ("#A41F99" . 85)
      ("#49483E" . 100))))
- '(load-theme atom-dark)
+ '(hl-sexp-background-color "#efebe9")
  '(magit-diff-use-overlays nil)
  '(menu-bar-mode nil)
  '(scroll-bar-mode nil)
@@ -99,8 +94,6 @@
 		   (quote powerline-active1))))
      (:propertize " " face powerline-active1))))
  '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
- '(smtpmail-smtp-server "localhost")
- '(smtpmail-smtp-service 1025)
  '(tool-bar-mode nil)
  '(vc-annotate-background "#d4d4d4")
  '(vc-annotate-color-map
@@ -134,13 +127,14 @@
        (not
 	(facep
 	 (aref ansi-term-color-vector 0))))))
+
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
-
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -158,8 +152,8 @@
 ;; Ryan Added
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load specific config files
-(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
-(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
+;;(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
+;;(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
 ;;(load "~/dotfiles/emacs/emacs_windows")    ; Windows Specifics (Boo)
 
 ;; Backup all files in 1 place.
@@ -181,7 +175,7 @@
 (global-linum-mode 1)
 
 ;; Menubar off by default
-(menu-bar-mode -1)
+(menu-bar-mode t)
 
 ;; Auto indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
@@ -196,7 +190,6 @@
 ;; Redisplay pause
 (setq redisplay-dont-pause t)
 
-
 ;; Stuff to auto find files better
 ;; ido path completemode
 (ido-mode 1)
@@ -206,6 +199,8 @@
 ;; ido version of imenu bind
 (global-set-key (kbd "M-i") 'ido-goto-symbol)
 
+(setq recentf-auto-cleanup 'never)
+(recentf-mode 1)
 ;; Supercharge recentf
 (require 'recentf)
 
@@ -213,10 +208,11 @@
 ;; more useful.
 (global-set-key (kbd "C-x C-r") 'ido-recentf-open)
 
+
 ;; enable recent files mode.
 (recentf-mode t)
 
-					; 50 files ought to be enough.
+;; 50 files ought to be enough.
 (setq recentf-max-saved-items 50)
 
 (defun ido-recentf-open ()
@@ -225,7 +221,6 @@
   (if (find-file (ido-completing-read "Find recent file: " recentf-list))
       (message "Opening file...")
     (message "Aborting")))
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Org Mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -258,6 +253,8 @@
 
 
 ;; erc auto login
+(require 'erc-image)
+
 (setq erc-autojoin-channels-alist
       '(("geekshed.net" "#jupiterbroadcasting")
 	("freenode.net" "#emacs" "reddit-homelab")))
@@ -301,6 +298,7 @@
     (kill-new selected-text nil)
     (minibuffer-message selected-text)))
 
+
 (global-set-key (kbd "C-c l") 'copy)
 
 ;; Change Theme keybind
@@ -315,76 +313,17 @@
 ;; Join irc
 (global-set-key (kbd "C-c i") 'irc)
 
-;; Jekyll stuff
-(add-to-list 'auto-mode-alist '("\\.md$" . jekyll-markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.html" . jekyll-html-mode))
-
 ;; Magit status
 (global-set-key (kbd "C-c g") 'magit-status)
 
 
-;; Jekyll, have org mode export only <body> to jekyll path
-(setq org-publish-project-alist
-      '(
-
-  ("org-ryanhimmelwright"
-          ;; Path to your org files.
-          :base-directory "~/owncloud/emacs/org/ryanhimmelwright/"
-          :base-extension "org"
-
-          ;; Path to your Jekyll project.
-          :publishing-directory "~/Network/ryanhimmelwright/"
-          :recursive t
-          :publishing-function org-publish-org-to-html
-          :headline-levels 4 
-          :html-extension "html"
-          :body-only t ;; Only export section between <body> </body>
-    )
-
-
-    ("org-static-ryan"
-          :base-directory "~/devel/ianbarton/org/"
-          :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|php"
-          :publishing-directory "~/Network/publishDir/"
-          :recursive t
-          :publishing-function org-publish-attachment)
-
-    ("ryan" :components ("org-ianbarton" "org-static-ian"))
-
-))
-
-
 ;; Trying to set up mail.
-
 (setq tramp-default-method "ssh")
 
 
 ;; Pianobar setup
 (add-to-list 'load-path "~/.emacs.d/elpa/pianobar-20120128.1301/pianobar.el")
 (autoload 'pianobar "pianobar" nil t)
-
-
-
-
-
-;;; ORG PAGE ;;;
-
-;;; the following is only needed if you install org-page manually
-(require 'org-page)
-(setq op/repository-directory "/Data/ryan/Network/ry-org-page/")
-(setq op/site-domain "ryan.himmelwright.net")
-;;; for commenting, you can choose either disqus or duoshuo
-(setq op/personal-disqus-shortname "himmAllRight")
-(setq op/personal-duoshuo-shortname "himmAllRight")
-(setq op/repository-org-branch "~/Networking/ry-org-page/blog")
-
-(setq op/site-main-title "ryan.himmelwright.net")
-(setq op/site-sub-title "/home/ryan")
-(setq op/personal-github-link "https://github.com/himmelwr")
-(setq op/personal-avatar "https://avatars1.githubusercontent.com/u/4473817?v=3&s=460")
-(setq op/category-ignore-lsit '("draft"))
-(setq op/theme 'phaer)
-
 
 ::::::::::::::::::::
 
@@ -437,7 +376,6 @@
 ;; auto-complete
 (global-auto-complete-mode t)
 
-
 ;; Save and Restore Window Configuration
 (setq zoom-temp-window-configuration nil) ;; set global var to save window state
 (defun zoom-window ()
@@ -453,6 +391,7 @@
       (message "Window zoomed"))))
 ;; Keybind
 (global-set-key (kbd "C-c z") 'zoom-window)
+
 
 ;; Toggl Comments
 (hide/show-comments)
@@ -476,3 +415,5 @@
 	(db-name (read-from-minibuffer "Language: ")))
     (kill-region start end)
     (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
+
+(load-theme 'jazz)
