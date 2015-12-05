@@ -416,4 +416,10 @@
     (kill-region start end)
     (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
 
+;; Slime SBCL
+(add-to-list 'load-path "/usr/share/common-lisp/source/slime/")
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(require 'slime)
+(slime-setup)
+
 (load-theme 'jazz)
