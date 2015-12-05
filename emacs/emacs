@@ -152,8 +152,8 @@
 ;; Ryan Added
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load specific config files
-;;(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
-;;(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
+(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
+(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
 ;;(load "~/dotfiles/emacs/emacs_windows")    ; Windows Specifics (Boo)
 
 ;; Backup all files in 1 place.
@@ -175,7 +175,7 @@
 (global-linum-mode 1)
 
 ;; Menubar off by default
-(menu-bar-mode t)
+(menu-bar-mode -1)
 
 ;; Auto indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
