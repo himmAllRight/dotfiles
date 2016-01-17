@@ -152,8 +152,8 @@
 ;; Ryan Added
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Load specific config files
-(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
-(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
+;;(load "~/dotfiles/emacs/emacs_secret")		                     ; Personal stuff
+;;(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
 ;;(load "~/dotfiles/emacs/emacs_windows")    ; Windows Specifics (Boo)
 
 ;; Backup all files in 1 place.
@@ -269,7 +269,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; org-mode open me.org
 (global-set-key (kbd "C-c o")
-		(lambda () (interactive) (find-file "~/owncloud/emacs/org/me.org")))
+		(lambda () (interactive) (find-file "~/owncloud/emacs/org/archive/me.org")))
 
 (global-set-key (kbd "C-c c") 'irc)
 
@@ -365,7 +365,7 @@
 (ac-config-default)
 (set-face-background 'ac-selection-face "#007700")
 
-(persistent-scratch-setup-default)
+;;(persistent-scratch-setup-default)
 
 ;; Spotify
 (global-set-key (kbd "C-c s") 'helm-spotify)
