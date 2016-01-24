@@ -7,4 +7,4 @@
 
 
 (mapcar #'package-install 
-	'(smart-mode-line symon recentf elfeed w3m multiple-cursors magit pianobar org-page auto-complete pretty-lambda indent-guide smartparens persistent-scratch hide-comnt aggresive-indent molokai-theme badger-theme))
+	'(recentf w3m multiple-cursors magit pianobar org-page auto-complete pretty-lambdada indent-guide smartparens persistent-scratch hide-comnt aggressive-indent molokai-theme badger-theme jazz-theme erc-image slime))
