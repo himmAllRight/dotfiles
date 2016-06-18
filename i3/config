@@ -26,7 +26,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -88,29 +88,41 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# Workspace names
+set $WS1 ♋ Main
+set $WS2 ツ Web
+set $WS3 ☢ Emacs
+set $WS4 ✉ Mail
+set $WS5 ☘ Music
+set $WS6 ✆ Chat
+set $WS7 ☠ Network
+set $WS8 ➑ Games
+set $WS9 ➒ Other
+set $WS0 ➓ Other
+
 # switch to workspace
-bindsym $mod+1 workspace ♋ Main
-bindsym $mod+2 workspace ツStatus
-bindsym $mod+3 workspace ☢ Work
-bindsym $mod+4 workspace ✉ Music
-bindsym $mod+5 workspace ☘ Etc
-bindsym $mod+6 workspace ✆ Chat
-bindsym $mod+7 workspace ☠ Network
-bindsym $mod+8 workspace ➑ Games
-bindsym $mod+9 workspace ➒
-bindsym $mod+0 workspace ➓ 
+bindsym $mod+1 workspace $WS1
+bindsym $mod+2 workspace $WS2
+bindsym $mod+3 workspace $WS3
+bindsym $mod+4 workspace $WS4
+bindsym $mod+5 workspace $WS5
+bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
+bindsym $mod+9 workspace $WS9
+bindsym $mod+0 workspace $WS0
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace ♋ Main
-bindsym $mod+Shift+2 move container to workspace ツStatus
-bindsym $mod+Shift+3 move container to workspace ☢ Work
-bindsym $mod+Shift+4 move container to workspace ✉ Music
-bindsym $mod+Shift+5 move container to workspace ☘ Etc
-bindsym $mod+Shift+6 move container to workspace ✆ Chat
-bindsym $mod+Shift+7 move container to workspace ☠ Network
-bindsym $mod+Shift+8 move container to workspace ➑ Games
-bindsym $mod+Shift+9 move container to workspace ➒
-bindsym $mod+Shift+0 move container to workspace ➓ 
+bindsym $mod+Shift+1 move container to workspace $WS1
+bindsym $mod+Shift+2 move container to workspace $WS2
+bindsym $mod+Shift+3 move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
+bindsym $mod+Shift+9 move container to workspace $WS9
+bindsym $mod+Shift+0 move container to workspace $WS0
 
 # Music Next, Prev, Pause/Play
 bindsym $mod+Shift+n exec playerctl next
@@ -153,9 +165,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status --config ~/.i3status.conf
+        status_command i3status --config ~/.config/i3status.conf
         font xft:Arial Black 9 
-#        position top
+        position top
  colors {
         background #222222                                                         
         statusline #ffffff                                                         
@@ -177,24 +189,28 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 #Ryan Add Ons
 ####
 
+## Gaps/ borders
+gaps inner 7
+gaps outer 7
+
 bindsym $mod+u border toggle
 
-#Volume Key Binds
-bindsym $mod+shift+equal exec amixer -c 0 -q set Master 2dB+
-bindsym $mod+shift+minus exec amixer -c 0 -q set Master 2dB-
+## DPI
+
+## Volume Key Binds
+bindsym $mod+shift+period exec amixer -c 0 -q set Master 2dB+
+bindsym $mod+shift+comma exec amixer -c 0 -q set Master 2dB-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
 exec gnome-settings-daemon &
 
-#colors
-
    
-#Start Nitrogen when loaded
+## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
-exec dropboxd &
 exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
 exec volumeicon &
 exec nm-applet &
+exec compton &
 exec urxvt
