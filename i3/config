@@ -26,17 +26,20 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec mate-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -p drad$ -nb '#000000' -nf '#A9E098' -sb '#222222' -sf '#BF7119'
+#bindsym $mod+d exec dmenu_run -p drad$ -nb '#222222' -nf '#990099' -sb '#222222' -sf '#BF7119'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+bindsym $mod+w exec rofi -show window 
+bindsym $mod+d exec rofi -show run -bg '#222222'
 
 # change focus
 bindsym $mod+h focus left
@@ -73,7 +76,7 @@ bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -136,9 +139,10 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+        # These bindings trigger as soon as you enter the resize mod
 
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
@@ -191,19 +195,19 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 
 ## Gaps/ borders
 gaps inner 7
-gaps outer 7
+gaps outer 50
 
+new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
 
 ## DPI
+exec xrandr --dpi 100
 
 ## Volume Key Binds
 bindsym $mod+shift+period exec amixer -c 0 -q set Master 2dB+
 bindsym $mod+shift+comma exec amixer -c 0 -q set Master 2dB-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
-
-exec gnome-settings-daemon &
 
    
 ## Start Nitrogen when loaded
@@ -213,4 +217,4 @@ exec mpd ~/.config/mpd/mpd.conf &
 exec volumeicon &
 exec nm-applet &
 exec compton &
-exec urxvt
+exec ~/.startup
