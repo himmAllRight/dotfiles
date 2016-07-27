@@ -1,8 +1,14 @@
+" Simple vimrc
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
 set tw=80
 set formatoptions+=t
-
 syntax on
+:colo evening
+:set autoindent
+:set number
+:set linebreak
+:set showbreak=+++
+:set textwidth=100
+:set hlsearch
