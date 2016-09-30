@@ -358,7 +358,6 @@ static char *gnus-pointer[] = {
   (switch-to-buffer "*Org Agenda*")
   (other-window 1)
   (switch-to-buffer "*eshell*")  ;; open scratch buffer in main pane
-                                        ;  (load-theme 'jazz)
   (toggle-frame-fullscreen)
   (toggle-frame-fullscreen))
 
@@ -803,7 +802,7 @@ static char *gnus-pointer[] = {
 (require 'spaceline-config)
 (spaceline-spacemacs-theme)
 
-(load-theme 'jazz)
+(load-theme 'flatland)
 ;;(nyan-mode)
 ;; Scroll 1 line with smooth scrolling
 (setq scroll-step           1
@@ -1001,5 +1000,3 @@ static char *gnus-pointer[] = {
   (setq alert-default-style 'notifier))
 
 
-
-;; Testing 3
