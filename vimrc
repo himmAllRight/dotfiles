@@ -5,7 +5,7 @@ set expandtab
 set tw=80
 set formatoptions+=t
 syntax on
-:colo evening
+:colo happy_hacking
 :set autoindent
 :set number
 :set linebreak
