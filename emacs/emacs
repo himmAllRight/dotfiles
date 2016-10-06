@@ -1,0 +1,959 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(Linum-format "%7i ")
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#26292c" "#ff4a52" "#40b83e" "#f6f080" "#afc4db" "#dc8cc3" "#93e0e3" "#f8f8f8"])
+ '(ansi-term-color-vector
+   [unspecified "#081724" "#ff694d" "#68f6cb" "#fffe4e" "#bad6e2" "#afc0fd" "#d2f1ff" "#d3f9ee"] t)
+ '(background-color "#202020")
+ '(background-mode dark)
+ '(bongo-enabled-backends (quote (C:Program Files (x86) VideoLANVLCvlc\.exe)))
+ '(column-number-mode t)
+ '(cursor-color "#cccccc")
+ '(cursor-type (quote bar))
+ '(custom-safe-themes
+   (quote
+    ("737d9d0e0f6c4279e80f7479ec5138af6e4908a2d052126f254e1e6d1a0d0188" "405b0ac2ac4667c5dab77b36e3dd87a603ea4717914e30fcf334983f79cfd87e" "5246ced3899bcd3813d71577f57cd47796ea3433aaebbba7522076357a7b37d1" "01ce486c3a7c8b37cf13f8c95ca4bb3c11413228b35676025fdf239e77019ea1" "9ab634dcc9131f79016c96c4955298409649f6538908c743a8a9d2c6bc8321ef" "e2edfb573cb4c4196b23fcdfa89c8d7889c841bfe296c4270b169d48585f16f0" "6aade83a639c9407e4365725431819af371d0b305b2b2cb5827680b7139aab4c" "a3abc2ca40085c8868ccdcc142699c59e692ea880046d488601f39d7ac3d97e9" "27be769d7233f8a14be03d2fb71175c30a9d4977ee12ceb5670162a96bfe62fc" "11636897679ca534f0dec6f5e3cb12f28bf217a527755f6b9e744bd240ed47e1" "a08aefd299f2de58993df81fd39d21bda1eb4681b483eef46a278498330ed3bf" "3448e3f5d01b39ce75962328a5310438e4a19e76e4b691c21c8e04ca318a5f62" "3d5307e5d6eb221ce17b0c952aa4cf65dbb3fa4a360e12a71e03aab78e0176c5" "7dd0db710296c4cec57c39068bfffa63861bf919fb6be1971012ca42346a417f" "c0dd5017b9f1928f1f337110c2da10a20f76da0a5b14bb1fec0f243c4eb224d4" "badc4f9ae3ee82a5ca711f3fd48c3f49ebe20e6303bba1912d4e2d19dd60ec98" "bc40f613df8e0d8f31c5eb3380b61f587e1b5bc439212e03d4ea44b26b4f408a" "94ba29363bfb7e06105f68d72b268f85981f7fba2ddef89331660033101eb5e5" "868f73b5cf78e72ca2402e1d48675e49cc9a9619c5544af7bf216515d22b58e7" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "e97dbbb2b1c42b8588e16523824bc0cb3a21b91eefd6502879cf5baa1fa32e10" "2305decca2d6ea63a408edd4701edf5f4f5e19312114c9d1e1d5ffe3112cde58" "62408b3adcd05f887b6357e5bd9221652984a389e9b015f87bbc596aba62ba48" "cedd3b4295ac0a41ef48376e16b4745c25fa8e7b4f706173083f16d5792bb379" "f8f68f14dc4bd60afc74ad0e24149d2ffcb126781beb6d753759b92fd5ff4c26" "3ff96689086ebc06f5f813a804f7114195b7c703ed2f19b51e10026723711e33" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "c70799e6420521bdd782842cd38ed9d18ba221ca294098f786e2c4ca4b2e9521" "b9183de9666c3a16a7ffa7faaa8e9941b8d0ab50f9aaba1ca49f2f3aec7e3be9" "0c311fb22e6197daba9123f43da98f273d2bfaeeaeb653007ad1ee77f0003037" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "8d6fb24169d94df45422617a1dfabf15ca42a97d594d28b3584dc6db711e0e0b" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "ea489f6710a3da0738e7dbdfc124df06a4e3ae82f191ce66c2af3e0a15e99b90" "18a33cdb764e4baf99b23dcd5abdbf1249670d412c6d3a8092ae1a7b211613d5" "0ba649556dc51762e6794b92017f6f7406754ae3136eafef686d81c6da176cc5" "96998f6f11ef9f551b427b8853d947a7857ea5a578c75aa9c4e7c73fe04d10b4" "0c29db826418061b40564e3351194a3d4a125d182c6ee5178c237a7364f0ff12" "987b709680284a5858d5fe7e4e428463a20dfabe0a6f2a6146b3b8c7c529f08b" "46fd293ff6e2f6b74a5edf1063c32f2a758ec24a5f63d13b07a20255c074d399" "3cd28471e80be3bd2657ca3f03fbb2884ab669662271794360866ab60b6cb6e6" "1a85b8ade3d7cf76897b338ff3b20409cb5a5fbed4e45c6f38c98eee7b025ad4" "58c6711a3b568437bab07a30385d34aacf64156cc5137ea20e799984f4227265" "3d5ef3d7ed58c9ad321f05360ad8a6b24585b9c49abcee67bdcbb0fe583a6950" "b3775ba758e7d31f3bb849e7c9e48ff60929a792961a2d536edec8f68c671ca5" "7bde52fdac7ac54d00f3d4c559f2f7aa899311655e7eb20ec5491f3b5c533fe8" "ad9fc392386f4859d28fe4ef3803585b51557838dbc072762117adad37e83585" "8cf56691a70156f611ac86d0bbcbc7dee7673df195de5918f34bfdc6814ffd39" "c5a044ba03d43a725bd79700087dea813abcb6beb6be08c7eb3303ed90782482" "588b1ec3f63dfbd7ab2ba7eda4b1b6009dd1c8ed6a321fa98c492d8a63f1bba7" "e8825f26af32403c5ad8bc983f8610a4a4786eb55e3a363fa9acb48e0677fe7e" "cdd26fa6a8c6706c9009db659d2dffd7f4b0350f9cc94e5df657fa295fffec71" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "764e3a6472a3a4821d929cdbd786e759fab6ef6c2081884fca45f1e1e3077d1d" "08efabe5a8f3827508634a3ceed33fa06b9daeef9c70a24218b70494acdf7855" "7997e0765add4bfcdecb5ac3ee7f64bbb03018fb1ac5597c64ccca8c88b1262f" "28ec8ccf6190f6a73812df9bc91df54ce1d6132f18b4c8fcc85d45298569eb53" "6d52f427961f4ba24777b23234ac3c84dc671d2c691d4741b38f205ed8f1ed70" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "312b0e18c0ed8fa54ab3cb20484a01c2a6c5a9a0f2d9da712de3ad0b0f981b38" "3cc2385c39257fed66238921602d8104d8fd6266ad88a006d0a4325336f5ee02" "e9776d12e4ccb722a2a732c6e80423331bcb93f02e089ba2a4b02e85de1cf00e" "cc0dbb53a10215b696d391a90de635ba1699072745bf653b53774706999208e3" "c739f435660ca9d9e77312cbb878d5d7fd31e386a7758c982fa54a49ffd47f6e" "62c9339d5cac3a49688abb34e98f87a6ee82003a11251f12e0ada1788090c40f" "573e46dadf8c2623256a164831cfe9e42d5c700baed1f8ecd1de0675072e23c2" "7dd515d883520286fc8936ce32381fb01b978d0d7cfb6fe56f7f55d8accbf63a" "f0a99f53cbf7b004ba0c1760aa14fd70f2eabafe4e62a2b3cf5cabae8203113b" "61b188036ad811b11387fc1ef944441826c19ab6dcee5c67c7664a0bbd67a5b5" "3164a65923ef23e0f3dff9f9607b4da1e07ef1c3888d0f6878feef6c28357732" "ed5af4af1d148dc4e0e79e4215c85e7ed21488d63303ddde27880ea91112b07e" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "0e121ff9bef6937edad8dfcff7d88ac9219b5b4f1570fd1702e546a80dba0832" "18e89f93cbaaac214202142d910582354d36639f21f32b04718ca6425dbc82a2" "6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" default)))
+ '(diary-entry-marker (quote font-lock-variable-name-face))
+ '(display-time-mode t)
+ '(emms-mode-line-icon-image-cache
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
+static char *note[] = {
+/* width height num_colors chars_per_pixel */
+\"    10   11        2            1\",
+/* colors */
+\". c #1fb3b3\",
+\"# c None s None\",
+/* pixels */
+\"###...####\",
+\"###.#...##\",
+\"###.###...\",
+\"###.#####.\",
+\"###.#####.\",
+\"#...#####.\",
+\"....#####.\",
+\"#..######.\",
+\"#######...\",
+\"######....\",
+\"#######..#\" };")) t)
+ '(fci-rule-character-color "#202020")
+ '(fci-rule-color "#202325" t)
+ '(foreground-color "#cccccc")
+ '(fringe-mode 6 nil (fringe))
+ '(gnus-logo-colors (quote ("#2fdbde" "#c0c0c0")) t)
+ '(gnus-mode-line-image-cache
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
+static char *gnus-pointer[] = {
+/* width height num_colors chars_per_pixel */
+\"    18    13        2            1\",
+/* colors */
+\". c #1fb3b3\",
+\"# c None s None\",
+/* pixels */
+\"##################\",
+\"######..##..######\",
+\"#####........#####\",
+\"#.##.##..##...####\",
+\"#...####.###...##.\",
+\"#..###.######.....\",
+\"#####.########...#\",
+\"###########.######\",
+\"####.###.#..######\",
+\"######..###.######\",
+\"###....####.######\",
+\"###..######.######\",
+\"###########.######\" };")) t)
+ '(hl-paren-background-colors (quote ("#2492db" "#95a5a6" nil)))
+ '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
+ '(hl-sexp-background-color "#1c1f26")
+ '(initial-scratch-message ";; Ryan's Emacs -- Scratch Buffer")
+ '(linum-format (quote dynamic))
+ '(linum-relative-current-symbol "")
+ '(main-line-color1 "#1E1E1E")
+ '(main-line-color2 "#111111")
+ '(main-line-separator-style (quote chamfer))
+ '(notmuch-search-line-faces
+   (quote
+    (("unread" :foreground "#aeee00")
+     ("flagged" :foreground "#0a9dff")
+     ("deleted" :foreground "#ff2c4b" :bold t))))
+ '(org-agenda-files
+   (quote
+    ("~/owncloud/emacs/org/archive/me.org" "~/owncloud/emacs/org/archive/work.org" "~/owncloud/emacs/org/archive/school.org")))
+ '(org-pomodoro-length 25 t)
+ '(org-pomodoro-short-break-length 8 t)
+ '(powerline-color1 "#1E1E1E")
+ '(powerline-color2 "#111111")
+ '(rainbow-identifiers-cie-l*a*b*-lightness 70)
+ '(rainbow-identifiers-cie-l*a*b*-saturation 20)
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t)
+ '(sml/active-background-color "#34495e")
+ '(sml/active-foreground-color "#ecf0f1")
+ '(sml/inactive-background-color "#dfe4ea")
+ '(sml/inactive-foreground-color "#34495e")
+ '(sml/pos-id-separator
+   (quote
+    (""
+     (:propertize " " face powerline-active1)
+     (:eval
+      (propertize " "
+                  (quote display)
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s" powerline-default-separator
+                            (car powerline-default-separator-dir)))
+                   (quote powerline-active1)
+                   (quote powerline-active2))))
+     (:propertize " " face powerline-active2))))
+ '(sml/pos-minor-modes-separator
+   (quote
+    (""
+     (:propertize " " face powerline-active1)
+     (:eval
+      (propertize " "
+                  (quote display)
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s" powerline-default-separator
+                            (cdr powerline-default-separator-dir)))
+                   (quote powerline-active1)
+                   nil)))
+     (:propertize " " face sml/global))))
+ '(sml/pre-id-separator
+   (quote
+    (""
+     (:propertize " " face sml/global)
+     (:eval
+      (propertize " "
+                  (quote display)
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s" powerline-default-separator
+                            (car powerline-default-separator-dir)))
+                   nil
+                   (quote powerline-active1))))
+     (:propertize " " face powerline-active1))))
+ '(sml/pre-minor-modes-separator
+   (quote
+    (""
+     (:propertize " " face powerline-active2)
+     (:eval
+      (propertize " "
+                  (quote display)
+                  (funcall
+                   (intern
+                    (format "powerline-%s-%s" powerline-default-separator
+                            (cdr powerline-default-separator-dir)))
+                   (quote powerline-active2)
+                   (quote powerline-active1))))
+     (:propertize " " face powerline-active1))))
+ '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
+ '(tool-bar-mode nil)
+ '(vc-annotate-background "#1f2124")
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#ff0000")
+     (40 . "#ff4a52")
+     (60 . "#f6aa11")
+     (80 . "#f1e94b")
+     (100 . "#f5f080")
+     (120 . "#f6f080")
+     (140 . "#41a83e")
+     (160 . "#40b83e")
+     (180 . "#b6d877")
+     (200 . "#b7d877")
+     (220 . "#b8d977")
+     (240 . "#b9d977")
+     (260 . "#93e0e3")
+     (280 . "#72aaca")
+     (300 . "#8996a8")
+     (320 . "#afc4db")
+     (340 . "#cfe2f2")
+     (360 . "#dc8cc3"))))
+ '(vc-annotate-very-old-color "#dc8cc3")
+ '(wakatime-api-key "10d02580-d931-4ff6-9c1e-9291a7057ef5")
+ '(wakatime-cli-path "c:/Users/rhimmelwright/wakatime-master/wakatime/cli.py")
+ '(wakatime-python-bin "C:\\Python34\\python.exe")
+ '(when
+      (or
+       (not
+        (boundp
+         (quote ansi-term-color-vector)))
+       (not
+        (facep
+         (aref ansi-term-color-vector 0))))))
+
+
+
+;; Allegro Common LISP Stuff
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; This is sample code for starting and specifying defaults to the
+;; Emacs-Lisp interface.
+
+(load "c:/acl90.64/eli/fi-site-init.el")
+
+;; Global var for the acl exe. Currently sets to ACL 10
+(setq acl-version "c:/acl100-smp.64/allegro")
+
+;; Function to set to another version of acl
+(defun set-acl-version ()
+  (interactive)
+  (let ((test-name nil)
+        (name-options '("9" "10")))
+    (while (not (remove nil (mapcar (lambda (name) (equalp name test-name)) name-options)))
+      (setf test-name
+            (read-from-minibuffer (format "test-name not one of: %s. Please enter one of them: " name-options))))
+    (cond ((equalp test-name "9")
+           (setf acl-version "c:/acl90-smp.64/allegro"))
+          ((equalp test-name "10")
+           (setq acl-version "c:/acl100-smp.64/allegro"))
+          (t
+           (error "test-name not correct.")))
+    (message "'acl-version set to \"%s\" (%s)." acl-version (get-acl-version t))))
+
+;; Function that returns the currently set ACL version
+(defun get-acl-version (&optional str-return)
+  (interactive)
+  (let ((return-message nil))
+    (cond ((equalp acl-version "c:/acl90-smp.64/allegro")
+           (setf return-message "Allegro 9"))
+          ((equalp acl-version "c:/acl100-smp.64/allegro")
+           (setf return-message "Allegro 10"))
+          (t
+           (setf return-message acl-version)))
+    (if str-return
+        return-message
+      (message return-message))))
+
+
+;; A function that will launch acl-smp, but with the path set to a defined project
+;; path. If path is lpr file, will open the project. If a project that is not in the
+;; list is entered, defaults to the vault folder.
+(defun acl-project ()
+  "Opens an allegro lisp environment with a default path for a particular project."
+  (interactive)
+  (let ((project-src-list
+         '((ggplot "s:/_Vault_Working/Libraries/ggplot/src/development/trunk/GGPLOT.lpr")
+           (pros-edi "S:/_Vault_Working/2-applications/ProsEDICreator/src/development/trunk/pros-edi-creator.lpr")
+           (pros-edi-1-0 "s:/_Vault_Working/2-applications/ProsEDICreator/src/branches/Version1.0/pros-edi-creator.lpr")
+           (dset-flis "s:/_Vault_Working/Libraries/DSET-FLIS/src/development/trunk/DSET-FLIS.lpr")
+           (dset-flis-1-0 "s:/_Vault_Working/Libraries/DSET-FLIS/src/branches/DSET-FLIS 1.0/DSET-FLIS.lpr")
+           (dset-pep "s:/_Vault_Working/Libraries/DSET-PEP/src/development/trunk/DSET-PEP.lpr")
+           (dset-pep-1-0 "s:/_Vault_Working/Libraries/DSET-PEP/src/branches/DSET-PEP 1.0/DSET-PEP.lpr")
+           (data-updater "s:/_Vault_Working/4-tools/DataUpdater/src/development/trunk/data-updater.lpr")
+           (flis-foi "S:/_Vault_Working/Interfaces/flis-foi/src/development/trunk/flis-foi.lpr")
+           (flis-foi-1-1 "S:/_Vault_Working/Interfaces/flis-foi/src/branches/1.1/flis-foi.lpr")
+           (flis-foi-2-0 "S:/_Vault_Working/Interfaces/flis-foi/src/branches/2.0/flis-foi.lpr")
+           (flis-foi-client "S:/_Vault_Working/Interfaces/flis-foi/src/development/trunk/flis-foi-client.lpr")
+           (contract-history "s:/_Vault_Working/Libraries/ContractHistory/src/branches/2.1.4/contract-history.lpr")
+           (apex "s:/_Vault_Working/Libraries/AutoPrice Explorer/src/development/Trunk/APEX.lpr")
+           (spreadsheet "S:/_Vault_Working/Interfaces/spreadsheet/src/development/trunk/spreadsheet.lpr")
+           (winstoic-base "s:/_Vault_Working/2-applications/winStoic/winStoic Base/Trunk/winStoicBase.lpr")
+           (2is-apps "C:/2is-apps/")))
+        (project-name (read-from-minibuffer "Select Project: "))
+        (execute-args (quote ("+B" "+cn")))
+        project-path
+        project-dir)
+
+    ;; Unless no project is provided, set paths
+    (cond ((equalp project-name "")
+           (setf project-dir "S:/_Vault_Working/")
+           (setf project-name "no-project"))
+          (t
+           (setf project-path (second (assoc (intern project-name) project-src-list)))
+           (setf project-dir (file-name-directory project-path))
+           ;; When project-lpr is specified, add it to args list to load up by default.
+           (when (equalp "lpr" (file-name-extension project-path))
+             (setf execute-args (concatenate 'list execute-args (list "-project" project-path))))))
+    (message acl-version)
+    ;; Launch ACL Session from emacs
+    (fi:common-lisp (format "*common-lisp-%s*" project-name)
+                    project-dir
+                    acl-version
+                    execute-args
+                    "localhost"
+                    nil)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Allegro Keybindings ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Uncomment Region  Note: "C-c ;" is already set to comment region in allegro
+(global-set-key (kbd "C-c :") 'uncomment-region)
+(global-set-key (kbd "C-c p") 'acl-project)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; lines
+(global-linum-mode 1)
+;;(require 'linum-relative)
+;;(linum-relative-global-mode 1)
+
+;; No Tabs
+(setq-default indent-tabs-mode nil)
+
+;; Menubar
+(menu-bar-mode -1)
+
+;; remove splash screen and use *scratch*
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
+
+;; Auto indent
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
+;; Add a load path
+                                        ;(add-to-list 'load-path "~/.emacs.d/")
+
+;; New line for C-n
+(setq net-line-add-newlines t)
+
+;; Tool Tips in echo area
+(tooltip-mode -1)
+(setq tooltip-use-echo-area t)
+
+;; Backup all files in 1 place.
+(setq backup-directory-alist '(("." . "~/owncloud/emacs/backups")))
+
+;; Launch Emacs in maximized mode in Windows
+(defun maximize-frame ()
+  "Maximizes the active frame in Windows"
+  (interactive)
+  ;; Send a `WM_SYSCOMMAND' message to the active frame with the
+  ;; `SC_MAXIMIZE' parameter.
+  (when (eq system-type 'windows-nt)
+    (w32-send-sys-command 61488)))
+(add-hook 'window-setup-hook 'maximize-frame t)
+
+;; Move deleted files to trash can
+(setq delete-by-moving-to-trash t)
+
+
+(setq org-agenda-files (list "~/owncloud/emacs/org/archive/work.org"
+                             "~/owncloud/emacs/org/archive/school.org"
+                             "~/owncloud/emacs/org/archive/me.org"))
+(global-set-key (kbd "C-c o")
+                (lambda() (interactive) (find-file "~/owncloud/emacs/org/archive/me.org")))
+
+;; Setup my basic default work environment
+(defun setup-work-environment ()
+  (org-agenda-list)
+  (delete-window)
+  ;; Split Windows
+  (split-window-right)
+  (split-window-below)
+  (find-file "~/owncloud/emacs/org/archive/work.org") ;; Open org file
+  (interactive)
+  (let ((current-prefix-arg 35))
+    (call-interactively 'shrink-window-horizontally)) ;; shrink left pane
+  (other-window 1)
+  (find-file "~/.emacs")
+  ;;  (customize-themes) ;; open themes window
+  (eshell)
+  (switch-to-buffer "*Org Agenda*")
+  (other-window 1)
+  (switch-to-buffer "*eshell*")  ;; open scratch buffer in main pane
+  (toggle-frame-fullscreen)
+  (toggle-frame-fullscreen))
+
+(defun setup-work-environment-tall ()
+  (toggle-frame-fullscreen)
+  ;; Split Windows
+  (find-file "~/owncloud/emacs/org/archive/work.org") ;; Open org file
+
+  (other-window 1)
+  (enlarge-window 10)
+  (find-file "~/.emacs") ;; Open org file
+  (switch-to-buffer "*scratch*")
+  (split-window-below)
+  (other-window 1)
+  (enlarge-window -10)
+  (eshell)
+  (other-window -1)
+  (interactive)
+  (toggle-frame-fullscreen)
+  (toggle-frame-fullscreen)
+)
+
+(global-set-key (kbd "C-c i") 'setup-work-environment-tall)
+
+;; Default Table Params
+(setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
+
+;; Org Pomodoro ;;
+;; Setup pomodoro timer keybind
+(global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
+(global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
+
+(defun org-pomodoro-get-times ()
+  (interactive)
+  (message "work length: %s  short break: %s  long break: %s"
+           org-pomodoro-length
+           org-pomodoro-short-break-length
+           org-pomodoro-long-break-length))
+
+(defun org-pomodoro-set-pomodoro ()
+  (interactive)
+  (setf org-pomodoro-length 35)
+  (setf org-pomodoro-short-break-length 9)
+  (setf org-pomodoro-long-break-length 15))
+
+
+(org-pomodoro-set-pomodoro)
+
+(defun org-pomodoro-set-52-17 ()
+  (interactive)
+  (setf org-pomodoro-length 52)
+  (setf org-pomodoro-short-break-length 17)
+  (setf org-pomodoro-long-break-length 17))
+
+
+;;;;;;;;;;;;;;;;;;
+
+;; Add Wrap org-mode code with appropriate code section
+(defun org-code (start end)
+  (interactive "r")
+  (let ((selected-text (buffer-substring (mark) (point)))
+        (db-name (read-from-minibuffer "Language[common-lisp]: ")))
+    (when (equalp db-name "")
+      (setf db-name "common-lisp"))
+    (kill-region start end)
+    (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
+
+
+;; Melpa stuff
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t))
+
+;; Toggle menubar keybind
+(global-set-key (kbd "C-c m") 'menu-bar-mode)
+
+;; Eshell launch keybind
+(global-set-key (kbd "C-c t") 'helm-themes)
+
+;; run allegro-common lisp
+(global-set-key (kbd "C-c l") 'fi:common-lisp)
+
+;; Previous Window shortcut
+(global-set-key (kbd "C-x p")
+                (lambda() (interactive) (other-window -1)))
+(global-set-key (kbd "C-x O")
+                (lambda() (interactive) (switch-window)))
+(global-set-key (kbd "C-x o")
+                (lambda() (interactive) (other-window 1)))
+(global-set-key (kbd "C-x \)")
+                (lambda() (interactive) (other-frame 1)))
+(global-set-key (kbd "C-x 0")
+                (lambda() (interactive) (delete-window)))
+
+;; Multiple Cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+
+;; Weather
+(require 'sunshine)
+(setq sunshine-location "02703,USA")
+
+;; Sunrise sunset stuff
+(setq calendar-latitude 41.5900)
+(setq calendar-longitude -71.2000)
+(setq calendar-location-name "North Attleboro, MA")
+
+;; wttrin weather
+(use-package wttrin
+  :ensure t
+  :commands (wttrin)
+  :init
+  (setq wttrin-default-cities '("North Attleboro"
+                                "Walpole"
+                                "Pennsburg, PA"
+                                "Houston, TX"
+                                "Seattle, WA")))
+
+
+;; erc auto login
+(setq erc-autojoin-channels-alist
+      '(("geekshed.net" "#jupiterbroadcasting")
+        ("freenode.net" "#emacs")))
+
+;; Logs into IRC
+(defun irc ()
+  (interactive)
+  (let ((geekshed-pass (read-passwd "irc.geekshed.net password: "))
+        (freenode-pass (read-passwd "irc.freenode.net password: ")))
+    (erc :server "irc.geekshed.net" :port 6667 :nick "himmAllRight|Work" :password geekshed-pass)
+    (erc :server "irc.freenode.net" :port 6667 :nick "himmAllRight|W" :password freenode-pass)))
+
+(global-set-key "\C-c\C-i" 'irc)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; elfeed ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'elfeed)
+(require 'elfeed-goodies)
+(elfeed-goodies/setup)
+
+;; elfeed list
+(setq elfeed-feeds
+      '(("http://www.theminimalists.com/feed/" minimalism)
+        ("http://feeds.feedburner.com/StudyHacks" propductivity blog)
+        ("http://www.rowdykittens.com/feed/" blog)
+        ("http://zenhabits.net/feed" minimalism)
+        ("http://feeds.feedburner.com/YourGreatOutdoors?format=xml" nature)
+        ("http://sachachua.com/blog/feed/" blog emacs)
+        ("http://cmacr.ae/rss.xml" blog tech unix)
+        ("http://fedoramagazine.org/feed/" tech linux fedora)
+        ("http://communityblog.fedoraproject.org/feed/" tech linux fedora)
+;;        ("http://planet.gentoo.org/rss20.xml" tech linux gentoo)
+        ("http://planet.lisp.org/rss20.xml" tech lisp dev)
+;;        ("http://www.ixsystems.com/feed/" tech bsd homelab)
+        ("http://langnostic.inaimathi.ca/feed/" tech lisp dev)
+        ("http://joyful.com/blog.xml" tech dev)
+        ("http://feeds.feedburner.com/d0od" tech linux dev ubuntu)
+;;        ("http://developerblog.redhat.com/feed/" tech linux dev redhat)
+        ("http://dominickm.com/?feed=rss2" tech linux dev jb)
+        ("http://allegrocl.blogspot.com/feeds/posts/default/" tech dev lisp)
+;;        ("https://blog.monstermuffin.org/feed/" tech linux homelab)
+;;        ("https://maryrosecook.com/blog/feed" tech dev lisp personal)
+        ))
+
+(defface unread-elfeed-entry
+  '((t :foreground "#f77" :background "#444"))
+  "Marks an important Elfeed entry.")
+
+(push '(important unread-elfeed-entry)
+      elfeed-search-face-alist)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Add time
+(defun insert-date ()
+  (interactive)
+  (insert (format-time-string "%A, %B %d" (current-time))))
+
+;; when cursor is on edge, move to the other side, as in a toroidal space
+(setq windmove-wrap-around t)
+
+
+(defun wrap-with-db-connection (start end)
+  (interactive "r")
+  (let ((selected-text (buffer-substring (mark) (point)))
+        (db-name (read-from-minibuffer "DB keyword: ")))
+    (kill-region start end)
+    (insert (concatenate 'string "(with-db-connection (:" db-name ")
+" selected-text ")"))
+    (indent-region start end)))
+
+;; Persistent scratch
+(persistent-scratch-setup-default)
+
+
+;; Pretty Lambda
+(global-pretty-lambda-mode t)
+
+
+(defun search-package-symbols ()
+  (interactive)
+  (let ((package-name (read-from-minibuffer "package name: ")))
+    (insert (format "(do-symbols (x %s) (when (eq (find-package %s) (symbol-package x)) (print x)))"
+                    package-name package-name))))
+
+(global-set-key (kbd "C-c 3") 'search-package-symbols)
+
+(format "%s " "Ryan")
+(setq zoom-temp-window-configuration nil) ;; set global var to save window state
+(defun zoom-window ()
+  (interactive)
+  (if zoom-temp-window-configuration
+      (progn
+        (set-window-configuration zoom-temp-window-configuration)
+        (setq zoom-temp-window-configuration nil)
+        (message "Window un-zoomed"))
+    (progn
+      (setq zoom-temp-window-configuration (current-window-configuration))
+      (delete-other-windows)
+      (message "Window zoomed"))))
+;; Keybind
+(global-set-key (kbd "C-c z") 'zoom-window)
+
+
+;; Spits out sorted list of most used words in selected region.
+(setq word-stats nil)
+(defun word-count-analysis (start end)
+  "Count how many times each word is used in the region.
+    Punctuation is ignored."
+  (interactive "r")
+  (let (words)
+    (save-excursion
+      (goto-char start)
+      (while (re-search-forward "\\w+" end t)
+        (let* ((word (intern (match-string 0)))
+               (cell (assq word words)))
+          (if cell
+              (setcdr cell (1+ (cdr cell)))
+            (setq words (cons (cons word 1) words))))))
+    (when (interactive-p)
+      (flet ((sort-by-2nd (lst)
+                          (sort lst (lambda (x y) (> (cdr x) (cdr y))))))
+        (setq word-stats (sort-by-2nd words)))
+      (message "%S" word-stats))
+    word-stats))
+
+(defun paste-word-stats ()
+  (interactive)
+  (insert (format "%s" word-stats)))
+
+
+
+
+;; Open and restore emacs calendar quickly
+(setq calendar-open-p nil) ;; set global to remember calendar state
+(defun open-close-calendar ()
+  (interactive)
+  (if calendar-open-p
+      (progn
+        (setq calendar-open-p nil)
+        (calendar-exit)
+        (message "Calendar Closed. Windows restored."))
+    (progn
+      (calendar)
+      (setq calendar-open-p t)
+      (message "Calendar Opened."))))
+;; Keybind
+(global-set-key (kbd "C-c C-c") 'open-close-calendar)
+
+;; Open links on conkeror
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "C:\\Program Files\\conkeror\\conkeror.exe")
+
+(defun open-browser-page ()
+  (interactive)
+  (let ((url (read-from-minibuffer "URL [www.duckduckgo.com]: ")))
+    (when (equalp url "")
+      (setf url "https://www.duckduckgo.com"))
+
+    (browse-url-generic url)))
+
+(global-set-key (kbd "C-c C-w") 'open-browser-page)
+
+;; eshell alias
+(defalias 'll "ls -lh $*")
+(defalias 'apps "cd C:/2is-apps/")
+
+
+;; indent guide
+(indent-guide-global-mode t)
+;; smartparens
+(smartparens-global-mode t)
+(sp-pair "'" nil :actions :rem) ;; removes single quote from pairing
+(sp-pair "`" nil :actions :rem) ;; remove ` f from pairiing
+
+;; aggressive indent mode also exists, but I'm not globally defining it yet
+(put 'narrow-to-region 'disabled nil)
+
+;; Crates a commented code section header
+(defun create-header (in-string &optional width)
+  (unless width
+    (setf width 80))
+
+  (let*  ((comment-char ?\;)
+          (outString (concatenate 'string " " in-string " "))
+          (side-buffer-count (/ (- width (length outString)) 2))
+          (middle-line (concatenate 'string
+                                    (make-string side-buffer-count comment-char)
+                                    " " in-string " "
+                                    (make-string
+                                     (- width (+ side-buffer-count (length outString)))
+                                     comment-char)))
+          (buffer (make-string width comment-char)))
+
+    (concatenate 'string buffer "\n" middle-line "\n" buffer)))
+
+
+;; Prompts user for Header text and option width, and inserts header into buffer.
+(defun insert-header (in-string &optional width)
+  (interactive "r")
+  (let ((in-string (read-from-minibuffer "Header Text: "))
+        (width (read-from-minibuffer "Width (Enter for default [80]): ")))
+
+    (if (equalp width "")
+        (setf width 80)
+      (setf width (string-to-number width)))
+
+    (when (> (+ 2 (length in-string)) width)
+      (error "Error: Header string is too long. String can at max (width - 2) characters long."))
+
+    (insert (create-header in-string width))))
+
+;; Connect to some sites
+(defun www-reddit ()
+  (interactive)
+  (let* ((sub-name (read-from-minibuffer "Open subredit: www.reddit.com/r/"))
+         (url (concatenate 'string "http://www.reddit.com/r/" sub-name)))
+    (browse-url-generic url)
+    (format "Opening %s" url)))
+
+(global-set-key (kbd "C-S-c C-S-r") 'www-reddit)
+
+;; rgrep keybing
+(global-set-key (kbd "C-c g") 'rgrep)
+
+;; easier M-X keybind
+(global-set-key (kbd "C-c x") 'execute-extended-command)
+
+(put 'upcase-region 'disabled nil)
+
+;; Easy buffer-list key
+(global-set-key (kbd "C-c b") 'list-buffers)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Helm ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'helm)
+(require 'helm-config)
+(require 'ac-helm)
+
+;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
+;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
+;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.
+(global-set-key (kbd "C-c h") 'helm-command-prefix)
+(global-unset-key (kbd "C-x c"))
+
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+(define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
+
+(when (executable-find "curl")
+  (setq helm-google-suggest-use-curl-p t))
+
+(setq helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
+      helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
+      helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
+      helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
+      helm-ff-file-name-history-use-recentf t)
+
+(helm-mode 1)
+
+(global-set-key (kbd "C-c h") 'helm-mini)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+
+(global-set-key (kbd "C-r") 'helm-recentf)
+(global-set-key (kbd "C-s") 'helm-swoop)
+(global-set-key (kbd "M-s") 'helm-multi-swoop-current-mode)
+
+(helm-autoresize-mode t)
+
+(setq helm-swoop-speed-or-color t)
+(set-face-attribute 'helm-selection nil
+                    :background "purple"
+                    :foreground "white")
+
+;; (global-set-key (kbd "M-i") 'helm-swoop)
+ (global-set-key (kbd "M-l") 'helm-multi-swoop)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Ivy ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (use-package ivy :ensure t)
+
+;; (global-set-key (kbd "C-s") 'swiper)
+;; (global-set-key (kbd "C-k") 'kill-buffer)
+;; (global-set-key (kbd "M-x") 'counsel-M-x)
+;; (global-set-key (kbd "C-x C-f") 'counsel-find-file)
+;; (global-set-key (kbd "<f1> f") 'counsel-describe-function)
+;; (global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+;; (global-set-key (kbd "<f1> l") 'counsel-load-library)
+;; (global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+;; (global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Focus Mode
+(require 'focus)
+(global-set-key (kbd "C-S-c C-S-f") 'focus-mode)
+
+;; Smooth Scroll
+(require 'smooth-scroll)
+
+;; dired tab
+(use-package dired-subtree :ensure t
+  :after dired
+  :config
+  (bind-key "<tab>" #'dired-subtree-toggle dired-mode-map)
+  (bind-key "<backtab>" #'dired-subtree-cycle dired-mode-map))
+
+
+;; Theme Stuff
+;; spaceline
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+
+(load-theme 'flatland)
+;;(nyan-mode)
+;; Scroll 1 line with smooth scrolling
+(setq scroll-step           1
+      scroll-conservatively 10000)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(elfeed-search-date-face ((t :foreground "#f0f" :weight extra-bold :underline t)))
+ '(font-lock-comment-face ((t (:foreground "dim gray")))))
+;; custom-set-faces was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
+
+
+(put 'scroll-left 'disabled nil)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; HTTP Server ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ (require 'simple-httpd)
+ (setq httpd-root "~/www/")
+ (httpd-start)
+
+;; Exports goals.org to html and copies to http server location
+(defun publish-goals ()
+  (interactive)
+  (org-export-dispatch)
+  (let ((dest-file "~/www/index.html"))
+    (when (file-exists-p dest-file)
+      (delete-file dest-file))
+    (copy-file "~/owncloud/emacs/org/archive/goals.html" dest-file)))
+
+
+;; Start server for emacsclient
+(server-start)
+
+
+;; Data Gaps study shortcuts
+(global-set-key (kbd "C-c 1")
+                (lambda ()
+                  (interactive)
+                  (insert "contract-history::")))
+
+(global-set-key (kbd "C-c 2")
+                (lambda ()
+                  (interactive)
+                  (insert "oikodomeo")))
+
+(global-set-key (kbd "C-c 4") 'insert-header)
+(global-set-key (kbd "C-c 5") 'wrap-with-db-connection)
+
+(put 'dired-find-alternate-file 'disabled nil)
+
+
+
+
+;;;;; Slime
+;;(push "C:/acl90-smp.64/eli" load-path)
+;;(load "fi-site-init.el")
+;; (setq fi:common-lisp-image-name "C:/acl090-smp.64/allegro.exe")
+;; (setq fi:common-lisp-image-file "C:/acl090-smp.64/allegro.dxl")
+;; (setq fi:common-lisp-directory "C:/acl090-smp.64")
+
+(push "C:/Users/rhimmelwright/.emacs.d/elpa/slime-20160309.1431/" load-path)
+(require 'slime-autoloads)
+(require 'slime)
+(slime-setup '(slime-fancy slime-banner))
+(global-set-key "\C-cs" 'slime-selector)
+(setq slime-complete-symbol*-fancy t)
+(setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol)
+
+(add-hook 'slime-mode-hook 'auto-complete)
+(setq inferior-lisp-program "c:/Users/rhimmelwright/.emacs.d/elpa/slime-20160309.1431/start-swank.bat c:/acl100-smp.64/allegro.exe")
+
+(global-set-key (kbd "C-c e") 'slime-eval-last-expression)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;; IDO ;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq ido-enable-flex-matching nil)
+(setq ido-everywhere nil)
+(ido-mode 1)
+;;(global-set-key (kbd "C-x C-f") 'ido-find-file)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;; Cut Queue ;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq cut-queue '()) ;; sets initial cutqueue var
+
+(defun push-cut-queue (start end)
+  "Pushes the selected text to the cut-queue"
+  (interactive "r")
+  (let ((selected-text (buffer-substring-no-properties (mark) (point))))
+    (message (format "'%s' added to cut-queue." selected-text))
+    (setq cut-queue (cons selected-text cut-queue))))
+
+(defun pop-cut-queue ()
+  "Pops and returns the first item in the cut-queue"
+  (interactive)
+  (let ((head (car cut-queue))
+        (tail (cdr cut-queue)))
+    (setf cut-queue tail)
+    head))
+
+(defun view-cut-queue-contents ()
+  "Prints out the cut-queue list to the mini-buffer"
+  (interactive)
+  (message (format "%s" cut-queue)))
+
+(defun clear-cut-queue ()
+  "Clears contents of cut-queue"
+  (interactive)
+  (setq cut-queue '()))
+
+(defun paste-and-dequeue-cut-queue ()
+  "Pops item in the cut-queue and prints it to the buffer"
+  (interactive)
+  (while cut-queue
+    (insert (format "%s\n" (pop-cut-queue)))))
+
+(global-set-key (kbd "C-S-c c") 'push-cut-queue)
+(global-set-key (kbd "C-S-c p") 'paste-and-dequeue-cut-queue)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;; End Cut Queue ;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; Theme stuff
+;;(set-face-attribute 'region nil :background "#444")
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Slack ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;(el-get-bundle slack)
+
+(use-package alert
+  :commands (alert)
+  :init
+  (setq alert-default-style 'notifier))
+
+
+(put 'downcase-region 'disabled nil)
