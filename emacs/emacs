@@ -438,6 +438,9 @@ static char *gnus-pointer[] = {
 ;; Eshell launch keybind
 (global-set-key (kbd "C-c t") 'helm-themes)
 
+;; Crosshairs mode
+(global-set-key (kbd "C-c C-t") 'crosshairs-mode)
+
 ;; run allegro-common lisp
 (global-set-key (kbd "C-c l") 'fi:common-lisp)
 
