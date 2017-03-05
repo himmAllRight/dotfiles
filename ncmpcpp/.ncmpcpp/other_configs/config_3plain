@@ -1,0 +1,58 @@
+# -------------------------------------------------
+#
+#  File: ~/.ncmpcpp/config
+#  Author: xeNULL
+#
+# MPD ---------------------------------------------
+
+mpd_host = "127.0.0.1"
+mpd_port = "6600"
+mpd_music_dir = "/home/xenull/music/"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+# Visualizer
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "fifo"
+visualizer_type = "wave" (spectrum/wave)
+
+# Playlist
+song_columns_list_format = "(6f)[default]{l} (40)[default]{t|f} (25)[default]{a} (30)[default]{b}"
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+playlist_display_mode = "columns" (classic/columns)
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+# Bars
+song_status_format = "%t » %a »{ %b » }%y"
+#progressbar_look = "|] "
+progressbar_look = "━■"
+titles_visibility = "no"
+
+# Browser
+browser_playlist_prefix = "$2plist »$9 "
+browser_display_mode = "columns" (classic/columns)
+
+# Colors
+discard_colors_if_item_is_selected = "yes"
+header_window_color = "default"
+volume_color = "default"
+state_line_color = "default"
+state_flags_color = "default"
+main_window_color = "default"
+color1 = "default"
+color2 = "default"
+main_window_highlight_color = "default"
+progressbar_color = "default"
+statusbar_color = "default"
+active_column_color = "default"
+visualizer_color = "default"
+
+# Others
+song_window_title_format = "{%a - }{%t}{ - %b{ Disc %d}}|{%f}"
+search_engine_display_mode = "columns" (classic/columns)
+follow_now_playing_lyrics = "yes"
+display_screens_numbers_on_start = "no"
+clock_display_seconds = "yes"
+#execute_on_song_change = "twmnc -c \"$(ncmpcpp --now-playing %a' - '%t)\"

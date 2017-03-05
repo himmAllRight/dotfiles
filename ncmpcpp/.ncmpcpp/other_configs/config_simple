@@ -1,0 +1,57 @@
+# Host and music location
+mpd_host = "::"
+mpd_port = "6600"
+# /gamez is my big files folder
+mpd_music_dir = "/gamez/Music"
+
+# Playlist look
+playlist_display_mode = "classic"
+song_list_format = "$2{%a}|{%A}$8 $6-$8 $7%t$8"
+
+song_status_format = "$8%a$9 - $8%t$9"
+now_playing_prefix = "$b"
+now_playing_suffix = "$/b"
+
+header_visibility = "no"
+autocenter_mode = "yes"
+statusbar_visibility = "no"
+main_window_highlight_color = "white"
+discard_colors_if_item_is_selected = "no"
+
+# Progressbar look
+progressbar_look = "___"
+progressbar_color = "234"
+progressbar_elapsed_color = "white"
+progressbar_boldness = "no"
+
+# Misc
+display_bitrate = "no"
+enable_window_title = "no"
+
+# cheat sheet
+# %l - length
+# %f - filename
+# %D - directory
+# %a - artist
+# %t - title
+# %b - album
+# %y - year
+# %n - track number (01/12 -> 01)
+# %N - full track info (01/12 -> 01/12)
+# %g - genre
+# %c - composer
+# %p - performer
+# %d - disc
+# %C - comment
+# $R - begin right alignment
+  # colors
+  # $0 - default window color
+  # $1 - black
+  # $2 - red
+  # $3 - green
+  # $4 - yellow
+  # $5 - blue
+  # $6 - magenta
+  # $7 - cyan
+  # $8 - white
+  # $9 - end of current color
