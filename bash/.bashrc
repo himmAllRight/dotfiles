@@ -74,3 +74,5 @@ PS1="\[$(tput setaf 1)\]┌─╼ \[$(tput setaf 7)\][\u@\h:\w]\n\[$(tput setaf 
 BROWSER=/usr/bin/xdg-open
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+fish

@@ -23,16 +23,3 @@ alias aur-updates="cower -u | wc -l"
 # Ruby Path Env
 #set -gx PATH ~/.gem/ruby/2.3.0/bin $PATH
 #set -gx PATH "(ruby -e 'print Gem.user_dir')/bin:$PATH"
-
-# Perl Manual Path Env
-#set -gx PATH /usr/bin/core_perl $PATH
-
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
-
-# postgres path
-#set -gx PATH /usr/bin/core_perl $PATH
-
-## Pokemon Welcome Message
-/home/ryan/Network/Server-Node-Files/welcome-messages/welcome-script.sh 65
