@@ -18,7 +18,7 @@
  '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
  '(package-selected-packages
    (quote
-    (flatui-theme badwolf-theme flatland-theme smooth-scroll helm auto-complete recentf helm-swoop w3m spotify smartparens smart-mode-line slime rust-mode pretty-lambdada pianobar persistent-scratch org-pomodoro org-page multiple-cursors molokai-theme material-theme markdown-mode magit jazz-theme indent-guide highlight-parentheses hide-comnt helm-spotify flymd flymake-yaml erc-image badger-theme aggressive-indent ac-helm)))
+    (markdown-preview-mode flatui-theme badwolf-theme flatland-theme smooth-scroll helm auto-complete recentf helm-swoop w3m spotify smartparens smart-mode-line slime rust-mode pretty-lambdada pianobar persistent-scratch org-pomodoro org-page multiple-cursors molokai-theme material-theme markdown-mode magit jazz-theme indent-guide highlight-parentheses hide-comnt helm-spotify flymd flymake-yaml erc-image badger-theme aggressive-indent ac-helm)))
  '(scroll-bar-mode nil)
  '(sml/active-background-color "#34495e")
  '(sml/active-foreground-color "#ecf0f1")
