@@ -7,4 +7,4 @@
 
 
 (mapcar #'package-install 
-	'(recentf w3m multiple-cursors magit pianobar org-page auto-complete pretty-lambdada indent-guide smartparens persistent-scratch hide-comnt aggressive-indent molokai-theme badger-theme jazz-theme erc-image slime spotify helm helm-swoop helm-spotify material-theme smart-mode-line))
+	'(recentf w3m multiple-cursors magit pianobar org-page auto-complete pretty-lambdada indent-guide smartparens persistent-scratch hide-comnt aggressive-indent molokai-theme badger-theme jazz-theme erc-image slime spotify helm helm-swoop helm-spotify material-theme smart-mode-line badwolf-theme ac-helm smooth-scroll))
