@@ -1,51 +1,58 @@
+(setq sml/no-confirm-load-theme t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
-   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+   ["#26292c" "#ff4a52" "#40b83e" "#f6f080" "#afc4db" "#dc8cc3" "#93e0e3" "#f8f8f8"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (smart-mode-line-light)))
  '(custom-safe-themes
    (quote
-    ("6a37be365d1d95fad2f4d185e51928c789ef7a4ccf17e7ca13ad63a8bf5b922f" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" "2a12e95e9ee6ed57592e7df12f3f028205575e9b3affdb5e6fa589421c618136" "e56f1b1c1daec5dbddc50abd00fcd00f6ce4079f4a7f66052cf16d96412a09a9" default)))
+    ("604648621aebec024d47c352b8e3411e63bdb384367c3dd2e8db39df81b475f5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "15348febfa2266c4def59a08ef2846f6032c0797f001d7b9148f30ace0d08bcf" "c39ae5721fce3a07a27a685c08e4b856a13780dbc755a569bb4393c932f226d7" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(display-battery-mode t)
  '(display-time-mode t)
- '(fci-rule-color "#c7c7c7")
- '(font-use-system-font t)
- '(load-theme atom-dark)
+ '(fci-rule-color "#202325")
+ '(hl-paren-background-colors (quote ("#2492db" "#95a5a6" nil)))
+ '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
+ '(package-selected-packages
+   (quote
+    (flatui-theme badwolf-theme flatland-theme smooth-scroll helm auto-complete recentf helm-swoop w3m spotify smartparens smart-mode-line slime rust-mode pretty-lambdada pianobar persistent-scratch org-pomodoro org-page multiple-cursors molokai-theme material-theme markdown-mode magit jazz-theme indent-guide highlight-parentheses hide-comnt helm-spotify flymd flymake-yaml erc-image badger-theme aggressive-indent ac-helm)))
  '(scroll-bar-mode nil)
- '(size-indication-mode t)
+ '(sml/active-background-color "#34495e")
+ '(sml/active-foreground-color "#ecf0f1")
+ '(sml/inactive-background-color "#dfe4ea")
+ '(sml/inactive-foreground-color "#34495e")
  '(tool-bar-mode nil)
- '(vc-annotate-background "#d4d4d4")
+ '(vc-annotate-background "#1f2124")
  '(vc-annotate-color-map
    (quote
-    ((20 . "#437c7c")
-     (40 . "#336c6c")
-     (60 . "#205070")
-     (80 . "#2f4070")
-     (100 . "#1f3060")
-     (120 . "#0f2050")
-     (140 . "#a080a0")
-     (160 . "#806080")
-     (180 . "#704d70")
-     (200 . "#603a60")
-     (220 . "#502750")
-     (240 . "#401440")
-     (260 . "#6c1f1c")
-     (280 . "#935f5c")
-     (300 . "#834744")
-     (320 . "#732f2c")
-     (340 . "#6b400c")
-     (360 . "#23733c"))))
- '(vc-annotate-very-old-color "#23733c"))
+    ((20 . "#ff0000")
+     (40 . "#ff4a52")
+     (60 . "#f6aa11")
+     (80 . "#f1e94b")
+     (100 . "#f5f080")
+     (120 . "#f6f080")
+     (140 . "#41a83e")
+     (160 . "#40b83e")
+     (180 . "#b6d877")
+     (200 . "#b7d877")
+     (220 . "#b8d977")
+     (240 . "#b9d977")
+     (260 . "#93e0e3")
+     (280 . "#72aaca")
+     (300 . "#8996a8")
+     (320 . "#afc4db")
+     (340 . "#cfe2f2")
+     (360 . "#dc8cc3"))))
+ '(vc-annotate-very-old-color "#dc8cc3"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
+ '(default ((t (:family "Hack" :foundry "simp" :slant normal :weight normal :height 98 :width normal)))))
 
 
 
@@ -60,34 +67,29 @@
   )
 
 
-
-;; Ryan Added
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Load specific config files
-(load "~/.emacs_secret")		                     ; Personal stuff
-(load "~/dotfiles/emacs/emacs_linux")	     ; Linux Specifics
-;;(load "~/dotfiles/emacs/emacs_windows")    ; Windows Specifics (Boo)
-
+;; Emacs Configs
 ;; Backup all files in 1 place.
-(setq backup-directory-alist '(("." . "~/owncloud/emacs/backups")))
+(setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
 
  ;; Remove splash screen and use *scratch* as home
 (setq inhibit-startup-message t
-      inhibit-startup-echo-area-message t)  
+      inhibit-startup-echo-area-message t)
 
 ;; Load Smart-mode-lines
-;(require 'smart-mode-line)
+(require 'smart-mode-line)
 (sml/setup)
 
-;; Monitor thing
-(require 'symon)
-(symon-mode)
+(setq-default indent-tabs-mode nil)
 
 ;; Lines  on
 (global-linum-mode 1)
 
 ;; Menubar off by default
 (menu-bar-mode -1)
+
+;; remove splash screen and use *scratch*
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
 
 ;; Auto indent
 (define-key global-map (kbd "RET") 'newline-and-indent)
@@ -99,80 +101,59 @@
 (tooltip-mode -1)
 (setq tooltip-use-echo-area t)
 
-;; Redisplay pause
-(setq redisplay-dont-pause t)
+;; Toggle menubar keybind
+(global-set-key (kbd "C-c m") 'menu-bar-mode)
 
-
-;; Stuff to auto find files better
-;; ido path completemode
-(ido-mode 1)
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-
-;; ido version of imenu bind
-(global-set-key (kbd "M-i") 'ido-goto-symbol)
-
-;; Supercharge recentf
-(require 'recentf)
-
-;; get rid of `find-file-read-only' and replace it with something
-;; more useful.
-(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
-
-;; enable recent files mode.
-(recentf-mode t)
-
-; 50 files ought to be enough.
-(setq recentf-max-saved-items 50)
-
-(defun ido-recentf-open ()
-  "Use `ido-completing-read' to \\[find-file] a recent file"
-  (interactive)
-  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
-      (message "Opening file...")
-    (message "Aborting")))
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Org Mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Org-Mode Global list of my TODOs
-(setq org-agenda-files (list "~/owncloud/emacs/org/work.org"
-                             "~/owncloud/emacs/org/homeorg" 
-                             "~/owncloud/emacs/org/me.org"))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Add Wrap org-mode code with appropriate code section
+(defun org-code (start end)
+  (interactive "r")
+  (let ((selected-text (buffer-substring (mark) (point)))
+        (db-name (read-from-minibuffer "Language[common-lisp]: ")))
+    (when (eq db-name "")
+      (setf db-name "common-lisp"))
+    (kill-region start end)
+    (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
 
 ;; Persistent Clocking
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
 
+;; Default Table Params
+(setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;; Applications ;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Twittering
-(require 'twittering-mode)
-(setq twittering-use-master-password t)
+;; Org Pomodoro ;;
+;; Setup pomodoro timer keybind
+(global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
+(global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
 
-;; EMMS Multimendia player
-(require 'emms-setup)
-(emms-standard)
-(emms-default-players)
+(defun org-pomodoro-get-times ()
+  (interactive)
+  (message "work length: %s  short break: %s  long break: %s"
+           org-pomodoro-length
+           org-pomodoro-short-break-length
+           org-pomodoro-long-break-length))
 
-'(elfeed-feeds
-   (quote
-    ("http://www.theminimalists.com/feed/" "http://feeds.feedburner.com/StudyHacks" "http://www.rowdykittens.com/feed/" "http://zenhabits.net/feed" "zenhabits.net/feed" "http://sachachua.com/blog/feed/")))
+(defun org-pomodoro-set-pomodoro ()
+  (interactive)
+  (setf org-pomodoro-length 35)
+  (setf org-pomodoro-short-break-length 9)
+  (setf org-pomodoro-long-break-length 15))
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;; Key Bindings ;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; w3m
-(eval-after-load 'w3m
-  '(progn
-     (define-key w3m-mode-map "q" 'w3m-previous-buffer)
-     (define-key w3m-mode-map "w" 'w3m-next-buffer)
-     (define-key w3m-mode-map "x" 'w3m-close-window)))
+(org-pomodoro-set-pomodoro)
 
+(defun org-pomodoro-set-52-17 ()
+  (interactive)
+  (setf org-pomodoro-length 52)
+  (setf org-pomodoro-short-break-length 17)
+  (setf org-pomodoro-long-break-length 17))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Key Bindings  ;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Spell Check Word key-binds
 (global-set-key (kbd "C-c w") 'ispell-word)
 (global-set-key (kbd "C-c r") 'ispell-region)
@@ -183,9 +164,137 @@
 ;; Eshell launch keybind
 (global-set-key (kbd "C-c t") 'eshell)
 
-;; run allegro-common lisp
-(global-set-key (kbd "C-c l") 'fi:common-lisp)
+;; Previous Window shortcut
+(global-set-key (kbd "C-x p")
+                (lambda() (interactive) (other-window -1)))
+(global-set-key (kbd "C-x O")
+                (lambda() (interactive) (switch-window)))
+(global-set-key (kbd "C-x o")
+                (lambda() (interactive) (other-window 1)))
+(global-set-key (kbd "C-x \)")
+                (lambda() (interactive) (other-frame 1)))
+(global-set-key (kbd "C-x 0")
+                (lambda() (interactive) (delete-window)))
 
-;; run elfeed keybind
-(global-set-key (kbd "C-c p") 'elfeed)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Helm ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'helm)
+(require 'helm-config)
+(require 'ac-helm)
 
+;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
+;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
+;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.
+(global-set-key (kbd "C-c h") 'helm-command-prefix)
+(global-unset-key (kbd "C-x c"))
+
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
+(define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
+
+(when (executable-find "curl")
+  (setq helm-google-suggest-use-curl-p t))
+
+(setq helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
+      helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
+      helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
+      helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
+      helm-ff-file-name-history-use-recentf t)
+
+(helm-mode 1)
+
+(global-set-key (kbd "C-c h") 'helm-mini)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+
+(global-set-key (kbd "C-r") 'helm-recentf)
+(global-set-key (kbd "C-s") 'helm-swoop)
+(global-set-key (kbd "M-s") 'helm-multi-swoop-current-mode)
+
+(helm-autoresize-mode t)
+
+(setq helm-swoop-speed-or-color t)
+(set-face-attribute 'helm-selection nil
+                    :background "purple"
+                    :foreground "white")
+
+;; (global-set-key (kbd "M-i") 'helm-swoop)
+ (global-set-key (kbd "M-l") 'helm-multi-swoop)
+
+
+
+
+;;; IDE Stuff
+
+(defun zoom-window ()
+  (interactive)
+  (if zoom-temp-window-configuration
+      (progn
+        (set-window-configuration zoom-temp-window-configuration)
+        (setq zoom-temp-window-configuration nil)
+        (message "Window un-zoomed"))
+    (progn
+      (setq zoom-temp-window-configuration (current-window-configuration))
+      (delete-other-windows)
+      (message "Window zoomed"))))
+;; Keybind
+(global-set-key (kbd "C-c z") 'zoom-window)
+
+;; Crates a commented code section header
+(defun create-header (in-string &optional width)
+  (unless width
+    (setf width 80))
+
+  (let*  ((comment-char ?\;)
+          (outString (concatenate 'string " " in-string " "))
+          (side-buffer-count (/ (- width (length outString)) 2))
+          (middle-line (concatenate 'string
+                                    (make-string side-buffer-count comment-char)
+                                    " " in-string " "
+                                    (make-string
+                                     (- width (+ side-buffer-count (length outString)))
+                                     comment-char)))
+          (buffer (make-string width comment-char)))
+
+    (concatenate 'string buffer "\n" middle-line "\n" buffer)))
+
+
+;; Prompts user for Header text and option width, and inserts header into buffer.
+(defun insert-header (in-string &optional width)
+  (interactive "r")
+  (let ((in-string (read-from-minibuffer "Header Text: "))
+        (width (read-from-minibuffer "Width (Enter for default [80]): ")))
+    (message width)
+    (if (eq width "")
+        (setf width 80)
+      (setf width (string-to-number width)))
+    (insert (length in-string))
+    (message (width))
+    (when (> (+ 2 (length in-string)) width)
+      (error "Error: Header string is too long. String can at max (width - 2) characters long."))
+
+    (insert (create-header in-string width))))
+
+;; Smooth Scroll
+(require 'smooth-scroll)
+
+;; Eshell clear
+(defun eshell-clear-buffer ()
+  "Clear terminal"
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)
+    (eshell-send-input)))
+
+(add-hook 'eshell-mode-hook
+      '(lambda()
+         (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
+
+(global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
+
+
+
+
+(load-theme 'badwolf)
