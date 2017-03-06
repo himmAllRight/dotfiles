@@ -8,11 +8,11 @@ After setting it all up, I decided to just start from scratch with a new reposit
 ## Using Stow and dotfiles
 If you haven't read it, I would highly suggest reading the post I have linked above. But in the meantime, I can provide a quick summary of how my dotfiles are setup. 
 
-<center>![My Dotfiles Dir](doc/dotfiles.png)</center>
+![My Dotfiles Dir](doc/dotfiles.png)
 
 Each application has an associated subdirectory (ex: `dotfiles/emacs`), which contains all of the dotfiles/folders associated with that application. I treat each application directory like my `~`, and fill it with my configuration files. For example, my `vim` directory has my `.vimrc`, as well as my `.vim/colors/` directory. This is so that when I use stow, it will properly place them as such in `~`.
 
-<center>![My Dotfiles Dir](doc/vim-dots.png)</center>
+![Vim dotfiles directory](doc/vim-dots.png)
 
 When I setup my dotfiles on a new system, or install an application that I have dotfiles saved for, setting them up is as easy as typing:
 
@@ -20,7 +20,7 @@ When I setup my dotfiles on a new system, or install an application that I have 
  
 GNU Stow then links my dotfiles under my home directory. In my vim example, this means symlinks are created for `~/.vimrc` and `~/.vim/colors/*`, pointing to their respective locations in `~/dotfiles/vim/`.
 
-<center>![My Dotfiles Dir](doc/vim-home.png)</center>
+![Vim dotfiles in Home](doc/vim-home.png)
 
 I think this setup is great, because initializing an application's directory is so simple, and I can choose to only initialize specific sub-directories. 
 
