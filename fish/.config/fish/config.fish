@@ -18,6 +18,9 @@ alias tn="tmux new-session -s $1"
 alias pacman-updates="pacman -Qqu | wc -l"
 alias aur-updates="cower -u | wc -l"
 
+# git
+alias gits="git status"
+
 # Solus
 
 # Ruby Path Env
