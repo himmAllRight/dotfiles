@@ -2,10 +2,16 @@
 ;; windows computers at work.
 
 ;; Allegro LISP paths
-(push "~/Builds/acl90express/eli" load-path)
-(load "fi-site-init.el")
-(setq fi:common-lisp-image-name "~/Builds/acl90express/alisp")
-(setq fi:common-lisp-image-file "~/Builds/acl90express/alisp.dxl")
-(setq fi:common-lisp-directory "~/")
+;; (push "~/Builds/acl90express/eli" load-path)
+;; (load "fi-site-init.el")
+;; (setq fi:common-lisp-image-name "~/Builds/acl90express/alisp")
+;; (setq fi:common-lisp-image-file "~/Builds/acl90express/alisp.dxl")
+;; (setq fi:common-lisp-directory "~/")
 
 
+(defun with-no-drawer (func &rest args)
+  (interactive "P")
+  (let ((org-log-into-drawer (not (car args))))
+    (funcall func)))
+
+(advice-add 'org-add-note :around #'with-no-drawer)

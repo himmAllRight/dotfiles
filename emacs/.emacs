@@ -10,15 +10,67 @@
  '(column-number-mode t)
  '(custom-safe-themes
    (quote
-    ("604648621aebec024d47c352b8e3411e63bdb384367c3dd2e8db39df81b475f5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "15348febfa2266c4def59a08ef2846f6032c0797f001d7b9148f30ace0d08bcf" "c39ae5721fce3a07a27a685c08e4b856a13780dbc755a569bb4393c932f226d7" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+    ("64ca5a1381fa96cb86fd6c6b4d75b66dc9c4e0fc1288ee7d914ab8d2638e23a9" "721bb3cb432bb6be7c58be27d583814e9c56806c06b4077797074b009f322509" "946e871c780b159c4bb9f580537e5d2f7dba1411143194447604ecbaf01bd90c" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "604648621aebec024d47c352b8e3411e63bdb384367c3dd2e8db39df81b475f5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "15348febfa2266c4def59a08ef2846f6032c0797f001d7b9148f30ace0d08bcf" "c39ae5721fce3a07a27a685c08e4b856a13780dbc755a569bb4393c932f226d7" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+ '(diary-entry-marker (quote font-lock-variable-name-face))
  '(display-battery-mode t)
  '(display-time-mode t)
+ '(emms-mode-line-icon-image-cache
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
+static char *note[] = {
+/* width height num_colors chars_per_pixel */
+\"    10   11        2            1\",
+/* colors */
+\". c #1fb3b3\",
+\"# c None s None\",
+/* pixels */
+\"###...####\",
+\"###.#...##\",
+\"###.###...\",
+\"###.#####.\",
+\"###.#####.\",
+\"#...#####.\",
+\"....#####.\",
+\"#..######.\",
+\"#######...\",
+\"######....\",
+\"#######..#\" };")))
  '(fci-rule-color "#202325")
+ '(font-use-system-font t)
+ '(gnus-logo-colors (quote ("#528d8d" "#c0c0c0")))
+ '(gnus-mode-line-image-cache
+   (quote
+    (image :type xpm :ascent center :data "/* XPM */
+static char *gnus-pointer[] = {
+/* width height num_colors chars_per_pixel */
+\"    18    13        2            1\",
+/* colors */
+\". c #1fb3b3\",
+\"# c None s None\",
+/* pixels */
+\"##################\",
+\"######..##..######\",
+\"#####........#####\",
+\"#.##.##..##...####\",
+\"#...####.###...##.\",
+\"#..###.######.....\",
+\"#####.########...#\",
+\"###########.######\",
+\"####.###.#..######\",
+\"######..###.######\",
+\"###....####.######\",
+\"###..######.######\",
+\"###########.######\" };")))
  '(hl-paren-background-colors (quote ("#2492db" "#95a5a6" nil)))
  '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
+ '(notmuch-search-line-faces
+   (quote
+    (("unread" :foreground "#aeee00")
+     ("flagged" :foreground "#0a9dff")
+     ("deleted" :foreground "#ff2c4b" :bold t))))
  '(package-selected-packages
    (quote
-    (markdown-preview-mode flatui-theme badwolf-theme flatland-theme smooth-scroll helm auto-complete recentf helm-swoop w3m spotify smartparens smart-mode-line slime rust-mode pretty-lambdada pianobar persistent-scratch org-pomodoro org-page multiple-cursors molokai-theme material-theme markdown-mode magit jazz-theme indent-guide highlight-parentheses hide-comnt helm-spotify flymd flymake-yaml erc-image badger-theme aggressive-indent ac-helm)))
+    (alect-themes airline-themes color-theme-sanityinc-solarized color-theme-buffer-local yoshi-theme markdown-preview-mode flatui-theme badwolf-theme flatland-theme smooth-scroll helm auto-complete recentf helm-swoop w3m spotify smartparens smart-mode-line slime rust-mode pretty-lambdada pianobar persistent-scratch org-pomodoro org-page multiple-cursors molokai-theme material-theme markdown-mode magit jazz-theme indent-guide highlight-parentheses hide-comnt helm-spotify flymd flymake-yaml erc-image badger-theme aggressive-indent ac-helm)))
  '(scroll-bar-mode nil)
  '(sml/active-background-color "#34495e")
  '(sml/active-foreground-color "#ecf0f1")
@@ -298,3 +350,4 @@
 
 
 (load-theme 'badwolf)
+(put 'dired-find-alternate-file 'disabled nil)
