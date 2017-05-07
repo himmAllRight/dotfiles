@@ -1,10 +1,15 @@
+# Navigation
+alias dotfiles="cd /home/ryan/dotfiles/"
+
 # Radio
 alias jblive="mpv http://jblive.fm"
 alias jbliveV="mpv rtsp://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream"
 alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.pls"
 
-# Other
+# Net
 alias getIP="curl -s icanhazip.com"
+
+# Tmux
 alias ta="tmux attach-session -t $1"
 alias tn="tmux new-session -s $1"
 
