@@ -12,7 +12,7 @@ general {
 }
 
 order += "disk /"
-order += "disk /Data"
+order += "disk /Data/"
 # order += "wireless wlan0"
 # order += "ethernet eth0"
 order += "battery 0"
@@ -62,11 +62,15 @@ load {
 }
 
 disk "/" {
-        format = "/  : %used/%total "
+        format = "/Data  : %used/%total "
 }
 
-disk "/Data" {
+disk "/Data/" {
         format = "/Data: %used/%total "
+}
+
+disk "/var/" {
+        format = "/var: %used/%total "
 }
 
 
