@@ -194,7 +194,7 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 
 ## Gaps/ borders
 gaps inner 7
-gaps outer 10
+gaps outer 7
 
 new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
@@ -203,11 +203,12 @@ bindsym $mod+u border toggle
 exec xrandr --dpi 90
 
 ## Volume Key Binds
-bindsym $mod+shift+period exec amixer -D pulse sset Master 2%+
-bindsym $mod+shift+comma exec amixer -D pulse sset Master 2%-
+bindsym $mod+period exec amixer -D pulse sset Master 2%+
+bindsym $mod+comma exec amixer -D pulse sset Master 2%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
+bindsym $mod++p exec passmenu
    
 ## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
