@@ -23,7 +23,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec mate-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -198,7 +198,7 @@ new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
 
 ## DPI
-exec xrandr --dpi 100
+exec xrandr --dpi 90
 
 ## Volume Key Binds
 bindsym $mod+shift+period exec amixer -c 0 -q set Master 2dB+
@@ -209,10 +209,10 @@ bindsym $mod+shift+m exec amixer -q set Master toggle
    
 ## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
-exec mpd ~/.config/mpd/mpd.conf &
+#exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
-exec volumeicon &
+#exec volumeicon &
 exec nm-applet &
-exec compton &
-exec davmail &
+#exec compton &
+#exec davmail &
 exec ~/.startup
