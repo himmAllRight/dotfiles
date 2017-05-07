@@ -203,8 +203,8 @@ bindsym $mod+u border toggle
 exec xrandr --dpi 90
 
 ## Volume Key Binds
-bindsym $mod+shift+period exec amixer -c 0 -q set Master 2dB+
-bindsym $mod+shift+comma exec amixer -c 0 -q set Master 2dB-
+bindsym $mod+shift+period exec amixer -D pulse sset Master 2%+
+bindsym $mod+shift+comma exec amixer -D pulse sset Master 2%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
