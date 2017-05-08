@@ -97,8 +97,8 @@ set $WS5 Music
 set $WS6 Chat
 set $WS7 Network
 set $WS8 Games
-set $WS9 Other
-set $WS0 Other
+set $WS9 Other0
+set $WS0 Other1
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -217,5 +217,7 @@ exec --no-startup-id nitrogen --restore &
 #exec volumeicon &
 exec nm-applet &
 #exec compton &
-#exec davmail &
+exec davmail &
+exec redshift-gtk &
+exec rescuetime &
 exec ~/.startup
