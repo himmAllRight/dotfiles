@@ -208,8 +208,8 @@ bindsym $mod+comma exec amixer -D pulse sset Master 2%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
-bindsym $mod++p exec passmenu
-   
+bindsym $mod+p exec passmenu
+
 ## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
 #exec mpd ~/.config/mpd/mpd.conf &
