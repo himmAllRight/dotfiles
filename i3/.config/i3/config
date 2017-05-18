@@ -89,16 +89,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Workspace names
-set $WS1 ♋ Main
-set $WS2 ツ Web
-set $WS3 ☢ Emacs
-set $WS4 ✉ Mail
-set $WS5 ☘ Music
-set $WS6 ✆ Chat
-set $WS7 ☠ Network
-set $WS8 ➑ Games
-set $WS9 ➒ Other
-set $WS0 ➓ Other
+set $WS1 Main
+set $WS2 Web
+set $WS3 Dev
+set $WS4 Mail
+set $WS5 Music
+set $WS6 Chat
+set $WS7 Network
+set $WS8 Games
+set $WS9 Other0
+set $WS0 Other1
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -190,9 +190,11 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 #Ryan Add Ons
 ####
 
+
+
 ## Gaps/ borders
 gaps inner 7
-gaps outer 10
+gaps outer 7
 
 new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
@@ -201,12 +203,13 @@ bindsym $mod+u border toggle
 exec xrandr --dpi 90
 
 ## Volume Key Binds
-bindsym $mod+shift+period exec amixer -c 0 -q set Master 2dB+
-bindsym $mod+shift+comma exec amixer -c 0 -q set Master 2dB-
+bindsym $mod+period exec amixer -D pulse sset Master 2%+
+bindsym $mod+comma exec amixer -D pulse sset Master 2%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
-   
+bindsym $mod+p exec passmenu
+
 ## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
 #exec mpd ~/.config/mpd/mpd.conf &
@@ -214,5 +217,7 @@ exec --no-startup-id nitrogen --restore &
 #exec volumeicon &
 exec nm-applet &
 #exec compton &
-#exec davmail &
+exec davmail &
+exec redshift-gtk &
+exec rescuetime &
 exec ~/.startup

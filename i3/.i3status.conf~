@@ -12,10 +12,11 @@ general {
 }
 
 order += "disk /"
-order += "disk /Data"
+order += "disk /var/"
+order += "disk /Data/"
 # order += "wireless wlan0"
 # order += "ethernet eth0"
-order += "battery 0"
+#order += "battery 0"
 order += "cpu_temperature 0"
 order += "cpu_usage"
 order += "volume master"
@@ -62,11 +63,15 @@ load {
 }
 
 disk "/" {
-        format = "/  : %used/%total "
+        format = "/: %used/%total "
 }
 
-disk "/Data" {
-        format = "/Data: %used/%total "
+disk "/Data/" {
+        format = "/Data Test: %used/%total "
+}
+
+disk "/var/" {
+        format = "/var: %used/%total "
 }
 
 
