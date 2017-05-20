@@ -1,43 +1,30 @@
-# Should you change your keyboard layout somewhen, delete
-# this file and re-run i3-config-wizard(1).
-#
+## Ryan i3 config
 
-# i3 config file (v4)
-#
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
+## Modifier Key
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:Arial Black 9
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, if you need a lot of unicode glyphs or
-# right-to-left text rendering, you should instead use pango for rendering and
-# chose a FreeType font, such as:
-# font pango:DejaVu Sans Mono 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec gnome-terminal
 
-# kill focused window
+## kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-#bindsym $mod+d exec dmenu_run -p drad$ -nb '#222222' -nf '#990099' -sb '#222222' -sf '#BF7119'
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+## Launcher, rofi
+bindsym $mod+d exec rofi -show run 
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 
-bindsym $mod+w exec rofi -show window 
-bindsym $mod+d exec rofi -show run -bg '#222222'
-
+####################
+##### Movement #####
+####################
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -86,20 +73,24 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+c focus child
 
-# Workspace names
-set $WS1 Main
-set $WS2 Web
-set $WS3 Dev
-set $WS4 Mail
-set $WS5 Music
-set $WS6 Chat
-set $WS7 Network
-set $WS8 Games
-set $WS9 Other0
-set $WS0 Other1
 
+
+####################
+#### Workspaces ####
+####################
+set $WS1   "1:   Main "
+set $WS2   "2:   Web "
+set $WS3   "3: λ  Code "
+set $WS4   "4:   Mail "
+set $WS5   "5:   Music "
+set $WS6   "6:   Chat "
+set $WS7   "7:   Network "
+set $WS8   "8:   Games "
+set $WS9   "9:   VMs "
+set $WS0  "10:   Other "
+ 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
 bindsym $mod+2 workspace $WS2
@@ -124,6 +115,35 @@ bindsym $mod+Shift+8 move container to workspace $WS8
 bindsym $mod+Shift+9 move container to workspace $WS9
 bindsym $mod+Shift+0 move container to workspace $WS0
 
+## Assign applications to workspaces
+## Main
+## Web
+assign [class="(?i)firefox"] → $WS2
+## Dev
+assign [class="(?i)emacs"] → $WS3
+assign [class="(?i)ghostwriter"] → $WS3
+## Mail
+assign [class="(?i)thunderbird"] → $WS4
+## Music
+assign [class="(?i)spotify"] → $WS5
+assign [class="(?i)pithos"] → $WS5
+## Chat
+assign [class="(?i)quasselclient"] → $WS6
+assign [class="(?i)telegram"] → $WS6
+## Network
+## Games
+assign [class="(?i)steam"] → $WS8
+## VMs
+assign [class="(?i)virt-manager"] → $WS9
+assign [class="(?i)virtualbox"] → $WS9
+## Other
+
+
+
+
+####################
+# MISC Keybindings #
+####################
 # Music Next, Prev, Pause/Play
 bindsym $mod+Shift+n exec playerctl next
 bindsym $mod+Shift+b exec playerctl previous
@@ -163,25 +183,40 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+
+
+####################
+#### Status Bar ####
+####################
+## Status Base
 bar {
-        status_command i3blocks
-        position top
+        status_command          i3blocks
+        tray_output             primary
+        separator_symbol        "|"
+        workspace_buttons       yes
+        strip_workspace_numbers yes
+        #position                top
+
+    colors {
+            background  #212121
+            statusline  #DDDDDD
+            separator   #777777
+            # class             border  backgr. text
+            focused_workspace   #777777 #2e004d #FFFFFF
+            active_workspace    #212121 #212121 #FFFFFF
+            inactive_workspace  #212121 #212121 #86888C
+            urgent_workspace    #2F343A #e65c00 #FFFFFF
+}
 	}
 
-
+####################
+## Theme & Looks ###
+####################
 # window colours:         border background text
-client.focused            #61778D #111111 #ffffff
+client.focused            #777777 #222222 #ffffff
 client.focused_inactive   #444444 #333333 #888888
 client.unfocused          #444444 #333333 #444444
 client.urgent             #0F0F0F #BC9B54 #E5E5E5
-
-##### 
-#Ryan Add Ons
-####
-
-
 
 ## Gaps/ borders
 gaps inner 7
