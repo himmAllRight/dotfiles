@@ -22,6 +22,9 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec rofi -show run 
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
+## Pass menu
+bindsym $mod+p exec passmenu -sb "#2e004d"
+
 ####################
 ##### Movement #####
 ####################
@@ -195,7 +198,7 @@ bar {
         separator_symbol        "|"
         workspace_buttons       yes
         strip_workspace_numbers yes
-        #position                top
+        position                top
 
     colors {
             background  #212121
@@ -233,8 +236,6 @@ bindsym $mod+period exec amixer -D pulse sset Master 2%+
 bindsym $mod+comma exec amixer -D pulse sset Master 2%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
-
-bindsym $mod+p exec passmenu
 
 ## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
