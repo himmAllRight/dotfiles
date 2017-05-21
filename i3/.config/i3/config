@@ -200,7 +200,7 @@ bar {
         separator_symbol        "|"
         workspace_buttons       yes
         strip_workspace_numbers yes
-        #position                top
+        position                top
 
     colors {
             background  #212121
@@ -234,10 +234,13 @@ bindsym $mod+u border toggle
 exec xrandr --dpi 90
 
 ## Volume Key Binds
-bindsym $mod+period exec amixer -D pulse sset Master 2%+
-bindsym $mod+comma exec amixer -D pulse sset Master 2%-
+bindsym $mod+period exec amixer -D pulse sset Master 5%+
+bindsym $mod+comma exec amixer -D pulse sset Master 5%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
+## Backlight Keybinds
+bindsym $mod+F8 exec xbacklight -dec 5
+bindsym $mod+F9 exec xbacklight -inc 5
 
 ## Autoload Applications
 exec --no-startup-id nitrogen --restore &
