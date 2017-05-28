@@ -10,7 +10,7 @@ fi
 
 # Main
 #exec dbus-launch --exit-with-session openbox-session 
-#exec dbus-launch --exit-with-session i3 & owncloud 
+exec dbus-launch --exit-with-session i3 
 #exec awesome 
 
 #xbindkeys 
@@ -30,4 +30,4 @@ fi
 
 #exec dbus-launch --exit-with-session mate-session
 
-exec gnome-session
+#exec gnome-session

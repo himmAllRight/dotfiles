@@ -12,7 +12,8 @@ font pango:Arial Black 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec mate-terminal
 #bindsym $mod+Return exec gnome-terminal
 
 ## kill focused window
