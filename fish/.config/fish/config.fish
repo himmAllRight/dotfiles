@@ -25,3 +25,5 @@ alias gits="git status"
 # Ruby Path Env
 #set -gx PATH ~/.gem/ruby/2.3.0/bin $PATH
 #set -gx PATH "(ruby -e 'print Gem.user_dir')/bin:$PATH"
+#
+bash /home/ryan/Network/Server-Node-Files/welcome-messages/welcome-script.sh 65
