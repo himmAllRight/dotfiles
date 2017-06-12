@@ -31,3 +31,5 @@ exec dbus-launch --exit-with-session i3
 #exec dbus-launch --exit-with-session mate-session
 
 #exec gnome-session
+
+#exec budgie-desktop
