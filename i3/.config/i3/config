@@ -29,6 +29,9 @@ bindsym $mod+Tab exec --no-startup-id rofi -show window
 ## Pass menu
 bindsym $mod+p exec passmenu -sb "#2e004d"
 
+## gnome-control-center
+bindsym $mod+g exec gnome-control-center
+
 ####################
 ##### Movement #####
 ####################
