@@ -62,6 +62,7 @@
     i3blocks-gaps
     rofi
     rofi-pass
+    dmenu
     
   # Fonts
     hack-font
@@ -78,6 +79,7 @@
     owncloud-client ## Nextcloud?
     mpv
     youtube-dl
+    
   ];
 
   # List services that you want to enable:
