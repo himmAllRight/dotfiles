@@ -37,16 +37,31 @@
     htop
     vim
     tmux
-    zip
+    unzip
+    acpi
+    acpitool
+    xorg.xbacklight
 
   # Virt
     libvirt
     qemu
     kvm
     virtmanager
+    vagrant
+    lxc
 
   # Dev
     git
+
+  # DM/WM
+    i3-gaps
+    i3blocks-gaps
+    rofi
+    rofi-pass
+    
+  # Fonts
+    hack-font
+    font-awesome-ttf
 
   # Desktop
     tdesktop
