@@ -41,6 +41,7 @@
     acpi
     acpitool
     xorg.xbacklight
+    stow
 
   # Virt
     libvirt
@@ -52,6 +53,9 @@
 
   # Dev
     git
+    emacs
+    clojure
+    leiningen
 
   # DM/WM
     i3-gaps
@@ -71,9 +75,19 @@
     pass
     gnupg
     kgpg
+    owncloud-client ## Nextcloud?
+    mpv
+    youtube-dl
   ];
 
   # List services that you want to enable:
+  
+  powerManagement.enable = true;
+
+  hardware.pulseaudio = {
+    enable = true;
+    package = pkgs.pulseaudioFull;
+  };
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
