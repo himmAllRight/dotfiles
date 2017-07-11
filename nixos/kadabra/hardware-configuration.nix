@@ -22,13 +22,8 @@
       fsType = "vfat";
     };
 
-  fileSystems."/ZFS" =
-    { device = "ZFS";
-      fsType = "zfs";
-    };
-
   fileSystems."/Data" =
-    { device = "ZFS/Data";
+    { device = "Data";
       fsType = "zfs";
     };
 
