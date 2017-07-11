@@ -14,7 +14,12 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.supportedFilesystems = [ "zfs" ];
+  
+
+
   networking.hostName = "kadabra"; # Define your hostname.
+  networking.hostId = "a8c04001";
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
 
@@ -35,6 +40,7 @@
     wget
     fish
     htop
+    ncdu
     vim
     tmux
     unzip
@@ -42,6 +48,11 @@
     acpitool
     xorg.xbacklight
     stow
+    gptfdisk
+    gparted
+
+    zfs
+    zfstools
 
   # Virt
     libvirt
