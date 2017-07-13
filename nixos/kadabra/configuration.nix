@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # LUKS Disk
+  # LUKS device
   boot.initrd.luks.devices = [
     {
       name = "root";
@@ -23,10 +23,10 @@
       allowDiscards = true;
     }
   ];
- 
-  networking.hostName = "kadabra"; # Define your hostname.
 
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.hostName = "kadabra"; # Define your hostname.
+  
+# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
 
   # Select internationalisation properties.
@@ -44,6 +44,7 @@
   environment.systemPackages = with pkgs; [
   # System  
     wget
+    sshuttle
     fish
     htop
     ncdu
@@ -87,6 +88,7 @@
     quasselClient
     firefox
     thunderbird
+    libreoffice
     pass
     gnupg
     kgpg
@@ -113,6 +115,7 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
+  networking.firewall.checkReversePath = false;  
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
