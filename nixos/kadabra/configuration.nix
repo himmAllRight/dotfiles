@@ -14,7 +14,18 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # LUKS Disk
+  boot.initrd.luks.devices = [
+    {
+      name = "root";
+      device = "/dev/disk/by-uuid/69a21cb3-3560-4a43-a4ca-046fc4b64ce0";
+      preLVM = true;
+      allowDiscards = true;
+    }
+  ];
+ 
   networking.hostName = "kadabra"; # Define your hostname.
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;
 
@@ -35,18 +46,41 @@
     wget
     fish
     htop
+    ncdu
     vim
     tmux
-    zip
+    unzip
+    acpi
+    acpitool
+    xorg.xbacklight
+    stow
+    gptfdisk
+    gparted
 
   # Virt
     libvirt
     qemu
     kvm
     virtmanager
+    vagrant
+    lxc
 
   # Dev
     git
+    emacs
+    clojure
+    leiningen
+
+  # DM/WM
+    i3-gaps
+    i3blocks-gaps
+    rofi
+    rofi-pass
+    dmenu
+    
+  # Fonts
+    hack-font
+    font-awesome-ttf
 
   # Desktop
     tdesktop
@@ -56,9 +90,20 @@
     pass
     gnupg
     kgpg
+    owncloud-client ## Nextcloud?
+    mpv
+    youtube-dl
+    
   ];
 
   # List services that you want to enable:
+  
+  powerManagement.enable = true;
+
+  hardware.pulseaudio = {
+    enable = true;
+    package = pkgs.pulseaudioFull;
+  };
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
