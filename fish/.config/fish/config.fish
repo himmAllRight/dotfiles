@@ -25,3 +25,7 @@ alias gits="git status"
 # Ruby Path Env
 #set -gx PATH ~/.gem/ruby/2.3.0/bin $PATH
 #set -gx PATH "(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
+# Go Path Env
+set -x GOPATH $HOME/Documents/Programming/golang/
+set -gx PATH $PATH ~/Documents/Programming/golang/bin/
