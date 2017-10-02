@@ -29,3 +29,5 @@ alias gits="git status"
 # Go Path Env
 set -x GOPATH $HOME/Documents/Programming/golang/
 set -gx PATH $PATH ~/Documents/Programming/golang/bin/
+
+set -gx EDITOR vim
