@@ -1,5 +1,6 @@
 # Navigation
 alias dotfiles="cd /home/ryan/dotfiles/"
+alias smb-drives="cd /run/user/1000/gvfs/"
 
 # Radio
 alias jblive="mpv http://jblive.fm"

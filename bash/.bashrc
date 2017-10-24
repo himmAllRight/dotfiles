@@ -1,3 +1,5 @@
+source /usr/share/defaults/etc/profile
+
 if [ -f /etc/bash_completion ]; then
 	    . /etc/bash_completion
 fi
@@ -66,13 +68,15 @@ alias getIP="curl -s icanhazip.com"
 alias ta="tmux attach-session -t $1"
 alias tn="tmux new-session -s $1"
 
+alias smb-drives="cd /run/user/1000/gvfs/"
+
 # prompt
 
-#PS1='[\u@\h \w]\$ '
-PS1="\[$(tput setaf 1)\]┌─╼ \[$(tput setaf 7)\][\u@\h:\w]\n\[$(tput setaf 1)\]\$(if [[ \$? == 0 ]]; then echo \"\[$(tput setaf 1)\]└────╼\"; else echo \"\[$(tput setaf 1)\]└╼\"; fi) \[$(tput setaf 7)\]"
+PS1='[\u@\h \w]\$ '
+#PS1="\[$(tput setaf 1)\]┌─╼ \[$(tput setaf 7)\][\u@\h:\w]\n\[$(tput setaf 1)\]\$(if [[ \$? == 0 ]]; then echo \"\[$(tput setaf 1)\]└────╼\"; else echo \"\[$(tput setaf 1)\]└╼\"; fi) \[$(tput setaf 7)\]"
 
 BROWSER=/usr/bin/xdg-open
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-fish
+
