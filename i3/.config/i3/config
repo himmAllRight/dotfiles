@@ -147,7 +147,7 @@ assign [class="(?i)virtualbox"] → $WS9
 # Music Next, Prev, Pause/Play
 bindsym $mod+Shift+n exec playerctl next
 bindsym $mod+Shift+b exec playerctl previous
-bindsym $mod+Shift+p exec playerctl play-pause
+bindsym $mod+p exec playerctl play-pause
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -156,6 +156,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+#bindsym $mod+Shift+x exec locker
+bindsym $mod+Shift+w exec mate-screensaver-command -l
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -234,16 +236,18 @@ bindsym $mod+comma exec amixer -D pulse sset Master 2%-
 bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
-bindsym $mod+p exec passmenu
+bindsym $mod+shift+p exec passmenu
 
 ## Start Nitrogen when loaded
 exec --no-startup-id nitrogen --restore &
 #exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
 #exec volumeicon &
-exec nm-applet &
+exec --no-startup-id mate-setting-daemon
+exec --no-startup-id mate-power-manager
+exec --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id mate-menu
+exec /home/ryan/dotfiles/scripts/ctrl-caps
 #exec compton &
-exec davmail &
-exec redshift-gtk &
-exec rescuetime &
 exec ~/.startup

@@ -189,7 +189,8 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(kaolin-tribal
+   dotspacemacs-themes '(wombat
+                         kaolin
                          creamsody
                          github-modern)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -197,7 +198,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Hack"
-                               :size 12
+                               :size 11
                                :weight bold
                                :width normal
                                :powerline-scale 1.1)
@@ -467,7 +468,7 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack" :foundry "simp" :slant normal :weight bold :height 90 :width normal)))))
+ '(default ((t (:family "Hack" :foundry "SRC" :slant normal :weight normal :height 108 :width normal)))))
 
 
 
@@ -491,9 +492,15 @@ you should place your code here."
     (("unread" :foreground "#aeee00")
      ("flagged" :foreground "#0a9dff")
      ("deleted" :foreground "#ff2c4b" :bold t))))
+ '(nrepl-message-colors
+   (quote
+    ("#032f62" "#6a737d" "#d73a49" "#6a737d" "#005cc5" "#6f42c1" "#d73a49" "#6a737d")))
+ '(org-fontify-whole-heading-line t)
  '(package-selected-packages
    (quote
-    (2048-game kaolin-tribal-theme-theme kaolin-tribal-theme kaolin-themes gruvbox-dark-hard-theme-theme gruvbox-dark-hard-theme web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc company-tern tern coffee-mode floobits rainbow-mode base16-theme yoshi-theme yapfify yaml-mode xterm-color ws-butler winum which-key web-mode wc-mode volatile-highlights vi-tilde-fringe uuidgen use-package unfill toml-mode toc-org tagedit synonyms spaceline sourcerer-theme smeargle slime-company slim-mode shell-pop scss-mode sass-mode restart-emacs ranger rainbow-delimiters racket-mode racer pyvenv pytest pyenv-mode py-isort pug-mode pretty-lambdada popwin pip-requirements persp-mode pcre2el paradox paganini-theme orgit org-present org-pomodoro org-download org-bullets open-junk-file neotree mwim multi-term move-text molokai-theme mmm-mode markdown-toc magit-gitflow magit-gh-pulls lorem-ipsum live-py-mode linum-relative link-hint less-css-mode ledger-mode kaolin-theme intero insert-shebang info+ indent-guide hy-mode hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-pydoc helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag haskell-snippets gruvbox-theme gotham-theme google-translate golden-ratio go-guru go-eldoc gnuplot github-search github-modern-theme github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gist gh-md geiser fuzzy flyspell-correct-helm flycheck-rust flycheck-pos-tip flycheck-ledger flycheck-haskell flx-ido flatland-theme fish-mode fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help emojify emmet-mode elisp-slime-nav dumb-jump disaster define-word cython-mode csv-mode creamsody-theme company-web company-statistics company-shell company-go company-ghci company-ghc company-cabal company-c-headers company-auctex company-anaconda common-lisp-snippets column-enforce-mode cmm-mode cmake-mode clojure-snippets clj-refactor clean-aindent-mode clang-format cider-eval-sexp-fu cargo badwolf-theme badger-theme avk-emacs-themes auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+    (xkcd kaolin-themes gruvbox-dark-hard-theme-theme gruvbox-dark-hard-theme web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc company-tern tern coffee-mode floobits rainbow-mode base16-theme yoshi-theme yapfify yaml-mode xterm-color ws-butler winum which-key web-mode wc-mode volatile-highlights vi-tilde-fringe uuidgen use-package unfill toml-mode toc-org tagedit synonyms spaceline sourcerer-theme smeargle slime-company slim-mode shell-pop scss-mode sass-mode restart-emacs ranger rainbow-delimiters racket-mode racer pyvenv pytest pyenv-mode py-isort pug-mode pretty-lambdada popwin pip-requirements persp-mode pcre2el paradox paganini-theme orgit org-present org-pomodoro org-download org-bullets open-junk-file neotree mwim multi-term move-text molokai-theme mmm-mode markdown-toc magit-gitflow magit-gh-pulls lorem-ipsum live-py-mode linum-relative link-hint less-css-mode ledger-mode kaolin-theme intero insert-shebang info+ indent-guide hy-mode hungry-delete htmlize hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-pydoc helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag haskell-snippets gruvbox-theme gotham-theme google-translate golden-ratio go-guru go-eldoc gnuplot github-search github-modern-theme github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gist gh-md geiser fuzzy flyspell-correct-helm flycheck-rust flycheck-pos-tip flycheck-ledger flycheck-haskell flx-ido flatland-theme fish-mode fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eshell-z eshell-prompt-extras esh-help emojify emmet-mode elisp-slime-nav dumb-jump disaster define-word cython-mode csv-mode creamsody-theme company-web company-statistics company-shell company-go company-ghci company-ghc company-cabal company-c-headers company-auctex company-anaconda common-lisp-snippets column-enforce-mode cmm-mode cmake-mode clojure-snippets clj-refactor clean-aindent-mode clang-format cider-eval-sexp-fu cargo badwolf-theme badger-theme avk-emacs-themes auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell)))
+ '(pdf-view-midnight-colors (quote ("#6a737d" . "#fffbdd")))
+ '(tool-bar-mode nil)
  '(vc-annotate-background "#1f2124")
  '(vc-annotate-color-map
    (quote
@@ -516,3 +523,6 @@ you should place your code here."
      (340 . "#cfe2f2")
      (360 . "#dc8cc3"))))
  '(vc-annotate-very-old-color "#dc8cc3"))
+'(vc-annotate-very-old-color "#dc8cc3")
+'(window-divider-default-right-width 1)
+'(window-divider-mode t))
