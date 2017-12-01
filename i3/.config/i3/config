@@ -130,6 +130,9 @@ assign [class="(?i)pithos"] → $WS5
 ## Chat
 assign [class="(?i)quasselclient"] → $WS6
 assign [class="(?i)telegram"] → $WS6
+assign [class="(?i)wire"] → $WS6
+assign [class="(?i)discord"] → $WS6
+assign [class="(?i)glip"] → $WS6
 ## Network
 ## Games
 assign [class="(?i)steam"] → $WS8
