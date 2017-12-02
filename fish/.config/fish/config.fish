@@ -21,6 +21,9 @@ alias aur-updates="cower -u | wc -l"
 # git
 alias gits="git status"
 
+# emacs
+alias emacs="emacs $1 -nw"
+
 # Solus
 
 # Ruby Path Env
