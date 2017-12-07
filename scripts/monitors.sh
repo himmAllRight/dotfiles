@@ -16,7 +16,7 @@ home-dock() {
 
 # Work Dock Monitors?
 work-dock() {
-    xrandr --auto --output HDMI-3 --primary --mode 1920x1080 --left-of VGA-1 --output VGA-1 --mode 1920x1080 --output LVDS-1 --off --dpi 90
+    xrandr --auto --output HDMI-3 --primary --mode 1920x1080 --left-of VGA-1 --output VGA-1 --mode 1920x1080 --output LVDS-1 --off --dpi 100
 }
 
 # Use just standard internal laptop screen
