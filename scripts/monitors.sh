@@ -5,11 +5,18 @@ usage() {
 	  echo "Usage:"
 	  echo "  undock                          - Returns monitor configuration to standard internal display only"
 	  echo "  home-dock                       - Configures laptop to use the monitors connected to my home workstation dock"
+	  echo "  work-dock                       - Configures laptop to use the monitors connected to my dock at work"
 }
 
 # Home Dock Monitors?
 home-dock() {
     xrandr --auto --output DP-2-1 --mode 1920x1080 --right-of DP-2-2 --output DP-2-2 --mode 1920x1080 --dpi 90
+}
+
+
+# Work Dock Monitors?
+work-dock() {
+    xrandr --auto --output HDMI-3 --primary --mode 1920x1080 --left-of VGA-1 --output VGA-1 --mode 1920x1080 --output LVDS-1 --off --dpi 90
 }
 
 # Use just standard internal laptop screen
@@ -32,6 +39,8 @@ main() {
 		    standard
     elif [[ $cmd == "home-dock" ]]; then
         home-dock
+    elif [[ $cmd == "work-dock" ]]; then
+        work-dock
 	  else
 		    usage
 	  fi
