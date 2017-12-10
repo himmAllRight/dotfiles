@@ -10,7 +10,7 @@ usage() {
 
 # Home Dock Monitors?
 home-dock() {
-    xrandr --auto --output DP-2-1 --mode 1920x1080 --right-of DP-2-2 --output DP-2-2 --mode 1920x1080 --dpi 90
+    xrandr --auto --output DP-3 --mode 1920x1080 --right-of DP-2-2 --output DP-2-2 --mode 1920x1080 --dpi 90
 }
 
 
