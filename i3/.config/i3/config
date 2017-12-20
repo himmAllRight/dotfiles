@@ -119,6 +119,7 @@ bindsym $mod+Shift+0 move container to workspace $WS0
 ## Main
 ## Web
 assign [class="(?i)firefox"] → $WS2
+assign [class="(?i)qutebrowser"] → $WS2
 ## Dev
 assign [class="(?i)emacs"] → $WS3
 assign [class="(?i)ghostwriter"] → $WS3
@@ -128,6 +129,7 @@ assign [class="(?i)pithos"] → $WS4
 assign [class="(?i)lollypop"] → $WS4
 ## Mail
 assign [class="(?i)thunderbird"] → $WS5
+assign [class="(?i)fastmail"] → $WS5
 ## Chat
 assign [class="(?i)quasselclient"] → $WS6
 assign [class="(?i)telegram"] → $WS6
