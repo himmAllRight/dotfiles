@@ -252,6 +252,7 @@ exec --no-startup-id mate-power-manager
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id mate-menu
+exec compton 
+exec nextcloud
 exec /home/ryan/dotfiles/scripts/ctrl-caps
-#exec compton &
 exec ~/.startup
