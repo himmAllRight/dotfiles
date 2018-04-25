@@ -287,9 +287,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;; Work Settings ;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Load functions for using Allegro when on Work computer
-(when (string-equal system-name "LAFAYETTE")
-  (load "~/.emacs-work.el"))
 
 
 ;; Settings for Spell Check
@@ -300,7 +297,18 @@
 
 
 
-;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;
+;; Load Other Files ;;
+;;;;;;;;;;;;;;;;;;;;;;
+;; Load functions for using Allegro when on Work computer
+(when (string-equal system-name "LAFAYETTE")
+  (load "~/.emacs-work.el"))
+
+
+(when (string-equal system-type "gnu/linux")
+  (load "~/.emacs-linux.el"))
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Settings added by emacs GUI options
 (custom-set-variables
