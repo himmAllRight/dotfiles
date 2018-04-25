@@ -1,9 +1,16 @@
-;; Base Emacs Configuration
+;;Base Emacs Configuration
 
 ;; Add Melpa packages to Repos
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;; Core Setup ;;;;;;;;;;;;;;;;;;;;;;;
@@ -15,28 +22,36 @@
 
 (setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
 
-(require 'powerline-evil)
-(powerline-evil-vim-color-theme)
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack" :foundry "outline" :slant normal :weight normal :height 98 :width normal))))
- ;; Power line colors
- '(powerline-evil-normal-face ((t (:background "#CE690a" :foreground "#eee8d5"))))
- '(powerline-evil-insert-face ((t (:background "#12a80d" :foreground "#eee8d5"))))
- '(powerline-evil-visual-face ((t (:background "#12a80d" :foreground "#eee8d5"))))
- '(powerline-evil-operator-face ((t (:background "#12a80d" :foreground "#eee8d5"))))
- '(powerline-evil-replace-face ((t (:background "#12a80d" :foreground "#eee8d5"))))
- '(powerline-evil-motion-face ((t (:background "#12a80d" :foreground "#eee8d5"))))
- '(powerline-evil-emacs-face ((t (:background "#410da8" :foreground "#eee8d5"))))
- )
-(display-time-mode t)
-
 ;; Evil Mode
-(require 'evil)
-(evil-mode 1)
+(use-package evil
+  :ensure t
+  :config
+
+  (evil-mode 1)
+  (use-package evil-leader
+    :ensure t
+    :config (global-evil-leader-mode))
+
+  (use-package evil-surround
+    :ensure t
+    :config (global-evil-surround-mode))
+
+  (use-package evil-indent-textobject
+    :ensure t)
+
+  (use-package evil-org
+    :ensure t
+    :config
+    (evil-org-set-key-theme '(textobjects insert navigation additional shift todo heading))
+    (add-hook 'org-mode-hook (lambda () (evil-org-mode))))
+
+  (use-package powerline-evil
+    :ensure t
+    :config
+    (powerline-evil-vim-color-theme)
+    )
+  )
+
 
 ;; Line Numbers On
 (global-linum-mode 1)
@@ -53,14 +68,14 @@
 (setq tooltip-use-echo-area t)
 
 ;; Smooth Scroll
-(require 'smooth-scroll)
+;;(require 'smooth-scroll)
 
 (defun zoom-window ()
   (interactive)
   (if zoom-temp-window-configuration
       (progn
         (set-window-configuration zoom-temp-window-configuration)
-       (setq zoom-temp-window-configuration nil)
+	(setq zoom-temp-window-configuration nil)
         (message "Window un-zoomed"))
     (progn
       (setq zoom-temp-window-configuration (current-window-configuration))
@@ -77,24 +92,48 @@
     (eshell-send-input)))
 
 (add-hook 'eshell-mode-hook
-      '(lambda()
-         (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
+	  '(lambda()
+	     (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
 
 (global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
+
+;; Themes
+(use-package monokai-alt-theme
+  :ensure t)
+;; (use-package gruvbox-theme
+;; 	     :ensure t)
+;; (use-package darkokai-theme
+;; 	     :ensure t)
+;; (use-package darktooth-theme
+;; 	     :ensure t)
+;; (use-package creamsody-theme
+;; 	     :ensure t)
+;; (use-package github-theme
+;;   :ensure t)
 
 
 ;;;;;;;;;;;;;;;;;;;;
 ;;;;; Ivy Mode ;;;;;
 ;;;;;;;;;;;;;;;;;;;;
-(ivy-mode 1)
-(setq ivy-use-virtual-buffers t)
-(setq enable-recursive-minibuffers t)
+(use-package ivy
+  :ensure t
+  :config
+  (ivy-mode 1)
+  (setq ivy-use-virtual-buffers t)
+  (setq enable-recursive-minibuffers t)
+  ;; Ivy Keybindings
+  (global-set-key (kbd "C-c C-r") 'ivy-resume))
 
-;; Ivy Keybindings
-(global-set-key "\C-s" 'swiper)
-(global-set-key (kbd "C-c C-r") 'ivy-resume)
-(global-set-key (kbd "M-x") 'counsel-M-x)
-(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(use-package swiper
+  :ensure t
+  :config
+  (global-set-key "\C-s" 'swiper))
+
+(use-package counsel 
+  :ensure t
+  :config 
+  (global-set-key (kbd "M-x") 'counsel-M-x)
+  (global-set-key (kbd "C-x C-f") 'counsel-find-file))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; Key Bindings ;;;;;
@@ -103,13 +142,13 @@
 (global-set-key (kbd "C-c w") 'ispell-word)
 (global-set-key (kbd "C-c r") 'ispell-region)
 
-;; Toggle menubar keybind
+;; ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
 
-;; Eshell launch keybind
+;; ;; Eshell launch keybind
 (global-set-key (kbd "C-c t") 'eshell)
 
-;; Comment/Uncomment region
+;; ;; Comment/Uncomment region
 (global-set-key (kbd "C-c ;") 'comment-region)
 
 
@@ -135,54 +174,83 @@
 
 ;;;;;;;;;;;;;
 ;; Org Mode;;
-;;;;;;;;;;;;; 
-(defun org-code (start end)
-  "Wraps selected text with org code tags"
-  (interactive "r")
-  (let ((selected-text (buffer-substring (mark) (point)))
-        (db-name (read-from-minibuffer "Language[common-lisp]: ")))
-    (when (eq db-name "")
-      (setf db-name "common-lisp"))
-    (kill-region start end)
-    (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
+;;;;;;;;;;;;;
 
-;; Persistent Clocking
-(setq org-clock-persist 'history)
-(org-clock-persistence-insinuate)
-
-;; Default Table Params
-(setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
-
-
-;; Org Pomodoro ;;
-;; Setup pomodoro timer keybind
-(global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
-(global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
-
-(defun org-pomodoro-get-times ()
+(defun open-org-file ()
   (interactive)
-  (message "work length: %s  short break: %s  long break: %s"
-           org-pomodoro-length
-           org-pomodoro-short-break-length
-           org-pomodoro-long-break-length))
-
-(defun org-pomodoro-set-pomodoro ()
-  (interactive)
-  (setf org-pomodoro-length 35)
-  (setf org-pomodoro-short-break-length 9)
-  (setf org-pomodoro-long-break-length 15))
+  (find-file "~/nextcloud/emacs/org/archive/work.org"))
 
 
-(org-pomodoro-set-pomodoro)
+(use-package org
+  :ensure t
+  :config
 
-(defun org-pomodoro-set-52-17 ()
-  (interactive)
-  (setf org-pomodoro-length 52)
-  (setf org-pomodoro-short-break-length 17)
-  (setf org-pomodoro-long-break-length 17))
+  (evil-leader/set-key-for-mode 'org-mode
+    "m i" 'org-clock-in
+    "m C" 'org-toggle-checkbox
+    "m o" 'org-clock-out
+    "m c" 'org-clock-jump-to-current-clock
+    "m d" 'org-clock-display
+    "m e" 'org-set-effort
+    "m p" 'org-pomodoro
+    "m t" 'org-set-tags-command
+    "m m" 'org-clock-modify-effort-estimate
+    "m s" 'org-schedule)
+  
+  ;; ;; Org Agenda stuff
+  (setq org-agenda-files '("~/nextcloud/emacs/org/archive/work.org"))
+  
+  (defun org-code (start end)
+    "Wraps selected text with org code tags"
+    (interactive "r")
+    (let ((selected-text (buffer-substring (mark) (point)))
+  	  (db-name (read-from-minibuffer "Language[common-lisp]: ")))
+      (when (eq db-name "")
+  	(setf db-name "common-lisp"))
+      (kill-region start end)
+      (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
 
-;; Org Agenda stuff
-(setq org-agenda-files '("~/nextcloud/emacs/org/archive/work.org"))
+  (use-package org-pomodoro
+    :ensure t
+    :config
+    ;; Persistent Clocking
+    (setq org-clock-persist 'history)
+    (org-clock-persistence-insinuate)
+
+    ;; Default Table Params
+    (setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
+
+
+    ;; Org Pomodoro ;;
+    ;; Setup pomodoro timer keybind
+    (global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
+    (global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
+
+    (defun org-pomodoro-get-times ()
+      (interactive)
+      (message "work length: %s  short break: %s  long break: %s"
+    	       org-pomodoro-length
+    	       org-pomodoro-short-break-length
+    	       org-pomodoro-long-break-length))
+
+    (defun org-pomodoro-set-pomodoro ()
+      (interactive)
+      (setf org-pomodoro-length 35)
+      (setf org-pomodoro-short-break-length 9)
+      (setf org-pomodoro-long-break-length 15))
+
+
+    (org-pomodoro-set-pomodoro)
+
+    (defun org-pomodoro-set-52-17 ()
+      (interactive)
+      (setf org-pomodoro-length 52)
+      (setf org-pomodoro-short-break-length 17)
+      (setf org-pomodoro-long-break-length 17)))
+  )
+
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;; Developer Settings ;;;;;;;;;;;;;;;;;;;;
@@ -190,24 +258,30 @@
 ;; (require 'pretty-mode)
 ;; (pretty-lambda-mode t)
 
-(ac-config-default) ;; Auto Complete
+(use-package auto-complete
+  :ensure t
+  :config
+  (ac-config-default))
 
-(require 'smartparens-config)
-;; Remove ' and  from pairing
-(sp-pair "'" nil :actions :rem)
-(sp-pair "`" "'" :actions :rem)
+(use-package smartparens
+  :ensure t
+  :config
+  ;; Remove ' and  from pairing
+  (sp-pair "'" nil :actions :rem)
+  (sp-pair "`" "'" :actions :rem))
 
-;; (sp-local-pair 'emacs-lisp-mode "`" "")  ;; only use single ` or ' in emacs-lisp
-;; (sp-local-pair 'common-lisp-mode "`" "") ;; only use single ` or ' in common-lisp
-;; (sp-local-pair 'lisp-mode "`" "")        ;; only use single ` or ' in "lisp"
-;; (sp-local-pair 'fi:common-lisp-mode "`" "") ;; only use single ` or ' in ACL common-lisp
 
 ;;(global-pretty-lambda-mode t)
-(global-aggressive-indent-mode t)
+(use-package aggressive-indent
+  :ensure t
+  :config
+  (global-aggressive-indent-mode t))
 
 ;; Magit
-(require 'evil-magit)
-(global-set-key (kbd "C-c g") 'magit-status)
+(use-package magit
+  :ensure t
+  :config 
+  (global-set-key (kbd "C-c g") 'magit-status))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;; Work Settings ;;;;;;;;;;;;;;;;;;;;;;
@@ -216,11 +290,10 @@
 (load "~/.emacs-work.el")
 
 ;; Settings for Spell Check
-(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
-(setq ispell-program-name "aspell")
-(setq ispell-dictionary "american")
-
-
+(when (package-installed-p 'ispell)
+  (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+  (setq ispell-program-name "aspell")
+  (setq ispell-dictionary "american"))
 
 
 
@@ -233,119 +306,67 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
-   ["#ffffff" "#183691" "#969896" "#a71d5d" "#969896" "#969896" "#795da3" "#969896"])
- '(blink-cursor-mode nil)
+   ["#242728" "#ff0066" "#63de5d" "#E6DB74" "#06d8ff" "#ff8eff" "#53f2dc" "#f8fbfc"])
  '(column-number-mode t)
+ '(compilation-message-face (quote default))
  '(custom-safe-themes
    (quote
-    ("b9e9ba5aeedcc5ba8be99f1cc9301f6679912910ff92fdf7980929c2fc83ab4d" "c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "fec6c786b1d3088091715772839ac6051ed972b17991af04b50e9285a98c7463" "08e47c1b4faf013eadb945fd15748fe4bc98435c75c0e3014541ecdb5adf7196" "5d05adb1e515a6739f6929089497369a70f6e460521200ba0626e2ea819ec18c" "7f6796a9b925f727bbe1781dc65f7f23c0aa4d4dc19613aa3cf96e41a96651e4" "9a58c408a001318ce9b4eab64c620c8e8ebd55d4c52327e354f24d298fb6978f" "5c3ae5c27605201867f0fa0b315cba0761f38502dae6be85c2846af982f9f054" "3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "dcb9fd142d390bb289fee1d1bb49cb67ab7422cd46baddf11f5c9b7ff756f64c" "ed0b4fc082715fc1d6a547650752cd8ec76c400ef72eb159543db1770a27caa7" "f41ecd2c34a9347aeec0a187a87f9668fa8efb843b2606b6d5d92a653abe2439" "eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" default)))
+    ("0ee3fc6d2e0fc8715ff59aed2432510d98f7e76fe81d183a0eb96789f4d897ca" "3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "021720af46e6e78e2be7875b2b5b05344f4e21fad70d17af7acfd6922386b61e" "6ac7c0f959f0d7853915012e78ff70150bfbe2a69a1b703c3ac4184f9ae3ae02" "ed0b4fc082715fc1d6a547650752cd8ec76c400ef72eb159543db1770a27caa7" "6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "a4d03266add9a1c8f12b5309612cbbf96e1291773c7bc4fb685bfdaf83b721c6" "eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" default)))
+ '(display-battery-mode t)
  '(display-time-mode t)
- '(fci-rule-color "#969896")
+ '(fci-rule-color "#424748")
+ '(highlight-changes-colors (quote ("#ff8eff" "#ab7eff")))
+ '(highlight-tail-colors
+   (quote
+    (("#424748" . 0)
+     ("#63de5d" . 20)
+     ("#4BBEAE" . 30)
+     ("#1DB4D0" . 50)
+     ("#9A8F21" . 60)
+     ("#A75B00" . 70)
+     ("#F309DF" . 85)
+     ("#424748" . 100))))
+ '(magit-diff-use-overlays nil)
  '(nrepl-message-colors
    (quote
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
- '(package-selected-packages
-   (quote
-    (evil-magit magit powerline-evil smart-mode-line-powerline-theme smart-mode-line pretty-mode pretty-symbols powerline auto-complete kaolin-themes github-theme challenger-deep-theme gruvbox-theme klere-theme monokai-alt-theme aggressive-indent smartparens smooth-scroll ivy org-pomodoro org evil)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
+ '(pos-tip-background-color "#E6DB74")
+ '(pos-tip-foreground-color "#242728")
  '(scroll-bar-mode nil)
  '(size-indication-mode t)
- '(sml/mode-width
-   (if
-       (eq
-	(powerline-current-separator)
-	(quote arrow))
-       (quote right)
-     (quote full)))
- '(sml/pos-id-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active1)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s"
-			    (powerline-current-separator)
-			    (car powerline-default-separator-dir)))
-		   (quote powerline-active1)
-		   (quote powerline-active2))))
-     (:propertize " " face powerline-active2))))
- '(sml/pos-minor-modes-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active1)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s"
-			    (powerline-current-separator)
-			    (cdr powerline-default-separator-dir)))
-		   (quote powerline-active1)
-		   (quote sml/global))))
-     (:propertize " " face sml/global))))
- '(sml/pre-id-separator
-   (quote
-    (""
-     (:propertize " " face sml/global)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s"
-			    (powerline-current-separator)
-			    (car powerline-default-separator-dir)))
-		   (quote sml/global)
-		   (quote powerline-active1))))
-     (:propertize " " face powerline-active1))))
- '(sml/pre-minor-modes-separator
-   (quote
-    (""
-     (:propertize " " face powerline-active2)
-     (:eval
-      (propertize " "
-		  (quote display)
-		  (funcall
-		   (intern
-		    (format "powerline-%s-%s"
-			    (powerline-current-separator)
-			    (cdr powerline-default-separator-dir)))
-		   (quote powerline-active2)
-		   (quote powerline-active1))))
-     (:propertize " " face powerline-active1))))
- '(sml/pre-modes-separator (propertize " " (quote face) (quote sml/modes)))
- '(smooth-scroll-mode t)
  '(tool-bar-mode nil)
- '(vc-annotate-background "#b0cde7")
+ '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
-    ((20 . "#969896")
-     (40 . "#183691")
-     (60 . "#969896")
-     (80 . "#969896")
-     (100 . "#969896")
-     (120 . "#a71d5d")
-     (140 . "#969896")
-     (160 . "#969896")
-     (180 . "#969896")
-     (200 . "#969896")
-     (220 . "#63a35c")
-     (240 . "#0086b3")
-     (260 . "#795da3")
-     (280 . "#969896")
-     (300 . "#0086b3")
-     (320 . "#969896")
-     (340 . "#a71d5d")
-     (360 . "#969896"))))
- '(vc-annotate-very-old-color "#969896"))
-
-
+    ((20 . "#ff0066")
+     (40 . "#CF4F1F")
+     (60 . "#C26C0F")
+     (80 . "#E6DB74")
+     (100 . "#AB8C00")
+     (120 . "#A18F00")
+     (140 . "#989200")
+     (160 . "#8E9500")
+     (180 . "#63de5d")
+     (200 . "#729A1E")
+     (220 . "#609C3C")
+     (240 . "#4E9D5B")
+     (260 . "#3C9F79")
+     (280 . "#53f2dc")
+     (300 . "#299BA6")
+     (320 . "#2896B5")
+     (340 . "#2790C3")
+     (360 . "#06d8ff"))))
+ '(vc-annotate-very-old-color nil)
+ '(weechat-color-list
+   (unspecified "#242728" "#424748" "#F70057" "#ff0066" "#86C30D" "#63de5d" "#BEB244" "#E6DB74" "#40CAE4" "#06d8ff" "#FF61FF" "#ff8eff" "#00b2ac" "#53f2dc" "#f8fbfc" "#ffffff")))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 ;; Load Theme
-(load-theme 'gruvbox-dark-hard)
-
-(put 'dired-find-alternate-file 'disabled nil)
+(when (package-installed-p 'creamsody-theme)
+  (load-theme 'creamsody))
