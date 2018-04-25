@@ -1,0 +1,260 @@
+## Ryan i3 config
+
+## Modifier Key
+set $mod Mod4
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below. ISO 10646 = Unicode
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+font pango:Arial Black 9
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec gnome-terminal
+
+## kill focused window
+bindsym $mod+Shift+q kill
+
+## Launcher, rofi
+bindsym $mod+d exec rofi -show run 
+bindsym $mod+Tab exec --no-startup-id rofi -show window
+
+####################
+##### Movement #####
+####################
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+c focus child
+
+
+
+####################
+#### Workspaces ####
+####################
+set $WS1   "1:   Main "
+set $WS2   "2:   Web "
+set $WS3   "3: λ  Code "
+set $WS4   "4:   Music "
+set $WS5   "5:   Mail "
+set $WS6   "6:   Chat "
+set $WS7   "7:   Network "
+set $WS8   "8:   Games "
+set $WS9   "9:   VMs "
+set $WS0  "10:   Other "
+ 
+# switch to workspace
+bindsym $mod+1 workspace $WS1
+bindsym $mod+2 workspace $WS2
+bindsym $mod+3 workspace $WS3
+bindsym $mod+4 workspace $WS4
+bindsym $mod+5 workspace $WS5
+bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
+bindsym $mod+9 workspace $WS9
+bindsym $mod+0 workspace $WS0
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $WS1
+bindsym $mod+Shift+2 move container to workspace $WS2
+bindsym $mod+Shift+3 move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
+bindsym $mod+Shift+9 move container to workspace $WS9
+bindsym $mod+Shift+0 move container to workspace $WS0
+
+## Assign applications to workspaces
+## Main
+## Web
+assign [class="(?i)firefox"] → $WS2
+assign [class="(?i)qutebrowser"] → $WS2
+## Dev
+assign [class="(?i)emacs"] → $WS3
+assign [class="(?i)ghostwriter"] → $WS3
+## Music
+assign [class="(?i)spotify"] → $WS4
+assign [class="(?i)pithos"] → $WS4
+assign [class="(?i)lollypop"] → $WS4
+## Mail
+assign [class="(?i)thunderbird"] → $WS5
+assign [class="(?i)fastmail"] → $WS5
+## Chat
+assign [class="(?i)quasselclient"] → $WS6
+assign [class="(?i)telegram"] → $WS6
+assign [class="(?i)wire"] → $WS6
+assign [class="(?i)discord"] → $WS6
+assign [class="(?i)glip"] → $WS6
+## Network
+## Games
+assign [class="(?i)steam"] → $WS8
+## VMs
+assign [class="(?i)virt-manager"] → $WS9
+assign [class="(?i)virtualbox"] → $WS9
+## Other
+
+
+
+
+####################
+# MISC Keybindings #
+####################
+# Music Next, Prev, Pause/Play
+bindsym $mod+Shift+n exec playerctl next
+bindsym $mod+Shift+b exec playerctl previous
+bindsym $mod+p exec playerctl play-pause
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+#bindsym $mod+Shift+x exec locker
+bindsym $mod+Shift+w exec mate-screensaver-command -l
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mod
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+
+####################
+#### Status Bar ####
+####################
+## Status Base
+bar {
+        status_command          i3blocks
+        tray_output             primary
+        separator_symbol        "|"
+        workspace_buttons       yes
+        strip_workspace_numbers yes
+        #position                top
+
+    colors {
+            background  #212121
+            statusline  #DDDDDD
+            separator   #777777
+            # class             border  backgr. text
+            focused_workspace   #777777 #2e004d #FFFFFF
+            active_workspace    #212121 #212121 #FFFFFF
+            inactive_workspace  #212121 #212121 #86888C
+            urgent_workspace    #2F343A #e65c00 #FFFFFF
+}
+	}
+
+####################
+## Theme & Looks ###
+####################
+# window colours:         border background text
+client.focused            #777777 #222222 #ffffff
+client.focused_inactive   #444444 #333333 #888888
+client.unfocused          #444444 #333333 #444444
+client.urgent             #0F0F0F #BC9B54 #E5E5E5
+
+## Gaps/ borders
+gaps inner 7
+gaps outer 7
+
+new_window none               # Opens new windows without borders
+bindsym $mod+u border toggle
+
+## DPI
+exec xrandr --dpi 90
+
+## Volume Key Binds
+bindsym $mod+period exec amixer -D pulse sset Master 5%+
+bindsym $mod+comma exec amixer -D pulse sset Master 5%-
+bindsym $mod+shift+m exec amixer -q set Master toggle
+
+
+bindsym $mod+shift+p exec passmenu
+
+## Start Nitrogen when loaded
+exec --no-startup-id nitrogen --restore &
+#exec mpd ~/.config/mpd/mpd.conf &
+#exec --no-startup-id sh ~/.fehbg &
+#exec volumeicon &
+exec --no-startup-id mate-setting-daemon
+exec --no-startup-id mate-power-manager
+exec --no-startup-id blueman-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id mate-menu
+exec compton 
+exec nextcloud
+exec /home/ryan/dotfiles/scripts/ctrl-caps
+exec ~/.startup

@@ -1,0 +1,59 @@
+################################
+## ncmpcpp config by bohoomil ##
+################################
+
+#########################
+## connection settings ##
+#########################
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "/home/bohoomil/music"
+mpd_connection_timeout = "5"
+
+########################
+## colours and layout ##
+########################
+song_list_format = "{$3%a - }{$4%b - }{$8%t$9}$R{$3(%l)$9}"
+song_status_format = "{$3%a{ - $4%b - }{$8%t}}"
+alternative_header_first_line_format = "$b$1$aqqu$/a$9 {$5%t$9}|{%f} $1$atqq$/a$9$/b"
+song_columns_list_format = "(5)[red]{l} (25)[green]{a} (60)[yellow]{t}"
+playlist_display_mode = "columns" (classic/columns)
+browser_display_mode = "columns" (classic/columns)
+#progressbar_look = "╼ "
+progressbar_look = "   "
+user_interface = "alternative" (classic/alternative)
+#media_library_left_column = "a" (possible values: a,y,g,c,p, legend above)
+header_visibility = "no"
+statusbar_visibility = "no"
+cyclic_scrolling = "no"
+#display_screens_numbers_on_start = "no"
+clock_display_seconds = "no"
+ignore_leading_the = "yes"
+colors_enabled = "yes"
+header_window_color = "green"
+volume_color = "green"
+state_line_color = "blue"
+state_flags_color = "green"
+main_window_color = "blue"
+color1 = "red"
+color2 = "green"
+main_window_highlight_color = "green"
+progressbar_color = "blue"
+statusbar_color = "green"
+alternative_ui_separator_color = "green"
+active_column_color = "green"
+
+################
+## visualizer ##
+################
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_sync_interval = "30"
+visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "+|"
+visualizer_color = "green"
+
+
+search_engine_display_mode = "columns"
+follow_now_playing_lyrics = "yes"
