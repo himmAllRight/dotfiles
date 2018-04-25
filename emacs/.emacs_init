@@ -1,0 +1,16 @@
+;; File to install required emacs packages for initial setup
+
+;; Add Melpa packages to Repos
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
+
+;; List of packages to install
+(setq package-list
+      '(evil org org-pomodoro ivy smooth-scroll smartparens aggressive-indent auto-complete
+	     smart-mode-line smart-mode-line-theme pretty-mode))
+
+(setq theme-list
+      '(monokai-alt-theme gruvbox-theme github-theme kaolin-themes))
+
+
