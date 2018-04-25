@@ -286,8 +286,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;; Work Settings ;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Load functions for using Allegro
-(load "~/.emacs-work.el")
+;; Load functions for using Allegro when on Work computer
+(when (string-equal system-name "LAFAYETTE")
+  (load "~/.emacs-work.el"))
+
 
 ;; Settings for Spell Check
 (when (package-installed-p 'ispell)
