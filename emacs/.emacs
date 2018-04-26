@@ -1,220 +1,156 @@
-(setq sml/no-confirm-load-theme t)
+;;Base Emacs Configuration
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#26292c" "#ff4a52" "#40b83e" "#f6f080" "#afc4db" "#dc8cc3" "#93e0e3" "#f8f8f8"])
- '(column-number-mode t)
- '(custom-safe-themes
-   (quote
-    ("64ca5a1381fa96cb86fd6c6b4d75b66dc9c4e0fc1288ee7d914ab8d2638e23a9" "721bb3cb432bb6be7c58be27d583814e9c56806c06b4077797074b009f322509" "946e871c780b159c4bb9f580537e5d2f7dba1411143194447604ecbaf01bd90c" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "b571f92c9bfaf4a28cb64ae4b4cdbda95241cd62cf07d942be44dc8f46c491f4" "604648621aebec024d47c352b8e3411e63bdb384367c3dd2e8db39df81b475f5" "a2e7b508533d46b701ad3b055e7c708323fb110b6676a8be458a758dd8f24e27" "15348febfa2266c4def59a08ef2846f6032c0797f001d7b9148f30ace0d08bcf" "c39ae5721fce3a07a27a685c08e4b856a13780dbc755a569bb4393c932f226d7" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
- '(diary-entry-marker (quote font-lock-variable-name-face))
- '(display-battery-mode t)
- '(display-time-mode t)
- '(emms-mode-line-icon-image-cache
-   (quote
-    (image :type xpm :ascent center :data "/* XPM */
-static char *note[] = {
-/* width height num_colors chars_per_pixel */
-\"    10   11        2            1\",
-/* colors */
-\". c #1fb3b3\",
-\"# c None s None\",
-/* pixels */
-\"###...####\",
-\"###.#...##\",
-\"###.###...\",
-\"###.#####.\",
-\"###.#####.\",
-\"#...#####.\",
-\"....#####.\",
-\"#..######.\",
-\"#######...\",
-\"######....\",
-\"#######..#\" };")))
- '(fci-rule-color "#202325")
- '(font-use-system-font t)
- '(gnus-logo-colors (quote ("#528d8d" "#c0c0c0")))
- '(gnus-mode-line-image-cache
-   (quote
-    (image :type xpm :ascent center :data "/* XPM */
-static char *gnus-pointer[] = {
-/* width height num_colors chars_per_pixel */
-\"    18    13        2            1\",
-/* colors */
-\". c #1fb3b3\",
-\"# c None s None\",
-/* pixels */
-\"##################\",
-\"######..##..######\",
-\"#####........#####\",
-\"#.##.##..##...####\",
-\"#...####.###...##.\",
-\"#..###.######.....\",
-\"#####.########...#\",
-\"###########.######\",
-\"####.###.#..######\",
-\"######..###.######\",
-\"###....####.######\",
-\"###..######.######\",
-\"###########.######\" };")))
- '(hl-paren-background-colors (quote ("#2492db" "#95a5a6" nil)))
- '(hl-paren-colors (quote ("#ecf0f1" "#ecf0f1" "#c0392b")))
- '(notmuch-search-line-faces
-   (quote
-    (("unread" :foreground "#aeee00")
-     ("flagged" :foreground "#0a9dff")
-     ("deleted" :foreground "#ff2c4b" :bold t))))
- '(package-selected-packages
-   (quote
-    (alect-themes airline-themes color-theme-sanityinc-solarized color-theme-buffer-local yoshi-theme markdown-preview-mode flatui-theme badwolf-theme flatland-theme smooth-scroll helm auto-complete recentf helm-swoop w3m spotify smartparens smart-mode-line slime rust-mode pretty-lambdada pianobar persistent-scratch org-pomodoro org-page multiple-cursors molokai-theme material-theme markdown-mode magit jazz-theme indent-guide highlight-parentheses hide-comnt helm-spotify flymd flymake-yaml erc-image badger-theme aggressive-indent ac-helm)))
- '(scroll-bar-mode nil)
- '(sml/active-background-color "#34495e")
- '(sml/active-foreground-color "#ecf0f1")
- '(sml/inactive-background-color "#dfe4ea")
- '(sml/inactive-foreground-color "#34495e")
- '(tool-bar-mode nil)
- '(vc-annotate-background "#1f2124")
- '(vc-annotate-color-map
-   (quote
-    ((20 . "#ff0000")
-     (40 . "#ff4a52")
-     (60 . "#f6aa11")
-     (80 . "#f1e94b")
-     (100 . "#f5f080")
-     (120 . "#f6f080")
-     (140 . "#41a83e")
-     (160 . "#40b83e")
-     (180 . "#b6d877")
-     (200 . "#b7d877")
-     (220 . "#b8d977")
-     (240 . "#b9d977")
-     (260 . "#93e0e3")
-     (280 . "#72aaca")
-     (300 . "#8996a8")
-     (320 . "#afc4db")
-     (340 . "#cfe2f2")
-     (360 . "#dc8cc3"))))
- '(vc-annotate-very-old-color "#dc8cc3"))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack" :foundry "simp" :slant normal :weight normal :height 98 :width normal)))))
+;; Add Melpa packages to Repos
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
 
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
+(eval-when-compile
+  (require 'use-package))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;; Package Management ;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Add Melpa Repos
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;; Core Setup ;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
-;; Emacs Configs
-;; Backup all files in 1 place.
-(setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
-
- ;; Remove splash screen and use *scratch* as home
+;; Remove splash screen and use *scratch* as home buffer
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
 
-;; Load Smart-mode-lines
-(require 'smart-mode-line)
-(sml/setup)
+(setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
 
-(setq-default indent-tabs-mode nil)
+;; Evil Mode
+(use-package evil
+  :ensure t
+  :config
 
-;; Lines  on
+  (evil-mode 1)
+  (use-package evil-leader
+    :ensure t
+    :config (global-evil-leader-mode))
+
+  (use-package evil-surround
+    :ensure t
+    :config (global-evil-surround-mode))
+
+  (use-package evil-indent-textobject
+    :ensure t)
+
+  (use-package evil-org
+    :ensure t
+    :config
+    (evil-org-set-key-theme '(textobjects insert navigation additional shift todo heading))
+    (add-hook 'org-mode-hook (lambda () (evil-org-mode))))
+
+  (use-package powerline-evil
+    :ensure t
+    :config
+    (powerline-evil-vim-color-theme)
+    )
+  )
+
+
+;; Line Numbers On
 (global-linum-mode 1)
 
 ;; Menubar off by default
 (menu-bar-mode -1)
 
-;; remove splash screen and use *scratch*
-(setq inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
-
-;; Auto indent
-(define-key global-map (kbd "RET") 'newline-and-indent)
-
-;; New line for C-n
-(setq net-line-add-newlines t)
+;; New line auto indents
+(define-key global-map (kbd "RET")
+  'newline-and-indent)
 
 ;; Tool Tips in echo area
 (tooltip-mode -1)
 (setq tooltip-use-echo-area t)
 
-;; Toggle menubar keybind
-(global-set-key (kbd "C-c m") 'menu-bar-mode)
+;; Smooth Scroll
+;;(require 'smooth-scroll)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Org Mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Add Wrap org-mode code with appropriate code section
-(defun org-code (start end)
-  (interactive "r")
-  (let ((selected-text (buffer-substring (mark) (point)))
-        (db-name (read-from-minibuffer "Language[common-lisp]: ")))
-    (when (eq db-name "")
-      (setf db-name "common-lisp"))
-    (kill-region start end)
-    (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
-
-;; Persistent Clocking
-(setq org-clock-persist 'history)
-(org-clock-persistence-insinuate)
-
-;; Default Table Params
-(setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
-
-;; Org Pomodoro ;;
-;; Setup pomodoro timer keybind
-(global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
-(global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
-
-(defun org-pomodoro-get-times ()
+(defun zoom-window ()
   (interactive)
-  (message "work length: %s  short break: %s  long break: %s"
-           org-pomodoro-length
-           org-pomodoro-short-break-length
-           org-pomodoro-long-break-length))
+  (if zoom-temp-window-configuration
+      (progn
+        (set-window-configuration zoom-temp-window-configuration)
+	(setq zoom-temp-window-configuration nil)
+        (message "Window un-zoomed"))
+    (progn
+      (setq zoom-temp-window-configuration (current-window-configuration))
+      (delete-other-windows)
+      (message "Window zoomed"))))
 
-(defun org-pomodoro-set-pomodoro ()
+
+;; Eshell clear
+(defun eshell-clear-buffer ()
+  "Clear terminal"
   (interactive)
-  (setf org-pomodoro-length 35)
-  (setf org-pomodoro-short-break-length 9)
-  (setf org-pomodoro-long-break-length 15))
+  (let ((inhibit-read-only t))
+    (erase-buffer)
+    (eshell-send-input)))
+
+(add-hook 'eshell-mode-hook
+	  '(lambda()
+	     (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
+
+(global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
+
+;; Themes
+(use-package monokai-alt-theme
+  :ensure t)
+;; (use-package gruvbox-theme
+;; 	     :ensure t)
+;; (use-package darkokai-theme
+;; 	     :ensure t)
+;; (use-package darktooth-theme
+;; 	     :ensure t)
+;; (use-package creamsody-theme
+;; 	     :ensure t)
+;; (use-package github-theme
+;;   :ensure t)
 
 
-(org-pomodoro-set-pomodoro)
+;;;;;;;;;;;;;;;;;;;;
+;;;;; Ivy Mode ;;;;;
+;;;;;;;;;;;;;;;;;;;;
+(use-package ivy
+  :ensure t
+  :config
+  (ivy-mode 1)
+  (setq ivy-use-virtual-buffers t)
+  (setq enable-recursive-minibuffers t)
+  ;; Ivy Keybindings
+  (global-set-key (kbd "C-c C-r") 'ivy-resume))
 
-(defun org-pomodoro-set-52-17 ()
-  (interactive)
-  (setf org-pomodoro-length 52)
-  (setf org-pomodoro-short-break-length 17)
-  (setf org-pomodoro-long-break-length 17))
+(use-package swiper
+  :ensure t
+  :config
+  (global-set-key "\C-s" 'swiper))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Key Bindings  ;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package counsel 
+  :ensure t
+  :config 
+  (global-set-key (kbd "M-x") 'counsel-M-x)
+  (global-set-key (kbd "C-x C-f") 'counsel-find-file))
+
+;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; Key Bindings ;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Spell Check Word key-binds
 (global-set-key (kbd "C-c w") 'ispell-word)
 (global-set-key (kbd "C-c r") 'ispell-region)
 
-;; Toggle menubar keybind
+;; ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
 
-;; Eshell launch keybind
+;; ;; Eshell launch keybind
 (global-set-key (kbd "C-c t") 'eshell)
+
+;; ;; Comment/Uncomment region
+(global-set-key (kbd "C-c ;") 'comment-region)
+
 
 ;; Previous Window shortcut
 (global-set-key (kbd "C-x p")
@@ -228,126 +164,224 @@ static char *gnus-pointer[] = {
 (global-set-key (kbd "C-x 0")
                 (lambda() (interactive) (delete-window)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Helm ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'helm)
-(require 'helm-config)
-(require 'ac-helm)
-
-;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
-;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
-;; cannot change `helm-command-prefix-key' once `helm-config' is loaded.
-(global-set-key (kbd "C-c h") 'helm-command-prefix)
-(global-unset-key (kbd "C-x c"))
-
-(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to run persistent action
-(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal
-(define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
-
-(when (executable-find "curl")
-  (setq helm-google-suggest-use-curl-p t))
-
-(setq helm-split-window-in-side-p           t ; open helm buffer inside current window, not occupy whole other window
-      helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
-      helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
-      helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
-      helm-ff-file-name-history-use-recentf t)
-
-(helm-mode 1)
-
-(global-set-key (kbd "C-c h") 'helm-mini)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(global-set-key (kbd "C-x b") 'helm-buffers-list)
-
-(global-set-key (kbd "C-r") 'helm-recentf)
-(global-set-key (kbd "C-s") 'helm-swoop)
-(global-set-key (kbd "M-s") 'helm-multi-swoop-current-mode)
-
-(helm-autoresize-mode t)
-
-(setq helm-swoop-speed-or-color t)
-(set-face-attribute 'helm-selection nil
-                    :background "purple"
-                    :foreground "white")
-
-;; (global-set-key (kbd "M-i") 'helm-swoop)
- (global-set-key (kbd "M-l") 'helm-multi-swoop)
-
-
-
-
-;;; IDE Stuff
-
-(defun zoom-window ()
-  (interactive)
-  (if zoom-temp-window-configuration
-      (progn
-        (set-window-configuration zoom-temp-window-configuration)
-        (setq zoom-temp-window-configuration nil)
-        (message "Window un-zoomed"))
-    (progn
-      (setq zoom-temp-window-configuration (current-window-configuration))
-      (delete-other-windows)
-      (message "Window zoomed"))))
-;; Keybind
 (global-set-key (kbd "C-c z") 'zoom-window)
 
-;; Crates a commented code section header
-(defun create-header (in-string &optional width)
-  (unless width
-    (setf width 80))
 
-  (let*  ((comment-char ?\;)
-          (outString (concatenate 'string " " in-string " "))
-          (side-buffer-count (/ (- width (length outString)) 2))
-          (middle-line (concatenate 'string
-                                    (make-string side-buffer-count comment-char)
-                                    " " in-string " "
-                                    (make-string
-                                     (- width (+ side-buffer-count (length outString)))
-                                     comment-char)))
-          (buffer (make-string width comment-char)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;; Writting Settings ;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package markdown-mode
+  :ensure t)
 
-    (concatenate 'string buffer "\n" middle-line "\n" buffer)))
+;;;;;;;;;;;;;
+;; Org Mode;;
+;;;;;;;;;;;;;
 
-
-;; Prompts user for Header text and option width, and inserts header into buffer.
-(defun insert-header (in-string &optional width)
-  (interactive "r")
-  (let ((in-string (read-from-minibuffer "Header Text: "))
-        (width (read-from-minibuffer "Width (Enter for default [80]): ")))
-    (message width)
-    (if (eq width "")
-        (setf width 80)
-      (setf width (string-to-number width)))
-    (insert (length in-string))
-    (message (width))
-    (when (> (+ 2 (length in-string)) width)
-      (error "Error: Header string is too long. String can at max (width - 2) characters long."))
-
-    (insert (create-header in-string width))))
-
-;; Smooth Scroll
-(require 'smooth-scroll)
-
-;; Eshell clear
-(defun eshell-clear-buffer ()
-  "Clear terminal"
+(defun open-org-file ()
   (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (eshell-send-input)))
-
-(add-hook 'eshell-mode-hook
-      '(lambda()
-         (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
-
-(global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
+  (find-file "~/nextcloud/emacs/org/archive/work.org"))
 
 
+(use-package org
+  :ensure t
+  :config
+
+  (evil-leader/set-key-for-mode 'org-mode
+    "m i" 'org-clock-in
+    "m C" 'org-toggle-checkbox
+    "m o" 'org-clock-out
+    "m c" 'org-clock-jump-to-current-clock
+    "m d" 'org-clock-display
+    "m e" 'org-set-effort
+    "m p" 'org-pomodoro
+    "m t" 'org-set-tags-command
+    "m m" 'org-clock-modify-effort-estimate
+    "m s" 'org-schedule)
+  
+  ;; ;; Org Agenda stuff
+  (setq org-agenda-files '("~/nextcloud/emacs/org/archive/work.org"))
+  
+  (defun org-code (start end)
+    "Wraps selected text with org code tags"
+    (interactive "r")
+    (let ((selected-text (buffer-substring (mark) (point)))
+  	  (db-name (read-from-minibuffer "Language[common-lisp]: ")))
+      (when (eq db-name "")
+  	(setf db-name "common-lisp"))
+      (kill-region start end)
+      (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
+
+  (use-package org-pomodoro
+    :ensure t
+    :config
+    ;; Persistent Clocking
+    (setq org-clock-persist 'history)
+    (org-clock-persistence-insinuate)
+
+    ;; Default Table Params
+    (setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
 
 
-(load-theme 'badwolf)
+    ;; Org Pomodoro ;;
+    ;; Setup pomodoro timer keybind
+    (global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
+    (global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
+
+    (defun org-pomodoro-get-times ()
+      (interactive)
+      (message "work length: %s  short break: %s  long break: %s"
+    	       org-pomodoro-length
+    	       org-pomodoro-short-break-length
+    	       org-pomodoro-long-break-length))
+
+    (defun org-pomodoro-set-pomodoro ()
+      (interactive)
+      (setf org-pomodoro-length 35)
+      (setf org-pomodoro-short-break-length 9)
+      (setf org-pomodoro-long-break-length 15))
+
+
+    (org-pomodoro-set-pomodoro)
+
+    (defun org-pomodoro-set-52-17 ()
+      (interactive)
+      (setf org-pomodoro-length 52)
+      (setf org-pomodoro-short-break-length 17)
+      (setf org-pomodoro-long-break-length 17)))
+  )
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;; Developer Settings ;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (require 'pretty-mode)
+;; (pretty-lambda-mode t)
+
+(use-package auto-complete
+  :ensure t
+  :config
+  (ac-config-default))
+
+(use-package smartparens
+  :ensure t
+  :config
+  ;; Remove ' and  from pairing
+  (sp-pair "'" nil :actions :rem)
+  (sp-pair "`" "'" :actions :rem))
+
+
+;;(global-pretty-lambda-mode t)
+(use-package aggressive-indent
+  :ensure t
+  :config
+  (global-aggressive-indent-mode t))
+
+;; Magit
+(use-package magit
+  :ensure t
+  :config 
+  (global-set-key (kbd "C-c g") 'magit-status))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;; Work Settings ;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; Settings for Spell Check
+(when (package-installed-p 'ispell)
+  (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+  (setq ispell-program-name "aspell")
+  (setq ispell-dictionary "american"))
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;
+;; Load Other Files ;;
+;;;;;;;;;;;;;;;;;;;;;;
+;; Load functions for using Allegro when on Work computer
+(when (string-equal system-name "LAFAYETTE")
+  (load "~/.emacs-work.el"))
+
+
+(when (string-equal system-type "gnu/linux")
+  (load "~/.emacs-linux.el"))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Settings added by emacs GUI options
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#242728" "#ff0066" "#63de5d" "#E6DB74" "#06d8ff" "#ff8eff" "#53f2dc" "#f8fbfc"])
+ '(column-number-mode t)
+ '(compilation-message-face (quote default))
+ '(custom-safe-themes
+   (quote
+    ("0ee3fc6d2e0fc8715ff59aed2432510d98f7e76fe81d183a0eb96789f4d897ca" "3b5ce826b9c9f455b7c4c8bff22c020779383a12f2f57bf2eb25139244bb7290" "021720af46e6e78e2be7875b2b5b05344f4e21fad70d17af7acfd6922386b61e" "6ac7c0f959f0d7853915012e78ff70150bfbe2a69a1b703c3ac4184f9ae3ae02" "ed0b4fc082715fc1d6a547650752cd8ec76c400ef72eb159543db1770a27caa7" "6ee6f99dc6219b65f67e04149c79ea316ca4bcd769a9e904030d38908fd7ccf9" "a4d03266add9a1c8f12b5309612cbbf96e1291773c7bc4fb685bfdaf83b721c6" "eea01f540a0f3bc7c755410ea146943688c4e29bea74a29568635670ab22f9bc" default)))
+ '(display-battery-mode t)
+ '(display-time-mode t)
+ '(fci-rule-color "#424748")
+ '(highlight-changes-colors (quote ("#ff8eff" "#ab7eff")))
+ '(highlight-tail-colors
+   (quote
+    (("#424748" . 0)
+     ("#63de5d" . 20)
+     ("#4BBEAE" . 30)
+     ("#1DB4D0" . 50)
+     ("#9A8F21" . 60)
+     ("#A75B00" . 70)
+     ("#F309DF" . 85)
+     ("#424748" . 100))))
+ '(magit-diff-use-overlays nil)
+ '(nrepl-message-colors
+   (quote
+    ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
+ '(package-selected-packages
+   (quote
+    (sly sly-mode markdown-mode magit aggressive-indent smartparens auto-complete org-pomodoro counsel swiper ivy monokai-alt-theme powerline-evil evil-org evil-indent-textobject evil-surround evil-leader evil use-package)))
+ '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
+ '(pos-tip-background-color "#E6DB74")
+ '(pos-tip-foreground-color "#242728")
+ '(scroll-bar-mode nil)
+ '(size-indication-mode t)
+ '(tool-bar-mode nil)
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#ff0066")
+     (40 . "#CF4F1F")
+     (60 . "#C26C0F")
+     (80 . "#E6DB74")
+     (100 . "#AB8C00")
+     (120 . "#A18F00")
+     (140 . "#989200")
+     (160 . "#8E9500")
+     (180 . "#63de5d")
+     (200 . "#729A1E")
+     (220 . "#609C3C")
+     (240 . "#4E9D5B")
+     (260 . "#3C9F79")
+     (280 . "#53f2dc")
+     (300 . "#299BA6")
+     (320 . "#2896B5")
+     (340 . "#2790C3")
+     (360 . "#06d8ff"))))
+ '(vc-annotate-very-old-color nil)
+ '(weechat-color-list
+   (unspecified "#242728" "#424748" "#F70057" "#ff0066" "#86C30D" "#63de5d" "#BEB244" "#E6DB74" "#40CAE4" "#06d8ff" "#FF61FF" "#ff8eff" "#00b2ac" "#53f2dc" "#f8fbfc" "#ffffff")))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; Load Theme
+(when (package-installed-p 'creamsody-theme)
+  (load-theme 'creamsody))
 (put 'dired-find-alternate-file 'disabled nil)
