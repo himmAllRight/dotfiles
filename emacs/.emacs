@@ -138,10 +138,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; Key Bindings ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
-;; Spell Check Word key-binds
-(global-set-key (kbd "C-c w") 'ispell-word)
-(global-set-key (kbd "C-c r") 'ispell-region)
-
 ;; ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
 
@@ -172,6 +168,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package markdown-mode
   :ensure t)
+
+(use-package ispell
+  :ensure t
+  :bind
+  (("C-c w" . 'ispell-word)
+   ("C-c r" . 'ispell-region)))
 
 ;;;;;;;;;;;;;
 ;; Org Mode;;
@@ -213,6 +215,9 @@
 
   (use-package org-pomodoro
     :ensure t
+    :bind (("C-S-c C-S-p" . 'org-pomodoro)
+	   ("C-S-c C-S-e" . 'org-pomodoro-extend-last-clock))
+    
     :config
     ;; Persistent Clocking
     (setq org-clock-persist 'history)
@@ -224,15 +229,13 @@
 
     ;; Org Pomodoro ;;
     ;; Setup pomodoro timer keybind
-    (global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
-    (global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
 
     (defun org-pomodoro-get-times ()
       (interactive)
       (message "work length: %s  short break: %s  long break: %s"
-    	       org-pomodoro-length
-    	       org-pomodoro-short-break-length
-    	       org-pomodoro-long-break-length))
+	       org-pomodoro-length
+	       org-pomodoro-short-break-length
+	       org-pomodoro-long-break-length))
 
     (defun org-pomodoro-set-pomodoro ()
       (interactive)
@@ -284,18 +287,6 @@
   :config 
   (global-set-key (kbd "C-c g") 'magit-status))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;; Work Settings ;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-;; Settings for Spell Check
-(when (package-installed-p 'ispell)
-  (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
-  (setq ispell-program-name "aspell")
-  (setq ispell-dictionary "american"))
-
-
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; Load Other Files ;;
@@ -343,7 +334,7 @@
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
  '(package-selected-packages
    (quote
-    (sly sly-mode markdown-mode magit aggressive-indent smartparens auto-complete org-pomodoro counsel swiper ivy monokai-alt-theme powerline-evil evil-org evil-indent-textobject evil-surround evil-leader evil use-package)))
+    (go-mode aggressive-fill-paragraph easy-hugo sly sly-mode markdown-mode magit aggressive-indent smartparens auto-complete org-pomodoro counsel swiper ivy monokai-alt-theme powerline-evil evil-org evil-indent-textobject evil-surround evil-leader evil use-package)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(pos-tip-background-color "#E6DB74")
  '(pos-tip-foreground-color "#242728")
