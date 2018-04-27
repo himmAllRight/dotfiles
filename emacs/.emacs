@@ -186,6 +186,8 @@
   :ensure t
   :config
 
+  (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "DONE DONE")))
+
   (evil-leader/set-key-for-mode 'org-mode
     "m i" 'org-clock-in
     "m C" 'org-toggle-checkbox
@@ -283,6 +285,18 @@
   :ensure t
   :config 
   (global-set-key (kbd "C-c g") 'magit-status))
+
+;; Projectile
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-global-mode)
+
+  (use-package counsel-projectile
+    :ensure t
+    )
+  )
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;; Work Settings ;;;;;;;;;;;;;;;;;;;;;;
