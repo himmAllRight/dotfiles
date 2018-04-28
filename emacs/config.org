@@ -1,7 +1,7 @@
 #+TITLE: My Emacs Configuration
 #+AUTHOR: Ryan Himmelwright
 #+EMAIL: ryan@himmelwright.net
-#+OPTIONS: num:nil toc:nil
+#+OPTIONS: num:nil 
 So I just learned about the org babel stuff, and I think I might save
 my emacs configuration in an org file like this, and then have emacs
 just load it with org-babel... It deff makes it easier to navigate
@@ -162,9 +162,6 @@ These will eventually be relocations to just be included with their
 respective ~use-package~ calls...
 
 #+BEGIN_SRC emacs-lisp
-;; Spell Check Word key-binds
-(global-set-key (kbd "C-c w") 'ispell-word)
-(global-set-key (kbd "C-c r") 'ispell-region)
 
 ;; ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
@@ -200,7 +197,8 @@ configs...
 (use-package org
   :ensure t
   :config
-
+  ;; Make sure org file code highlights correctly
+  (setq org-src-fontify-natively t)
   (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "DONE DONE")))
 
   (evil-leader/set-key-for-mode 'org-mode
@@ -273,6 +271,18 @@ configs...
 (use-package markdown-mode
   :ensure t)
 #+END_SRC
+** Spell Check
+I use ispell for spell checking. The actual libraries are set
+depending on the system (in my [[emacs-linux.el][./emacs-linux.el]] and [[emacs-work.el][./emacs-work.el]]
+files).
+
+#+BEGIN_SRC emacs-lisp
+(use-package ispell
+  :ensure t
+  :bind
+  (("C-c w" . 'ispell-word)
+   ("C-c r" . 'ispell-region)))
+#+END_SRC
 
 * Development
 ** Auto Complete
@@ -306,8 +316,8 @@ I use magit for easy git management
 #+BEGIN_SRC emacs-lisp
 (use-package magit
   :ensure t
-  :config 
-  (global-set-key (kbd "C-c g") 'magit-status))
+  :bind 
+  (("C-c g" . 'magit-status)))
 #+END_SRC
 
 ** Projects
