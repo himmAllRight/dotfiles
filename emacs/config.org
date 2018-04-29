@@ -283,7 +283,11 @@ files).
   (("C-c w" . 'ispell-word)
    ("C-c r" . 'ispell-region)))
 #+END_SRC
-
+** Word Count
+#+BEGIN_SRC emacs-lisp
+(use-package wc-mode
+  :ensure t)
+#+END_SRC
 * Development
 ** Auto Complete
 #+BEGIN_SRC emacs-lisp
