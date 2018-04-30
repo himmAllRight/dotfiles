@@ -1,27 +1,96 @@
-;;Base Emacs Configuration
+#+TITLE: My Emacs Configuration
+#+AUTHOR: Ryan Himmelwright
+#+EMAIL: ryan@himmelwright.net
+#+OPTIONS: num:nil 
+So I just learned about the org babel stuff, and I think I might save
+my emacs configuration in an org file like this, and then have emacs
+just load it with org-babel... It deff makes it easier to navigate
+around the file...
+* Repos & Core Packages
+** Melpa 
+Melpa is the big package repo that nearly /everything/ can be
+found. It's a must for emacs configs.
 
-;; Add Melpa packages to Repos
+#+BEGIN_SRC emacs-lisp
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
+#+END_SRC
 
+** Setup =use-package= if isn't already
+#+BEGIN_SRC emacs-lisp
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
 (eval-when-compile
   (require 'use-package))
+#+END_SRC
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;; Core Setup ;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; Remove splash screen and use *scratch* as home buffer
+* Core Setup
+** Basic Stuff
+Remove splash screen and use *scratch* instead as the home buffer
+#+BEGIN_SRC emacs-lisp
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
+#+END_SRC
 
+Funnel all the auto backup files to one location.
+
+#+BEGIN_SRC emacs-lisp
 (setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
+#+END_SRC
 
+Switch line numbers on by default in all buffers
+#+BEGIN_SRC emacs-lisp
+(global-linum-mode 1)
+#+END_SRC
+
+
+Switch the Menubar off by default (I like to keep everything clean)
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode -1)
+#+END_SRC
+
+New lines auto indents
+#+BEGIN_SRC emacs-lisp
+(define-key global-map (kbd "RET")
+  'newline-and-indent)
+#+END_SRC
+
+
+Tool Tips in echo area
+#+BEGIN_SRC emacs-lisp
+(tooltip-mode -1)
+(setq tooltip-use-echo-area t)
+#+END_SRC
+
+Smooth Scrolling
+#+BEGIN_SRC emacs-lisp
+;;(require 'smooth-scroll)
+#+END_SRC
+** Themes
+#+BEGIN_SRC emacs-lisp
+  (use-package monokai-alt-theme
+    :ensure t)
+  ;;  (use-package gruvbox-theme
+  ;; 	     :ensure t)
+  ;; (use-package darkokai-theme
+  ;; 	     :ensure t)
+  ;; (use-package darktooth-theme
+  ;; 	     :ensure t)
+  ;; (use-package creamsody-theme
+  ;; 	     :ensure t)
+  ;; (use-package github-theme
+  ;;   :ensure t)
+#+END_SRC
+* Evil Mode
+
+Here is my Evile Mode setup. I've nested other ~use-pacages~ inside of
+it, so that if I am using =evil=, the packages that depend on it go
+ahead and configure themselves.
+
+#+BEGIN_SRC emacs-lisp
 ;; Evil Mode
 (use-package evil
   :ensure t
@@ -30,7 +99,12 @@
   (evil-mode 1)
   (use-package evil-leader
     :ensure t
-    :config (global-evil-leader-mode))
+    :config
+    (global-evil-leader-mode t)
+    (evil-leader/set-leader "<SPC>")
+    (evil-leader/set-key
+      "s s" 'swiper
+      "d x w" 'delete-trailing-whitespace)) 
 
   (use-package evil-surround
     :ensure t
@@ -51,70 +125,10 @@
     (powerline-evil-vim-color-theme)
     )
   )
-
-
-;; Line Numbers On
-(global-linum-mode 1)
-
-;; Menubar off by default
-(menu-bar-mode -1)
-
-;; New line auto indents
-(define-key global-map (kbd "RET")
-  'newline-and-indent)
-
-;; Tool Tips in echo area
-(tooltip-mode -1)
-(setq tooltip-use-echo-area t)
-
-;; Smooth Scroll
-;;(require 'smooth-scroll)
-
-(defun zoom-window ()
-  (interactive)
-  (if zoom-temp-window-configuration
-      (progn
-        (set-window-configuration zoom-temp-window-configuration)
-	(setq zoom-temp-window-configuration nil)
-        (message "Window un-zoomed"))
-    (progn
-      (setq zoom-temp-window-configuration (current-window-configuration))
-      (delete-other-windows)
-      (message "Window zoomed"))))
-
-
-;; Eshell clear
-(defun eshell-clear-buffer ()
-  "Clear terminal"
-  (interactive)
-  (let ((inhibit-read-only t))
-    (erase-buffer)
-    (eshell-send-input)))
-
-(add-hook 'eshell-mode-hook
-	  '(lambda()
-	     (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
-
-(global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
-
-;; Themes
-(use-package monokai-alt-theme
-  :ensure t)
-;; (use-package gruvbox-theme
-;; 	     :ensure t)
-;; (use-package darkokai-theme
-;; 	     :ensure t)
-;; (use-package darktooth-theme
-;; 	     :ensure t)
-;; (use-package creamsody-theme
-;; 	     :ensure t)
-;; (use-package github-theme
-;;   :ensure t)
-
-
-;;;;;;;;;;;;;;;;;;;;
-;;;;; Ivy Mode ;;;;;
-;;;;;;;;;;;;;;;;;;;;
+#+END_SRC
+* Ivy
+Setup and use Ivy
+#+BEGIN_SRC emacs-lisp
 (use-package ivy
   :ensure t
   :config
@@ -123,21 +137,32 @@
   (setq enable-recursive-minibuffers t)
   ;; Ivy Keybindings
   (global-set-key (kbd "C-c C-r") 'ivy-resume))
+#+END_SRC
 
+Configure Swiper
+#+BEGIN_SRC emacs-lisp
 (use-package swiper
   :ensure t
   :config
-  (global-set-key "\C-s" 'swiper))
+  (global-set-key "\C-s" 'swiper)
+  )
+#+END_SRC
 
+Counsel configuration
+#+BEGIN_SRC emacs-lisp
 (use-package counsel 
   :ensure t
   :config 
   (global-set-key (kbd "M-x") 'counsel-M-x)
   (global-set-key (kbd "C-x C-f") 'counsel-find-file))
+#+END_SRC
 
-;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;; Key Bindings ;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;
+* Key Bindings
+These will eventually be relocations to just be included with their
+respective ~use-package~ calls...
+
+#+BEGIN_SRC emacs-lisp
+
 ;; ;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
 
@@ -161,33 +186,19 @@
                 (lambda() (interactive) (delete-window)))
 
 (global-set-key (kbd "C-c z") 'zoom-window)
+#+END_SRC
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;; Writting Settings ;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(use-package markdown-mode
-  :ensure t)
-
-(use-package ispell
-  :ensure t
-  :bind
-  (("C-c w" . 'ispell-word)
-   ("C-c r" . 'ispell-region)))
-
-;;;;;;;;;;;;;
-;; Org Mode;;
-;;;;;;;;;;;;;
-
-(defun open-org-file ()
-  (interactive)
-  (find-file "~/nextcloud/emacs/org/archive/work.org"))
-
-
+* Writting
+** Org Mode
+Yes. It get's it's own section. Again, I've nested everything. I might
+break that up though now if I the babel stuff to generate my
+configs...
+#+BEGIN_SRC emacs-lisp
 (use-package org
   :ensure t
   :config
-
+  ;; Make sure org file code highlights correctly
+  (setq org-src-fontify-natively t)
   (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "DONE DONE")))
 
   (evil-leader/set-key-for-mode 'org-mode
@@ -217,9 +228,6 @@
 
   (use-package org-pomodoro
     :ensure t
-    :bind (("C-S-c C-S-p" . 'org-pomodoro)
-	   ("C-S-c C-S-e" . 'org-pomodoro-extend-last-clock))
-    
     :config
     ;; Persistent Clocking
     (setq org-clock-persist 'history)
@@ -231,13 +239,15 @@
 
     ;; Org Pomodoro ;;
     ;; Setup pomodoro timer keybind
+    (global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
+    (global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
 
     (defun org-pomodoro-get-times ()
       (interactive)
       (message "work length: %s  short break: %s  long break: %s"
-	       org-pomodoro-length
-	       org-pomodoro-short-break-length
-	       org-pomodoro-long-break-length))
+    	       org-pomodoro-length
+    	       org-pomodoro-short-break-length
+    	       org-pomodoro-long-break-length))
 
     (defun org-pomodoro-set-pomodoro ()
       (interactive)
@@ -255,41 +265,68 @@
       (setf org-pomodoro-long-break-length 17)))
   )
 
+#+END_SRC
+** Markdown
+#+BEGIN_SRC emacs-lisp
+(use-package markdown-mode
+  :ensure t)
+#+END_SRC
+** Spell Check
+I use ispell for spell checking. The actual libraries are set
+depending on the system (in my [[emacs-linux.el][./emacs-linux.el]] and [[emacs-work.el][./emacs-work.el]]
+files).
 
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;; Developer Settings ;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (require 'pretty-mode)
-;; (pretty-lambda-mode t)
-
+#+BEGIN_SRC emacs-lisp
+(use-package ispell
+  :ensure t
+  :bind
+  (("C-c w" . 'ispell-word)
+   ("C-c r" . 'ispell-region)))
+#+END_SRC
+** Word Count
+#+BEGIN_SRC emacs-lisp
+(use-package wc-mode
+  :ensure t)
+#+END_SRC
+* Development
+** Auto Complete
+#+BEGIN_SRC emacs-lisp
 (use-package auto-complete
   :ensure t
   :config
   (ac-config-default))
-
+#+END_SRC
+** Indentation
+=aggressive-indent= automatically indents buffers as I type out my
+code. I love it.
+#+BEGIN_SRC emacs-lisp
+(use-package aggressive-indent
+  :ensure t
+  :config
+  (global-aggressive-indent-mode t))
+#+END_SRC
+** Parens
+smart parens does auto paring for my parenthesis
+#+BEGIN_SRC emacs-lisp
 (use-package smartparens
   :ensure t
   :config
   ;; Remove ' and  from pairing
   (sp-pair "'" nil :actions :rem)
   (sp-pair "`" "'" :actions :rem))
-
-
-;;(global-pretty-lambda-mode t)
-(use-package aggressive-indent
-  :ensure t
-  :config
-  (global-aggressive-indent-mode t))
-
-;; Magit
+#+END_SRC
+** Git
+I use magit for easy git management
+#+BEGIN_SRC emacs-lisp
 (use-package magit
   :ensure t
-  :config 
-  (global-set-key (kbd "C-c g") 'magit-status))
+  :bind 
+  (("C-c g"   . 'magit-status)))
+#+END_SRC
 
-;; Projectile
+** Projects
+Starting to learn projectile a little bit...
+#+BEGIN_SRC emacs-lisp
 (use-package projectile
   :ensure t
   :config
@@ -299,20 +336,68 @@
     :ensure t
     )
   )
+#+END_SRC
+** Pretty Code
+#+BEGIN_SRC emacs-lisp
+;; (require 'pretty-mode)
+;; (pretty-lambda-mode t)
 
+;;(global-pretty-lambda-mode t)
+#+END_SRC
+* My Random Functions
+** Zoom-Window
+Saves the current state of the buffers, and then zooms the current
+buffer full screen. When called again, goes back to origonal buffer
+setup.
+#+BEGIN_SRC emacs-lisp
+(defun zoom-window ()
+  (interactive)
+  (if zoom-temp-window-configuration
+      (progn
+        (set-window-configuration zoom-temp-window-configuration)
+	(setq zoom-temp-window-configuration nil)
+        (message "Window un-zoomed"))
+    (progn
+      (setq zoom-temp-window-configuration (current-window-configuration))
+      (delete-other-windows)
+      (message "Window zoomed"))))
+#+END_SRC
+** eshell-clear-buffer
+Clears my eshell more like a normal terminal would
+#+BEGIN_SRC emacs-lisp
+(defun eshell-clear-buffer ()
+  "Clear terminal"
+  (interactive)
+  (let ((inhibit-read-only t))
+    (erase-buffer)
+    (eshell-send-input)))
+#+END_SRC
 
-;;;;;;;;;;;;;;;;;;;;;;
-;; Load Other Files ;;
-;;;;;;;;;;;;;;;;;;;;;;
-;; Load functions for using Allegro when on Work computer
-(when (string-equal system-name "LAFAYETTE")
+I need this hook for the function, and I like to set it to a keybind:
+#+BEGIN_SRC emacs-lisp
+(add-hook 'eshell-mode-hook
+	  '(lambda()
+	     (local-set-key (kbd "C-l") 'eshell-clear-buffer)))
+
+(global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
+#+END_SRC
+* Load Other Configs
+** Work Settings
+Load functions for using Allegro when on Work computer
+#+BEGIN_SRC emacs-lisp
+(when (string-equal (upcase system-name) "LAFAYETTE")
   (load "~/.emacs-work.el"))
-
-
+#+END_SRC
+** Linux
+Load my Linux-specific configs
+#+BEGIN_SRC emacs-lisp
 (when (string-equal system-type "gnu/linux")
   (load "~/.emacs-linux.el"))
-
-
+#+END_SRC
+* The Rest
+** Auto Generated Stuff
+Not sure what to do with this crap in my babel org config...
+#+BEGIN_SRC emacs-lisp
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Settings added by emacs GUI options
 (custom-set-variables
@@ -347,7 +432,7 @@
     ("#183691" "#969896" "#a71d5d" "#969896" "#0086b3" "#795da3" "#a71d5d" "#969896")))
  '(package-selected-packages
    (quote
-    (go-mode aggressive-fill-paragraph easy-hugo sly sly-mode markdown-mode magit aggressive-indent smartparens auto-complete org-pomodoro counsel swiper ivy monokai-alt-theme powerline-evil evil-org evil-indent-textobject evil-surround evil-leader evil use-package)))
+    (counsel-projectile projectile ess org-babel-eval-in-repl org-beautify-theme sly sly-mode markdown-mode magit aggressive-indent smartparens auto-complete org-pomodoro counsel swiper ivy monokai-alt-theme powerline-evil evil-org evil-indent-textobject evil-surround evil-leader evil use-package)))
  '(pdf-view-midnight-colors (quote ("#969896" . "#f8eec7")))
  '(pos-tip-background-color "#E6DB74")
  '(pos-tip-foreground-color "#242728")
@@ -383,9 +468,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((((class color) (min-colors 89)) (:background "#262626" :foreground "#f8f8f2")))))
+#+END_SRC
 
+** Theme Load
+I like to load the theme after the custom stuff the GUI adds, so I
+don't have to verify loading it whenever emacs boots up.
+#+BEGIN_SRC emacs-lisp
 ;; Load Theme
 (when (package-installed-p 'creamsody-theme)
   (load-theme 'creamsody))
 (put 'dired-find-alternate-file 'disabled nil)
+#+END_SRC
