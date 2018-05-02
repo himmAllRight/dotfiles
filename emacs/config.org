@@ -67,7 +67,8 @@ Tool Tips in echo area
 
 Smooth Scrolling
 #+BEGIN_SRC emacs-lisp
-;;(require 'smooth-scroll)
+(use-package smooth-scroll
+    :ensure t)
 #+END_SRC
 ** Themes
 #+BEGIN_SRC emacs-lisp
@@ -343,6 +344,11 @@ Starting to learn projectile a little bit...
 ;; (pretty-lambda-mode t)
 
 ;;(global-pretty-lambda-mode t)
+#+END_SRC
+** Go
+Setup my environment for programming in Go.
+#+BEGIN_SRC emacs-lisp
+(add-hook 'before-save-hook 'gofmt-before-save)
 #+END_SRC
 * My Random Functions
 ** Zoom-Window
