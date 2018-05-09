@@ -102,7 +102,6 @@ Tool Tips in echo area
     )
 
 
-  ;; Previous Window shortcut
 #+END_SRC
 ** Themes
 Installed Themes
@@ -407,6 +406,11 @@ Starting to learn projectile a little bit...
 ;; (pretty-lambda-mode t)
 
 ;;(global-pretty-lambda-mode t)
+#+END_SRC
+** Go
+Setup my environment for programming in Go.
+#+BEGIN_SRC emacs-lisp
+(add-hook 'before-save-hook 'gofmt-before-save)
 #+END_SRC
 * My Random Functions
 ** Zoom-Window

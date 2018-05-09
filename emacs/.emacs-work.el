@@ -124,3 +124,9 @@
 
 ;; Org Pomodoro
 (setq org-pomodoro-clock-break t)
+
+;; Settings for Spell Check
+(when (package-installed-p 'ispell)
+  (add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin/")
+  (setq ispell-program-name "aspell")
+  (setq ispell-dictionary "american"))
