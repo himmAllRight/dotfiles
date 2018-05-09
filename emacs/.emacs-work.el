@@ -47,7 +47,7 @@
   (interactive)
   (let ((project-src-list
          '((ggplot-1-2 "s:/_Vault_Working/Libraries/ggplot/src/branches/1.2/GGPLOT.lpr")
-           (ggplot "s:/_Vault_Working/Libraries/ggplot/src/developmet/truk/GGPLOT.lpr")
+           (ggplot "s:/_Vault_Working/Libraries/ggplot/src/development/trunk/GGPLOT.lpr")
            (ggplot-1-1 "s:/_Vault_Working/Libraries/ggplot/src/development/trunk/GGPLOT.lpr")
            (pros-edi "S:/_Vault_Working/2-applications/ProsEDICreator/src/development/trunk/pros-edi-creator.lpr")
            (pros-edi-1-0 "s:/_Vault_Working/2-applications/ProsEDICreator/src/branches/Version1.0/pros-edi-creator.lpr")
@@ -67,6 +67,7 @@
            (winstoic-base "s:/_Vault_Working/2-applications/winStoic/winStoic Base/Trunk/winStoicBase.lpr")
            (ihs-dvd "s:/_Vault_Working/2-applications/IHS-DVD/src/branches/1.0/WebServer/IHS-DVD.lpr")
            (ihs-dvd-trunk "s:/_Vault_Working/2-applications/IHS-DVD/src/development/trunk/WebServer/IHS-DVD.lpr")
+	   (hats-trunk "s:/_Vault_Working/2-applications/IHS-DVD/src/development/trunk/hats/hats.lpr")
            (2isBuild "s:/_Vault_Working/Libraries/2isBuild/src/development/trunk/2isBuild.lpr")
            (2apdataexec "s:/_Vault_Working/1-saas/2AP/src/development/2AP-C27J/trunk/DataExec/DataExec.lpr")
            (DB-Builder "s:/_Vault_Working/1-saas/PriceEdge/src/development/trunk/DB-builder/DB-builder.lpr")
