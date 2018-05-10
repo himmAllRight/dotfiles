@@ -54,6 +54,11 @@ Switch the Menubar off by default (I like to keep everything clean)
 (menu-bar-mode -1)
 #+END_SRC
 
+... but still let me easily toggle it on/off
+#+BEGIN_SRC emacs-lisp
+;; Toggle menubar keybind
+(global-set-key (kbd "C-c m") 'menu-bar-mode)
+#+END_SRC
 *** Scroll Bar
 Remove Scroll Bars
 #+BEGIN_SRC emacs-lisp
@@ -223,22 +228,19 @@ Counsel configuration
   (global-set-key (kbd "C-x C-f") 'counsel-find-file))
 #+END_SRC
 
-* Key Bindings
+* COMMENT Key Bindings
 These will eventually be relocations to just be included with their
 respective ~use-package~ calls...
 
 #+BEGIN_SRC emacs-lisp
+  ;; Eshell launch keybind
+  (global-set-key (kbd "C-c t") 'eshell)
 
-;; Toggle menubar keybind
-(global-set-key (kbd "C-c m") 'menu-bar-mode)
+  ;; Comment/Uncomment region
+  (global-set-key (kbd "C-c ;") 'comment-region)
 
-;; Eshell launch keybind
-(global-set-key (kbd "C-c t") 'eshell)
-
-;; Comment/Uncomment region
-(global-set-key (kbd "C-c ;") 'comment-region)
-
-
+  ;; Comment/Uncomment region
+  (global-set-key (kbd "C-c s") 'org-edit-src-code)
 #+END_SRC
 
 * Writting
