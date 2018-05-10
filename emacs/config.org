@@ -118,6 +118,11 @@ Load my Current default theme
 #+BEGIN_SRC emacs-lisp
   (load-theme 'gruvbox-dark-hard)
 #+END_SRC
+** Fonts
+Set default font
+#+BEGIN_SRC emacs-lisp
+  (set-default-font "Hack-10")
+#+END_SRC
 ** Dashboard
 Use the "dashboard" package for my startup screen.
 #+BEGIN_SRC emacs-lisp
@@ -228,7 +233,7 @@ Counsel configuration
   (global-set-key (kbd "C-x C-f") 'counsel-find-file))
 #+END_SRC
 
-* COMMENT Key Bindings
+* Key Bindings
 These will eventually be relocations to just be included with their
 respective ~use-package~ calls...
 
