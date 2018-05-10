@@ -29,42 +29,58 @@ found. It's a must for emacs configs.
 
 * Core Setup
 ** Basic Stuff
+*** Splash Screen
 Remove splash screen and use *scratch* instead as the home buffer
 #+BEGIN_SRC emacs-lisp
 (setq inhibit-startup-message t
       inhibit-startup-echo-area-message t)
 #+END_SRC
 
+*** Backup Directory
 Funnel all the auto backup files to one location.
-
 #+BEGIN_SRC emacs-lisp
 (setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
 #+END_SRC
 
+*** Line Numbers
 Switch line numbers on by default in all buffers
 #+BEGIN_SRC emacs-lisp
 (global-linum-mode 1)
 #+END_SRC
 
-
+*** Menu Bar
 Switch the Menubar off by default (I like to keep everything clean)
 #+BEGIN_SRC emacs-lisp
 (menu-bar-mode -1)
 #+END_SRC
 
+*** Scroll Bar
+Remove Scroll Bars
+#+BEGIN_SRC emacs-lisp
+  (scroll-bar-mode -1)
+#+END_SRC
+
+*** Tool Bar
+Remove Tool Bars
+#+BEGIN_SRC emacs-lisp
+  (tool-bar-mode -1)
+#+END_SRC
+
+*** New Line indent
 New lines auto indents
 #+BEGIN_SRC emacs-lisp
 (define-key global-map (kbd "RET")
   'newline-and-indent)
 #+END_SRC
 
-
+*** Tool Tips
 Tool Tips in echo area
 #+BEGIN_SRC emacs-lisp
 (tooltip-mode -1)
 (setq tooltip-use-echo-area t)
 #+END_SRC
 
+*** Smooth Scrolling
 Smooth Scrolling
 #+BEGIN_SRC emacs-lisp
 (use-package smooth-scroll
@@ -176,13 +192,13 @@ respective ~use-package~ calls...
 
 #+BEGIN_SRC emacs-lisp
 
-;; ;; Toggle menubar keybind
+;; Toggle menubar keybind
 (global-set-key (kbd "C-c m") 'menu-bar-mode)
 
-;; ;; Eshell launch keybind
+;; Eshell launch keybind
 (global-set-key (kbd "C-c t") 'eshell)
 
-;; ;; Comment/Uncomment region
+;; Comment/Uncomment region
 (global-set-key (kbd "C-c ;") 'comment-region)
 
 
