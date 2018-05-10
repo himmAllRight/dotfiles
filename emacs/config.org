@@ -113,6 +113,43 @@ Load my Current default theme
 #+BEGIN_SRC emacs-lisp
   (load-theme 'gruvbox-dark-hard)
 #+END_SRC
+** Dashboard
+Use the "dashboard" package for my startup screen.
+#+BEGIN_SRC emacs-lisp
+  (use-package dashboard
+    :ensure t
+    :config
+    (dashboard-setup-startup-hook)
+
+    ;; Edits
+    (setq dashboard-banner-logo-title "Welcome to Emacs, Ryan!")
+    (setq dashboard-startup-banner 'logo)
+    (setq dashboard-items '((recents   . 5)
+			    (bookmarks . 5)
+			    (agenda    . 5))))
+#+END_SRC
+** Window Management
+*** Switch-Window
+#+BEGIN_SRC emacs-lisp
+  (use-package switch-window
+    :ensure t)
+#+END_SRC
+*** Key Binding
+#+BEGIN_SRC emacs-lisp
+;; Previous Window shortcut
+(global-set-key (kbd "C-x p")
+                (lambda() (interactive) (other-window -1)))
+(global-set-key (kbd "C-x O")
+                (lambda() (interactive) (switch-window)))
+(global-set-key (kbd "C-x o")
+                (lambda() (interactive) (other-window 1)))
+(global-set-key (kbd "C-x \)")
+                (lambda() (interactive) (other-frame 1)))
+(global-set-key (kbd "C-x 0")
+                (lambda() (interactive) (delete-window)))
+
+(global-set-key (kbd "C-c z") 'zoom-window)
+#+END_SRC
 * Evil Mode
 
 Here is my Evile Mode setup. I've nested other ~use-pacages~ inside of
@@ -202,19 +239,6 @@ respective ~use-package~ calls...
 (global-set-key (kbd "C-c ;") 'comment-region)
 
 
-;; Previous Window shortcut
-(global-set-key (kbd "C-x p")
-                (lambda() (interactive) (other-window -1)))
-(global-set-key (kbd "C-x O")
-                (lambda() (interactive) (switch-window)))
-(global-set-key (kbd "C-x o")
-                (lambda() (interactive) (other-window 1)))
-(global-set-key (kbd "C-x \)")
-                (lambda() (interactive) (other-frame 1)))
-(global-set-key (kbd "C-x 0")
-                (lambda() (interactive) (delete-window)))
-
-(global-set-key (kbd "C-c z") 'zoom-window)
 #+END_SRC
 
 * Writting
