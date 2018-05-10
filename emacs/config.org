@@ -326,6 +326,11 @@ configs...
   )
 
 #+END_SRC
+
+Org Agenda open in current window
+#+BEGIN_SRC emacs-lisp
+  (setq org-agenda-window-setup 'current-window)
+#+END_SRC
 ** Markdown
 #+BEGIN_SRC emacs-lisp
 (use-package markdown-mode
