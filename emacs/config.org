@@ -357,7 +357,7 @@ files).
 Automatically wrap my lines:
 
 #+BEGIN_SRC emacs-lisp  
-(use-package aggressive-fill-paragraph
+  (use-package aggressive-fill-paragraph
     :ensure t
     :config
     (afp-setup-recommended-hooks))
@@ -371,9 +371,9 @@ Automatically wrap my lines:
   (ac-config-default))
 #+END_SRC
 ** Indentation
-=aggressive-indent= automatically indents buffers as I type out my
-code. I love it.
-#+BEGIN_SRC emacs-lisp
+   =aggressive-indent= automatically indents buffers as I type out my
+   code. I love it.
+   #+BEGIN_SRC emacs-lisp
 (use-package aggressive-indent
   :ensure t
   :config
