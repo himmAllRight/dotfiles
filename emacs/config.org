@@ -379,6 +379,12 @@ Automatically wrap my lines:
   :config
   (global-aggressive-indent-mode t))
 #+END_SRC
+** Fill Column Indicator
+Draws a line for the fill column, or at a different location.
+#+BEGIN_SRC emacs-lisp 
+(use-package fill-column-indicator
+    :ensure t) 
+#+END_SRC 
 ** Parens
 smart parens does auto paring for my parenthesis
 #+BEGIN_SRC emacs-lisp
