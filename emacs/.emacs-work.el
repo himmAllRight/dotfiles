@@ -56,6 +56,7 @@
            (dset-pep "s:/_Vault_Working/Libraries/DSET-PEP/src/development/trunk/DSET-PEP.lpr")
            (dset-pep-1-0 "s:/_Vault_Working/Libraries/DSET-PEP/src/branches/DSET-PEP 1.0/DSET-PEP.lpr")
            (data-updater "s:/_Vault_Working/3-blocks/DataUpdater/src/development/trunk/data-updater.lpr")
+           (data-updater-demo "s:/_Vault_Working/3-blocks/DataUpdater/User Documentation/data-updater-example/data-updater-example.lpr")
            (flis-foi "S:/_Vault_Working/Interfaces/flis-foi/src/development/trunk/flis-foi.lpr")
            (flis-foi-1-1 "S:/_Vault_Working/Interfaces/flis-foi/src/branches/1.1/flis-foi.lpr")
            (flis-foi-2-0 "S:/_Vault_Working/Interfaces/flis-foi/src/branches/2.0/flis-foi.lpr")
