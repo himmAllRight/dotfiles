@@ -427,7 +427,10 @@ Starting to learn projectile a little bit...
 ** Go
 Setup my environment for programming in Go.
 #+BEGIN_SRC emacs-lisp
-(add-hook 'before-save-hook 'gofmt-before-save)
+  (use-package go-mode
+    :ensure t
+    :config
+    (add-hook 'before-save-hook 'gofmt-before-save))
 #+END_SRC
 * My Random Functions
 ** Zoom-Window
@@ -470,8 +473,9 @@ I need this hook for the function, and I like to set it to a keybind:
 ** Work Settings
 Load functions for using Allegro when on Work computer
 #+BEGIN_SRC emacs-lisp
-(when (string-equal (upcase system-name) "LAFAYETTE")
-  (load "~/.emacs-work.el"))
+  (when ( or (string-equal (upcase system-name) "LAFAYETTE")
+             (string-equal (upcase system-name) "LAFAYETTE-LAPTO"))
+    (load "~/.emacs-work.el"))
 #+END_SRC
 ** Linux
 Load my Linux-specific configs
