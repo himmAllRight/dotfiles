@@ -259,7 +259,7 @@ configs...
   :config
   ;; Make sure org file code highlights correctly
   (setq org-src-fontify-natively t)
-  (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "DONE DONE")))
+  (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "Completed")))
 
   (evil-leader/set-key-for-mode 'org-mode
     "m i" 'org-clock-in
