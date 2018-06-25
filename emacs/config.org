@@ -92,6 +92,10 @@ Smooth Scrolling
     :ensure t)
 #+END_SRC
 ** Themes
+*** Load manual install theme dir
+    #+BEGIN_SRC emacs-lisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+*** Install Themes from Repos
 List of themes to install
 #+BEGIN_SRC emacs-lisp
   (use-package monokai-alt-theme
@@ -112,9 +116,15 @@ List of themes to install
   (use-package github-theme
     :ensure t
     :defer t)
+  (use-package melancholy
+    :ensure t
+    :defer t)
+  (use-package darkburn
+    :ensure t
+    :defer t)
 #+END_SRC
 
-Load my Current default theme
+*** Load Current default theme
 #+BEGIN_SRC emacs-lisp
   (load-theme 'gruvbox-dark-hard)
 #+END_SRC
@@ -370,15 +380,22 @@ code. I love it.
   :config
   (global-aggressive-indent-mode t))
 #+END_SRC
+** Fill Column Indicator
+Draws a line for the fill column, or at a different location.
+#+BEGIN_SRC emacs-lisp
+  (use-package fill-column-indicator
+    :ensure t)
+#+END_SRC
 ** Parens
 smart parens does auto paring for my parenthesis
 #+BEGIN_SRC emacs-lisp
-(use-package smartparens
-  :ensure t
-  :config
-  ;; Remove ' and  from pairing
-  (sp-pair "'" nil :actions :rem)
-  (sp-pair "`" "'" :actions :rem))
+  (use-package smartparens
+    :ensure t
+    :config
+    ;; Remove ' and  from pairing
+    (sp-pair "'" nil :actions :rem)
+    (sp-pair "`" "'" :actions :rem)
+    (smartparens-global-mode 1))
 #+END_SRC
 ** Git
 I use magit for easy git management
@@ -420,6 +437,7 @@ Saves the current state of the buffers, and then zooms the current
 buffer full screen. When called again, goes back to origonal buffer
 setup.
 #+BEGIN_SRC emacs-lisp
+(setq zoom-temp-window-configuration nil)
 (defun zoom-window ()
   (interactive)
   (if zoom-temp-window-configuration
@@ -456,13 +474,13 @@ I need this hook for the function, and I like to set it to a keybind:
 Load functions for using Allegro when on Work computer
 #+BEGIN_SRC emacs-lisp
 (when (string-equal (upcase system-name) "LAFAYETTE")
-  (load "~/.emacs-work.el"))
+  (load "~/dotfiles/emacs/.emacs-work.el"))
 #+END_SRC
 ** Linux
 Load my Linux-specific configs
 #+BEGIN_SRC emacs-lisp
 (when (string-equal system-type "gnu/linux")
-  (load "~/.emacs-linux.el"))
+  (load "~/dotfiles/emacs/.emacs-linux.el"))
 #+END_SRC
 * The Rest
 ** Auto Generated Stuff
