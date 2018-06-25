@@ -391,17 +391,10 @@ Automatically wrap my lines:
 #+END_SRC
 ** Fill Column Indicator
 Draws a line for the fill column, or at a different location.
-<<<<<<< HEAD
-#+BEGIN_SRC emacs-lisp
-  (use-package fill-column-indicator
-    :ensure t)
-#+END_SRC
-=======
 #+BEGIN_SRC emacs-lisp 
 (use-package fill-column-indicator
     :ensure t) 
 #+END_SRC 
->>>>>>> 74706c3762657efacfbe263fe3d138cdced89a92
 ** Parens
 smart parens does auto paring for my parenthesis
 #+BEGIN_SRC emacs-lisp
@@ -492,14 +485,9 @@ I need this hook for the function, and I like to set it to a keybind:
 ** Work Settings
 Load functions for using Allegro when on Work computer
 #+BEGIN_SRC emacs-lisp
-<<<<<<< HEAD
-(when (string-equal (upcase system-name) "LAFAYETTE")
-  (load "~/dotfiles/emacs/.emacs-work.el"))
-=======
   (when ( or (string-equal (upcase system-name) "LAFAYETTE")
-             (string-equal (upcase system-name) "LAFAYETTE-LAPTO"))
-    (load "~/.emacs-work.el"))
->>>>>>> 74706c3762657efacfbe263fe3d138cdced89a92
+	       (string-equal (upcase system-name) "LAFAYETTE-LAPTO"))
+      (load "~/.emacs-work.el"))
 #+END_SRC
 ** Linux
 Load my Linux-specific configs
