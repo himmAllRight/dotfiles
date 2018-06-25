@@ -3,7 +3,7 @@
 ;; This is sample code for starting and specifying defaults to the
 ;; {{[[-Emacs-]]}}-Lisp interface.
 
-(load "c:/acl100.64/eli/fi-site-init.el")
+(load "c:/acl100-smp.64/eli/fi-site-init.el")
 
 ;; Global var for the acl exe. Currently sets to ACL 10
 (setq acl-version "c:/acl100-smp.64/allegro")

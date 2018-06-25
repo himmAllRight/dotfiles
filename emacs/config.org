@@ -269,7 +269,7 @@ configs...
   :config
   ;; Make sure org file code highlights correctly
   (setq org-src-fontify-natively t)
-  (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "DONE DONE")))
+  (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "Completed")))
 
   (evil-leader/set-key-for-mode 'org-mode
     "m i" 'org-clock-in
@@ -363,6 +363,15 @@ files).
 (use-package wc-mode
   :ensure t)
 #+END_SRC
+** Auto word wrap
+Automatically wrap my lines:
+
+#+BEGIN_SRC emacs-lisp  
+  (use-package aggressive-fill-paragraph
+    :ensure t
+    :config
+    (afp-setup-recommended-hooks))
+#+END_SRC
 * Development
 ** Auto Complete
 #+BEGIN_SRC emacs-lisp
@@ -372,9 +381,9 @@ files).
   (ac-config-default))
 #+END_SRC
 ** Indentation
-=aggressive-indent= automatically indents buffers as I type out my
-code. I love it.
-#+BEGIN_SRC emacs-lisp
+   =aggressive-indent= automatically indents buffers as I type out my
+   code. I love it.
+   #+BEGIN_SRC emacs-lisp
 (use-package aggressive-indent
   :ensure t
   :config
@@ -382,10 +391,17 @@ code. I love it.
 #+END_SRC
 ** Fill Column Indicator
 Draws a line for the fill column, or at a different location.
+<<<<<<< HEAD
 #+BEGIN_SRC emacs-lisp
   (use-package fill-column-indicator
     :ensure t)
 #+END_SRC
+=======
+#+BEGIN_SRC emacs-lisp 
+(use-package fill-column-indicator
+    :ensure t) 
+#+END_SRC 
+>>>>>>> 74706c3762657efacfbe263fe3d138cdced89a92
 ** Parens
 smart parens does auto paring for my parenthesis
 #+BEGIN_SRC emacs-lisp
@@ -429,7 +445,10 @@ Starting to learn projectile a little bit...
 ** Go
 Setup my environment for programming in Go.
 #+BEGIN_SRC emacs-lisp
-(add-hook 'before-save-hook 'gofmt-before-save)
+  (use-package go-mode
+    :ensure t
+    :config
+    (add-hook 'before-save-hook 'gofmt-before-save))
 #+END_SRC
 * My Random Functions
 ** Zoom-Window
@@ -473,8 +492,14 @@ I need this hook for the function, and I like to set it to a keybind:
 ** Work Settings
 Load functions for using Allegro when on Work computer
 #+BEGIN_SRC emacs-lisp
+<<<<<<< HEAD
 (when (string-equal (upcase system-name) "LAFAYETTE")
   (load "~/dotfiles/emacs/.emacs-work.el"))
+=======
+  (when ( or (string-equal (upcase system-name) "LAFAYETTE")
+             (string-equal (upcase system-name) "LAFAYETTE-LAPTO"))
+    (load "~/.emacs-work.el"))
+>>>>>>> 74706c3762657efacfbe263fe3d138cdced89a92
 #+END_SRC
 ** Linux
 Load my Linux-specific configs
