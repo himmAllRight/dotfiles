@@ -435,6 +435,12 @@ Starting to learn projectile a little bit...
 
 ;;(global-pretty-lambda-mode t)
 #+END_SRC
+** Yaml
+Setup YAML mode for editing configs
+#+BEGIN_SRC emacs-lisp
+  (use-package yaml-mode
+    :ensure t)
+#+END_SRC
 ** Go
 Setup my environment for programming in Go.
 #+BEGIN_SRC emacs-lisp
