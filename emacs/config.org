@@ -122,11 +122,14 @@ List of themes to install
   (use-package darkburn
     :ensure t
     :defer t)
+  (use-package dracula-theme
+    :ensure t
+    :defer t)
 #+END_SRC
 
 *** Load Current default theme
 #+BEGIN_SRC emacs-lisp
-  (load-theme 'gruvbox-dark-hard)
+  (load-theme 'dracula)
 #+END_SRC
 ** Fonts
 Set default font
