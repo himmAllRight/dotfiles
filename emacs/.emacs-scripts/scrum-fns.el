@@ -12,7 +12,9 @@
     
     (apply #'insert output-list)
 
-    (org-cycle)))
+    (org-cycle)
+
+    (insert "\n")))
 
 (defun ryan/get-org-task-list-data ()
   "Parses a sub tree and grabs the data to generate the table from."
@@ -41,19 +43,19 @@
 				      (cadr header-list))
 				   0)))
 		(cond ((= prev-level (car header-data))
-		       (push (format "| %s | %s |\n"
+		       (push (format "\n| %s | %s |"
 				     (elt header-data 4)
 				     time)
 			     output-list)
 		       (cons (car header-data) (+ (cdr prev-values) time)))
 		      ((<= prev-level (car header-data))
-		       (push (format "| %s | %s |\n"
+		       (push (format "\n| %s | %s |"
 				     (elt header-data 4)
 				     time)
 			     output-list)
 		       (cons (car header-data) 0))
 		      ((> prev-level (car header-data))
-		       (push (format "| %s | %s |\n"
+		       (push (format "\n| %s | %s |"
 				     (elt header-data 4)
 				     (+ time (cdr prev-values)))
 			     output-list)
