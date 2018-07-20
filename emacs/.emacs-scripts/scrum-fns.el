@@ -36,8 +36,8 @@
     (mapcar #'ryan/insert-scrum-board-task
 	    task-list)
 
-    (org-cycle)
-    ))
+    ;; Align compelted table
+    (org-table-align)))
 
 (defun ryan/insert-scrum-board-task (task)
   (let* ((status       (oref task :status))
