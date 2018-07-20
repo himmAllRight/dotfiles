@@ -9,10 +9,20 @@
 
 
 ;; An alist to manage the status names and their respective columns.
-(setf *columns-alist* '(("Backlog"    "\n| %s | | | |")
+(setf *columns-alist* '(("Queue"    "\n| %s | | | |")
 			("Working On" "\n| | %s | | |")
 			("On Hold"    "\n| | | %s | |")
 			("Finished"   "\n| | | | %s |")))
+
+(defun ryan/create-scrum-board ()
+  "Create a new scrum board, with BEGIN and END tags."
+  (interactive)
+  (insert (format "#+BEGIN: scrum-board\n"))
+  (ryan/generate-scrum-board)
+  (insert (format "\n#+END:")))
+
+(defun org-dblock-write:scrum-board (params)
+  (ryan/generate-scrum-board))
 
 (defun ryan/generate-scrum-board ()
   (interactive)
@@ -20,13 +30,11 @@
     ;; Create Header
     (insert
      (format "|--|\n|%s|\n|--|"
-	     (mapconcat #'car *columns-defs* " | ")))
+	     (mapconcat #'car *columns-alist* " | ")))
 
     ;; Insert rows for each task
     (mapcar #'ryan/insert-scrum-board-task
 	    task-list)
-
-    (insert (format "\n|--|"))
 
     (org-cycle)
     ))
@@ -69,19 +77,7 @@ status marked."
 			   :heading  heading
 			   :tags     tags
 			   :time     (when time (string-to-number time)))
-	    output-it))))
+	    output-items))))
      nil
      nil)
-    output-items))
-
-;; Scratch
-(setf foo nil)
-(setf bar (car foo))
-
-(mapcar #'ryan/insert-scrum-board-task foo)
-
-
-
-(mapcar (lambda (obj) (oref obj :status)) foo)
-
-
+    (reverse output-items)))
