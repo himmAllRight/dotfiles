@@ -9,12 +9,18 @@
     (save-excursion
       (end-of-line 0)
       (open-line 1))
+
+    (apply #'insert
+	   '("| Task | Time (hr) |\n"
+	     "|----|\n"))
     
     (apply #'insert output-list)
 
     (org-cycle)
 
-    (insert "\n")))
+    ))
+
+(setf foo nil)
 
 (defun ryan/get-org-task-list-data ()
   "Parses a sub tree and grabs the data to generate the table from."
@@ -22,19 +28,29 @@
   (let (output-items)
     (org-map-entries
      (lambda ()
-       (let* ((name (org-heading-components))
-	      (time (org-element-property :TIME (org-element-at-point))))
-	 (push (list name time) output-items)))
-     nil
-     'tree)
-    output-items))
+       (multiple-value-bind (level rlevel todo priority title tags)
+	   (org-heading-components)
+	 (let* ((time (org-element-property :TIME (org-element-at-point))))
+	   (push
+	    (make-instance 'ryan/task
+			   :level    level
+			   :todo     todo
+			   :priority priority
+			   :title    title
+			   :tags     tags
+			   :time     time)
+	    foo))
+	 nil
+	 'tree))
+     output-items)))
 
 
 (defun calc-table-output (parsed-list)
   "Takes the parsed list of lists for the table, sums up the total
   time and then returns a list of strings to insert."
   (interactive)
-  (let ((output-list))
+  (let ((top-level-total 0)
+	(output-list))
     (reduce (lambda (prev-values header-list)
 	      (let ((header-data (car header-list))
 		    (prev-level   (car prev-values))
@@ -62,3 +78,26 @@
 		       (cons (car header-data) (+ (cdr prev-values) time))))))
 	    parsed-list :initial-value (cons 0 0))
     output-list))
+
+
+(mapcar (lambda (item) (insert (format "\n%s" item))) (reverse foo))
+
+
+(defclass ryan/task ()
+  ((level    :initarg :level    :initform 0)
+   (todo     :initarg :todo     :initform nil)
+   (priority :initarg :priority :initform nil)
+   (title    :initarg :title    :initform "")
+   (tags     :initarg :tags     :initform nil)
+   (time     :initarg :time     :initform 0)))
+
+
+
+(setf bar (make-instance 'ryan/task
+			 :level 1
+			 :title "Some Title Name"
+			 :tags :Test:
+			 :time 2))
+
+
+(setf foo nil)
