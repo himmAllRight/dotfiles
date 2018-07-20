@@ -267,76 +267,77 @@ Yes. It get's it's own section. Again, I've nested everything. I might
 break that up though now if I the babel stuff to generate my
 configs...
 #+BEGIN_SRC emacs-lisp
-(use-package org
-  :ensure t
-  :config
-  ;; Make sure org file code highlights correctly
-  (setq org-src-fontify-natively t)
-  (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "Completed")))
-
-  (evil-leader/set-key-for-mode 'org-mode
-    "m i" 'org-clock-in
-    "m C" 'org-toggle-checkbox
-    "m o" 'org-clock-out
-    "m c" 'org-clock-jump-to-current-clock
-    "m d" 'org-clock-display
-    "m e" 'org-set-effort
-    "m p" 'org-pomodoro
-    "m t" 'org-set-tags-command
-    "m m" 'org-clock-modify-effort-estimate
-    "m s" 'org-schedule)
-  
-  ;; ;; Org Agenda stuff
-  (setq org-agenda-files '("~/nextcloud/emacs/org/archive/work.org"))
-  
-  (defun org-code (start end)
-    "Wraps selected text with org code tags"
-    (interactive "r")
-    (let ((selected-text (buffer-substring (mark) (point)))
-  	  (db-name (read-from-minibuffer "Language[common-lisp]: ")))
-      (when (eq db-name "")
-  	(setf db-name "common-lisp"))
-      (kill-region start end)
-      (insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
-
-  (use-package org-pomodoro
+  (use-package org
     :ensure t
     :config
-    ;; Persistent Clocking
-    (setq org-clock-persist 'history)
-    (org-clock-persistence-insinuate)
+    ;; Make sure org file code highlights correctly
+    (setq org-src-fontify-natively t)
+    (setq org-todo-keywords '((sequence "TODO" "In Progress" "|" "Waiting" "DONE" "Completed")
+			      (sequence "Queue" "Working On" "On Hold" "|" "Finished")))
 
-    ;; Default Table Params
-    (setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
+    (evil-leader/set-key-for-mode 'org-mode
+      "m i" 'org-clock-in
+      "m C" 'org-toggle-checkbox
+      "m o" 'org-clock-out
+      "m c" 'org-clock-jump-to-current-clock
+      "m d" 'org-clock-display
+      "m e" 'org-set-effort
+      "m p" 'org-pomodoro
+      "m t" 'org-set-tags-command
+      "m m" 'org-clock-modify-effort-estimate
+      "m s" 'org-schedule)
+
+    ;; ;; Org Agenda stuff
+    (setq org-agenda-files '("~/nextcloud/emacs/org/archive/work.org"))
+
+    (defun org-code (start end)
+      "Wraps selected text with org code tags"
+      (interactive "r")
+      (let ((selected-text (buffer-substring (mark) (point)))
+	    (db-name (read-from-minibuffer "Language[common-lisp]: ")))
+	(when (eq db-name "")
+	  (setf db-name "common-lisp"))
+	(kill-region start end)
+	(insert (format "#+BEGIN_SRC %s \n%s \n#+END_SRC" db-name selected-text))))
+
+    (use-package org-pomodoro
+      :ensure t
+      :config
+      ;; Persistent Clocking
+      (setq org-clock-persist 'history)
+      (org-clock-persistence-insinuate)
+
+      ;; Default Table Params
+      (setq org-clock-clocktable-default-properties '(:maxlevel 3 :scope subtree :tags "-Lunch"))
 
 
-    ;; Org Pomodoro ;;
-    ;; Setup pomodoro timer keybind
-    (global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
-    (global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
+      ;; Org Pomodoro ;;
+      ;; Setup pomodoro timer keybind
+      (global-set-key (kbd "C-S-c C-S-p") 'org-pomodoro)
+      (global-set-key (kbd "C-S-c C-S-e") 'org-pomodoro-extend-last-clock)
 
-    (defun org-pomodoro-get-times ()
-      (interactive)
-      (message "work length: %s  short break: %s  long break: %s"
-    	       org-pomodoro-length
-    	       org-pomodoro-short-break-length
-    	       org-pomodoro-long-break-length))
+      (defun org-pomodoro-get-times ()
+	(interactive)
+	(message "work length: %s  short break: %s  long break: %s"
+		 org-pomodoro-length
+		 org-pomodoro-short-break-length
+		 org-pomodoro-long-break-length))
 
-    (defun org-pomodoro-set-pomodoro ()
-      (interactive)
-      (setf org-pomodoro-length 35)
-      (setf org-pomodoro-short-break-length 9)
-      (setf org-pomodoro-long-break-length 15))
+      (defun org-pomodoro-set-pomodoro ()
+	(interactive)
+	(setf org-pomodoro-length 35)
+	(setf org-pomodoro-short-break-length 9)
+	(setf org-pomodoro-long-break-length 15))
 
 
-    (org-pomodoro-set-pomodoro)
+      (org-pomodoro-set-pomodoro)
 
-    (defun org-pomodoro-set-52-17 ()
-      (interactive)
-      (setf org-pomodoro-length 52)
-      (setf org-pomodoro-short-break-length 17)
-      (setf org-pomodoro-long-break-length 17)))
-  )
+      (defun org-pomodoro-set-52-17 ()
+	(interactive)
+	(setf org-pomodoro-length 52)
+	(setf org-pomodoro-short-break-length 17)
+	(setf org-pomodoro-long-break-length 17)))
+    )
 
 #+END_SRC
 
