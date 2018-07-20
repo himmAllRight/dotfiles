@@ -38,11 +38,37 @@
 			   :priority priority
 			   :title    title
 			   :tags     tags
-			   :time     time)
-	    foo))
-	 nil
-	 'tree))
-     output-items)))
+			   :time     (when time (string-to-number time)))
+	    foo))))
+     nil
+     'tree)
+    output-items))
+
+;; (defun ryan/get-org-task-list-data ()
+;;   "Parses a sub tree and grabs the data to generate the table from."
+;;   (interactive)
+;;   (let (output-items)
+;;     (org-map-entries
+;;      (lambda ()
+;;        (let* ((item-data (org-heading-components))
+;; 	      (level    (elt item-data 0))
+;; 	      (todo     (elt item-data 2))
+;; 	      (priority (elt item-data 3))
+;; 	      (title    (elt item-data 4))
+;; 	      (tags     (elt item-data 5))
+;; 	      (time     (org-element-property :TIME (org-element-at-point))))
+;; 	 (push
+;; 	  (make-instance 'ryan/task
+;; 			 :level    level
+;; 			 :todo     todo
+;; 			 :priority priority
+;; 			 :title    title
+;; 			 :tags     tags
+;; 			 :time     time)
+;; 	  foo)))
+;;      nil
+;;      'tree)
+;;     output-items))
 
 
 (defun calc-table-output (parsed-list)
@@ -51,9 +77,8 @@
   (interactive)
   (let ((top-level-total 0)
 	(output-list))
-    (reduce (lambda (prev-values header-list)
-	      (let ((header-data (car header-list))
-		    (prev-level   (car prev-values))
+    (reduce (lambda (prev-values obj)
+	      (let ((prev-level   (car prev-values))
 		    (time        (if (cadr header-list)
 				     (string-to-number
 				      (cadr header-list))
@@ -79,7 +104,7 @@
 	    parsed-list :initial-value (cons 0 0))
     output-list))
 
-
+(org-element)
 (mapcar (lambda (item) (insert (format "\n%s" item))) (reverse foo))
 
 
@@ -92,12 +117,7 @@
    (time     :initarg :time     :initform 0)))
 
 
-
-(setf bar (make-instance 'ryan/task
-			 :level 1
-			 :title "Some Title Name"
-			 :tags :Test:
-			 :time 2))
-
-
 (setf foo nil)
+(setf bar (car foo))
+
+(mapcar (lambda (obj) (oref obj :time)) foo)
