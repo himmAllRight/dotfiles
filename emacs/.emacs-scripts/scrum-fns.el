@@ -2,90 +2,86 @@
 
 (defclass ryan/task ()
   ((level    :initarg :level    :initform 0)
-   (todo     :initarg :todo     :initform nil)
-   (priority :initarg :priority :initform nil)
-   (title    :initarg :title    :initform "")
+   (status   :initarg :status   :initform nil)
+   (heading  :initarg :heading  :initform "")
    (tags     :initarg :tags     :initform nil)
    (time     :initarg :time     :initform 0)))
 
-(defun ryan/generate-task-table ()
-  "Generates a table from a sub tree"
+
+;; An alist to manage the status names and their respective columns.
+(setf *columns-alist* '(("Backlog"    "\n| %s | | | |")
+			("Working On" "\n| | %s | | |")
+			("On Hold"    "\n| | | %s | |")
+			("Finished"   "\n| | | | %s |")))
+
+(defun ryan/generate-scrum-board ()
   (interactive)
-  (let* ((parsed-list (ryan/get-org-task-list-data))
-	 (output-list (calc-table-output parsed-list)))
+  (let ((task-list (ryan/get-tasks-with-status)))
+    ;; Create Header
+    (insert
+     (format "|--|\n|%s|\n|--|"
+	     (mapconcat #'car *columns-defs* " | ")))
 
-    (save-excursion
-      (end-of-line 0)
-      (open-line 1))
+    ;; Insert rows for each task
+    (mapcar #'ryan/insert-scrum-board-task
+	    task-list)
 
-    (apply #'insert
-	   '("\n| Task | Time (hr) |"
-	     "\n|----|"))
-    
-    (apply #'insert output-list)
+    (insert (format "\n|--|"))
 
     (org-cycle)
-
     ))
 
-(defun ryan/get-org-task-list-data ()
-  "Parses a sub tree and grabs the data to generate the table from."
+(defun ryan/insert-scrum-board-task (task)
+  (let* ((status       (oref task :status))
+	 (link-heading (format "[[%s]]" (oref task :heading)))
+	 (str          (ryan/scrum-row-format-string status)))
+    ;; Only write task it matches a proper status
+    (when str
+      (insert (format str link-heading)))))
+
+(defun ryan/scrum-row-format-string (status)
+  "Returns the format string based on status/column placement
+using *coumns-alist*."
+  (let ((var (assoc status *columns-alist* #'string-equal)))
+    (when var
+      (cadr var))))
+
+
+
+(defun ryan/get-tasks-with-status ()
+  "Returns a list of task objects in the buffer that have a
+status marked."
   (interactive)
   (let (output-items)
     (org-map-entries
      (lambda ()
-       (multiple-value-bind (level rlevel todo priority title tags)
-	   (org-heading-components)
-	 (let* ((time (org-element-property :TIME (org-element-at-point))))
+       (let* ((heading-data (org-heading-components))w
+	      (level        (elt heading-data 0))
+	      (status       (elt heading-data 2))
+	      (heading      (elt heading-data 4))
+	      (tags         (elt heading-data 5))
+	      (time (org-element-property :TIME (org-element-at-point))))
+	 (when status
 	   (push
 	    (make-instance 'ryan/task
 			   :level    level
-			   :todo     todo
-			   :priority priority
-			   :title    title
+			   :status   status
+			   :heading  heading
 			   :tags     tags
 			   :time     (when time (string-to-number time)))
-	    output-items))))
+	    output-it))))
      nil
-     'tree)
+     nil)
     output-items))
-
-(defun calc-table-output (parsed-list)
-  "Takes the parsed list of lists for the table, sums up the total
-  time and then returns a list of strings to insert."
-  (interactive)
-  (let ((top-level-total 0)
-	(output-list))
-    (reduce (lambda (prev-values obj)
-	      (let ((prev-level   (car prev-values))
-		    (time        (if (oref obj :time)
-				     (oref obj :time)
-				   0)))
-		;; TODO: Cleanup all this redundancy
-		(cond ((= prev-level (oref obj :level))
-		       (push (format "\n| %s | %s |"
-				     (oref obj :title)
-				     time)
-			     output-list)
-		       (cons (oref obj :level) (+ (cdr prev-values) time)))
-		      ((<= prev-level (oref obj :level))
-		       (push (format "\n| %s | %s |"
-				     (oref obj :title)
-				     time)
-			     output-list)
-		       (cons (oref obj :level) 0))
-		      ((> prev-level (oref obj :level))
-		       (push (format "\n| %s | %s |"
-				     (oref obj :title)
-				     (+ time (cdr prev-values)))
-			     output-list)
-		       (cons (oref obj :level) (+ (cdr prev-values) time))))))
-	    parsed-list :initial-value (cons 0 0))
-    output-list))
-
 
 ;; Scratch
 (setf foo nil)
 (setf bar (car foo))
 
-(mapcar (lambda (obj) (oref obj :time)) foo)
+(mapcar #'ryan/insert-scrum-board-task foo)
+
+
+
+(mapcar (lambda (obj) (oref obj :status)) foo)
+
+
