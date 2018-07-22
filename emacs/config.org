@@ -445,6 +445,12 @@ Setup YAML mode for editing configs
   (use-package yaml-mode
     :ensure t)
 #+END_SRC
+** Json
+Json mode:
+#+BEGIN_SRC emacs-lisp
+  (use-package json-mode
+    :ensure t)
+#+END_SRC
 ** Go
 Setup my environment for programming in Go.
 #+BEGIN_SRC emacs-lisp
@@ -491,6 +497,12 @@ I need this hook for the function, and I like to set it to a keybind:
 
 (global-set-key (kbd "C-c <delete>") 'eshell-clear-buffer)
 #+END_SRC
+** Org SCRUM
+Load my functions for org scrum stuff
+#+BEGIN_SRC emacs-lisp
+  (load "~/dotfiles/emacs/.emacs-scripts/scrum-fns.el")
+#+END_SRC
+
 * Load Other Configs
 ** Work Settings
 Load functions for using Allegro when on Work computer
