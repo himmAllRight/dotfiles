@@ -501,7 +501,8 @@ I need this hook for the function, and I like to set it to a keybind:
 ** Org SCRUM
 Load my functions for org scrum stuff
 #+BEGIN_SRC emacs-lisp
-  (load "~/dotfiles/emacs/.emacs-scripts/scrum-fns.el")
+  (use-package ry-org-scrum
+    :ensure t)
 #+END_SRC
 
 * Load Other Configs
