@@ -93,8 +93,9 @@ Smooth Scrolling
 #+END_SRC
 ** Themes
 *** Load manual install theme dir
-    #+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+#+END_SRC
 *** Install Themes from Repos
 List of themes to install
 #+BEGIN_SRC emacs-lisp
@@ -129,7 +130,7 @@ List of themes to install
 
 *** Load Current default theme
 #+BEGIN_SRC emacs-lisp
-  (load-theme 'dracula)
+  (load-theme 'creamsody)
 #+END_SRC
 ** Fonts
 Set default font
@@ -387,7 +388,7 @@ Automatically wrap my lines:
 ** Indentation
    =aggressive-indent= automatically indents buffers as I type out my
    code. I love it.
-   #+BEGIN_SRC emacs-lisp
+#+BEGIN_SRC emacs-lisp
 (use-package aggressive-indent
   :ensure t
   :config
