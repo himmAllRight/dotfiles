@@ -117,10 +117,10 @@ List of themes to install
   (use-package github-theme
     :ensure t
     :defer t)
-  (use-package melancholy
+  (use-package melancholy-theme
     :ensure t
     :defer t)
-  (use-package darkburn
+  (use-package darkburn-theme
     :ensure t
     :defer t)
   (use-package dracula-theme
