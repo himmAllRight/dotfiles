@@ -342,6 +342,13 @@ configs...
 
 #+END_SRC
 
+Htmlize to export my org files to web pages:
+
+#+BEGIN_SRC emacs-lisp
+  (use-package htmlize
+    :ensure t)
+#+END_SRC
+
 Org Agenda open in current window
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-window-setup 'current-window)
@@ -424,15 +431,15 @@ I use magit for easy git management
 ** Projects
 Starting to learn projectile a little bit...
 #+BEGIN_SRC emacs-lisp
-(use-package projectile
-  :ensure t
-  :config
-  (projectile-global-mode)
-
-  (use-package counsel-projectile
+  (use-package projectile
     :ensure t
+    :config
+    (projectile-global-mode)
+
+    ;; (use-package counsel-projectile
+    ;;   :ensure t
+    ;;   )
     )
-  )
 #+END_SRC
 ** Pretty Code
 #+BEGIN_SRC emacs-lisp
