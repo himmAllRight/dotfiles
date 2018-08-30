@@ -123,6 +123,9 @@ List of themes to install
   (use-package darkburn-theme
     :ensure t
     :defer t)
+  (use-package kaolin-themes
+    :ensure t
+    :defer t)
   (use-package dracula-theme
     :ensure t
     :defer t)
