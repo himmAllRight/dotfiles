@@ -385,11 +385,18 @@ files).
 ** Auto word wrap
 Automatically wrap my lines:
 
+Removed default on for now... it's actaully annoying for most
+things. I'll eventually figure out /which/ minor modes I want it on by
+default in and add those hooks here. I also left the setup command
+commented so I can default it to on again easily in the future if I
+want.
+
 #+BEGIN_SRC emacs-lisp  
   (use-package aggressive-fill-paragraph
     :ensure t
     :config
-    (afp-setup-recommended-hooks))
+    ;;(afp-setup-recommended-hooks)
+    )
 #+END_SRC
 * Development
 ** Auto Complete
