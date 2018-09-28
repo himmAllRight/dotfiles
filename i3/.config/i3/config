@@ -12,7 +12,8 @@ font pango:Arial Black 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec konsole
 #bindsym $mod+Return exec gnome-terminal
 
 ## kill focused window
@@ -203,7 +204,7 @@ bar {
         separator_symbol        "|"
         workspace_buttons       yes
         strip_workspace_numbers yes
-        #position                top
+        position                top
 
     colors {
             background  #212121
