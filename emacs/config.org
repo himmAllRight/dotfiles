@@ -529,12 +529,6 @@ Load my functions for org scrum stuff
 
 * Load Other Configs
 ** Work Settings
-Load functions for using Allegro when on Work computer
-#+BEGIN_SRC emacs-lisp
-  (when ( or (string-equal (upcase system-name) "LAFAYETTE")
-	       (string-equal (upcase system-name) "LAFAYETTE-LAPTO"))
-      (load "~/.emacs-work.el"))
-#+END_SRC
 ** Linux
 Load my Linux-specific configs
 #+BEGIN_SRC emacs-lisp
