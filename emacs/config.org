@@ -398,6 +398,12 @@ want.
     ;;(afp-setup-recommended-hooks)
     )
 #+END_SRC
+** Darkroom
+#+BEGIN_SRC emacs-lisp
+  (use-package darkroom
+    :ensure t
+    :bind (("C-c d" . darkroom-mode)))
+#+END_SRC
 * Development
 ** Auto Complete
 #+BEGIN_SRC emacs-lisp
