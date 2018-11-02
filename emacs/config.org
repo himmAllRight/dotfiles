@@ -492,8 +492,15 @@ Json mode:
 Starting a python dev setup:
 
 #+BEGIN_SRC emacs-lisp
-  ;; (use-package elpy
-  ;;   :ensure t)
+  ;; This should only run fully if elpy is installed
+  (unwind-protect
+      (use-package elpy
+        :ensure t))
+#+END_SRC
+
+Set default interpreter to python 3 instead of 2.
+#+BEGIN_SRC emacs-lisp
+  (setf python-shell-interpreter "python3")
 #+END_SRC
 
 ** Go
