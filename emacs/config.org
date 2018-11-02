@@ -28,6 +28,11 @@ found. It's a must for emacs configs.
 #+END_SRC
 * Core Setup
 ** Basic Stuff
+*** Better Defaults
+#+BEGIN_SRC emacs-lisp
+  (use-package better-defaults
+    :ensure t)
+#+END_SRC
 *** Splash Screen
 Remove splash screen and use *scratch* instead as the home buffer
 #+BEGIN_SRC emacs-lisp
@@ -128,11 +133,14 @@ List of themes to install
   (use-package dracula-theme
     :ensure t
     :defer t)
+  (use-package darkokai-theme
+    :ensure t
+    :defer t)
 #+END_SRC
 
 *** Load Current default theme
 #+BEGIN_SRC emacs-lisp
-  (load-theme 'creamsody)
+  (load-theme 'darkokai)
 #+END_SRC
 ** Fonts
 Set default font
@@ -480,6 +488,14 @@ Json mode:
   (use-package json-mode
     :ensure t)
 #+END_SRC
+** Python
+Starting a python dev setup:
+
+#+BEGIN_SRC emacs-lisp
+  ;; (use-package elpy
+  ;;   :ensure t)
+#+END_SRC
+
 ** Go
 Setup my environment for programming in Go.
 #+BEGIN_SRC emacs-lisp
