@@ -140,7 +140,7 @@ List of themes to install
 
 *** Load Current default theme
 #+BEGIN_SRC emacs-lisp
-  (load-theme 'darkokai)
+  (load-theme 'darkokai t)
 #+END_SRC
 ** Fonts
 Set default font
