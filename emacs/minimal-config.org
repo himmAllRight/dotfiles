@@ -58,7 +58,7 @@ Switch the Menubar off by default (I like to keep everything clean)
 *** Scroll Bar
 Remove Scroll Bars
 #+BEGIN_SRC emacs-lisp
-  (scroll-bar-mode -1)
+  ;;(scroll-bar-mode -1)
 #+END_SRC
 
 *** Tool Bar
