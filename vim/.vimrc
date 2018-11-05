@@ -77,6 +77,8 @@ set expandtab
 set shiftround
 set smarttab
 
+" NERDTreeToggle shorthand
+cnoreabbrev NTO NERDTreeToggle
 
 " Smart way to move between windows
 map <C-j> <C-W>j
