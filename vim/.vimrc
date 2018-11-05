@@ -20,12 +20,12 @@ Plug 'nvie/vim-flake8'          " PEP 8 checking
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'kien/ctrlp.vim'           " Search anything with ^p
 Plug 'tpope/vim-fugitive'       " Git integration
 Plug 'itchyny/lightline.vim'    " Powerline clone
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'sheerun/vim-polyglot'
+Plug 'Valloric/YouCompleteMe'
 
 " Python
 Plug 'hdima/python-syntax'
@@ -34,6 +34,7 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
@@ -112,6 +113,18 @@ imap <M-D-Left> <esc>:tabprevious<cr>a
 
 " Set UTF-8
 set encoding=utf-8
+
+
+" Syntastic
+let g:syntastic_python_checkers = ['pylint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Prefer pytest whenever it is available
 if executable('py.test')
