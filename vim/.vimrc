@@ -14,7 +14,6 @@ call plug#begin('~/.vim/plugged')
 
 " Bundles to install
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 Plug 'https://gitlab.com/yorickpeterse/happy_hacking.vim'
 Plug 'vim-syntastic/syntastic'  " Syntax plugin
 Plug 'nvie/vim-flake8'          " PEP 8 checking
@@ -23,6 +22,18 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'kien/ctrlp.vim'           " Search anything with ^p
 Plug 'tpope/vim-fugitive'       " Git integration
+Plug 'itchyny/lightline.vim'    " Powerline clone
+Plug 'terryma/vim-multiple-cursors'
+
+Plug 'sheerun/vim-polyglot'
+
+" Python
+Plug 'hdima/python-syntax'
+Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
+Plug 'hynek/vim-python-pep8-indent'
+Plug 'davidhalter/jedi-vim'
+Plug 'jmcantrell/vim-virtualenv'
+Plug 'janko-m/vim-test'
 
 call plug#end()
 
@@ -98,28 +109,15 @@ imap <M-D-Right> <esc>:tabnext<cr>a
 map <M-D-Left> :tabprevious<cr>
 imap <M-D-Left> <esc>:tabprevious<cr>a
 
-" Proper PEP 8 indentation
-au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
 
 " Set UTF-8
 set encoding=utf-8
 
-"python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
+" Prefer pytest whenever it is available
+if executable('py.test')
+    let test#python#runner = 'pytest'
+    let test#python#pytest#options = '-v'
+endif
 
 " Strip trailing whitespace
 function! Preserve(command)
