@@ -15,7 +15,6 @@ call plug#begin('~/.vim/plugged')
 " Bundles to install
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
-Plug 'Valloric/YouCompleteMe'
 Plug 'https://gitlab.com/yorickpeterse/happy_hacking.vim'
 Plug 'vim-syntastic/syntastic'  " Syntax plugin
 Plug 'nvie/vim-flake8'          " PEP 8 checking
@@ -109,10 +108,6 @@ au BufNewFile,BufRead *.py
 
 " Set UTF-8
 set encoding=utf-8
-
-" YouCompleteMe stuff
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 "python with virtualenv support
 py << EOF
