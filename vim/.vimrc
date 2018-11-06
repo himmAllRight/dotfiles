@@ -46,6 +46,7 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'sheerun/vim-polyglot'
 "Plug 'Valloric/YouCompleteMe'
+Plug 'jceb/vim-orgmode'
 
 " Python
 Plug 'hdima/python-syntax'
@@ -55,6 +56,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
 Plug 'vim-syntastic/syntastic'
+
 
 " Neovim only plugins
 if has('nvim')
@@ -69,7 +71,16 @@ if has('nvim')
     Plug 'ncm2/ncm2-bufword'
     Plug 'ncm2/ncm2-tmux'
     Plug 'ncm2/ncm2-path'
+
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'zchee/deoplete-jedi'
+else
+    " deoplete else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
 endif
+let g:deoplete#enable_at_startup = 1
 
 if has('autocmd')
     " Spelling
