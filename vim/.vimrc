@@ -1,3 +1,4 @@
+
 if has('vim_starting')
     " Be iMproved
     set nocompatible
@@ -32,7 +33,7 @@ endif
 call plug#begin(s:plugged_path)
 
 " Bundles to install
-Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown'
 Plug 'vim-syntastic/syntastic'  " Syntax plugin
 Plug 'nvie/vim-flake8'          " PEP 8 checking
 Plug 'scrooloose/nerdtree'
@@ -41,9 +42,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'       " Git integration
 Plug 'itchyny/lightline.vim'    " Powerline clone
 Plug 'terryma/vim-multiple-cursors'
+Plug 'kien/ctrlp.vim'
 
 Plug 'sheerun/vim-polyglot'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
 " Python
 Plug 'hdima/python-syntax'
@@ -56,9 +58,25 @@ Plug 'vim-syntastic/syntastic'
 
 " Neovim only plugins
 if has('nvim')
-    Plug 'roxma/nvim-completion-manager'
+    Plug 'ncm2/ncm2'
+    Plug 'roxma/nvim-yarp'
+
+    " IMPORTANTE: :help Ncm2PopupOpen for more information
+    set completeopt=noinsert,menuone,noselect
+
+    " NOTE: you need to install completion sources to get completions. Check
+    " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+    Plug 'ncm2/ncm2-bufword'
+    Plug 'ncm2/ncm2-tmux'
+    Plug 'ncm2/ncm2-path'
 endif
 
+if has('autocmd')
+    " Spelling
+    autocm FileType gitcommit setlocal spell
+    autocmd BufRead,BufNewFile *.md setlocal spell
+    set complete+=kspell
+endif
 
 " Themes
 Plug 'YorickPeterse/happy_hacking.vim'
@@ -95,6 +113,9 @@ set number
 
 " Show relative line numbers
 set relativenumber
+
+" Markdown
+let g:vim_markdown_folding_disabled = 1
 
 " Enable mouse support in terminal
 set mouse=a
