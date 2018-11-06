@@ -1,5 +1,5 @@
 # .vim
-The Vim section of my [dotfiles](https://github.com/himmAllRight.git) repo.
+The Vim section of my [dotfiles](https://github.com/dotfiles/himmAllRight.git) repo.
 
 ## Pre-Reqs
 Unfortunately, I think I currently have a few pre-reqs that need to be
