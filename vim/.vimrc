@@ -3,18 +3,36 @@ if has('vim_starting')
     set nocompatible
 endif
 
+if has('nvim')
+    let s:plug_path = '~/.local/share/nvim/site/autoload/plug.vim'
+    let s:plugged_path = '~/.local/share/nvim/plugged'
+    let g:python_host_prog = '/usr/bin/python2'
+    let g:python3_host_prog = '/usr/bin/python3'
+else
+    let s:plug_path = '~/.vim/autoload/plug.vim'
+    let s:plugged_path = '~/.vim/plugged'
+endif
 
 " Load vim-plug
 if empty(glob("~/.vim/autoload/plug.vim"))
     execute '!curl -fLo ~/.vim/autoload/plug.vim https://raw.github.com/junegunn/vim-plug/master/plug.vim'
 endif
 
+if !filereadable(expand(s:plug_path))
+    echo 'Installing vim-plug...'
+    echo ''
+    execute "silent !curl -fLo " . s:plug_path . " --create-dirs "
+        \ "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+    " Install plugins after loading vim
+    autocmd VimEnter * PlugInstall
+endif
+
 " Plugged System
-call plug#begin('~/.vim/plugged')
+call plug#begin(s:plugged_path)
 
 " Bundles to install
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
-Plug 'https://gitlab.com/yorickpeterse/happy_hacking.vim'
 Plug 'vim-syntastic/syntastic'  " Syntax plugin
 Plug 'nvie/vim-flake8'          " PEP 8 checking
 Plug 'scrooloose/nerdtree'
@@ -36,6 +54,15 @@ Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
 Plug 'vim-syntastic/syntastic'
 
+" Neovim only plugins
+if has('nvim')
+    Plug 'roxma/nvim-completion-manager'
+endif
+
+
+" Themes
+Plug 'YorickPeterse/happy_hacking.vim'
+
 call plug#end()
 
 " Set Splits
@@ -52,7 +79,7 @@ let python_highlight_all=1
 " Colorscheme
 syntax enable
 set background=dark
-colorscheme happy_hacking
+colo happy_hacking
 
 " Automatically load a file changed outside
 set autoread
