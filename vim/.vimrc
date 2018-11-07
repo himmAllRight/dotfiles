@@ -98,6 +98,9 @@ call plug#end()
 set splitbelow
 set splitright
 
+" Increase preview window (ex: Gstatus) size
+set previewheight=30
+
 " Simple vimrc
 set formatoptions+=t
 let python_highlight_all=1
