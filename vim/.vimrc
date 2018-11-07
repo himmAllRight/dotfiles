@@ -98,6 +98,9 @@ call plug#end()
 set splitbelow
 set splitright
 
+" Clipboard
+set clipboard=unnamedplus
+
 " Simple vimrc
 set formatoptions+=t
 let python_highlight_all=1
