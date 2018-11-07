@@ -101,6 +101,9 @@ set splitright
 " Clipboard
 set clipboard=unnamedplus
 
+" Increase preview window (ex: Gstatus) size
+set previewheight=30
+
 " Simple vimrc
 set formatoptions+=t
 let python_highlight_all=1
