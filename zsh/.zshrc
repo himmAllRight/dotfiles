@@ -79,6 +79,7 @@ plugins=(
   #vi-mode
   #virtualenvwrapper
   #web-search
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
