@@ -136,11 +136,14 @@ List of themes to install
   (use-package darkokai-theme
     :ensure t
     :defer t)
+(use-package monokai-alt-theme
+    :ensure t
+    :defer t)
 #+END_SRC
 
 *** Load Current default theme
 #+BEGIN_SRC emacs-lisp
-  (load-theme 'darkokai t)
+  (load-theme 'monokai-alt t)
 #+END_SRC
 ** Fonts
 Set default font
@@ -498,7 +501,7 @@ Starting a python dev setup:
         :ensure t))
 #+END_SRC
 
-Set default interpreter to python 3 instead of 2.
+Set dhttps://github.com/himmAllRight/ry-org-scrumefault interpreter to python 3 instead of 2.
 #+BEGIN_SRC emacs-lisp
   (setf python-shell-interpreter "python3")
 #+END_SRC
