@@ -34,7 +34,8 @@ call plug#begin(s:plugged_path)
 
 " Bundles to install
 Plug 'plasticboy/vim-markdown'
-Plug 'vim-syntastic/syntastic'  " Syntax plugin
+"Plug 'vim-syntastic/syntastic'  " Syntax plugin
+Plug 'w0rp/ale'
 Plug 'nvie/vim-flake8'          " PEP 8 checking
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -49,13 +50,13 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jceb/vim-orgmode'
 
 " Python
-Plug 'hdima/python-syntax'
+"Plug 'hdima/python-syntax'
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 
 
 " Neovim only plugins
@@ -181,15 +182,15 @@ set encoding=utf-8
 
 
 " Syntastic
-let g:syntastic_python_checkers = ['pylint']
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"let g:syntastic_python_checkers = ['pylint']
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_write = 1
+":let g:syntastic_check_on_wq = 0
 
 " Prefer pytest whenever it is available
 if executable('py.test')
