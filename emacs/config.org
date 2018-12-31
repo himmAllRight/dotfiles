@@ -148,7 +148,7 @@ List of themes to install
 ** Fonts
 Set default font
 #+BEGIN_SRC emacs-lisp
-  (set-default-font "Hack-10")
+  (set-default-font "Monospace-11")
 #+END_SRC
 ** Dashboard
 Use the "dashboard" package for my startup screen.
