@@ -18,6 +18,7 @@ bindsym $mod+Return exec gnome-terminal
 
 ## kill focused window
 bindsym $mod+Shift+q kill
+bindsym $mod+Shift+e exec i3-msg exit
 
 ## Launcher, rofi
 bindsym $mod+d exec rofi -show drun
@@ -88,8 +89,8 @@ set $WS4   "4:   Music "
 set $WS5   "5:   Mail "
 set $WS6   "6:   Chat "
 set $WS7   "7:   Network "
-set $WS8   "8:   Video "
-set $WS9   "9:   VMs "
+set $WS8   "8:   VMs "
+set $WS9   "9:   Video "
 set $WS0  "10:   Other "
 
 # switch to workspace
@@ -200,8 +201,9 @@ bindsym $mod+r mode "resize"
 ## Status Base
 bar {
         #status_command          i3blocks
-        status_command          i3status
-        tray_output             primary
+        #status_command          i3status
+        tray_output             None
+        mode                    invisible
         separator_symbol        "|"
         workspace_buttons       yes
         strip_workspace_numbers yes
