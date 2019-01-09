@@ -1,4 +1,4 @@
-## Ryan i3 config
+## Ryan i3/sway config
 
 ## Modifier Key
 set $mod Mod4
@@ -13,14 +13,14 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec konsole
-#bindsym $mod+Return exec gnome-terminal
+#bindsym $mod+Return exec konsole
+bindsym $mod+Return exec gnome-terminal
 
 ## kill focused window
 bindsym $mod+Shift+q kill
 
 ## Launcher, rofi
-bindsym $mod+d exec rofi -show run 
+bindsym $mod+d exec rofi -show drun
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 ####################
@@ -86,12 +86,12 @@ set $WS2   "2:   Web "
 set $WS3   "3: λ  Code "
 set $WS4   "4:   Music "
 set $WS5   "5:   Mail "
-set $WS6   "6:   Chat "
+set $WS6   "6:   Chat "
 set $WS7   "7:   Network "
-set $WS8   "8:   Games "
+set $WS8   "8:   Video "
 set $WS9   "9:   VMs "
 set $WS0  "10:   Other "
- 
+
 # switch to workspace
 bindsym $mod+1 workspace $WS1
 bindsym $mod+2 workspace $WS2
@@ -122,7 +122,7 @@ bindsym $mod+Shift+0 move container to workspace $WS0
 assign [class="(?i)firefox"] → $WS2
 assign [class="(?i)qutebrowser"] → $WS2
 ## Dev
-assign [class="(?i)emacs"] → $WS3
+#assign [class="(?i)emacs"] → $WS3
 assign [class="(?i)ghostwriter"] → $WS3
 ## Music
 assign [class="(?i)spotify"] → $WS4
@@ -161,10 +161,10 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 #bindsym $mod+Shift+x exec locker
-bindsym $mod+Shift+w exec mate-screensaver-command -l
+#bindsym $mod+Shift+w exec mate-screensaver-command -l
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -199,7 +199,8 @@ bindsym $mod+r mode "resize"
 ####################
 ## Status Base
 bar {
-        status_command          i3blocks
+        #status_command          i3blocks
+        status_command          i3status
         tray_output             primary
         separator_symbol        "|"
         workspace_buttons       yes
@@ -235,7 +236,7 @@ new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
 
 ## DPI
-exec xrandr --dpi 90
+#exec xrandr --dpi 90
 
 ## Volume Key Binds
 bindsym $mod+period exec amixer -D pulse sset Master 5%+
@@ -246,16 +247,16 @@ bindsym $mod+shift+m exec amixer -q set Master toggle
 bindsym $mod+shift+p exec passmenu
 
 ## Start Nitrogen when loaded
-exec --no-startup-id nitrogen --restore &
+#exec --no-startup-id nitrogen --restore &
 #exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
 #exec volumeicon &
-exec --no-startup-id mate-setting-daemon
-exec --no-startup-id mate-power-manager
-exec --no-startup-id blueman-applet
+#exec --no-startup-id mate-setting-daemon
+#exec --no-startup-id mate-power-manager
+#exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet
-exec --no-startup-id mate-menu
-exec compton 
+#exec --no-startup-id mate-menu
+#exec compton
 exec nextcloud
 exec /home/ryan/dotfiles/scripts/ctrl-caps
 exec ~/.startup
