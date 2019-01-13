@@ -13,6 +13,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec mate-termainal
 #bindsym $mod+Return exec konsole
 bindsym $mod+Return exec gnome-terminal
 
@@ -164,7 +165,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-#bindsym $mod+Shift+x exec locker
+bindsym $mod+Shift+x exec mate-screensaver-command -l
 #bindsym $mod+Shift+w exec mate-screensaver-command -l
 
 # resize window (you can also use the mouse for that)
