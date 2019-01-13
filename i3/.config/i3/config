@@ -126,26 +126,30 @@ assign [class="(?i)qutebrowser"] → $WS2
 ## Dev
 #assign [class="(?i)emacs"] → $WS3
 assign [class="(?i)ghostwriter"] → $WS3
-## Music
-assign [class="(?i)spotify"] → $WS4
-assign [class="(?i)pithos"] → $WS4
-assign [class="(?i)lollypop"] → $WS4
 ## Mail
-assign [class="(?i)thunderbird"] → $WS5
-assign [class="(?i)fastmail"] → $WS5
+assign [class="(?i)thunderbird"] → $WS4
+assign [class="(?i)fastmail"] → $WS4
+assign [class="(?i)chromium"] → $WS4
+## Music
+assign [class="(?i)spotify"] → $WS5
+assign [class="(?i)pithos"] → $WS5
+assign [class="(?i)lollypop"] → $WS5
+assign [class="(?i)rhythmbox"] → $WS5
 ## Chat
 assign [class="(?i)quasselclient"] → $WS6
 assign [class="(?i)telegram"] → $WS6
+assign [class="(?i)slack"] → $WS6
 assign [class="(?i)wire"] → $WS6
 assign [class="(?i)discord"] → $WS6
-assign [class="(?i)glip"] → $WS6
 ## Network
-## Games
-assign [class="(?i)steam"] → $WS8
 ## VMs
-assign [class="(?i)virt-manager"] → $WS9
-assign [class="(?i)virtualbox"] → $WS9
+assign [class="(?i)virt-manager"] → $WS8
+assign [class="(?i)Boxes"] → $WS8
+assign [class="(?i)virtualbox"] → $WS8
+## Video
+assign [class="(?i)Bluejeans"] → $WS9
 ## Other
+assign [class="(?i)steam"] → $WS9
 
 
 
@@ -233,7 +237,7 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 
 ## Gaps/ borders
 gaps inner 7
-gaps outer 7
+gaps outer 100
 
 new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
