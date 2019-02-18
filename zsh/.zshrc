@@ -85,7 +85,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+export TERM=xterm-256color
 # Navigation
 alias dotfiles="cd /home/ryan/dotfiles/"
 alias smb-drives="cd /run/user/1000/gvfs/"
@@ -118,6 +118,7 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='nvim'
+alias vim="nvim"
 
 # Go Path Env
 export GOPATH=$HOME//Documents/Programming/golang/
