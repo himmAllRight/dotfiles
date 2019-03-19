@@ -237,7 +237,7 @@ client.urgent             #0F0F0F #BC9B54 #E5E5E5
 
 ## Gaps/ borders
 gaps inner 7
-gaps outer 100
+gaps outer 7
 
 new_window none               # Opens new windows without borders
 bindsym $mod+u border toggle
