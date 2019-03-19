@@ -131,7 +131,7 @@ assign [class="(?i)thunderbird"] → $WS4
 assign [class="(?i)fastmail"] → $WS4
 assign [class="(?i)chromium"] → $WS4
 ## Music
-assign [class="(?i)spotify"] → $WS5
+assign [class="(?i)Spotify"] → $WS5
 assign [class="(?i)pithos"] → $WS5
 assign [class="(?i)lollypop"] → $WS5
 assign [class="(?i)rhythmbox"] → $WS5
