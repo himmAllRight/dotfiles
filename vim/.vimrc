@@ -29,6 +29,10 @@ if !filereadable(expand(s:plug_path))
     autocmd VimEnter * PlugInstall
 endif
 
+
+""""""""""""""""""""""""""""""""""""""""
+""""""""""""" Plug-Ins """""""""""""""""
+""""""""""""""""""""""""""""""""""""""""
 " Plugged System
 call plug#begin(s:plugged_path)
 
@@ -38,16 +42,18 @@ Plug 'plasticboy/vim-markdown'
 Plug 'w0rp/ale'
 Plug 'nvie/vim-flake8'          " PEP 8 checking
 Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'       " Git integration
 Plug 'itchyny/lightline.vim'    " Powerline clone
 Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
 
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'     " Collection of language packs
 "Plug 'Valloric/YouCompleteMe'
 Plug 'jceb/vim-orgmode'
+
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 " Python
 "Plug 'hdima/python-syntax'
@@ -64,7 +70,7 @@ if has('nvim')
     Plug 'ncm2/ncm2'
     Plug 'roxma/nvim-yarp'
 
-    " IMPORTANTE: :help Ncm2PopupOpen for more information
+    " IMPORTANT: :help Ncm2PopupOpen for more information
     set completeopt=noinsert,menuone,noselect
 
     " NOTE: you need to install completion sources to get completions. Check
@@ -92,6 +98,7 @@ endif
 
 " Themes
 Plug 'YorickPeterse/happy_hacking.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -115,7 +122,8 @@ let python_highlight_all=1
 " Colorscheme
 syntax enable
 set background=dark
-colo happy_hacking
+" colo happy_hacking
+colo gruvbox
 
 " Automatically load a file changed outside
 set autoread
