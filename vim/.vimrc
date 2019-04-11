@@ -64,6 +64,8 @@ Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
 "Plug 'vim-syntastic/syntastic'
 
+" Other
+Plug 'malithsen/trello-vim'
 
 " Neovim only plugins
 if has('nvim')
@@ -99,6 +101,14 @@ endif
 " Themes
 Plug 'YorickPeterse/happy_hacking.vim'
 Plug 'morhetz/gruvbox'
+Plug 'abnt713/vim-hashpunk'
+Plug 'fortes/vim-escuro'
+Plug 'srcery-colors/srcery-vim'
+Plug 'vim-scripts/Ambient-Color-Scheme'
+Plug 'ayu-theme/ayu-vim'
+
+set termguicolors
+let ayucolor="dark"
 
 call plug#end()
 
@@ -123,7 +133,7 @@ let python_highlight_all=1
 syntax enable
 set background=dark
 " colo happy_hacking
-colo gruvbox
+colo ayu
 
 " Automatically load a file changed outside
 set autoread
