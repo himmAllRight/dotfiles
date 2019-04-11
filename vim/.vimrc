@@ -106,6 +106,7 @@ Plug 'fortes/vim-escuro'
 Plug 'srcery-colors/srcery-vim'
 Plug 'vim-scripts/Ambient-Color-Scheme'
 Plug 'ayu-theme/ayu-vim'
+Plug 'danilo-augusto/vim-afterglow'
 
 set termguicolors
 let ayucolor="dark"
