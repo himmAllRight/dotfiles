@@ -99,6 +99,7 @@ endif
 " Themes
 Plug 'YorickPeterse/happy_hacking.vim'
 Plug 'morhetz/gruvbox'
+Plug 'danilo-augusto/vim-afterglow'
 
 call plug#end()
 
