@@ -89,10 +89,11 @@ set $WS3   "3: λ  Code "
 set $WS4   "4:   Mail "
 set $WS5   "5:   Music "
 set $WS6   "6:   Chat "
-set $WS7   "7:   Network "
+set $WS7   "7:   Notes "
 set $WS8   "8:   VMs "
 set $WS9   "9:   Video "
 set $WS0  "10:   Other "
+set $WS11  "11:   Notes "
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
