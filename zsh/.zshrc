@@ -99,8 +99,8 @@ alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.p
 alias getIP="curl -s icanhazip.com"
 
 # Tmux
-alias ta="tmux attach-session -t $1"
-alias tn="tmux new-session -s $1"
+alias ta="tmux -2 attach-session -t $1"
+alias tn="tmux -2 new-session -s $1"
 
 # Manual Upgrades
 alias pacman-updates="pacman -Qqu | wc -l"
