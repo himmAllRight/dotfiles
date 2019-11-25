@@ -49,7 +49,7 @@ Plug 'tpope/vim-fugitive'       " Git integration
 Plug 'itchyny/lightline.vim'    " Powerline clone
 Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
-
+Plug 'wakatime/vim-wakatime'
 Plug 'sheerun/vim-polyglot'     " Collection of language packs
 "Plug 'Valloric/YouCompleteMe'
 Plug 'jceb/vim-orgmode'
