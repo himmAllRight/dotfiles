@@ -110,10 +110,16 @@ Plug 'vim-scripts/Ambient-Color-Scheme'
 Plug 'ayu-theme/ayu-vim'
 Plug 'danilo-augusto/vim-afterglow'
 
+call plug#end()
+
+" Colorscheme
 set termguicolors
 let ayucolor="dark"
-
-call plug#end()
+" Gruvbox
+let g:gruvbox_contract_dark = 'hard'
+syntax enable
+"set background=dark
+colo gruvbox
 
 " Set Splits
 set splitbelow
@@ -131,12 +137,6 @@ let python_highlight_all=1
 :set linebreak
 :set showbreak=+++
 :set hlsearch
-
-" Colorscheme
-syntax enable
-set background=dark
-colo happy_hacking
-" colo ayu
 
 " Automatically load a file changed outside
 set autoread
