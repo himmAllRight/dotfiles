@@ -16,7 +16,6 @@ found. It's a must for emacs configs.
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 #+END_SRC
-
 ** Setup =use-package= if isn't already
 #+BEGIN_SRC emacs-lisp
 (unless (package-installed-p 'use-package)
@@ -25,6 +24,11 @@ found. It's a must for emacs configs.
 
 (eval-when-compile
   (require 'use-package))
+#+END_SRC
+** Auto-compile
+#+BEGIN_SRC emacs-lisp
+  (use-package auto-compile
+    :ensure t)
 #+END_SRC
 * Core Setup
 ** Basic Stuff
@@ -40,16 +44,10 @@ Remove splash screen and use *scratch* instead as the home buffer
       inhibit-startup-echo-area-message t)
 #+END_SRC
 
-*** Backup Directory
-Funnel all the auto backup files to one location.
-#+BEGIN_SRC emacs-lisp
-(setq backup-directory-alist '(("." . "~/nextcloud/emacs/backups")))
-#+END_SRC
-
 *** Line Numbers
 Switch line numbers on by default in all buffers
 #+BEGIN_SRC emacs-lisp
-(global-linum-mode 1)
+;;(global-linum-mode 1)
 #+END_SRC
 
 *** Menu Bar
@@ -92,8 +90,8 @@ Tool Tips in echo area
 *** Smooth Scrolling
 Smooth Scrolling
 #+BEGIN_SRC emacs-lisp
-(use-package smooth-scroll
-    :ensure t)
+  ;; (use-package smooth-scroll
+  ;;     :ensure t)
 #+END_SRC
 ** Themes
 *** Load manual install theme dir
@@ -143,7 +141,7 @@ List of themes to install
 
 *** Load Current default theme
 #+BEGIN_SRC emacs-lisp
-  (load-theme 'monokai-alt t)
+  (load-theme 'gruvbox-dark-hard t)
 #+END_SRC
 ** Fonts
 Set default font
@@ -410,12 +408,6 @@ want.
     ;;(afp-setup-recommended-hooks)
     )
 #+END_SRC
-** Darkroom
-#+BEGIN_SRC emacs-lisp
-  (use-package darkroom
-    :ensure t
-    :bind (("C-c d" . darkroom-mode)))
-#+END_SRC
 * Development
 ** Auto Complete
 #+BEGIN_SRC emacs-lisp
@@ -433,12 +425,6 @@ want.
   :config
   (global-aggressive-indent-mode t))
 #+END_SRC
-** Fill Column Indicator
-Draws a line for the fill column, or at a different location.
-#+BEGIN_SRC emacs-lisp 
-(use-package fill-column-indicator
-    :ensure t) 
-#+END_SRC 
 ** Parens
 smart parens does auto paring for my parenthesis
 #+BEGIN_SRC emacs-lisp
@@ -460,26 +446,6 @@ I use magit for easy git management
      ("C-c C-p"   . 'magit-push)))
 #+END_SRC
 
-** Projects
-Starting to learn projectile a little bit...
-#+BEGIN_SRC emacs-lisp
-  ;; (use-package projectile
-  ;;   :ensure t
-  ;;   :config
-  ;;   (projectile-global-mode)
-
-  ;;   (use-package counsel-projectile
-  ;;     :ensure t
-  ;;     )
-  ;;   )
-#+END_SRC
-** Pretty Code
-#+BEGIN_SRC emacs-lisp
-;; (require 'pretty-mode)
-;; (pretty-lambda-mode t)
-
-;;(global-pretty-lambda-mode t)
-#+END_SRC
 ** Yaml
 Setup YAML mode for editing configs
 #+BEGIN_SRC emacs-lisp
@@ -565,9 +531,28 @@ Load my functions for org scrum stuff
   (use-package ry-org-scrum
     :ensure t)
 #+END_SRC
+** Shrug
+A tiny function that makes pasting an ASCII shrug into my notes much
+easier...
+
+#+BEGIN_SRC emacs-lisp
+(defun shrug ()
+  "Insert an ASCII shurg at cursor."
+  (interactive)
+  (insert (format "¯\\_(ツ)_/¯")))
+#+END_SRC
+
+** Disapproval
+A tiny function that makes it easy to paste in a disapproval face.
+
+#+BEGIN_SRC emacs-lisp
+(defun disapproval ()
+  "Insert an ASCII disapproval face at cursor."
+  (interactive)
+  (insert (format "ಠ_ಠ")))
+#+END_SRC
 
 * Load Other Configs
-** Work Settings
 ** Linux
 Load my Linux-specific configs
 #+BEGIN_SRC emacs-lisp
@@ -575,10 +560,7 @@ Load my Linux-specific configs
   (load "~/dotfiles/emacs/.emacs-linux.el"))
 #+END_SRC
 * The Rest
-** Auto Generated Stuff
-Not sure what to do with this crap in my babel org config...
-
 ** Theme Load
 #+BEGIN_SRC emacs-lisp
-(put 'dired-find-alternate-file 'disabled nil)
+;;(put 'dired-find-alternate-file 'disabled nil)
 #+END_SRC
