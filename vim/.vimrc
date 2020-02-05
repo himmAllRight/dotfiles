@@ -135,7 +135,7 @@ let python_highlight_all=1
 " Colorscheme
 syntax enable
 set background=dark
-colo happy_hacking
+colo gruvbox
 " colo ayu
 
 " Automatically load a file changed outside
