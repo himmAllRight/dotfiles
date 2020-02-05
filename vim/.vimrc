@@ -49,7 +49,7 @@ Plug 'tpope/vim-fugitive'       " Git integration
 Plug 'itchyny/lightline.vim'    " Powerline clone
 Plug 'terryma/vim-multiple-cursors'
 Plug 'kien/ctrlp.vim'
-
+Plug 'wakatime/vim-wakatime'
 Plug 'sheerun/vim-polyglot'     " Collection of language packs
 "Plug 'Valloric/YouCompleteMe'
 Plug 'jceb/vim-orgmode'
@@ -110,10 +110,16 @@ Plug 'vim-scripts/Ambient-Color-Scheme'
 Plug 'ayu-theme/ayu-vim'
 Plug 'danilo-augusto/vim-afterglow'
 
+call plug#end()
+
+" Colorscheme
 set termguicolors
 let ayucolor="dark"
-
-call plug#end()
+" Gruvbox
+let g:gruvbox_contract_dark = 'hard'
+syntax enable
+"set background=dark
+colo gruvbox
 
 " Set Splits
 set splitbelow
