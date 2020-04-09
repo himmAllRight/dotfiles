@@ -40,34 +40,30 @@ call plug#begin(s:plugged_path)
 
 " Bundles to install
 Plug 'plasticboy/vim-markdown'
-"Plug 'vim-syntastic/syntastic'  " Syntax plugin
 Plug 'w0rp/ale'
-Plug 'nvie/vim-flake8'          " PEP 8 checking
+Plug 'nvie/vim-flake8'              " PEP 8 checking
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tpope/vim-fugitive'       " Git integration
-Plug 'itchyny/lightline.vim'    " Powerline clone
-Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-fugitive'           " Git integration
+Plug 'itchyny/lightline.vim'        " Powerline clone
+Plug 'terryma/vim-multiple-cursors' " Multuple cursorts
 Plug 'kien/ctrlp.vim'
-Plug 'wakatime/vim-wakatime'
+"Plug 'wakatime/vim-wakatime'
 Plug 'sheerun/vim-polyglot'     " Collection of language packs
-"Plug 'Valloric/YouCompleteMe'
-Plug 'jceb/vim-orgmode'
+"Plug 'jceb/vim-orgmode'
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 
 " Python
-"Plug 'hdima/python-syntax'
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
-"Plug 'vim-syntastic/syntastic'
 
 " Other
-Plug 'malithsen/trello-vim'
+"Plug 'malithsen/trello-vim'
 
 " Neovim only plugins
 if has('nvim')
@@ -83,15 +79,15 @@ if has('nvim')
     Plug 'ncm2/ncm2-tmux'
     Plug 'ncm2/ncm2-path'
 
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'zchee/deoplete-jedi'
+"    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"    Plug 'zchee/deoplete-jedi'
 else
     " deoplete else
-    Plug 'Shougo/deoplete.nvim'
+"    Plug 'Shougo/deoplete.nvim'
     Plug 'roxma/nvim-yarp'
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 if has('autocmd')
     " Spelling
@@ -118,7 +114,6 @@ let ayucolor="dark"
 " Gruvbox
 let g:gruvbox_contract_dark = 'hard'
 syntax enable
-"set background=dark
 colo gruvbox
 
 " Set Splits
@@ -138,12 +133,6 @@ let python_highlight_all=1
 :set showbreak=+++
 :set hlsearch
 
-" Colorscheme
-syntax enable
-set background=dark
-colo gruvbox
-" colo ayu
-
 " Automatically load a file changed outside
 set autoread
 
@@ -157,7 +146,7 @@ set cursorline
 set number
 
 " Show relative line numbers
-set relativenumber
+"set relativenumber
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
@@ -184,6 +173,7 @@ set smarttab
 
 " NERDTreeToggle shorthand
 cnoreabbrev NTO NERDTreeToggle
+cnoreabbrev NTR NERDTreeRefreshRoot
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -203,21 +193,8 @@ imap <M-D-Right> <esc>:tabnext<cr>a
 map <M-D-Left> :tabprevious<cr>
 imap <M-D-Left> <esc>:tabprevious<cr>a
 
-
 " Set UTF-8
 set encoding=utf-8
-
-
-" Syntastic
-"let g:syntastic_python_checkers = ['pylint']
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_write = 1
-":let g:syntastic_check_on_wq = 0
 
 " Prefer pytest whenever it is available
 if executable('py.test')
