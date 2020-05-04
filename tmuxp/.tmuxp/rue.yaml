@@ -1,0 +1,24 @@
+session_name: rue
+windows:
+- focus: 'true'
+  layout: 5db2,181x53,0,0,13
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /home/ryan/Documents/Programming/golang/rue-rss
+  window_name: nvim
+- layout: 5db3,181x53,0,0,14
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: toolbox enter -c rue
+  start_directory: /home/ryan/Documents/Programming/golang/rue-rss
+  window_name: sh
+- layout: 5db4,181x53,0,0,15
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: toolbox enter -c rue
+  start_directory: /home/ryan/Documents/Programming/golang/rue-rss
+  window_name: sh
