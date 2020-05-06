@@ -62,6 +62,9 @@ Plug 'davidhalter/jedi-vim'
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'janko-m/vim-test'
 
+"Golang
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " Other
 "Plug 'malithsen/trello-vim'
 
