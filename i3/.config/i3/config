@@ -231,16 +231,16 @@ bar {
 ## Theme & Looks ###
 ####################
 # window colours:         border background text
-client.focused            #777777 #222222 #ffffff
-client.focused_inactive   #444444 #333333 #888888
-client.unfocused          #444444 #333333 #444444
-client.urgent             #0F0F0F #BC9B54 #E5E5E5
+#client.focused            #777777 #222222 #ffffff
+#client.focused_inactive   #444444 #333333 #888888
+#client.unfocused          #444444 #333333 #444444
+#client.urgent             #0F0F0F #BC9B54 #E5E5E5
 
 ## Gaps/ borders
 gaps inner 7
 gaps outer 7
 
-new_window none               # Opens new windows without borders
+default_border none               # Opens new windows without borders
 bindsym $mod+u border toggle
 
 ## DPI

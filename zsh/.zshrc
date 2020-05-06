@@ -123,3 +123,7 @@ alias vim="nvim"
 # Go Path Env
 export GOPATH=$HOME//Documents/Programming/golang/
 export PATH=$PATH:$HOME/Documents/Programming/golang/bin/
+
+
+# IQE certs
+export REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt
