@@ -121,7 +121,7 @@ export EDITOR='nvim'
 alias vim="nvim"
 
 # Go Path Env
-export GOPATH=$HOME//Documents/Programming/golang/
+export GOPATH=$HOME/Documents/Programming/golang/
 export PATH=$PATH:$HOME/Documents/Programming/golang/bin/
 
 

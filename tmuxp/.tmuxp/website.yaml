@@ -1,0 +1,43 @@
+session_name: website
+windows:
+- focus: 'true'
+  layout: ca7d,123x38,0,0,0
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan/Documents/himmAllRight-source
+  window_name: Git
+- layout: ca7e,123x38,0,0,1
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: toolbox enter -c website
+  start_directory: /home/ryan
+  window_name: Server
+- layout: ca7f,123x38,0,0,2
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: nvim
+  start_directory: /home/ryan/Documents/himmAllRight-source
+  window_name: Editor
+- layout: ca80,123x38,0,0,3
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: pipenv shell
+  start_directory: /home/ryan/Documents/himmAllRight-source
+  window_name: Test
+- layout: ca81,123x38,0,0,4
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan/Documents/himmAllRight-source
+  window_name: Publish
