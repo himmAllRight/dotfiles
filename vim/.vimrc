@@ -115,7 +115,7 @@ call plug#end()
 set termguicolors
 let ayucolor="dark"
 " Gruvbox
-let g:gruvbox_contract_dark = 'hard'
+let g:gruvbox_contrast_dark = 'hard'
 syntax enable
 colo gruvbox
 
