@@ -1,0 +1,24 @@
+session_name: Main
+windows:
+- focus: 'true'
+  layout: c300,189x54,0,0,3
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan
+  window_name: zsh
+- layout: c301,189x54,0,0,4
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan/Documents/DevOps/Ansible/ry-ansible-config
+  window_name: zsh
+- layout: c302,189x54,0,0,5
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: htop
+  start_directory: /home/ryan
+  window_name: htop
