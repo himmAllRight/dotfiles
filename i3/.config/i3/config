@@ -5,8 +5,8 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font pango:Arial Black 9
+#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font pango:Arial Black 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -14,15 +14,16 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
 #bindsym $mod+Return exec mate-termainal
-#bindsym $mod+Return exec konsole
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec konsole
+#bindsym $mod+Return exec gnome-terminal
+
 
 ## kill focused window
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exec i3-msg exit
 
 ## Launcher, rofi
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+space exec rofi -show drun
 bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 ####################
@@ -70,7 +71,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+#bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -83,17 +84,15 @@ bindsym $mod+c focus child
 ####################
 #### Workspaces ####
 ####################
-set $WS1   "1:   Main "
-set $WS2   "2:   Web "
-set $WS3   "3: λ  Code "
-set $WS4   "4:   Mail "
-set $WS5   "5:   Music "
-set $WS6   "6:   Chat "
-set $WS7   "7:   Notes "
-set $WS8   "8:   VMs "
-set $WS9   "9:   Video "
-set $WS0  "10:   Other "
-set $WS11  "11:   Notes "
+set $WS1   "1: Main "
+set $WS2   "2: Web "
+set $WS3   "3: Code "
+set $WS4   "4: Mail "
+set $WS5   "5: Music "
+set $WS6   "6: Chat "
+set $WS7   "7: VMs "
+set $WS8   "8: Video "
+set $WS9   "9: Other "
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
@@ -122,35 +121,35 @@ bindsym $mod+Shift+0 move container to workspace $WS0
 ## Assign applications to workspaces
 ## Main
 ## Web
-assign [class="(?i)firefox"] → $WS2
-assign [class="(?i)qutebrowser"] → $WS2
-## Dev
-#assign [class="(?i)emacs"] → $WS3
-assign [class="(?i)ghostwriter"] → $WS3
-## Mail
-assign [class="(?i)thunderbird"] → $WS4
-assign [class="(?i)fastmail"] → $WS4
-assign [class="(?i)chromium"] → $WS4
-## Music
-assign [class="(?i)Spotify"] → $WS5
-assign [class="(?i)pithos"] → $WS5
-assign [class="(?i)lollypop"] → $WS5
-assign [class="(?i)rhythmbox"] → $WS5
-## Chat
-assign [class="(?i)quasselclient"] → $WS6
-assign [class="(?i)telegram"] → $WS6
-assign [class="(?i)slack"] → $WS6
-assign [class="(?i)wire"] → $WS6
-assign [class="(?i)discord"] → $WS6
-## Network
-## VMs
-assign [class="(?i)virt-manager"] → $WS8
-assign [class="(?i)Boxes"] → $WS8
-assign [class="(?i)virtualbox"] → $WS8
-## Video
-assign [class="(?i)Bluejeans"] → $WS9
-## Other
-assign [class="(?i)steam"] → $WS9
+#assign [class="(?i)firefox"] → $WS2
+#assign [class="(?i)qutebrowser"] → $WS2
+### Dev
+##assign [class="(?i)emacs"] → $WS3
+#assign [class="(?i)ghostwriter"] → $WS3
+### Mail
+#assign [class="(?i)thunderbird"] → $WS4
+#assign [class="(?i)fastmail"] → $WS4
+#assign [class="(?i)chromium"] → $WS4
+### Music
+#assign [class="(?i)Spotify"] → $WS5
+#assign [class="(?i)pithos"] → $WS5
+#assign [class="(?i)lollypop"] → $WS5
+#assign [class="(?i)rhythmbox"] → $WS5
+### Chat
+#assign [class="(?i)quasselclient"] → $WS6
+#assign [class="(?i)telegram"] → $WS6
+#assign [class="(?i)slack"] → $WS6
+#assign [class="(?i)wire"] → $WS6
+#assign [class="(?i)discord"] → $WS6
+### Network
+### VMs
+#assign [class="(?i)virt-manager"] → $WS8
+#assign [class="(?i)Boxes"] → $WS8
+#assign [class="(?i)virtualbox"] → $WS8
+### Video
+#assign [class="(?i)Bluejeans"] → $WS9
+### Other
+#assign [class="(?i)steam"] → $WS9
 
 
 
@@ -158,10 +157,10 @@ assign [class="(?i)steam"] → $WS9
 ####################
 # MISC Keybindings #
 ####################
-# Music Next, Prev, Pause/Play
-bindsym $mod+Shift+n exec playerctl next
-bindsym $mod+Shift+b exec playerctl previous
-bindsym $mod+p exec playerctl play-pause
+## Music Next, Prev, Pause/Play
+#bindsym $mod+Shift+n exec playerctl next
+#bindsym $mod+Shift+b exec playerctl previous
+#bindsym $mod+p exec playerctl play-pause
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -170,7 +169,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+Shift+x exec mate-screensaver-command -l
+#bindsym $mod+Shift+x exec mate-screensaver-command -l
 #bindsym $mod+Shift+w exec mate-screensaver-command -l
 
 # resize window (you can also use the mouse for that)
@@ -207,9 +206,9 @@ bindsym $mod+r mode "resize"
 ## Status Base
 bar {
         #status_command          i3blocks
-        #status_command          i3status
+        status_command          i3status
         tray_output             None
-        mode                    invisible
+        #mode                    invisible
         separator_symbol        "|"
         workspace_buttons       yes
         strip_workspace_numbers yes
@@ -237,8 +236,8 @@ bar {
 #client.urgent             #0F0F0F #BC9B54 #E5E5E5
 
 ## Gaps/ borders
-gaps inner 7
-gaps outer 7
+#gaps inner 7
+#gaps outer 7
 
 default_border none               # Opens new windows without borders
 bindsym $mod+u border toggle
@@ -247,24 +246,24 @@ bindsym $mod+u border toggle
 #exec xrandr --dpi 90
 
 ## Volume Key Binds
-bindsym $mod+period exec amixer -D pulse sset Master 5%+
-bindsym $mod+comma exec amixer -D pulse sset Master 5%-
-bindsym $mod+shift+m exec amixer -q set Master toggle
+#bindsym $mod+period exec amixer -D pulse sset Master 5%+
+#bindsym $mod+comma exec amixer -D pulse sset Master 5%-
+#bindsym $mod+shift+m exec amixer -q set Master toggle
 
 
-bindsym $mod+shift+p exec passmenu
+#bindsym $mod+shift+p exec passmenu
 
 ## Start Nitrogen when loaded
-#exec --no-startup-id nitrogen --restore &
+exec --no-startup-id nitrogen --restore &
 #exec mpd ~/.config/mpd/mpd.conf &
 #exec --no-startup-id sh ~/.fehbg &
 #exec volumeicon &
 #exec --no-startup-id mate-setting-daemon
 #exec --no-startup-id mate-power-manager
 #exec --no-startup-id blueman-applet
-exec --no-startup-id nm-applet
+#exec --no-startup-id nm-applet
 #exec --no-startup-id mate-menu
 #exec compton
-exec nextcloud
-exec /home/ryan/dotfiles/scripts/ctrl-caps
-exec ~/.startup
+#exec nextcloud
+#exec /home/ryan/dotfiles/scripts/ctrl-caps
+#exec ~/.startup
