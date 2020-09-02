@@ -15,7 +15,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: toolbox enter -c website
-  start_directory: /home/ryan
+  start_directory: /home/ryan/Documents/himmAllRight-source
   window_name: Server
 - layout: ca7f,123x38,0,0,2
   options:

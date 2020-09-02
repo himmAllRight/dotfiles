@@ -1,0 +1,27 @@
+session_name: dev
+windows:
+- focus: 'true'
+  layout: c15e,215x64,0,0,1
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan
+  window_name: zsh
+- layout: c15f,215x64,0,0,2
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan
+  window_name: zsh
+- layout: c160,215x64,0,0,3
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: htop
+  start_directory: /home/ryan
+  window_name: htop

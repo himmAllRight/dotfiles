@@ -22,3 +22,10 @@ windows:
     shell_command: htop
   start_directory: /home/ryan
   window_name: htop
+- layout: c303,189x54,0,0,6
+  options: {}
+  panes:
+  - focus: 'true'
+    shell_command: bashtop
+  start_directory: /home/ryan
+  window_name: bashtop
