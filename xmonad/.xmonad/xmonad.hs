@@ -442,9 +442,15 @@ myKeys =
         , ("M-u <Space>", spawn "mocp --toggle-pause")
 
     --- My Applications (Super+Alt+Key)
-        , ("M-M1-h", spawn (myTerminal ++ " -e htop"))
         , ("M-M1-v", spawn (myTerminal ++ " -e nvim"))
         , ("M-M1-d", spawn ("/home/ryan/Builds/Discord/Discord"))
+        , ("M-M1-n", spawn ("/home/ryan/Builds/notion-linux-x64/notion"))
+        , ("M-M1-f", spawn ("/home/ryan/Builds/fastmail-linux-x64/fastmail"))
+        , ("M-M1-h", spawn ("/home/ryan/Builds/homeassistant/homeassistant"))
+        , ("M-M1-p", spawn ("/home/ryan/Builds/pocketcasts-linux-x64/pocketcasts"))
+        , ("M-M1-r", spawn ("/home/ryan/Builds/pocket-linux-x64/pocket"))
+        , ("M-M1-s", spawn ("/home/ryan/Builds/soundcloud-linux-x64/soundcloud"))
+        , ("M-M1-t", spawn ("/home/ryan/Builds/twitch-linux-x64/twitch"))
 
     -- Multimedia Keys
         , ("<XF86AudioPlay>", spawn "cmus toggle")
