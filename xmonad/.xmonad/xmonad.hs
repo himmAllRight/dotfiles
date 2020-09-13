@@ -451,6 +451,7 @@ myKeys =
         , ("M-M1-r", spawn ("/home/ryan/Builds/pocket-linux-x64/pocket"))
         , ("M-M1-s", spawn ("/home/ryan/Builds/soundcloud-linux-x64/soundcloud"))
         , ("M-M1-t", spawn ("/home/ryan/Builds/twitch-linux-x64/twitch"))
+        , ("M-M1-b", spawn ("flatpak run com.bitwarden.desktop"))
 
     -- Multimedia Keys
         , ("<XF86AudioPlay>", spawn "cmus toggle")
