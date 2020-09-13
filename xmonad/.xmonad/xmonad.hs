@@ -362,8 +362,8 @@ xmobarEscape = concatMap doubleLts
 
 myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
-               -- $ ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-               $ ["dev", "www", "sys", "doc", "vbox", "chat", "mus", "vid", "gfx"]
+               $ ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+               -- $ ["dev", "www", "sys", "doc", "vbox", "chat", "mus", "vid", "gfx"]
   where
         clickable l = [ "<action=xdotool key super+" ++ show (n) ++ "> " ++ ws ++ " </action>" |
                       (i,ws) <- zip [1..9] l,
@@ -452,6 +452,7 @@ myKeys =
         , ("M-M1-s", spawn ("/home/ryan/Builds/soundcloud-linux-x64/soundcloud"))
         , ("M-M1-t", spawn ("/home/ryan/Builds/twitch-linux-x64/twitch"))
         , ("M-M1-b", spawn ("flatpak run com.bitwarden.desktop"))
+        , ("M-M1-m", spawn ("flatpak run com.mojang.Minecraft"))
 
     -- Multimedia Keys
         , ("<XF86AudioPlay>", spawn "cmus toggle")
@@ -480,7 +481,7 @@ myKeys =
 main :: IO ()
 main = do
     -- Launching xmobar on my monitors.
-    xmproc0 <- spawnPipe "xmobar -x 0 ~/.xmonad/xmobar/xmonad.hs"
+    xmproc0 <- spawnPipe "xmobar -x 0 ~/.xmonad/xmobar/xmobarrc"
     -- the xmonad, ya know...what the WM is named after!
     xmonad $ ewmh def
         { manageHook = ( isFullscreen --> doFullFloat ) <+> manageDocks
