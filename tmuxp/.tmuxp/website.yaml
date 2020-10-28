@@ -6,10 +6,18 @@ windows:
     automatic-rename: 'off'
   panes:
   - focus: 'true'
+    shell_command: nvim
+  start_directory: /home/ryan/Documents/himmAllRight-source
+  window_name: Editor
+- layout: ca7e,123x38,0,0,1
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
     shell_command: zsh
   start_directory: /home/ryan/Documents/himmAllRight-source
   window_name: Git
-- layout: ca7e,123x38,0,0,1
+- layout: ca7f,123x38,0,0,2
   options:
     automatic-rename: 'off'
   panes:
@@ -17,14 +25,6 @@ windows:
     shell_command: toolbox enter -c website
   start_directory: /home/ryan/Documents/himmAllRight-source
   window_name: Server
-- layout: ca7f,123x38,0,0,2
-  options:
-    automatic-rename: 'off'
-  panes:
-  - focus: 'true'
-    shell_command: nvim
-  start_directory: /home/ryan/Documents/himmAllRight-source
-  window_name: Editor
 - layout: ca80,123x38,0,0,3
   options:
     automatic-rename: 'off'
@@ -41,3 +41,11 @@ windows:
     shell_command: zsh
   start_directory: /home/ryan/Documents/himmAllRight-source
   window_name: Publish
+- layout: ca82,123x38,0,0,5
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: 'true'
+    shell_command: zsh
+  start_directory: /home/ryan/Documents/himmAllRight-source
+  window_name: Shell
