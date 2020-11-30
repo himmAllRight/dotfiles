@@ -109,6 +109,9 @@ alias aur-updates="cower -u | wc -l"
 # git
 alias gits="git status"
 
+# neofetch
+alias neofetch="neofetch --memory_unit gib"
+
 # emacs
 alias emacs="emacs $1 -nw"
 # export MANPATH="/usr/local/man:$MANPATH"
