@@ -86,14 +86,12 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export TERM=xterm-256color
-# Navigation
-alias dotfiles="cd /home/ryan/dotfiles/"
-alias smb-drives="cd /run/user/1000/gvfs/"
+
+# Toolbox helpers
+alias install-rpmfusion="sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
 
 # Radio
 alias jblive="mpv http://jblive.fm"
-alias jbliveV="mpv rtsp://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream"
-alias wmmr="mpv -playlist http://provisioning.streamtheworld.com/pls/WMMRFMAAC.pls"
 
 # Net
 alias getIP="curl -s icanhazip.com"
@@ -102,31 +100,17 @@ alias getIP="curl -s icanhazip.com"
 alias ta="tmux -2 attach-session -t $1"
 alias tn="tmux -2 new-session -s $1"
 
-# Manual Upgrades
-alias pacman-updates="pacman -Qqu | wc -l"
-alias aur-updates="cower -u | wc -l"
-
 # git
 alias gits="git status"
 
 # neofetch
 alias neofetch="neofetch --memory_unit gib"
 
-# emacs
-alias emacs="emacs $1 -nw"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR='nvim'
-alias vim="nvim"
-
-# Go Path Env
-export GOPATH=$HOME/Documents/Programming/golang/
-export PATH=$PATH:$HOME/Documents/Programming/golang/bin/
-
+export EDITOR='vim'
 
 # IQE certs
 export REQUESTS_CA_BUNDLE=/etc/pki/tls/certs/ca-bundle.crt
