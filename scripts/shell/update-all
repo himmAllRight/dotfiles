@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Update rpm-ostree
+echo -e "\nRunning rpm-ostree updates\n----------"
+sudo rpm-ostree update
+
+# Update Flatpaks
+echo -e "\nRunning flatpak updates\n----------"
+sudo flatpak update
+
+# Update
+#for n in "fedora-toolbox-34" "go-dev" "go-test" "iqe" "iqe-yupana" "rust-test" "test"
+for n in `toolbox list -c | awk '{print $2}' | tail -n +2`
+do
+    echo -e "\nRunning $n toolbox updates\n----------"
+    toolbox run -c $n sudo dnf update -y
+done
+
+echo -e "\n\nAll Updates complete!"
