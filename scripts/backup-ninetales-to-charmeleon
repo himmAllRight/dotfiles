@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# External Drive's mounted location
+#DRIVE=/home/ryan/Network/external
+DRIVE=ryan@10.0.7.5:/var/Data/Ninetales_Backup
+OPTIONS='-aHAXxv --numeric-ids --progress'
+
+# Backup Music
+rsync $OPTIONS /Data/Music/ $DRIVE/Data/Music/
+
+# Backup Pictures
+rsync $OPTIONS /Data/Pictures/ $DRIVE/Data/Pictures/
+
+# Backup Ryan Documents
+rsync $OPTIONS /Data/ryan/Documents/ $DRIVE/Data/ryan/Documents
+
+# Backup rebecca
+rsync $OPTIONS /Data/rebecca/ $DRIVE/Data/rebecca
+
+# Backup Home Movies
+rsync $OPTIONS /Data/Videos/Home_Movies $DRIVE/Data/Videos/Home_Movies/
+
+# Backup Movies
+rsync $OPTIONS /Data/Videos/Movies $DRIVE/Data/Videos/Movies/
+
+# Backup TV_Shows
+rsync $OPTIONS /Data/Videos/TV_Shows $DRIVE/Data/Videos/TV_Shows/
+
+# Backup Documentaries
+rsync $OPTIONS /Data/Videos/Documentaries $DRIVE/Data/Videos/Documentaries/
+
+# Backup Minecraft Servers
+rsync $OPTIONS /Backups/minecraft/ $DRIVE/Backups/minecraft/
+
+# Backup FoundryVTT Servers
+rsync $OPTIONS /Backups/FoundryVTT/ $DRIVE/Backups/FoundryVTT/
+
+# Backup VMs
+rsync $OPTIONS /Backups/VMs/ $DRIVE/Backups/VMs/
