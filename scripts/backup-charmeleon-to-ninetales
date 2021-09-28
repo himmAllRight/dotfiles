@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+
+NINETALES=10.0.7.38
+OPTIONS='--progress -az'
+
+# Backup Music
+rsync $OPTIONS /var/Data/Music/ ryan@$NINETALES:/Data/Music/
+
+# Backup Documents
+rsync $OPTIONS --exclude 'ISOs' /var/home/ryan/Documents/ ryan@$NINETALES:/Data/ryan/Documents/
+
+# Backup Videos
+# Don't need this currently...
+
+# Backup Minecraft server
+rsync $OPTIONS /var/Data/minecraft/ ryan@$NINETALES:/Backups/minecraft
+
+# Backup FoundryVTT Server
+rsync $OPTIONS /var/Data/FoundryVTT/ ryan@$NINETALES:/Backups/FoundryVTT
+
+# Backup VMs
+# None currently worth backing up

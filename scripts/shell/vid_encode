@@ -1,0 +1,6 @@
+#!/bin/bash
+
+INPUT=$1
+OUTPUT=$2
+
+ffmpeg -i "$INPUT" -c:v h264 -c:a copy "$OUTPUT"
