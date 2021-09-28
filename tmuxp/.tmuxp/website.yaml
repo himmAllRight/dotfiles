@@ -7,7 +7,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: nvim
-  start_directory: /home/ryan/Documents/himmAllRight-source
+  start_directory: /home/ryan/Documents/himmallright.gitlab.io
   window_name: Editor
 - layout: ca7e,123x38,0,0,1
   options:
@@ -15,7 +15,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: zsh
-  start_directory: /home/ryan/Documents/himmAllRight-source
+  start_directory: /home/ryan/Documents/himmallright.gitlab.io
   window_name: Git
 - layout: ca7f,123x38,0,0,2
   options:
@@ -23,7 +23,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: toolbox enter -c website
-  start_directory: /home/ryan/Documents/himmAllRight-source
+  start_directory: /home/ryan/Documents/himmallright.gitlab.io
   window_name: Server
 - layout: ca80,123x38,0,0,3
   options:
@@ -31,7 +31,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: pipenv shell
-  start_directory: /home/ryan/Documents/himmAllRight-source
+  start_directory: /home/ryan/Documents/himmallright.gitlab.io
   window_name: Test
 - layout: ca81,123x38,0,0,4
   options:
@@ -39,7 +39,7 @@ windows:
   panes:
   - focus: 'true'
     shell_command: zsh
-  start_directory: /home/ryan/Documents/himmAllRight-source
+  start_directory: /home/ryan/Documents/himmallright.gitlab.io
   window_name: Publish
 - layout: ca82,123x38,0,0,5
   options:
@@ -47,5 +47,5 @@ windows:
   panes:
   - focus: 'true'
     shell_command: zsh
-  start_directory: /home/ryan/Documents/himmAllRight-source
+  start_directory: /home/ryan/Documents/himmallright.gitlab.io
   window_name: Shell
